@@ -9,6 +9,7 @@ namespace HoloJam.Characters
     /// </summary>
     public abstract class Core : MonoBehaviour
     {
+        [Header("Inherited Blackboard variabels")]
         // blackboard variables
         public Rigidbody2D Body;
         // TOOD: ANIMATOR IMPLEMENTATION

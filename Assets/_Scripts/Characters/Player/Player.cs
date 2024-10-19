@@ -33,11 +33,11 @@ namespace HoloJam.Characters.Player
 
         private void Update()
         {
-            Jump();
-
             // Handle state machine
             SelectState();
             Machine.CurrentState.Do();
+            
+            Jump();
         }
 
         private void FixedUpdate()
@@ -48,8 +48,10 @@ namespace HoloJam.Characters.Player
 
         private void SelectState()
         {
+            Data.AirborneData.Grounded = GroundSensor.Grounded;
+
             // grounded states
-            if (GroundSensor.Grounded)
+            if (Data.AirborneData.Grounded)
             {
                 if (Input.GetMovementInput().x == 0)
                 {
@@ -82,15 +84,15 @@ namespace HoloJam.Characters.Player
             if (Input.GetJumpValue() == 0) return;
 
             // if the palyer is grounded, jump
-            if (GroundSensor.Grounded)
+            if (Data.AirborneData.Grounded)
                 Body.linearVelocityY = Data.AirborneData.JumpingForce;
         }
-        #endregion
 
         private void ApplyFriction()
         {
-            if (GroundSensor.Grounded && Input.GetMovementInput().x == 0 && Body.linearVelocityY <= 0)
+            if (Data.AirborneData.Grounded && Input.GetMovementInput().x == 0 && Body.linearVelocityY <= 0)
                 Body.linearVelocity *= Data.GroundedData.GroundDecay;
         }
+        #endregion
     }
 }

@@ -18,4 +18,4 @@ MonoBehaviour:
     <MaxHorizontalSpeed>k__BackingField: 5
   <AirborneData>k__BackingField:
     <JumpingForce>k__BackingField: 5
-    <Grounded>k__BackingField: 0
+    <Grounded>k__BackingField: 1

@@ -6,6 +6,6 @@ namespace HoloJam.Characters.Data
     public class AirborneData
     {
         [field: SerializeField] public float JumpingForce { get; private set; }
-        public bool Grounded { get; set; }
+        [field: SerializeField] public bool Grounded { get; set; }
     }
 }
