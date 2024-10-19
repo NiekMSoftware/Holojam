@@ -1,3 +1,4 @@
+using HoloJam.Characters;
 using UnityEngine;
 
 namespace HoloJam.StateMachine
@@ -10,18 +11,18 @@ namespace HoloJam.StateMachine
         public float RunTime => Time.time - startTime;
 
         // blackboard variables
-        protected Rigidbody2D Rigidbody;
-        protected Player.Player Input;
+        protected Core core;
+
+        protected Rigidbody2D Rigidbody => core.Body;
 
         public virtual void Enter() {  }
         public virtual void Exit() {  }
         public virtual void Do() {  }
         public virtual void FixedDo() {  }
 
-        public void Setup(Rigidbody2D body, Player.Player player)
+        public void SetCore(Core core)
         {
-            Rigidbody = body;
-            Input = player;
+            this.core = core;
         }
 
         public void Initialise()

@@ -11,7 +11,7 @@ namespace HoloJam.StateMachine.States
 
         public override void Do()
         {
-            if (!Input.Data.Grounded || Input.Input.GetMovementInput().x != 0)
+            if (!core.GroundSensor.Grounded)
                 IsComplete = true;
         }
 
