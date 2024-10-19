@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 731f570241c56fd4e90eb5ed546d5091, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  <Acceleration>k__BackingField: 0.6
-  <MaxHorizontalSpeed>k__BackingField: 5
-  <GroundDecay>k__BackingField: 0.5
-  <JumpingForce>k__BackingField: 5
-  <Grounded>k__BackingField: 1
+  <GroundedData>k__BackingField:
+    <Acceleration>k__BackingField: 0.5
+    <GroundDecay>k__BackingField: 0.5
+    <MaxHorizontalSpeed>k__BackingField: 5
+  <AirborneData>k__BackingField:
+    <JumpingForce>k__BackingField: 5
+    <Grounded>k__BackingField: 0

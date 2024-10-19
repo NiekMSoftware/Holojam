@@ -1,3 +1,4 @@
+using HoloJam.Characters.Data;
 using HoloJam.StateMachine;
 using UnityEngine;
 
@@ -13,6 +14,9 @@ namespace HoloJam.Characters
         // TOOD: ANIMATOR IMPLEMENTATION
         public GroundSensor GroundSensor;
         public Machine Machine;
+
+        [field: Header("Data References")]
+        [field: SerializeField] protected CharacterSO Data { get; private set; }
 
         public void SetupInstances()
         {

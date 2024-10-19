@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HoloJam.Player.Utils
+namespace HoloJam.Characters.Player.Utils
 {
     public class PlayerInput : MonoBehaviour
     {

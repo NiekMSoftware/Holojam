@@ -1,6 +1,5 @@
 using UnityEngine;
-using HoloJam.Player.Utils;
-using HoloJam.Player.Data;
+using HoloJam.Characters.Player.Utils;
 using HoloJam.StateMachine;
 using HoloJam.StateMachine.States;
 
@@ -18,9 +17,6 @@ namespace HoloJam.Characters.Player
         public AirState airState;
 
         [field: Space()] public PlayerInput Input { get; private set; }
-
-        [field: Header("Data References")]
-        [field: SerializeField] public PlayerSO Data { get; private set; }
 
         private void Awake()
         {
@@ -72,8 +68,8 @@ namespace HoloJam.Characters.Player
             if (!(Mathf.Abs(Input.GetMovementInput().x) > 0)) return;
 
             // increment velocity by acceleration and clamp within range
-            float increment = Input.GetMovementInput().x * Data.Acceleration;
-            float newSpeed = Mathf.Clamp(Body.linearVelocityX + increment, -Data.MaxHorizontalSpeed, Data.MaxHorizontalSpeed);
+            float increment = Input.GetMovementInput().x * Data.GroundedData.Acceleration;
+            float newSpeed = Mathf.Clamp(Body.linearVelocityX + increment, -Data.GroundedData.MaxHorizontalSpeed, Data.GroundedData.MaxHorizontalSpeed);
             Body.linearVelocity = new Vector2(newSpeed, Body.linearVelocityY);
 
             // flip object based on direction
@@ -87,14 +83,14 @@ namespace HoloJam.Characters.Player
 
             // if the palyer is grounded, jump
             if (GroundSensor.Grounded)
-                Body.linearVelocityY = Data.JumpingForce;
+                Body.linearVelocityY = Data.AirborneData.JumpingForce;
         }
         #endregion
 
         private void ApplyFriction()
         {
             if (GroundSensor.Grounded && Input.GetMovementInput().x == 0 && Body.linearVelocityY <= 0)
-                Body.linearVelocity *= Data.GroundDecay;
+                Body.linearVelocity *= Data.GroundedData.GroundDecay;
         }
     }
 }
