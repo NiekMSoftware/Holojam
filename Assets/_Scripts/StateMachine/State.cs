@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace HoloJam.StateMachine
 {
+    /// <summary>
+    /// Base State class that all the other possible states inherit from.
+    /// </summary>
     public class State : MonoBehaviour
     {
         public bool IsComplete { get; protected set; }

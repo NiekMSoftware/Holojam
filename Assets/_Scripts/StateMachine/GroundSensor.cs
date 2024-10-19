@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace HoloJam.StateMachine
 {
+    /// <summary>
+    /// Determines if the entity is grounded, a core component for the Core class.
+    /// </summary>
     public class GroundSensor : MonoBehaviour
     {
         [Header("Ground Check")]

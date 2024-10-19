@@ -1,12 +1,14 @@
+using UnityEngine;
 using HoloJam.Player.Utils;
 using HoloJam.Player.Data;
-using UnityEngine;
 using HoloJam.StateMachine;
 using HoloJam.StateMachine.States;
-using HoloJam.Characters;
 
-namespace HoloJam.Player
+namespace HoloJam.Characters.Player
 {
+    /// <summary>
+    /// Player inherits from Core, taking all the core functionality from it.
+    /// </summary>
     [RequireComponent(typeof(Rigidbody2D), typeof(PlayerInput))]
     public class Player : Core
     {
@@ -29,7 +31,6 @@ namespace HoloJam.Player
 
         private void Start()
         {
-
             SetupInstances();
             Machine.Set(idleState);
         }
@@ -38,6 +39,7 @@ namespace HoloJam.Player
         {
             Jump();
 
+            // Handle state machine
             SelectState();
             Machine.CurrentState.Do();
         }
@@ -48,7 +50,6 @@ namespace HoloJam.Player
             ApplyFriction();
         }
 
-        #region State Machine
         private void SelectState()
         {
             // grounded states
@@ -64,7 +65,6 @@ namespace HoloJam.Player
             else
                 Machine.Set(airState);
         }
-        #endregion
 
         #region Movement Methods
         private void Move()

@@ -1,8 +1,8 @@
-using Unity.VisualScripting;
-using UnityEngine;
-
 namespace HoloJam.StateMachine
 {
+    /// <summary>
+    /// State Machine class that sets the new State.
+    /// </summary>
     public class Machine
     {
         public State CurrentState;
