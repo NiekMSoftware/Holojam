@@ -1,5 +1,3 @@
-using UnityEngine;
-
 namespace HoloJam.StateMachine.States
 {
     public class RunState : State

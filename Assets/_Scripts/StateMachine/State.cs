@@ -18,7 +18,7 @@ namespace HoloJam.StateMachine
         protected Rigidbody2D Rigidbody => core.Body;
 
         public Machine Machine;
-        public State Parent;
+        protected Machine Parent;
         public State state => Machine.CurrentState;
 
         protected void Set(State newState, bool forceReset = false)
@@ -28,6 +28,7 @@ namespace HoloJam.StateMachine
 
         public void SetCore(Core core)
         {
+            Machine = new Machine();
             this.core = core;
         }
 
@@ -43,8 +44,9 @@ namespace HoloJam.StateMachine
             state?.DoBranch();
         }
 
-        public void Initialise()
+        public void Initialise(Machine parent)
         {
+            Parent = parent;
             IsComplete = false;
             startTime = Time.time;
         }

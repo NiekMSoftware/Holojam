@@ -1,9 +1,12 @@
+using HoloJam.StateMachine.States;
 using UnityEngine;
 
 namespace HoloJam.Characters.NPC
 {
     public class Tako : Core
     {
+        public Patrol Patrol;
+
         private void Awake()
         {
             Body = GetComponent<Rigidbody2D>();
@@ -12,6 +15,7 @@ namespace HoloJam.Characters.NPC
         private void Start()
         {
             SetupInstances();
+            Set(Patrol);
         }
 
         private void Update()

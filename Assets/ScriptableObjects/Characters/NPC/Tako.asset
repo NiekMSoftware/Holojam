@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <GroundedData>k__BackingField:
     <Acceleration>k__BackingField: 0.5
-    <GroundDecay>k__BackingField: 0
+    <GroundDecay>k__BackingField: 0.3
     <MaxHorizontalSpeed>k__BackingField: 5
   <AirborneData>k__BackingField:
     <JumpingForce>k__BackingField: 0

@@ -12,7 +12,7 @@ namespace HoloJam.StateMachine
             if (CurrentState != newState || forceReset) {
                 CurrentState?.Exit();
                 CurrentState = newState;
-                CurrentState.Initialise();
+                CurrentState.Initialise(this);
                 CurrentState.Enter();
             }
         }

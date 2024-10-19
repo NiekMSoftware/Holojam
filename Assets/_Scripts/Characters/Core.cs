@@ -19,7 +19,12 @@ namespace HoloJam.Characters
         public State State => Machine.CurrentState;
 
         [field: Header("Data References")]
-        [field: SerializeField] protected CharacterSO Data { get; private set; }
+        [field: SerializeField] public CharacterSO Data { get; private set; }
+
+        public void Set(State newState, bool forceReset = false)
+        {
+            Machine.Set(newState, forceReset);
+        }
 
         public void SetupInstances()
         {
