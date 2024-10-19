@@ -7,6 +7,7 @@ namespace HoloJam.Characters
     /// <summary>
     /// All entities inherit from Core.
     /// </summary>
+    [RequireComponent(typeof(Rigidbody2D), typeof(GroundSensor))]
     public abstract class Core : MonoBehaviour
     {
         [Header("Inherited Blackboard variabels")]
@@ -15,6 +16,7 @@ namespace HoloJam.Characters
         // TOOD: ANIMATOR IMPLEMENTATION
         public GroundSensor GroundSensor;
         public Machine Machine;
+        public State State => Machine.CurrentState;
 
         [field: Header("Data References")]
         [field: SerializeField] protected CharacterSO Data { get; private set; }

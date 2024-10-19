@@ -8,7 +8,7 @@ namespace HoloJam.Characters.Player
     /// <summary>
     /// Player inherits from Core, taking all the core functionality from it.
     /// </summary>
-    [RequireComponent(typeof(Rigidbody2D), typeof(PlayerInput))]
+    [RequireComponent(typeof(PlayerInput))]
     public class Player : Core
     {
         [Header("Behaviors")]

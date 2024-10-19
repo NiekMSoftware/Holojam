@@ -15,17 +15,32 @@ namespace HoloJam.StateMachine
 
         // blackboard variables
         protected Core core;
-
         protected Rigidbody2D Rigidbody => core.Body;
 
-        public virtual void Enter() {  }
-        public virtual void Exit() {  }
-        public virtual void Do() {  }
-        public virtual void FixedDo() {  }
+        public Machine Machine;
+        public State Parent;
+        public State state => Machine.CurrentState;
+
+        protected void Set(State newState, bool forceReset = false)
+        {
+            Machine.Set(newState, forceReset);
+        }
 
         public void SetCore(Core core)
         {
             this.core = core;
+        }
+
+        public void FixedDoBranch()
+        {
+            FixedDo();
+            state?.FixedDoBranch();
+        }
+
+        public void DoBranch()
+        {
+            Do();
+            state?.DoBranch();
         }
 
         public void Initialise()
@@ -33,5 +48,10 @@ namespace HoloJam.StateMachine
             IsComplete = false;
             startTime = Time.time;
         }
+
+        public virtual void Enter() {  }
+        public virtual void Exit() {  }
+        public virtual void Do() {  }
+        public virtual void FixedDo() {  }
     }
 }
