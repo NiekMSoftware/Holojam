@@ -11,12 +11,16 @@ namespace HoloJam.StateMachine.States
 
         public override void Do()
         {
-            base.Do();
+            float velX = Rigidbody.linearVelocityX;
+            // set anim speed with the helper's map function
+
+            if (!Input.Data.Grounded || Mathf.Abs(velX) < 0.1f)
+                IsComplete = true;
         }
 
-        public override void FixedDo()
+        public override void Exit()
         {
-            base.FixedDo();
+            
         }
     }
 }

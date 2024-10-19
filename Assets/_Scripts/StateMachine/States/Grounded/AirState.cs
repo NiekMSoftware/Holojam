@@ -6,17 +6,20 @@ namespace HoloJam.StateMachine.States
     {
         public override void Enter()
         {
-            base.Enter();
+            // play anim
         }
 
         public override void Do()
         {
-            base.Do();
+            // seek the animator to the frame based on the y velocity
+            
+            if (Input.Data.Grounded)
+                IsComplete = true;
         }
 
-        public override void FixedDo()
+        public override void Exit()
         {
-            base.FixedDo();
+            
         }
     }
 }

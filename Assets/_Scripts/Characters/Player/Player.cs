@@ -1,12 +1,19 @@
 using HoloJam.Player.Utils;
 using HoloJam.Player.Data;
 using UnityEngine;
+using HoloJam.StateMachine;
+using HoloJam.StateMachine.States;
 
 namespace HoloJam.Player
 {
     [RequireComponent(typeof(Rigidbody2D), typeof(PlayerInput))]
     public class Player : MonoBehaviour
     {
+        public IdleState idleState;
+        public RunState runState;
+        public AirState airState;
+        State state;
+
         public Rigidbody2D Rigidbody { get; private set; }
         public PlayerInput Input { get; private set; }
 
@@ -14,7 +21,7 @@ namespace HoloJam.Player
         [field: SerializeField] public PlayerSO Data { get; private set; }
 
         [Header("Ground Check")]
-        [SerializeField] private Collider2D GroundCollider;
+        [SerializeField] private Collider2D GroundCheck;
         [SerializeField] private LayerMask GroundLayer;
 
         private void Awake()
@@ -23,9 +30,21 @@ namespace HoloJam.Player
             Input = GetComponent<PlayerInput>();
         }
 
+        private void Start()
+        {
+            idleState.Setup(Rigidbody, this);
+            runState.Setup(Rigidbody, this);
+            airState.Setup(Rigidbody, this);
+
+            state = idleState;
+        }
+
         private void Update()
         {
             Jump();
+
+            SelectState();
+            state.Do();
         }
 
         private void FixedUpdate()
@@ -34,6 +53,36 @@ namespace HoloJam.Player
             Move();
             ApplyFriction();
         }
+
+        #region State Machine
+
+        private void SelectState()
+        {
+            State oldState = state;
+
+            // grounded states
+            if (Data.Grounded)
+            {
+                if (Input.GetMovementInput().x == 0)
+                {
+                    state = idleState;
+                    // start state
+                }
+                else
+                    state = runState;
+            }
+            else
+                state = airState;
+
+            if (oldState != state || oldState.IsComplete)
+            {
+                oldState?.Exit();
+                state.Initialise();
+                state.Exit();
+            }
+        }
+
+        #endregion
 
         #region Movement Methods
 
@@ -66,7 +115,7 @@ namespace HoloJam.Player
 
         private void CheckGround()
         {
-            Data.Grounded = Physics2D.OverlapAreaAll(GroundCollider.bounds.min, GroundCollider.bounds.max, GroundLayer).Length > 0;
+            Data.Grounded = Physics2D.OverlapAreaAll(GroundCheck.bounds.min, GroundCheck.bounds.max, GroundLayer).Length > 0;
         }
 
         private void ApplyFriction()

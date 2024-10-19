@@ -11,12 +11,12 @@ namespace HoloJam.StateMachine.States
 
         public override void Do()
         {
-            base.Do();
+            if (!Input.Data.Grounded || Input.Input.GetMovementInput().x != 0)
+                IsComplete = true;
         }
 
-        public override void FixedDo()
+        public override void Exit()
         {
-            base.FixedDo();
         }
     }
 }
