@@ -1,5 +1,6 @@
 using HoloJam.Characters.Data;
 using HoloJam.StateMachine;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace HoloJam.Characters
@@ -34,6 +35,17 @@ namespace HoloJam.Characters
             State[] allChildStates = GetComponentsInChildren<State>();
             foreach (State state in allChildStates)
                 state.SetCore(this);
+        }
+
+        private void OnDrawGizmos()
+        {
+#if UNITY_EDITOR
+            if (Application.isPlaying && State != null)
+            {
+                List<State> states = Machine.GetActiveStateBranch();
+                UnityEditor.Handles.Label(transform.position, "Active States: " + string.Join(" > ", states));
+            }
+#endif
         }
     }
 }

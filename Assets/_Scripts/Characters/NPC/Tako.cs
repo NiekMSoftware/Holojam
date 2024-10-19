@@ -7,6 +7,8 @@ namespace HoloJam.Characters.NPC
     {
         public Patrol Patrol;
 
+        public Collect Collect;
+
         private void Awake()
         {
             Body = GetComponent<Rigidbody2D>();
@@ -22,7 +24,16 @@ namespace HoloJam.Characters.NPC
         {
             if (State.IsComplete)
             {
+                if (State == Collect)
+                    Set(Patrol);
+            }
 
+            if (State == Patrol)
+            {
+                Collect.CheckForTarget();
+
+                if (Collect.Target != null)
+                    Set(Collect);
             }
 
             State.DoBranch();
