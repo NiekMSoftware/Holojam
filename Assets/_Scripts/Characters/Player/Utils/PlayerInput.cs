@@ -34,6 +34,11 @@ namespace HoloJam.Player.Utils
             return PlayerActions.Move.ReadValue<Vector2>();
         }
 
+        public float GetJumpValue()
+        {
+            return PlayerActions.Jump.ReadValue<float>();
+        }
+
         #endregion
     }
 }

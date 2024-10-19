@@ -15,3 +15,5 @@ MonoBehaviour:
   <Acceleration>k__BackingField: 0.6
   <MaxHorizontalSpeed>k__BackingField: 5
   <GroundDecay>k__BackingField: 0.5
+  <JumpingForce>k__BackingField: 5
+  <Grounded>k__BackingField: 1

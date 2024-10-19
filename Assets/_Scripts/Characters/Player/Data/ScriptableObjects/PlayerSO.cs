@@ -9,5 +9,9 @@ namespace HoloJam.Player.Data
         [field: SerializeField, Range(0.1f, 2f)] public float Acceleration { get; private set; }
         [field: SerializeField] public float MaxHorizontalSpeed { get; private set; }
         [field: SerializeField, Range(0f, 1f)] public float GroundDecay { get; private set; }
+
+        [field: Header("Jumping properties")]
+        [field: SerializeField] public float JumpingForce { get; private set; }
+        [field: SerializeField] public bool Grounded { get; set; }
     }
 }

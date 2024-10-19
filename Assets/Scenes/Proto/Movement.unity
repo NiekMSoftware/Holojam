@@ -363,6 +363,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Data>k__BackingField: {fileID: 11400000, guid: 567933b0858356f4cbb3d8c81e2a7c5a, type: 2}
+  GroundCollider: {fileID: 496057238}
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &903734382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,7 +486,7 @@ GameObject:
   - component: {fileID: 1285521402}
   - component: {fileID: 1285521403}
   - component: {fileID: 1285521404}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
