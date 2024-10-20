@@ -44,6 +44,8 @@ namespace HoloJam
             {
                 _body.linearVelocityY = airborneData.JumpForce;
                 _coyoteTimeCounter = 0;
+
+                _jumpTimeCounter = airborneData.JumpTime;
             }
 
             Jump(input.GetJumpValue(), airborneData.JumpForce, airborneData.AddedJumpForce, airborneData.JumpTime);
