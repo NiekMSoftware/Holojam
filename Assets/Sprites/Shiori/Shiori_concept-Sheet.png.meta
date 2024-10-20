@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Shiori_concept-Sheet_0: 7818616268494082394
+      Shiori_concept-Sheet_1: 1312930814098654398
+      Shiori_concept-Sheet_2: -3931603926734191462
+      Shiori_concept-Sheet_3: -8950541364646273198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

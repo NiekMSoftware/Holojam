@@ -3,19 +3,42 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "test_level.tmx",
     "expandedProjectPaths": [
+        "."
     ],
     "fileStates": {
+        "jail_block.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 11
+        },
+        "jail_wall.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 11
+        },
+        "test_level.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 319.90909090909093,
+                "y": 196.36363636363637
+            }
+        }
     },
     "last.imagePath": "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Tiles",
     "map.lastUsedFormat": "tmx",
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "openFiles": [
+        "jail_block.tsx",
+        "jail_wall.tsx",
+        "test_level.tmx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "jail_block.tsx",
+        "jail_wall.tsx",
+        "test_level.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
