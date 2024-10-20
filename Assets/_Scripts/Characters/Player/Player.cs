@@ -7,8 +7,9 @@ namespace HoloJam.Characters.Player
 {
     /// <summary>
     /// Player inherits from Core, taking all the core functionality from it.
+    /// Player requires the custom PlayerInput and PlayerController class to function properly.
     /// </summary>
-    [RequireComponent(typeof(PlayerInput))]
+    [RequireComponent(typeof(PlayerInput), typeof(PlayerController))]
     public class Player : Core
     {
         [Header("Behaviors")]
@@ -17,16 +18,15 @@ namespace HoloJam.Characters.Player
         public AirState airState;
 
         [field: Space()] public PlayerInput Input { get; private set; }
-
-        // timers
-        private float _jumpTimeCounter;
-        private float _coyoteTimeCounter;
+        public PlayerController Controller { get ; private set; }
 
         private void Awake()
         {
             Body = GetComponent<Rigidbody2D>();
             Input = GetComponent<PlayerInput>();
             GroundSensor = GetComponent<GroundSensor>();
+            Controller = GetComponent<PlayerController>();
+            Controller.Initialize(Body);
         }
 
         private void Start()
@@ -40,26 +40,22 @@ namespace HoloJam.Characters.Player
             // Handle state machine
             SelectState();
             Machine.CurrentState.Do();
-
-            // Update timers if grounded
-            UpdateTimers();
-            Jump();
+            Controller.UpdateTimers(Data.AirborneData);
+            Controller.HandleJump(Input, Data.AirborneData);
         }
 
         private void FixedUpdate()
         {
-            Move();
-            ApplyFriction();
+            Controller.Move(Input.GetMovementInput(), Data.GroundedData.Acceleration, Data.GroundedData.MaxHorizontalSpeed);
+            Controller.ApplyFriction(Data.AirborneData.Grounded, Input.GetMovementInput(), Data.GroundedData.GroundDecay);
         }
 
         private void SelectState()
         {
             Data.AirborneData.Grounded = GroundSensor.Grounded;
-
-            // grounded states
             if (Data.AirborneData.Grounded)
             {
-                if (Input.GetMovementInput() == 0)
+                if (Input.GetMovementInput() == 0 && Controller.CheckVelocity(0.1f))
                 {
                     Machine.Set(idleState);
                 }
@@ -69,63 +65,5 @@ namespace HoloJam.Characters.Player
             else
                 Machine.Set(airState);
         }
-
-        #region Movement Methods
-        private void Move()
-        {
-            if (!(Mathf.Abs(Input.GetMovementInput()) > 0)) return;
-
-            // increment velocity by acceleration and clamp within range
-            float increment = Input.GetMovementInput() * Data.GroundedData.Acceleration;
-            float newSpeed = Mathf.Clamp(Body.linearVelocityX + increment, -Data.GroundedData.MaxHorizontalSpeed, Data.GroundedData.MaxHorizontalSpeed);
-            Body.linearVelocity = new Vector2(newSpeed, Body.linearVelocityY);
-
-            // flip object based on direction
-            float direction = Mathf.Sign(Input.GetMovementInput());
-            transform.localScale = new Vector3(direction, 1, 1);
-        }
-
-        private void Jump()
-        {
-            // Allow jumping even if coyoteTimeCounter > 0 (player left ground recently)
-            if (Input.GetJumpValue() > 0 && _coyoteTimeCounter > 0)
-            {
-                Body.linearVelocityY = Data.AirborneData.JumpForce;
-                _coyoteTimeCounter = 0;  // Reset coyote time after jumping
-            }
-
-            // continue to apply jump force while button is held
-            if (Input.GetJumpValue() > 0 && _jumpTimeCounter > 0)
-            {
-                Body.linearVelocityY = Mathf.Lerp(Data.AirborneData.AddedJumpForce, Data.AirborneData.JumpForce, _jumpTimeCounter / Data.AirborneData.JumpTime);
-                _jumpTimeCounter -= Time.deltaTime;
-            }
-
-            // if the button is released early, stop the jump force
-            if (Input.GetJumpValue() == 0 && _jumpTimeCounter > 0f && !Data.AirborneData.Grounded)
-            {
-                _jumpTimeCounter = 0;
-            }
-        }
-
-        private void ApplyFriction()
-        {
-            if (Data.AirborneData.Grounded && Input.GetMovementInput() == 0 && Body.linearVelocityY <= 0)
-                Body.linearVelocity *= Data.GroundedData.GroundDecay;
-        }
-
-        private void UpdateTimers()
-        {
-            if (Data.AirborneData.Grounded)
-            {
-                _coyoteTimeCounter = Data.AirborneData.CoyoteTime;
-                _jumpTimeCounter = Data.AirborneData.JumpTime;
-            }
-            else
-            {
-                _coyoteTimeCounter -= Time.deltaTime;
-            }
-        }
-        #endregion
     }
 }

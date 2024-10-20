@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   <GroundedData>k__BackingField:
-    <Acceleration>k__BackingField: 0.8
-    <GroundDecay>k__BackingField: 0.3
+    <Acceleration>k__BackingField: 0.3
+    <GroundDecay>k__BackingField: 0.712
     <MaxHorizontalSpeed>k__BackingField: 5
   <AirborneData>k__BackingField:
     <JumpTime>k__BackingField: 0.35
