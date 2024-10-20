@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   <GroundedData>k__BackingField:
-    <Acceleration>k__BackingField: 0.7
-    <GroundDecay>k__BackingField: 0.712
+    <Acceleration>k__BackingField: 0.8
+    <GroundDecay>k__BackingField: 0.9
     <MaxHorizontalSpeed>k__BackingField: 5
   <AirborneData>k__BackingField:
     <JumpTime>k__BackingField: 0.35
-    <JumpForce>k__BackingField: 4
-    <AddedJumpForce>k__BackingField: 5
+    <JumpForce>k__BackingField: 6
+    <AddedJumpForce>k__BackingField: 6
+    <GravityMultiplier>k__BackingField: 1.3
+    <MaxFallingSpeed>k__BackingField: 18
     <CoyoteTime>k__BackingField: 0.2
-    <Grounded>k__BackingField: 0
+    <Grounded>k__BackingField: 1

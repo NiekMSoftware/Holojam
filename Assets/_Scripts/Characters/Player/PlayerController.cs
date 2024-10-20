@@ -55,6 +55,15 @@ namespace HoloJam
             {
                 _jumpTimeCounter = 0;
             }
+
+            // apply a downwards force to fall faster
+            if (_jumpTimeCounter <= 0)
+            {
+                _body.linearVelocityY += airborneData.GravityMultiplier * Physics2D.gravity.y * Time.deltaTime;
+
+                // Clamp the falling velocity to avoid falling too fast
+                _body.linearVelocityY = Mathf.Clamp(_body.linearVelocityY, -airborneData.MaxFallingSpeed, Mathf.Infinity);
+            }
         }
 
         private void Jump(float jumpValue, float jumpForce, float addedJumpForce, float jumpTime)
