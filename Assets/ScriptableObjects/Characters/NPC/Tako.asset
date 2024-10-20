@@ -15,7 +15,7 @@ MonoBehaviour:
   <GroundedData>k__BackingField:
     <Acceleration>k__BackingField: 0.5
     <GroundDecay>k__BackingField: 0.3
-    <MaxHorizontalSpeed>k__BackingField: 5
+    <MaxHorizontalSpeed>k__BackingField: 3
   <AirborneData>k__BackingField:
     <JumpTime>k__BackingField: 0.1
     <JumpForce>k__BackingField: 0
