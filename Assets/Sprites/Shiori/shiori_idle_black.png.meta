@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: e38210fa05a3a894aadb58692ab4b083
+guid: f71d1a2cb5f32554e84da473c460a91a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7818616268494082394
-    second: Shiori_concept-Sheet_0
+      213: 5989059400197793059
+    second: shiori_idle_black_0
   - first:
-      213: 1312930814098654398
-    second: Shiori_concept-Sheet_1
+      213: -6935605748704471498
+    second: shiori_idle_black_1
   - first:
-      213: -3931603926734191462
-    second: Shiori_concept-Sheet_2
+      213: 1775010273635969285
+    second: shiori_idle_black_2
   - first:
-      213: -8950541364646273198
-    second: Shiori_concept-Sheet_3
+      213: -1932066659955304653
+    second: shiori_idle_black_3
+  - first:
+      213: -795569396550768991
+    second: shiori_idle_black_4
+  - first:
+      213: 1164501756632788345
+    second: shiori_idle_black_5
+  - first:
+      213: -5936462455083043974
+    second: shiori_idle_black_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -62,7 +71,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -135,89 +144,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shiori_concept-Sheet_0
+      name: shiori_idle_black_0
       rect:
         serializedVersion: 2
-        x: 15
+        x: 0
         y: 0
-        width: 15
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a511ea6421e418c60800000000000000
-      internalID: 7818616268494082394
+      spriteID: 325e0870bc96d1350800000000000000
+      internalID: 5989059400197793059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shiori_concept-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 0
-        width: 17
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eb4c3058e97783210800000000000000
-      internalID: 1312930814098654398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shiori_concept-Sheet_2
+      name: shiori_idle_black_1
       rect:
         serializedVersion: 2
         x: 48
         y: 0
-        width: 17
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a944a752f032079c0800000000000000
-      internalID: -3931603926734191462
+      spriteID: 63610566157cfbf90800000000000000
+      internalID: -6935605748704471498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shiori_concept-Sheet_3
+      name: shiori_idle_black_2
       rect:
         serializedVersion: 2
-        x: 66
+        x: 96
         y: 0
-        width: 15
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 25f91d40d0a49c380800000000000000
-      internalID: -8950541364646273198
+      spriteID: 509adb0807a12a810800000000000000
+      internalID: 1775010273635969285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiori_idle_black_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3371dfafb9bef25e0800000000000000
+      internalID: -1932066659955304653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiori_idle_black_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a66b6459d195f4f0800000000000000
+      internalID: -795569396550768991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiori_idle_black_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d6a688d24292010800000000000000
+      internalID: 1164501756632788345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiori_idle_black_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73f45e89d27d9da0800000000000000
+      internalID: -5936462455083043974
       vertices: []
       indices: 
       edges: []
@@ -226,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 87c4aaab749f81646a9c261e417aef74
     internalID: 0
     vertices: []
     indices: 
@@ -236,10 +311,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Shiori_concept-Sheet_0: 7818616268494082394
-      Shiori_concept-Sheet_1: 1312930814098654398
-      Shiori_concept-Sheet_2: -3931603926734191462
-      Shiori_concept-Sheet_3: -8950541364646273198
+      shiori_idle_black_0: 5989059400197793059
+      shiori_idle_black_1: -6935605748704471498
+      shiori_idle_black_2: 1775010273635969285
+      shiori_idle_black_3: -1932066659955304653
+      shiori_idle_black_4: -795569396550768991
+      shiori_idle_black_5: 1164501756632788345
+      shiori_idle_black_6: -5936462455083043974
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

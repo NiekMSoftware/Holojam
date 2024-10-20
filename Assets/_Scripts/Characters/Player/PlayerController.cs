@@ -10,7 +10,7 @@ namespace HoloJam
     /// </summary>
     [RequireComponent(typeof(Rigidbody2D))]
     public class PlayerController : MonoBehaviour
-    {
+    {        
         private Rigidbody2D _body;
 
         // timers

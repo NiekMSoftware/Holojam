@@ -15,18 +15,27 @@ namespace HoloJam.Characters
         // blackboard variables
         public Rigidbody2D Body;
         // TOOD: ANIMATOR IMPLEMENTATION
+        public CharacterAnimation charAnimator;
         public SurroundingSensors SurroundingSensor;
         public Machine Machine;
         public State State => Machine.CurrentState;
+        public delegate void OnDirectionChanged(bool isFacingLeft);
+        public event OnDirectionChanged DirectionChangedEvent;
 
         [field: Header("Data References")]
         [field: SerializeField] public CharacterSO Data { get; private set; }
-
+        [field: SerializeField] public bool lastFacingLeft { get; private set; }
         public void Set(State newState, bool forceReset = false)
         {
             Machine.Set(newState, forceReset);
         }
-
+        public void SetFacingLeft(bool newFacingLeft)
+        {
+            if (newFacingLeft != lastFacingLeft) {
+                lastFacingLeft = newFacingLeft;
+                if (DirectionChangedEvent != null) DirectionChangedEvent(newFacingLeft); 
+            }
+        }
         public void SetupInstances()
         {
             Machine = new Machine();

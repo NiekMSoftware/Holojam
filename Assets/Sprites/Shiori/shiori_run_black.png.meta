@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: a1a750f68f3f9c145a9d420bb3f0347a
+guid: ccab0b6299c49e349aa52d14d9a90ac6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2278278623249075982
-    second: Jail cell elements_0
+      213: 6020326573229750395
+    second: shiori_run_black_0
   - first:
-      213: 5082721474478478717
-    second: Jail cell elements_1
+      213: 5238294206159980191
+    second: shiori_run_black_1
   - first:
-      213: 7410069772162754660
-    second: Jail cell elements_2
+      213: 6788440146350102727
+    second: shiori_run_black_2
   - first:
-      213: 9136462472874906927
-    second: Jail cell elements_3
+      213: 5532106076313039767
+    second: shiori_run_black_3
   - first:
-      213: -2130701403484747665
-    second: Jail cell elements_4
+      213: 7781918661643042115
+    second: shiori_run_black_4
   - first:
-      213: -5266493430341285934
-    second: Jail cell elements_5
+      213: -6286437028877920752
+    second: shiori_run_black_5
+  - first:
+      213: 3949943342029675905
+    second: shiori_run_black_6
+  - first:
+      213: -8966028552340223553
+    second: shiori_run_black_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,10 +69,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -141,133 +147,241 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jail cell elements_0
+      name: shiori_run_black_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 0
-        width: 21
-        height: 35
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
+      physicsShape:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
       tessellationDetail: -1
       bones: []
-      spriteID: 2f07fd9b9ade160e0800000000000000
-      internalID: -2278278623249075982
+      spriteID: b78343d0f1f7c8350800000000000000
+      internalID: 6020326573229750395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jail cell elements_1
+      name: shiori_run_black_1
       rect:
         serializedVersion: 2
-        x: 27
+        x: 48
         y: 0
-        width: 17
-        height: 66
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
+      physicsShape:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
       tessellationDetail: -1
       bones: []
-      spriteID: d751a8a6044798640800000000000000
-      internalID: 5082721474478478717
+      spriteID: f96072ba3d822b840800000000000000
+      internalID: 5238294206159980191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jail cell elements_2
+      name: shiori_run_black_2
       rect:
         serializedVersion: 2
-        x: 47
+        x: 96
         y: 0
-        width: 13
-        height: 66
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
+      physicsShape:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
       tessellationDetail: -1
       bones: []
-      spriteID: 468ee92923bd5d660800000000000000
-      internalID: 7410069772162754660
+      spriteID: 7c8d23ea852653e50800000000000000
+      internalID: 6788440146350102727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jail cell elements_3
+      name: shiori_run_black_3
       rect:
         serializedVersion: 2
-        x: 62
+        x: 144
         y: 0
-        width: 11
-        height: 66
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
+      physicsShape:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
       tessellationDetail: -1
       bones: []
-      spriteID: f255567463c3bce70800000000000000
-      internalID: 9136462472874906927
+      spriteID: 7933b628a2df5cc40800000000000000
+      internalID: 5532106076313039767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jail cell elements_4
+      name: shiori_run_black_4
       rect:
         serializedVersion: 2
-        x: 79
-        y: 33
-        width: 34
-        height: 15
+        x: 192
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
+      physicsShape:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
       tessellationDetail: -1
       bones: []
-      spriteID: f688ddacc5a3e62e0800000000000000
-      internalID: -2130701403484747665
+      spriteID: 34d773adacdeefb60800000000000000
+      internalID: 7781918661643042115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jail cell elements_5
+      name: shiori_run_black_5
       rect:
         serializedVersion: 2
-        x: 79
+        x: 240
         y: 0
-        width: 50
-        height: 24
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
+      physicsShape:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
       tessellationDetail: -1
       bones: []
-      spriteID: 2d74490d028a9e6b0800000000000000
-      internalID: -5266493430341285934
+      spriteID: 0169ed644d612c8a0800000000000000
+      internalID: -6286437028877920752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiori_run_black_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
+      physicsShape:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d1998ba8401d630800000000000000
+      internalID: 3949943342029675905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shiori_run_black_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
+      physicsShape:
+      - - {x: 0, y: -24}
+        - {x: 24, y: 0}
+        - {x: 0, y: 24}
+        - {x: -24, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb940c32984429380800000000000000
+      internalID: -8966028552340223553
       vertices: []
       indices: 
       edges: []
@@ -276,7 +390,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a9951faa32f81d642a51640f180a7e80
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +400,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Jail cell elements_0: -2278278623249075982
-      Jail cell elements_1: 5082721474478478717
-      Jail cell elements_2: 7410069772162754660
-      Jail cell elements_3: 9136462472874906927
-      Jail cell elements_4: -2130701403484747665
-      Jail cell elements_5: -5266493430341285934
+      shiori_run_black_0: 6020326573229750395
+      shiori_run_black_1: 5238294206159980191
+      shiori_run_black_2: 6788440146350102727
+      shiori_run_black_3: 5532106076313039767
+      shiori_run_black_4: 7781918661643042115
+      shiori_run_black_5: -6286437028877920752
+      shiori_run_black_6: 3949943342029675905
+      shiori_run_black_7: -8966028552340223553
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
