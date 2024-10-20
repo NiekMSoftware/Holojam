@@ -142,5 +142,17 @@ namespace HoloJam.Managers
         {
             DialogueManager.Instance.ChooseOption(choice);
         }
+
+        public void FinishTyping(string fullText)
+        {
+            if (_typingCoroutine != null)
+            {
+                StopCoroutine(_typingCoroutine);
+                _typingCoroutine = null;
+            }
+
+            dialogueText.text = fullText; // Set the full text
+            _isTypingComplete = true;
+        }
     }
 }

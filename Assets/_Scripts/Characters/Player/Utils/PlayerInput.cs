@@ -1,6 +1,7 @@
 using HoloJam.Dialogue;
 using HoloJam.Managers;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace HoloJam.Characters.Player.Utils
 {
@@ -36,12 +37,27 @@ namespace HoloJam.Characters.Player.Utils
         {
             PlayerActions.Disable();
             UIActions.Enable();
+
+            UIActions.Submit.performed += OnSubmit;
         }
 
         public void SwitchToPlayerControls()
         {
+            UIActions.Submit.performed -= OnSubmit;
             UIActions.Disable();
             PlayerActions.Enable();
+        }
+
+        public void OnSubmit(InputAction.CallbackContext ctx)
+        {
+            if (!UIManager.Instance.IsTypingComplete())
+            {
+                // If the dialogue is still typing, finish it
+                UIManager.Instance.FinishTyping(DialogueManager.Instance.CurrentNode.dialogueText);
+                return;
+            }
+
+            DialogueManager.Instance.ContinueDialogue();
         }
 
         #region Input Methods

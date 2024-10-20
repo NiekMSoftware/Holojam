@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8bbc356638bf243a23dcaa8c99bcd8, type: 3}
   m_Name: Test01
   m_EditorClassIdentifier: 
-  characterName: Joe
-  dialogueText: HEHE
+  characterName: The "questionable" Novellite
+  dialogueText: "Hey guys, did you know that in terms of male human and female Pok\xE9mon
+    breeding, Vaporeon is the most compatible Pok\xE9mon for humans?"
   NextNode: {fileID: 11400000, guid: f124c4e2228371f4a9e7936c647f76be, type: 2}

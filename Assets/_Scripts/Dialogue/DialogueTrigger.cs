@@ -19,7 +19,6 @@ namespace HoloJam.Dialogue
 
                 if (input.GetInteractValue() > 0)
                 {
-                    print("pressed");
                     DialogueManager.Instance.StartDialogue(StartingNode); 
                 }
             }

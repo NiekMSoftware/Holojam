@@ -19,7 +19,7 @@ namespace HoloJam.Dialogue
         {
             if (Instance != null && Instance != this)
             {
-                Destroy(this);
+                Destroy(gameObject);
                 return;
             }
             Instance = this;
@@ -34,7 +34,7 @@ namespace HoloJam.Dialogue
         public void StartDialogue(DialogueNode node)
         {
             UIManager.Instance.ShowDialogue(node.characterName, node.dialogueText);
-            player?.Input.SwitchToUIControls();
+            player.Input.SwitchToUIControls();
             SetCurrentNode(node);
         }
 
@@ -42,19 +42,16 @@ namespace HoloJam.Dialogue
         {
             UIManager.Instance.HideDialogue();
             player.Input.SwitchToPlayerControls();
+            CurrentNode = null;
         }
 
         public void SetCurrentNode(DialogueNode node)
         {
-            if (node == null)
+            if (node != null)
             {
-                // end if none are present
-                EndDialogue();
-                return;
+                CurrentNode = node;
+                CurrentNode.EnterNode();
             }
-
-            CurrentNode = node;
-            CurrentNode.EnterNode();
         }
 
         public void OnDialogueLineCompleted()
@@ -62,18 +59,19 @@ namespace HoloJam.Dialogue
             OnDialogueLineComplete?.Invoke();
         }
 
-        #region UI Methods
-
         public void ContinueDialogue()
         {
             if (CurrentNode is DialogueLineNode lineNode)
             {
-                if (lineNode.NextNode == null)
+                if (lineNode.NextNode != null)
                 {
-                    EndDialogue();
+                    OnDialogueLineCompleted();
+                    SetCurrentNode(lineNode.NextNode);
                 }
                 else
-                    OnDialogueLineCompleted();
+                { 
+                    EndDialogue();
+                }
             }
         }
 
@@ -91,7 +89,5 @@ namespace HoloJam.Dialogue
         {
             UIManager.Instance.ShowChoices(characterName, text, choices);
         }
-
-        #endregion
     }
 }
