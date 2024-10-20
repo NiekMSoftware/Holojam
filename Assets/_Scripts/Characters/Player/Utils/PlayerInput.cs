@@ -1,3 +1,5 @@
+using HoloJam.Dialogue;
+using HoloJam.Managers;
 using UnityEngine;
 
 namespace HoloJam.Characters.Player.Utils
@@ -6,6 +8,7 @@ namespace HoloJam.Characters.Player.Utils
     {
         public PlayerInputActions InputActions;
         public PlayerInputActions.PlayerActions PlayerActions;
+        public PlayerInputActions.UIActions UIActions;
 
         #region Main Methods
 
@@ -13,6 +16,7 @@ namespace HoloJam.Characters.Player.Utils
         {
             InputActions = new PlayerInputActions();
             PlayerActions = InputActions.Player;
+            UIActions = InputActions.UI;
         }
 
         private void OnEnable()
@@ -23,9 +27,22 @@ namespace HoloJam.Characters.Player.Utils
         private void OnDisable()
         {
             PlayerActions.Disable();
+            UIActions.Disable();
         }
 
         #endregion
+
+        public void SwitchToUIControls()
+        {
+            PlayerActions.Disable();
+            UIActions.Enable();
+        }
+
+        public void SwitchToPlayerControls()
+        {
+            UIActions.Disable();
+            PlayerActions.Enable();
+        }
 
         #region Input Methods
 
@@ -37,6 +54,11 @@ namespace HoloJam.Characters.Player.Utils
         public float GetJumpValue()
         {
             return PlayerActions.Jump.ReadValue<float>();
+        }
+
+        public float GetInteractValue()
+        {
+            return PlayerActions.Interact.ReadValue<float>();
         }
 
         #endregion

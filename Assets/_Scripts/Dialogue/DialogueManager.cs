@@ -1,3 +1,4 @@
+using HoloJam.Characters.Player;
 using HoloJam.Dialogue.Data;
 using HoloJam.Managers;
 using System;
@@ -11,6 +12,7 @@ namespace HoloJam.Dialogue
         public static DialogueManager Instance { get; private set; }
         public event Action OnDialogueLineComplete;
 
+        [SerializeField] private Player player;
         public DialogueNode CurrentNode;
 
         private void Awake()
@@ -23,14 +25,23 @@ namespace HoloJam.Dialogue
             Instance = this;
         }
 
+        private void Start()
+        {
+            if (player == null)
+                player = FindFirstObjectByType<Player>();
+        }
+
         public void StartDialogue(DialogueNode node)
         {
+            UIManager.Instance.ShowDialogue(node.characterName, node.dialogueText);
+            player?.Input.SwitchToUIControls();
             SetCurrentNode(node);
         }
 
         private void EndDialogue()
         {
             UIManager.Instance.HideDialogue();
+            player.Input.SwitchToPlayerControls();
         }
 
         public void SetCurrentNode(DialogueNode node)
