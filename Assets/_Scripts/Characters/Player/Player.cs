@@ -18,13 +18,9 @@ namespace HoloJam.Characters.Player
 
         [field: Space()] public PlayerInput Input { get; private set; }
 
-        // temporary place for the jump timing
-        [SerializeField] private float _jumpTimeCounter;
-        [SerializeField] private float jumpTime = 0.35f; // max jump time
-        [SerializeField] private float jumpForce = 10f;
-        [SerializeField] private float extraForce = 5f;
-        [Space(), SerializeField] private float coyoteTime = 0.2f;
-        [SerializeField] private float _coyoteTimeCounter;
+        // timers
+        private float _jumpTimeCounter;
+        private float _coyoteTimeCounter;
 
         private void Awake()
         {
@@ -63,7 +59,7 @@ namespace HoloJam.Characters.Player
             // grounded states
             if (Data.AirborneData.Grounded)
             {
-                if (Input.GetMovementInput().x == 0)
+                if (Input.GetMovementInput() == 0)
                 {
                     Machine.Set(idleState);
                 }
@@ -77,15 +73,15 @@ namespace HoloJam.Characters.Player
         #region Movement Methods
         private void Move()
         {
-            if (!(Mathf.Abs(Input.GetMovementInput().x) > 0)) return;
+            if (!(Mathf.Abs(Input.GetMovementInput()) > 0)) return;
 
             // increment velocity by acceleration and clamp within range
-            float increment = Input.GetMovementInput().x * Data.GroundedData.Acceleration;
+            float increment = Input.GetMovementInput() * Data.GroundedData.Acceleration;
             float newSpeed = Mathf.Clamp(Body.linearVelocityX + increment, -Data.GroundedData.MaxHorizontalSpeed, Data.GroundedData.MaxHorizontalSpeed);
             Body.linearVelocity = new Vector2(newSpeed, Body.linearVelocityY);
 
             // flip object based on direction
-            float direction = Mathf.Sign(Input.GetMovementInput().x);
+            float direction = Mathf.Sign(Input.GetMovementInput());
             transform.localScale = new Vector3(direction, 1, 1);
         }
 
@@ -94,14 +90,14 @@ namespace HoloJam.Characters.Player
             // Allow jumping even if coyoteTimeCounter > 0 (player left ground recently)
             if (Input.GetJumpValue() > 0 && _coyoteTimeCounter > 0)
             {
-                Body.linearVelocityY = jumpForce;
+                Body.linearVelocityY = Data.AirborneData.JumpForce;
                 _coyoteTimeCounter = 0;  // Reset coyote time after jumping
             }
 
             // continue to apply jump force while button is held
             if (Input.GetJumpValue() > 0 && _jumpTimeCounter > 0)
             {
-                Body.linearVelocityY = Mathf.Lerp(extraForce, jumpForce, _jumpTimeCounter / jumpTime);
+                Body.linearVelocityY = Mathf.Lerp(Data.AirborneData.AddedJumpForce, Data.AirborneData.JumpForce, _jumpTimeCounter / Data.AirborneData.JumpTime);
                 _jumpTimeCounter -= Time.deltaTime;
             }
 
@@ -114,7 +110,7 @@ namespace HoloJam.Characters.Player
 
         private void ApplyFriction()
         {
-            if (Data.AirborneData.Grounded && Input.GetMovementInput().x == 0 && Body.linearVelocityY <= 0)
+            if (Data.AirborneData.Grounded && Input.GetMovementInput() == 0 && Body.linearVelocityY <= 0)
                 Body.linearVelocity *= Data.GroundedData.GroundDecay;
         }
 
@@ -122,8 +118,8 @@ namespace HoloJam.Characters.Player
         {
             if (Data.AirborneData.Grounded)
             {
-                _coyoteTimeCounter = coyoteTime;
-                _jumpTimeCounter = jumpTime;
+                _coyoteTimeCounter = Data.AirborneData.CoyoteTime;
+                _jumpTimeCounter = Data.AirborneData.JumpTime;
             }
             else
             {

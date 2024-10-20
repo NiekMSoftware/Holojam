@@ -29,9 +29,9 @@ namespace HoloJam.Characters.Player.Utils
 
         #region Input Methods
 
-        public Vector2 GetMovementInput()
+        public float GetMovementInput()
         {
-            return PlayerActions.Move.ReadValue<Vector2>();
+            return PlayerActions.Move.ReadValue<float>();
         }
 
         public float GetJumpValue()
