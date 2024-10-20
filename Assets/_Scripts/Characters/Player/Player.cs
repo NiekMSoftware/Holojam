@@ -24,7 +24,7 @@ namespace HoloJam.Characters.Player
         {
             Body = GetComponent<Rigidbody2D>();
             Input = GetComponent<PlayerInput>();
-            GroundSensor = GetComponent<GroundSensor>();
+            SurroundingSensor = GetComponent<SurroundingSensors>();
             Controller = GetComponent<PlayerController>();
             Controller.Initialize(Body);
         }
@@ -41,7 +41,7 @@ namespace HoloJam.Characters.Player
             SelectState();
             Machine.CurrentState.Do();
             Controller.UpdateTimers(Data.AirborneData);
-            Controller.HandleJump(Input, Data.AirborneData);
+            if (!SurroundingSensor.HitCeiling) Controller.HandleJump(Input, Data.AirborneData);
         }
 
         private void FixedUpdate()
@@ -52,7 +52,7 @@ namespace HoloJam.Characters.Player
 
         private void SelectState()
         {
-            Data.AirborneData.Grounded = GroundSensor.Grounded;
+            Data.AirborneData.Grounded = SurroundingSensor.Grounded;
             if (Data.AirborneData.Grounded)
             {
                 if (Input.GetMovementInput() == 0 && Controller.CheckVelocity(0.1f))

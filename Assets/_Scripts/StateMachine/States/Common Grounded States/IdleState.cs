@@ -9,7 +9,7 @@ namespace HoloJam.StateMachine.States
 
         public override void Do()
         {
-            if (!core.GroundSensor.Grounded)
+            if (!core.SurroundingSensor.Grounded)
                 IsComplete = true;
         }
 

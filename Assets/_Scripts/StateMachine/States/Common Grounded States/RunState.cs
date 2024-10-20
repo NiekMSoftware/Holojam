@@ -12,7 +12,7 @@ namespace HoloJam.StateMachine.States
             float velX = Rigidbody.linearVelocityX;
             // set anim speed with the helper's map function
 
-            if (!core.GroundSensor.Grounded)
+            if (!core.SurroundingSensor.Grounded)
                 IsComplete = true;
         }
 

@@ -13,7 +13,7 @@ namespace HoloJam.StateMachine.States
         {
             // seek the animator to the frame based on the y velocity
             
-            if (core.GroundSensor.Grounded)
+            if (core.SurroundingSensor.Grounded)
                 IsComplete = true;
         }
 

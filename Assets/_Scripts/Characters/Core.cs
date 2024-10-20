@@ -8,14 +8,14 @@ namespace HoloJam.Characters
     /// <summary>
     /// All entities inherit from Core.
     /// </summary>
-    [RequireComponent(typeof(Rigidbody2D), typeof(GroundSensor))]
+    [RequireComponent(typeof(Rigidbody2D), typeof(SurroundingSensors))]
     public abstract class Core : MonoBehaviour
     {
         [Header("Inherited Blackboard variabels")]
         // blackboard variables
         public Rigidbody2D Body;
         // TOOD: ANIMATOR IMPLEMENTATION
-        public GroundSensor GroundSensor;
+        public SurroundingSensors SurroundingSensor;
         public Machine Machine;
         public State State => Machine.CurrentState;
 
