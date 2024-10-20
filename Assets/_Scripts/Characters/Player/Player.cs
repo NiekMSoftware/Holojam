@@ -19,12 +19,12 @@ namespace HoloJam.Characters.Player
         [field: Space()] public PlayerInput Input { get; private set; }
 
         // temporary place for the jump timing
-        private float _jumpTimeCounter;
+        [SerializeField] private float _jumpTimeCounter;
         [SerializeField] private float jumpTime = 0.35f; // max jump time
         [SerializeField] private float jumpForce = 10f;
         [SerializeField] private float extraForce = 5f;
         [Space(), SerializeField] private float coyoteTime = 0.2f;
-        private float _coyoteTimeCounter;
+        [SerializeField] private float _coyoteTimeCounter;
 
         private void Awake()
         {
@@ -45,12 +45,8 @@ namespace HoloJam.Characters.Player
             SelectState();
             Machine.CurrentState.Do();
 
-            // Update coyote time if grounded
-            if (Data.AirborneData.Grounded)
-                _coyoteTimeCounter = coyoteTime;
-            else
-                _coyoteTimeCounter -= Time.deltaTime;
-
+            // Update timers if grounded
+            UpdateTimers();
             Jump();
         }
 
@@ -95,23 +91,13 @@ namespace HoloJam.Characters.Player
 
         private void Jump()
         {
-            if (Input.GetJumpValue() == 0) return;
-
             // Allow jumping even if coyoteTimeCounter > 0 (player left ground recently)
-            if (Data.AirborneData.Grounded || _coyoteTimeCounter > 0)
+            if (Input.GetJumpValue() > 0 && _coyoteTimeCounter > 0)
             {
                 Body.linearVelocityY = jumpForce;
-                _jumpTimeCounter = jumpTime;
                 _coyoteTimeCounter = 0;  // Reset coyote time after jumping
             }
 
-            // if the palyer is grounded, jump
-            if (Data.AirborneData.Grounded)
-            { 
-                Body.linearVelocityY = jumpForce;
-                _jumpTimeCounter = jumpTime;
-            }
-            
             // continue to apply jump force while button is held
             if (Input.GetJumpValue() > 0 && _jumpTimeCounter > 0)
             {
@@ -120,7 +106,7 @@ namespace HoloJam.Characters.Player
             }
 
             // if the button is released early, stop the jump force
-            if (Input.GetJumpValue() == 0 && _jumpTimeCounter > 0)
+            if (Input.GetJumpValue() == 0 && _jumpTimeCounter > 0f && !Data.AirborneData.Grounded)
             {
                 _jumpTimeCounter = 0;
             }
@@ -130,6 +116,19 @@ namespace HoloJam.Characters.Player
         {
             if (Data.AirborneData.Grounded && Input.GetMovementInput().x == 0 && Body.linearVelocityY <= 0)
                 Body.linearVelocity *= Data.GroundedData.GroundDecay;
+        }
+
+        private void UpdateTimers()
+        {
+            if (Data.AirborneData.Grounded)
+            {
+                _coyoteTimeCounter = coyoteTime;
+                _jumpTimeCounter = jumpTime;
+            }
+            else
+            {
+                _coyoteTimeCounter -= Time.deltaTime;
+            }
         }
         #endregion
     }
