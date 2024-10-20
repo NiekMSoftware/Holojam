@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace HoloJam.Dialogue.Data
 {
+    [CreateAssetMenu(fileName = "NewDialogueChoiceNode", menuName = "Dialogue/Choice Node")]
     public class DialogueChoiceNode : DialogueNode
     {
         [System.Serializable]
@@ -16,7 +17,7 @@ namespace HoloJam.Dialogue.Data
 
         public override void EnterNode()
         {
-            // dialogue manager
+            DialogueManager.Instance.DisplayChoices(characterName, dialogueText, choices);
         }
     }
 }
