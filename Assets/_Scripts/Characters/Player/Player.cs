@@ -18,6 +18,14 @@ namespace HoloJam.Characters.Player
 
         [field: Space()] public PlayerInput Input { get; private set; }
 
+        // temporary place for the jump timing
+        private float _jumpTimeCounter;
+        [SerializeField] private float jumpTime = 0.35f; // max jump time
+        [SerializeField] private float jumpForce = 10f;
+        [SerializeField] private float extraForce = 5f;
+        [Space(), SerializeField] private float coyoteTime = 0.2f;
+        private float _coyoteTimeCounter;
+
         private void Awake()
         {
             Body = GetComponent<Rigidbody2D>();
@@ -36,7 +44,13 @@ namespace HoloJam.Characters.Player
             // Handle state machine
             SelectState();
             Machine.CurrentState.Do();
-            
+
+            // Update coyote time if grounded
+            if (Data.AirborneData.Grounded)
+                _coyoteTimeCounter = coyoteTime;
+            else
+                _coyoteTimeCounter -= Time.deltaTime;
+
             Jump();
         }
 
@@ -83,9 +97,33 @@ namespace HoloJam.Characters.Player
         {
             if (Input.GetJumpValue() == 0) return;
 
+            // Allow jumping even if coyoteTimeCounter > 0 (player left ground recently)
+            if (Data.AirborneData.Grounded || _coyoteTimeCounter > 0)
+            {
+                Body.linearVelocityY = jumpForce;
+                _jumpTimeCounter = jumpTime;
+                _coyoteTimeCounter = 0;  // Reset coyote time after jumping
+            }
+
             // if the palyer is grounded, jump
             if (Data.AirborneData.Grounded)
-                Body.linearVelocityY = Data.AirborneData.JumpingForce;
+            { 
+                Body.linearVelocityY = jumpForce;
+                _jumpTimeCounter = jumpTime;
+            }
+            
+            // continue to apply jump force while button is held
+            if (Input.GetJumpValue() > 0 && _jumpTimeCounter > 0)
+            {
+                Body.linearVelocityY = Mathf.Lerp(extraForce, jumpForce, _jumpTimeCounter / jumpTime);
+                _jumpTimeCounter -= Time.deltaTime;
+            }
+
+            // if the button is released early, stop the jump force
+            if (Input.GetJumpValue() == 0 && _jumpTimeCounter > 0)
+            {
+                _jumpTimeCounter = 0;
+            }
         }
 
         private void ApplyFriction()

@@ -406,7 +406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &416911998
 Transform:
   m_ObjectHideFlags: 0
@@ -913,7 +913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &903734380
 Transform:
   m_ObjectHideFlags: 0
@@ -995,6 +995,9 @@ MonoBehaviour:
   idleState: {fileID: 905568479}
   runState: {fileID: 893000515}
   airState: {fileID: 530709894}
+  jumpTime: 0.35
+  jumpForce: 5
+  extraForce: 4
 --- !u!114 &903734386
 MonoBehaviour:
   m_ObjectHideFlags: 0
