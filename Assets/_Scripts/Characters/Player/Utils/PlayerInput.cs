@@ -41,6 +41,22 @@ namespace HoloJam.Characters.Player.Utils
             UIActions.Submit.performed += OnSubmit;
         }
 
+        public void EnableUIControls()
+        {
+            UIActions.Enable();
+            PlayerActions.Jump.Disable();
+
+            UIActions.Submit.performed += OnSubmit;
+        }
+
+        public void DisableUIControls()
+        {
+            UIActions.Disable();
+            PlayerActions.Jump.Enable();
+
+            UIActions.Submit.performed -= OnSubmit;
+        }
+
         public void SwitchToPlayerControls()
         {
             UIActions.Submit.performed -= OnSubmit;

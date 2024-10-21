@@ -34,14 +34,14 @@ namespace HoloJam.Dialogue
         public void StartDialogue(DialogueNode node)
         {
             UIManager.Instance.ShowDialogue(node.characterName, node.dialogueText);
-            player.Input.SwitchToUIControls();
+            player.Input.EnableUIControls();
             SetCurrentNode(node);
         }
 
-        private void EndDialogue()
+        public void EndDialogue()
         {
             UIManager.Instance.HideDialogue();
-            player.Input.SwitchToPlayerControls();
+            player.Input.DisableUIControls();
             CurrentNode = null;
         }
 
