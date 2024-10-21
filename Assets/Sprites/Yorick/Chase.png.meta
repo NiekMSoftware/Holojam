@@ -360,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Chase_0: -8119283496594638284
+      Chase_1: -5378331134508779171
+      Chase_2: 3554934202613893630
+      Chase_3: 807243042133444469
+      Chase_4: 7386242845606915847
+      Chase_5: 383820563828010120
+      Chase_6: 3458261826891800465
+      Chase_7: -7799191338604554827
+      Chase_8: -569414517956255311
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

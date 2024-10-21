@@ -1,8 +1,9 @@
 using HoloJam.Characters.Data;
 using HoloJam.Characters.Player.Utils;
 using UnityEngine;
+using UnityEngine.Windows;
 
-namespace HoloJam
+namespace HoloJam.Characters.Player
 {
     /// <summary>
     /// Handles everything to control the player, mainly moving and jumping around.
@@ -16,6 +17,13 @@ namespace HoloJam
         // timers
         private float _jumpTimeCounter;
         private float _coyoteTimeCounter;
+
+        // parent component
+        private Player player;
+        private void Start()
+        {
+            player = GetComponent<Player>();
+        }
 
         public void Initialize(Rigidbody2D body)
         {
@@ -48,7 +56,11 @@ namespace HoloJam
                 _jumpTimeCounter = airborneData.JumpTime;
             }
 
-            Jump(input.GetJumpValue(), airborneData.JumpForce, airborneData.AddedJumpForce, airborneData.JumpTime);
+            // check if the ceiling was hit
+            if (!player.SurroundingSensor.HitCeiling)
+                Jump(input.GetJumpValue(), airborneData.JumpForce, airborneData.AddedJumpForce, airborneData.JumpTime);
+            else
+                _jumpTimeCounter = 0;
 
             // stop jumping if released earlier
             if (input.GetJumpValue() == 0 && _jumpTimeCounter > 0 && !airborneData.Grounded)

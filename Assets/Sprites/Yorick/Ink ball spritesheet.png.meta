@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ink ball spritesheet_0: 251562832856502633
+      Ink ball spritesheet_1: -11005774618694775
+      Ink ball spritesheet_2: 2856260982211891514
+      Ink ball spritesheet_3: 3784225636919449569
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

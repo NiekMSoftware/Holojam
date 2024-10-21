@@ -24,6 +24,7 @@ namespace HoloJam.Characters.Player
         {
             Body = GetComponent<Rigidbody2D>();
             Input = GetComponent<PlayerInput>();
+            charAnimator = GetComponent<CharacterAnimation>();
             SurroundingSensor = GetComponent<SurroundingSensors>();
             Controller = GetComponent<PlayerController>();
             Controller.Initialize(Body);
@@ -41,7 +42,7 @@ namespace HoloJam.Characters.Player
             SelectState();
             Machine.CurrentState.Do();
             Controller.UpdateTimers(Data.AirborneData);
-            if (!SurroundingSensor.HitCeiling) Controller.HandleJump(Input, Data.AirborneData);
+            Controller.HandleJump(Input, Data.AirborneData);
         }
 
         private void FixedUpdate()

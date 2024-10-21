@@ -6,7 +6,7 @@ namespace HoloJam.StateMachine.States
         public override void Enter()
         {
             base.Enter();
-            core.charAnimator.PlayAnimation("run");
+            CharAnimator.PlayAnimation("run");
         }
 
         public override void Do()
@@ -16,9 +16,8 @@ namespace HoloJam.StateMachine.States
             {
                 core.SetFacingLeft(velX < 0);
             }
-            core.charAnimator.PlayAnimation(Mathf.Abs(velX) > 1 ? "run" : "idle");
-            core.charAnimator.SetSpeed(Mathf.Abs(velX)/ core.Data.GroundedData.MaxHorizontalSpeed);
-            // set anim speed with the helper's map function
+            CharAnimator.PlayAnimation(Mathf.Abs(velX) > 1 ? "run" : "idle");
+            CharAnimator.SetSpeed(Mathf.Abs(velX)/ core.Data.GroundedData.MaxHorizontalSpeed);
 
             if (!core.SurroundingSensor.Grounded)
                 IsComplete = true;
@@ -26,7 +25,7 @@ namespace HoloJam.StateMachine.States
 
         public override void Exit()
         {
-            core.charAnimator.SetSpeed(1);
+            CharAnimator.SetSpeed(1);
         }
     }
 }

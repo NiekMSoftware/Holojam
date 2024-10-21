@@ -5,7 +5,7 @@ namespace HoloJam.StateMachine.States
         public override void Enter()
         {
             base.Enter();
-            core.charAnimator.PlayAnimation("idle");
+            CharAnimator.PlayAnimation("idle");
         }
 
         public override void Do()
