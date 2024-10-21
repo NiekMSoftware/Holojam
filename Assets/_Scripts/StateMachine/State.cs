@@ -16,6 +16,7 @@ namespace HoloJam.StateMachine
         // blackboard variables
         protected Core core;
         protected Rigidbody2D Rigidbody => core.Body;
+        protected CharacterAnimation CharAnimator => core.charAnimator;
 
         public Machine Machine;
         protected Machine Parent;

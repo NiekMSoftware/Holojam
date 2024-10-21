@@ -1,3 +1,4 @@
+using UnityEngine;
 namespace HoloJam.StateMachine.States
 {
     public class RunState : State
@@ -5,12 +6,18 @@ namespace HoloJam.StateMachine.States
         public override void Enter()
         {
             base.Enter();
+            CharAnimator.PlayAnimation("run");
         }
 
         public override void Do()
         {
             float velX = Rigidbody.linearVelocityX;
-            // set anim speed with the helper's map function
+            if (velX != 0)
+            {
+                core.SetFacingLeft(velX < 0);
+            }
+            CharAnimator.PlayAnimation(Mathf.Abs(velX) > 1 ? "run" : "idle");
+            CharAnimator.SetSpeed(Mathf.Abs(velX)/ core.Data.GroundedData.MaxHorizontalSpeed);
 
             if (!core.SurroundingSensor.Grounded)
                 IsComplete = true;
@@ -18,7 +25,7 @@ namespace HoloJam.StateMachine.States
 
         public override void Exit()
         {
-            
+            CharAnimator.SetSpeed(1);
         }
     }
 }
