@@ -3,10 +3,11 @@ using HoloJam.Characters;
 
 namespace HoloJam
 {
+    [RequireComponent(typeof(Animator))]
     public class CharacterAnimation : MonoBehaviour
     {
         [SerializeField] private Core characterRef;
-        [SerializeField] private Animator mAnimator;
+        [field: SerializeField] public Animator Animator { get; private set; }
         [SerializeField] private string left_suffix;
         [SerializeField] private string right_suffix;
 
@@ -34,7 +35,7 @@ namespace HoloJam
 
         public void SetSpeed(float speed)
         {
-            mAnimator.speed = speed;
+            Animator.speed = speed;
         }
 
         public void PlayAnimation(string animation, bool isFacingLeft = false)
@@ -42,13 +43,13 @@ namespace HoloJam
             lastAnimationBase = animation;
             string appendedSuffix = animation + (isFacingLeft ? left_suffix : right_suffix);
             int animHash = Animator.StringToHash(appendedSuffix);
-            bool hasState = mAnimator.HasState(0, animHash);
+            bool hasState = Animator.HasState(0, animHash);
             if (hasState)
             {
-                mAnimator.Play(appendedSuffix);
+                Animator.Play(appendedSuffix);
             } else
             {
-                mAnimator.Play(lastAnimationBase);
+                Animator.Play(lastAnimationBase);
             }
         }
     }

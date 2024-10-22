@@ -24,7 +24,7 @@ namespace HoloJam.Characters.Player
         {
             Body = GetComponent<Rigidbody2D>();
             Input = GetComponent<PlayerInput>();
-            charAnimator = GetComponent<CharacterAnimation>();
+            CharacterAnimator = GetComponent<CharacterAnimation>();
             SurroundingSensor = GetComponent<SurroundingSensors>();
             Controller = GetComponent<PlayerController>();
             Controller.Initialize(Body);
