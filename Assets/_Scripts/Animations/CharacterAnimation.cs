@@ -27,7 +27,7 @@ namespace HoloJam
             PlayAnimation(lastAnimationBase, newFacingLeft);
         }
 
-        public void PlayAnimation(string animation)
+         public void PlayAnimation(string animation)
         {
             PlayAnimation(animation, characterRef.lastFacingLeft);
         }

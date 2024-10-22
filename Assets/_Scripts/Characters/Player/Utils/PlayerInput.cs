@@ -92,6 +92,10 @@ namespace HoloJam.Characters.Player.Utils
         {
             return PlayerActions.Interact.ReadValue<float>();
         }
+        public bool GetCorruptionPressed()
+        {
+            return PlayerActions.Corruption.WasPressedThisFrame();
+        }
 
         #endregion
     }
