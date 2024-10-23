@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Linq;
 using System.Collections.Generic;
+using HoloJam.Characters.Player;
+using UnityEngine.EventSystems;// Required when using Event data.
 namespace HoloJam
 {
     public class CorruptionManager : MonoBehaviour
@@ -10,22 +12,39 @@ namespace HoloJam
         private List<CorruptableObject> corruptableObjects = new List<CorruptableObject>();
         private Dictionary<CorruptionType, CorruptionEffect> effects = new Dictionary<CorruptionType, CorruptionEffect>();
         private bool isOpen;
+        [SerializeField] private Player player;
+        [SerializeField] private EventSystem mEventSystem;
         private void Awake()
         {
             if (Instance == null)
             {
                 Instance = this;
+                DontDestroyOnLoad(gameObject);
             } else
             {
                 Destroy(gameObject);
             }
         }
+        private void Start()
+        {
+            if (player == null)
+                player = FindFirstObjectByType<Player>();
+        }
+
         public static void TogglePanelOpen()
         {
             if (!Instance.effects.Values.Any(obj => obj.CanBeUsed)) return;
             Instance.isOpen = !Instance.isOpen;
             Time.timeScale = Instance.isOpen ? 0 : 1;
             Instance.bookmarkUI.SetPanelOpen(Instance.isOpen);
+            if (Instance.isOpen)
+                Instance.player.Input.EnableUIControls();
+            else
+            {
+                Instance.player.Input.DisableUIControls();
+                Instance.mEventSystem.SetSelectedGameObject(null);
+            }
+                
         }
         public static void RegisterEffect(CorruptionEffect effect, CorruptionType cType)
         {

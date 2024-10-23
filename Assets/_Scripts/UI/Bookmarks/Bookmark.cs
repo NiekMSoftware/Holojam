@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;// Required when using Event data.
 using TMPro;
 namespace HoloJam
 {
-    public class Bookmark : MonoBehaviour
+    public class Bookmark : MonoBehaviour, ISelectHandler, IDeselectHandler
     {
         public CorruptionType corruptionType;
         [SerializeField]
@@ -13,15 +14,40 @@ namespace HoloJam
         [SerializeField]
         private Image bookmarkImage;
         [SerializeField]
+        private Selectable selection;
+        [SerializeField]
         private Color inactiveColor;
         [SerializeField]
         private Color activeColor;
 
         private bool lastIsActive = true;
+        private bool lastHasCharges = true;
+        [HideInInspector]
+        public BookMarkSection parentSection;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-            
+
+        }
+        public void OnSelect(BaseEventData eventData)
+        {
+            //Debug.Log("selected: " + gameObject);
+            parentSection.lastSelection = selection;
+            mAnimator.Play("select");
+        }
+
+        public void OnDeselect(BaseEventData eventData)
+        {
+            //Debug.Log("deselected: " + gameObject);
+            mAnimator.Play("idle");
+        }
+
+        public void OnUse()
+        {
+            if (!lastHasCharges) return;
+            mAnimator.Play("use");
+            CorruptionManager.AttemptUseEffect(corruptionType);
+            CorruptionManager.TogglePanelOpen();
         }
         public void SetActive(bool newActive)
         {
@@ -48,6 +74,7 @@ namespace HoloJam
                 counter.text = newQuantity.ToString();
             }
             bookmarkImage.color = (newQuantity == 0) ? inactiveColor : activeColor;
+            lastHasCharges = (newQuantity != 0);
         }
     }
 }
