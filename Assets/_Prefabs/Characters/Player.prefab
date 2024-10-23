@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Body: {fileID: 8570296347121683168}
-  charAnimator: {fileID: 4607265853129413531}
+  CharacterAnimator: {fileID: 0}
   SurroundingSensor: {fileID: 5777590054181522931}
   <Data>k__BackingField: {fileID: 11400000, guid: 567933b0858356f4cbb3d8c81e2a7c5a, type: 2}
   <lastFacingLeft>k__BackingField: 0
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterRef: {fileID: 4749020959323371696}
-  mAnimator: {fileID: 6190951334307788935}
+  <Animator>k__BackingField: {fileID: 6190951334307788935}
   left_suffix: _b
   right_suffix: _w
 --- !u!114 &2909000748719466834

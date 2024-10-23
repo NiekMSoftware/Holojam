@@ -20,5 +20,7 @@ MonoBehaviour:
     <JumpTime>k__BackingField: 0.1
     <JumpForce>k__BackingField: 0
     <AddedJumpForce>k__BackingField: 0
+    <GravityMultiplier>k__BackingField: 3.8
+    <MaxFallingSpeed>k__BackingField: 32.11
     <CoyoteTime>k__BackingField: 0.2
     <Grounded>k__BackingField: 0
