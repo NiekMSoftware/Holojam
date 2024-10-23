@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2825de50128195b4ba6112ff1bb8b704
+guid: 149f7076d2c49144282f86c132e8062d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5342801015690890752
-    second: lantern_0
+      213: 8096223083536941298
+    second: pen_nip_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lantern_0
+      name: pen_nip_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 14
-        height: 16
+        x: 9
+        y: 1
+        width: 23
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00e0ad56731752a40800000000000000
-      internalID: 5342801015690890752
+      spriteID: 2f08984bfff8b5070800000000000000
+      internalID: 8096223083536941298
       vertices: []
       indices: 
       edges: []

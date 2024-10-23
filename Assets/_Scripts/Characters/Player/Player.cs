@@ -38,13 +38,19 @@ namespace HoloJam.Characters.Player
 
         private void Update()
         {
+            TEMPActivatePower();
             // Handle state machine
             SelectState();
             Machine.CurrentState.Do();
             Controller.UpdateTimers(Data.AirborneData);
             Controller.HandleJump(Input, Data.AirborneData);
         }
-
+        private void TEMPActivatePower()
+        {
+            if (Input.GetCorruptionPressed()) {
+                CorruptionManager.TogglePanelOpen();
+            }
+        }
         private void FixedUpdate()
         {
             Controller.Move(Input.GetMovementInput(), Data.GroundedData.Acceleration, Data.GroundedData.MaxHorizontalSpeed);

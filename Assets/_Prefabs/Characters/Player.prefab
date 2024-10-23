@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 5777590054181522931}
   - component: {fileID: 6190951334307788935}
   - component: {fileID: 4607265853129413531}
+  - component: {fileID: 2909000748719466834}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -320,6 +321,19 @@ MonoBehaviour:
   <Animator>k__BackingField: {fileID: 6190951334307788935}
   left_suffix: _b
   right_suffix: _w
+--- !u!114 &2909000748719466834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3254002416308601019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dade1cfda2540b04f8c35803d2e8e855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NegationFieldsOverlapped: 0
 --- !u!1 &3334347543086741179
 GameObject:
   m_ObjectHideFlags: 0

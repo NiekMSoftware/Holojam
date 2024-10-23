@@ -37,6 +37,7 @@ namespace HoloJam.Characters.Player.Utils
         {
             PlayerActions.Disable();
             UIActions.Enable();
+            Debug.Log("Enabled ui");
 
             UIActions.Submit.performed += OnSubmit;
         }
@@ -44,6 +45,7 @@ namespace HoloJam.Characters.Player.Utils
         public void EnableUIControls()
         {
             UIActions.Enable();
+            Debug.Log("Enabled ui");
             PlayerActions.Jump.Disable();
 
             UIActions.Submit.performed += OnSubmit;
@@ -91,6 +93,10 @@ namespace HoloJam.Characters.Player.Utils
         public float GetInteractValue()
         {
             return PlayerActions.Interact.ReadValue<float>();
+        }
+        public bool GetCorruptionPressed()
+        {
+            return PlayerActions.Corruption.WasPressedThisFrame();
         }
 
         #endregion
