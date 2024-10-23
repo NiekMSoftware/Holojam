@@ -8,10 +8,6 @@ namespace HoloJam
         public bool CanBeUsed;
         public int currentCharges = 1;
         public CorruptionType associatedType;
-        private void Start()
-        {
-            CorruptionManager.RegisterEffect(this, associatedType);
-        }
         public void ModifyCharges(int delta)
         {
             currentCharges += delta;

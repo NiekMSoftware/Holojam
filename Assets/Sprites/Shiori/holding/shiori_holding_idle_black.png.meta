@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shiori_holding_idle_black_0: 7760067667428899089
+      shiori_holding_idle_black_1: 3932010005243331287
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -14,6 +14,7 @@ namespace HoloJam.Dialogue
         {
             if (collision.CompareTag("Player"))
             {
+                Debug.Log("Stay");
                 // grab the input component once
                 if (input == null) input = collision.GetComponentInParent<Player>().Input;
 

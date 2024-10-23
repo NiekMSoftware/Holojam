@@ -14,6 +14,7 @@ namespace HoloJam
         private bool isOpen;
         [SerializeField] private Player player;
         [SerializeField] private EventSystem mEventSystem;
+        [SerializeField] private Transform effectTransform;
         private void Awake()
         {
             if (Instance == null)
@@ -29,6 +30,10 @@ namespace HoloJam
         {
             if (player == null)
                 player = FindFirstObjectByType<Player>();
+            for (int i = 0; i < effectTransform.childCount; i++) {
+                CorruptionEffect ce = effectTransform.GetChild(i).GetComponent<CorruptionEffect>();
+                RegisterEffect(ce, ce.associatedType);
+            }
         }
 
         public static void TogglePanelOpen()
