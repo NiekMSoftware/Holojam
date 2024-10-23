@@ -78,6 +78,51 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.6, y: 0.1}
   m_EdgeRadius: 0
+--- !u!1 &2308807859624306250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 640757667891059170}
+  - component: {fileID: 6492276512516698896}
+  m_Layer: 0
+  m_Name: Action
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &640757667891059170
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2308807859624306250}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9209957530472656713}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6492276512516698896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2308807859624306250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0558ca579f34b0449d54ce12a4d0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackable: {fileID: 6762349373321213318}
 --- !u!1 &2565532839413890777
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,6 +209,7 @@ GameObject:
   - component: {fileID: 6190951334307788935}
   - component: {fileID: 4607265853129413531}
   - component: {fileID: 2909000748719466834}
+  - component: {fileID: 6762349373321213318}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -246,6 +292,8 @@ MonoBehaviour:
   Body: {fileID: 8570296347121683168}
   CharacterAnimator: {fileID: 0}
   SurroundingSensor: {fileID: 5777590054181522931}
+  performingAction: 0
+  actionState: {fileID: 6492276512516698896}
   <Data>k__BackingField: {fileID: 11400000, guid: 567933b0858356f4cbb3d8c81e2a7c5a, type: 2}
   <lastFacingLeft>k__BackingField: 0
   idleState: {fileID: 6798557807497120442}
@@ -334,6 +382,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NegationFieldsOverlapped: 0
+--- !u!114 &6762349373321213318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3254002416308601019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2be25a812cfaf141a18fbd2a585add0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInvincible: 0
+  isPlayerCharacter: 1
+  myFaction: 0
+  CurrentHP: 1
+  MaxHP: 1
 --- !u!1 &3334347543086741179
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +519,7 @@ Transform:
   - {fileID: 1878285538146901330}
   - {fileID: 832737384321529644}
   - {fileID: 4410243140952295358}
+  - {fileID: 640757667891059170}
   m_Father: {fileID: 3118709267513838134}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6451696483463904530

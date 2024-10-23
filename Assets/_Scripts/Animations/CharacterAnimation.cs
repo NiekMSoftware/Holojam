@@ -10,7 +10,7 @@ namespace HoloJam
         [field: SerializeField] public Animator Animator { get; private set; }
         [SerializeField] private string left_suffix;
         [SerializeField] private string right_suffix;
-
+        public string LastAnimationBase { get { return lastAnimationBase; } }
         private string lastAnimationBase = "idle";
 
         void Start()
@@ -51,6 +51,7 @@ namespace HoloJam
             {
                 Animator.Play(lastAnimationBase);
             }
+            Animator.Update(0); // force update;
         }
     }
 }
