@@ -19,7 +19,7 @@ namespace HoloJam.Tools
 
             // Add a slider to control the distance of the second anchor point
             EditorGUILayout.LabelField("Anchor Points Settings", EditorStyles.boldLabel);
-            adjustableDistance = EditorGUILayout.Slider("Anchor Distance", adjustableDistance, 5f, 50f);
+            adjustableDistance = EditorGUILayout.Slider("Anchor Distance", adjustableDistance, -50f, 50f);
 
             EditorGUILayout.Space();
 
@@ -80,6 +80,18 @@ namespace HoloJam.Tools
 
             // Set the parent to the Empty GO
             anchor.transform.parent = parentGO;
+
+            // Assign a gizmo icon (you can change the icon type to suit your needs)
+            GUIContent iconContent = EditorGUIUtility.IconContent("sv_label_0");
+            if (iconContent != null)
+            {
+                var gizmoIcon = iconContent.image as Texture2D;
+                if (gizmoIcon != null)
+                {
+                    EditorGUIUtility.SetIconForObject(anchor, gizmoIcon);
+                }
+            }
+
             return anchor.transform;
         }
     }
