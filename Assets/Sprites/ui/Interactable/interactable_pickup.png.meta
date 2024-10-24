@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      interactable_pickup_0: -4636070167954529658
+      interactable_pickup_1: 6005337333561207957
+      interactable_pickup_2: 4494807916083668483
+      interactable_pickup_3: -7443999500163933255
+      interactable_pickup_4: 4514618745333997485
+      interactable_pickup_5: 6103128168234133214
+      interactable_pickup_6: -3858661842865579073
+      interactable_pickup_7: -9056421012108251460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

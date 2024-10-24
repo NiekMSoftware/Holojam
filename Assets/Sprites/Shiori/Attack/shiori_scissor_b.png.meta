@@ -410,7 +410,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shiori_scissor_b_0: 8397735375645847358
+      shiori_scissor_b_1: 7304094815962398773
+      shiori_scissor_b_10: -5651828685457113720
+      shiori_scissor_b_2: -7361166052279294084
+      shiori_scissor_b_3: -8611661094954760280
+      shiori_scissor_b_4: 6030864348825227866
+      shiori_scissor_b_5: -1832281935218705968
+      shiori_scissor_b_6: -981055385105165798
+      shiori_scissor_b_7: 2184314534087965475
+      shiori_scissor_b_8: 651912621166911926
+      shiori_scissor_b_9: -4054359355253555307
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
