@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HoloJam.MovingPlatform
+namespace HoloJam.Platform
 {
     public class MovingPlatform : MonoBehaviour
     {
@@ -17,7 +17,7 @@ namespace HoloJam.MovingPlatform
         public Transform[] AnchorPoints;
 
         [Space, Tooltip("Set the speed of the moving platform.")]
-        public float Speed = 2f;
+        public float Speed = 5f;
 
         private int _currentPointIndex = 0;
         private bool _movingForward = true;
@@ -71,7 +71,7 @@ namespace HoloJam.MovingPlatform
 #if UNITY_EDITOR
         private void OnDrawGizmos()
         {
-            if (AnchorPoints.Length > 0 && AnchorPoints != null)
+            if (AnchorPoints.Length > 0)
             {
                 Gizmos.color = Color.red;
 
