@@ -310,7 +310,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shiori_pickup_black_0: 8753110130161261532
+      shiori_pickup_black_1: 8524293516019816010
+      shiori_pickup_black_2: -4237698800567897059
+      shiori_pickup_black_3: 5884796523958724958
+      shiori_pickup_black_4: -2681942502101035848
+      shiori_pickup_black_5: 951214381234301828
+      shiori_pickup_black_6: -2339026666503879287
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

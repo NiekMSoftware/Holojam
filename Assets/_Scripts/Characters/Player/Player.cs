@@ -43,6 +43,7 @@ namespace HoloJam.Characters.Player
             SelectState();
             Machine.CurrentState.Do();
             Controller.UpdateTimers(Data.AirborneData);
+            if (performingAction) return;
             Controller.HandleJump(Input, Data.AirborneData);
         }
         private void TEMPActivatePower()
@@ -59,6 +60,7 @@ namespace HoloJam.Characters.Player
 
         private void SelectState()
         {
+            if (performingAction) return;
             Data.AirborneData.Grounded = SurroundingSensor.Grounded;
             if (Data.AirborneData.Grounded)
             {

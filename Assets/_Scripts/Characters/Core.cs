@@ -2,6 +2,7 @@ using HoloJam.Characters.Data;
 using HoloJam.StateMachine;
 using System.Collections.Generic;
 using UnityEngine;
+using HoloJam.StateMachine.States;
 
 namespace HoloJam.Characters
 {
@@ -18,9 +19,13 @@ namespace HoloJam.Characters
         public CharacterAnimation CharacterAnimator;
         public SurroundingSensors SurroundingSensor;
         public Machine Machine;
+        public bool performingAction = false;
         public State State => Machine.CurrentState;
         public delegate void OnDirectionChanged(bool isFacingLeft);
         public event OnDirectionChanged DirectionChangedEvent;
+
+        [Header("Behaviors")]
+        public ActionState actionState;
 
         [field: Header("Data References")]
         [field: SerializeField] public CharacterSO Data { get; private set; }
@@ -46,6 +51,12 @@ namespace HoloJam.Characters
                 state.SetCore(this);
         }
 
+        public void PerformAction(string actionName)
+        {
+            performingAction = true;
+            CharacterAnimator.PlayAnimation(actionName);
+            if (actionState != null) Machine.Set(actionState);
+        }
         private void OnDrawGizmos()
         {
 #if UNITY_EDITOR

@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shiori_holding_run_white_0: -3524638512211059124
+      shiori_holding_run_white_1: -3999220542360203029
+      shiori_holding_run_white_2: -9127524704494770267
+      shiori_holding_run_white_3: -6712467191627375905
+      shiori_holding_run_white_4: -4363870275770452801
+      shiori_holding_run_white_5: -9148655391864853508
+      shiori_holding_run_white_6: -5260724636501404337
+      shiori_holding_run_white_7: -4423855590904978657
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
