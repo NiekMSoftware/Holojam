@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -159,10 +159,10 @@ TextureImporter:
       name: shiori_scissor_w_0
       rect:
         serializedVersion: 2
-        x: 133
+        x: 0
         y: 0
-        width: 26
-        height: 34
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: shiori_scissor_w_1
       rect:
         serializedVersion: 2
-        x: 201
+        x: 64
         y: 0
-        width: 48
-        height: 46
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,10 +203,10 @@ TextureImporter:
       name: shiori_scissor_w_2
       rect:
         serializedVersion: 2
-        x: 267
-        y: 32
-        width: 15
-        height: 13
+        x: 128
+        y: 0
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,10 +225,10 @@ TextureImporter:
       name: shiori_scissor_w_3
       rect:
         serializedVersion: 2
-        x: 282
-        y: 22
-        width: 30
-        height: 24
+        x: 192
+        y: 0
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +247,10 @@ TextureImporter:
       name: shiori_scissor_w_4
       rect:
         serializedVersion: 2
-        x: 338
+        x: 256
         y: 0
-        width: 39
-        height: 46
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +269,10 @@ TextureImporter:
       name: shiori_scissor_w_5
       rect:
         serializedVersion: 2
-        x: 403
+        x: 320
         y: 0
-        width: 44
-        height: 43
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,10 +291,10 @@ TextureImporter:
       name: shiori_scissor_w_6
       rect:
         serializedVersion: 2
-        x: 2
+        x: 384
         y: 0
-        width: 36
-        height: 31
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,10 +313,10 @@ TextureImporter:
       name: shiori_scissor_w_7
       rect:
         serializedVersion: 2
-        x: 69
+        x: 448
         y: 0
-        width: 31
-        height: 31
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,77 +331,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: shiori_scissor_w_8
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 0
-        width: 43
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be9fe9b67dbca9400800000000000000
-      internalID: 331801648649140715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shiori_scissor_w_9
-      rect:
-        serializedVersion: 2
-        x: 371
-        y: 0
-        width: 11
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f66c04fa841cd870800000000000000
-      internalID: 8708858366460192500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shiori_scissor_w_10
-      rect:
-        serializedVersion: 2
-        x: 464
-        y: 0
-        width: 21
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 332713f9e6ed56a90800000000000000
-      internalID: -7321201052522286541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b9f534cf33f7ce04d90b7f727df05c12
     internalID: 0
     vertices: []
     indices: 
@@ -410,7 +344,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shiori_scissor_w_0: -1734883512677567490
+      shiori_scissor_w_1: 8430029870046122633
+      shiori_scissor_w_2: -878299328511759748
+      shiori_scissor_w_3: -7194905036764366752
+      shiori_scissor_w_4: -6579402935712313712
+      shiori_scissor_w_5: 4849127218435436998
+      shiori_scissor_w_6: -7224054915318230662
+      shiori_scissor_w_7: 3780467319119627537
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

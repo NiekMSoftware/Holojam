@@ -2,35 +2,19 @@ using HoloJam.Characters.Player;
 using HoloJam.Characters.Player.Utils;
 using HoloJam.Dialogue.Data;
 using UnityEngine;
-
+using HoloJam.Characters.Player;
 namespace HoloJam.Dialogue
 {
-    public class DialogueTrigger : MonoBehaviour
+    public class DialogueTrigger : Interactable
     {
         public DialogueNode StartingNode;
-        private PlayerInput input;
-
-        private void OnTriggerStay2D(Collider2D collision)
+        private void Start()
         {
-            if (collision.CompareTag("Player"))
-            {
-                Debug.Log("Stay");
-                // grab the input component once
-                if (input == null) input = collision.GetComponentInParent<Player>().Input;
-
-                if (input.GetInteractValue() > 0)
-                {
-                    DialogueManager.Instance.StartDialogue(StartingNode); 
-                }
-            }
+            interactionType = InteractableType.DIALOGUE;
         }
-
-        private void OnTriggerExit2D(Collider2D collision)
+        public override void OnPerformInteraction(Player p)
         {
-            if (collision.CompareTag("Player"))
-            {
-                DialogueManager.Instance.EndDialogue();
-            }
+            DialogueManager.Instance.StartDialogue(StartingNode);
         }
     }
 }
