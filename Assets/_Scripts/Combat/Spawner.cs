@@ -13,7 +13,7 @@ namespace HoloJam
         // Update is called once per frame
         void Update()
         {
-            if (spawnNow != lastSpawnNow)
+            if (spawnNow != lastSpawnNow && spawnNow)
             {
                 GameObject newInstance = Instantiate(spawnObjPrefab, transform.position, Quaternion.identity);
                 if (parentAttackable != null)
@@ -23,9 +23,14 @@ namespace HoloJam
                     {
                         hb.SetParentAttackable(parentAttackable);
                     }
+                    Projectile p = newInstance.GetComponent<Projectile>();
+                    if (p != null && parentAttackable.transform.localScale.x < 0)
+                    {
+                        p.FlipVelocity();
+                    }
                 }
-                lastSpawnNow = spawnNow;
             }
+            lastSpawnNow = spawnNow;
         }
     }
 }

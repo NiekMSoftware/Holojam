@@ -1,0 +1,57 @@
+using UnityEngine;
+
+namespace HoloJam
+{
+    public class Projectile : MonoBehaviour
+    {
+        [SerializeField]
+        private float lifeTime;
+        [SerializeField]
+        private bool destroyOnHit;
+        [SerializeField]
+        private bool DestroyOnWall;
+
+        private Rigidbody2D mRigidBody;
+        [SerializeField]
+        private Vector2 initialVelocity;
+        [SerializeField]
+        private Vector2 velocityChange;
+        private Vector2 currentVelocity;
+        private float expirationTime;
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
+        {
+            expirationTime = Time.timeSinceLevelLoad + lifeTime;
+            mRigidBody = GetComponent<Rigidbody2D>();
+            currentVelocity = initialVelocity;
+        }
+        public void FlipVelocity()
+        {
+            initialVelocity = new Vector2(-initialVelocity.x, initialVelocity.y);
+            currentVelocity = new Vector2(-currentVelocity.x, currentVelocity.y);
+        }
+        private void Update()
+        {
+            if (Time.timeSinceLevelLoad > expirationTime)
+            {
+                Destroy(gameObject);
+            }
+        }
+        // Update is called once per frame
+        void FixedUpdate()
+        {
+            currentVelocity += velocityChange * Time.deltaTime;
+            mRigidBody.linearVelocity = currentVelocity;
+        }
+
+        public void OnHitboxHit(Attackable target)
+        {
+            if (destroyOnHit) Destroy(gameObject);
+        }
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.isTrigger) return;
+            if (DestroyOnWall) Destroy(gameObject);
+        }
+    }
+}
