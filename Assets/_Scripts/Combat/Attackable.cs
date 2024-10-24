@@ -57,7 +57,8 @@ namespace HoloJam
         {
             CurrentHP = Mathf.Clamp(CurrentHP - hb.damage, 0, MaxHP);
             if (mRigidBody == null) return;
-            Vector2 finalKB = new Vector2((hb.transform.position.x - transform.position.x > 0 ? -1 : 1) * hb.KnockbackImpulse.x, hb.KnockbackImpulse.y);
+            Vector3 theirPos = hb.ParentAttackable != null ? hb.ParentAttackable.transform.position : hb.transform.position;
+            Vector2 finalKB = new Vector2((theirPos.x - transform.position.x > 0 ? -1 : 1) * hb.KnockbackImpulse.x, hb.KnockbackImpulse.y);
             if (Mathf.Abs(finalKB.y) != 0) mRigidBody.linearVelocityY = 0;
             mRigidBody.AddForce(finalKB, ForceMode2D.Impulse);
             if (CurrentHP == 0)

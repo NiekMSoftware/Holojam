@@ -9,8 +9,9 @@ namespace HoloJam
         private AttackableFaction faction;
         public int damage;
         public Vector2 KnockbackImpulse;
-        private const float REFRESH_RATE = 0.3f;
+        private const float REFRESH_RATE = 0.2f;
         private Dictionary<Attackable, float> lastTimeHit = new Dictionary<Attackable, float>();
+        public Attackable ParentAttackable { get { return parentAttackable; } }
         private Attackable parentAttackable;
         public void SetParentAttackable(Attackable parentAttackable)
         {

@@ -13,13 +13,13 @@ namespace HoloJam
         }
         void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.attachedRigidbody.GetComponent<Interactor>() == null) return;
+            if (collision.attachedRigidbody == null || collision.attachedRigidbody.GetComponent<Interactor>() == null) return;
 
             collision.attachedRigidbody.GetComponent<Interactor>().RegisterInteractable(this);
         }
         void OnTriggerExit2D(Collider2D collision)
         {
-            if (collision.attachedRigidbody.GetComponent<Interactor>() == null) return;
+            if (collision.attachedRigidbody == null || collision.attachedRigidbody.GetComponent<Interactor>() == null) return;
             collision.attachedRigidbody.GetComponent<Interactor>().DeregisterInteractable(this);
         }
     }

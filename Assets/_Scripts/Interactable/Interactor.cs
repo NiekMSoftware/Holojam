@@ -12,10 +12,13 @@ namespace HoloJam
         private Animator interactionAnimator;
         private Interactable highestInteractable;
         private PlayerInput input;
+        public bool HandsFree { get { return canInteract; } set { canInteract = value; } }
+        private bool canInteract;
         private void Start()
         {
             basePlayer = GetComponent<Player>();
             input = GetComponentInParent<Player>().Input;
+            canInteract = true;
         }
         public void RegisterInteractable(Interactable interactable)
         {
@@ -34,7 +37,7 @@ namespace HoloJam
         // Update is called once per frame
         void Update()
         {
-            if (basePlayer.performingAction) return;
+            if (basePlayer.performingAction || !canInteract) return;
             if (input.GetInteractValue() > 0 && highestInteractable != null)
             {
                 highestInteractable.OnPerformInteraction(basePlayer);
@@ -52,7 +55,7 @@ namespace HoloJam
                     highestInteractable = i;
                 }
             }
-            if (highestInteractable == null)
+            if (highestInteractable == null || !HandsFree)
             {
                 interactionAnimator.Play("idle");
                 return;

@@ -33,6 +33,9 @@ namespace HoloJam.Characters.Enemies
         protected virtual void Update()
         {
             HandleState();
+            Machine.CurrentState.Do();
+            if (performingAction) return;
+            Machine.Set(Idle);
         }
 
         /// <summary>
