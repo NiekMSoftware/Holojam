@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -159,9 +159,9 @@ TextureImporter:
       name: interactable_exit_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -181,9 +181,9 @@ TextureImporter:
       name: interactable_exit_1
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -225,10 +225,10 @@ TextureImporter:
       name: interactable_exit_3
       rect:
         serializedVersion: 2
-        x: 47
-        y: 5
-        width: 8
-        height: 7
+        x: 48
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,9 +247,9 @@ TextureImporter:
       name: interactable_exit_4
       rect:
         serializedVersion: 2
-        x: 54
+        x: 64
         y: 0
-        width: 10
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -269,10 +269,10 @@ TextureImporter:
       name: interactable_exit_5
       rect:
         serializedVersion: 2
-        x: 63
-        y: 5
-        width: 8
-        height: 7
+        x: 80
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,10 +291,10 @@ TextureImporter:
       name: interactable_exit_6
       rect:
         serializedVersion: 2
-        x: 70
-        y: 1
-        width: 10
-        height: 15
+        x: 96
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,10 +313,10 @@ TextureImporter:
       name: interactable_exit_7
       rect:
         serializedVersion: 2
-        x: 79
-        y: 5
-        width: 8
-        height: 7
+        x: 112
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,77 +331,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: interactable_exit_8
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 0
-        width: 10
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 676e22f5cd4c311f0800000000000000
-      internalID: -1075299435243444618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: interactable_exit_9
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 52cd10adef5474f90800000000000000
-      internalID: -6969524937450988507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: interactable_exit_10
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 0
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0247ba0df8263d710800000000000000
-      internalID: 1716824252779033632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 90cf5a0cf7acfc54eb366cd54950841e
     internalID: 0
     vertices: []
     indices: 
@@ -413,7 +347,6 @@ TextureImporter:
     nameFileIdTable:
       interactable_exit_0: -4843647641471763499
       interactable_exit_1: 4202435377247501817
-      interactable_exit_10: 1716824252779033632
       interactable_exit_2: -9068153273660404126
       interactable_exit_3: 1519913391182761435
       interactable_exit_4: -772510741003289379

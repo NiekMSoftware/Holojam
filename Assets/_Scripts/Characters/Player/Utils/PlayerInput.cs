@@ -84,6 +84,10 @@ namespace HoloJam.Characters.Player.Utils
         {
             return PlayerActions.Move.ReadValue<float>();
         }
+        public float GetUpDownInput()
+        {
+            return PlayerActions.UpDown.ReadValue<float>();
+        }
 
         public float GetJumpValue()
         {
@@ -97,6 +101,10 @@ namespace HoloJam.Characters.Player.Utils
         public bool GetCorruptionPressed()
         {
             return PlayerActions.Corruption.WasPressedThisFrame();
+        }
+        public bool GetPausePressed()
+        {
+            return PlayerActions.Pause.WasPressedThisFrame();
         }
 
         #endregion

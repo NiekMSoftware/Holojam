@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Linq;
 
 namespace HoloJam
 {
@@ -22,12 +23,12 @@ namespace HoloJam
 
         private void CheckCeiling()
         {
-            HitCeiling = Physics2D.OverlapAreaAll(CeilingCheck.bounds.min, CeilingCheck.bounds.max, CeilingLayer).Length > 0;
+            HitCeiling = Physics2D.OverlapAreaAll(CeilingCheck.bounds.min, CeilingCheck.bounds.max, CeilingLayer).Any(collider => !collider.isTrigger);
         }
 
         private void CheckGround()
         {
-            Grounded = Physics2D.OverlapAreaAll(GroundCheck.bounds.min, GroundCheck.bounds.max, GroundLayer).Length > 0;
+            Grounded = Physics2D.OverlapAreaAll(GroundCheck.bounds.min, GroundCheck.bounds.max, GroundLayer).Any(collider => !collider.isTrigger);
         }
     }
 }

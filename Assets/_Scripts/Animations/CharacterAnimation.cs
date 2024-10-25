@@ -12,7 +12,7 @@ namespace HoloJam
         [SerializeField] private string right_suffix;
         public string LastAnimationBase { get { return lastAnimationBase; } }
         private string lastAnimationBase = "idle";
-
+        private string prefix = "";
         void Start()
         {
             characterRef.DirectionChangedEvent += OnDirectionChanged;
@@ -37,20 +37,30 @@ namespace HoloJam
         {
             Animator.speed = speed;
         }
-
+        public void SetPrefix(string newPrefix)
+        {
+            prefix = newPrefix;
+        }
         public void PlayAnimation(string animation, bool isFacingLeft = false)
         {
             lastAnimationBase = animation;
-            string appendedSuffix = animation + (isFacingLeft ? left_suffix : right_suffix);
+            string targetAnimation = animation;
+            string appendedSuffix = targetAnimation + (isFacingLeft ? left_suffix : right_suffix);
             int animHash = Animator.StringToHash(appendedSuffix);
             bool hasState = Animator.HasState(0, animHash);
             if (hasState)
             {
-                Animator.Play(appendedSuffix);
-            } else
-            {
-                Animator.Play(lastAnimationBase);
+                targetAnimation = appendedSuffix;
             }
+            
+            string appendedPrefix = prefix + targetAnimation;
+            animHash = Animator.StringToHash(appendedPrefix);
+            hasState = Animator.HasState(0, animHash);
+            if (hasState)
+            {
+                targetAnimation = appendedPrefix;
+            }
+            Animator.Play(targetAnimation);
             Animator.Update(0); // force update;
         }
     }

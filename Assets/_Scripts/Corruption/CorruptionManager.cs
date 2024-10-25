@@ -11,6 +11,7 @@ namespace HoloJam
         public BookMarkSection bookmarkUI;
         private List<CorruptableObject> corruptableObjects = new List<CorruptableObject>();
         private Dictionary<CorruptionType, CorruptionEffect> effects = new Dictionary<CorruptionType, CorruptionEffect>();
+        public static bool IsOpen { get { return Instance.isOpen; } }
         private bool isOpen;
         [SerializeField] private Player player;
         [SerializeField] private EventSystem mEventSystem;

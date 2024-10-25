@@ -69,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -147,10 +147,10 @@ TextureImporter:
       name: shiori_pickup_black_0
       rect:
         serializedVersion: 2
-        x: 15
+        x: 0
         y: 0
-        width: 18
-        height: 32
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +169,10 @@ TextureImporter:
       name: shiori_pickup_black_1
       rect:
         serializedVersion: 2
-        x: 62
+        x: 48
         y: 0
-        width: 20
-        height: 31
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: shiori_pickup_black_2
       rect:
         serializedVersion: 2
-        x: 111
+        x: 96
         y: 0
-        width: 19
-        height: 22
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +213,10 @@ TextureImporter:
       name: shiori_pickup_black_3
       rect:
         serializedVersion: 2
-        x: 157
+        x: 144
         y: 0
-        width: 22
-        height: 20
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,10 +235,10 @@ TextureImporter:
       name: shiori_pickup_black_4
       rect:
         serializedVersion: 2
-        x: 207
+        x: 192
         y: 0
-        width: 19
-        height: 22
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: shiori_pickup_black_5
       rect:
         serializedVersion: 2
-        x: 256
+        x: 240
         y: 0
-        width: 18
-        height: 31
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,19 +279,19 @@ TextureImporter:
       name: shiori_pickup_black_6
       rect:
         serializedVersion: 2
-        x: 303
+        x: 288
         y: 0
-        width: 18
-        height: 32
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 985ced6b3ab1a8fd0800000000000000
+      spriteID: 5ffd53902e771b6448234d28600ca7e2
       internalID: -2339026666503879287
       vertices: []
       indices: 
@@ -301,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1ed847412afd4f94f9970a4b76ed322c
     internalID: 0
     vertices: []
     indices: 
