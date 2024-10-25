@@ -68,6 +68,16 @@ namespace HoloJam.Platform
             }
         }
 
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            collision.transform.parent.SetParent(transform);
+        }
+
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            collision.transform.parent.SetParent(null);
+        }
+
 #if UNITY_EDITOR
         private void OnDrawGizmos()
         {
