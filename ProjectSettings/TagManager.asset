@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - onoff-defaultoff
+  - onoff-defaulton
+  - onoff2-defaulton
+  - onoff2-defaultoff
   layers:
   - Default
   - TransparentFX

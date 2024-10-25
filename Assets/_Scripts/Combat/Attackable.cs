@@ -9,6 +9,8 @@ namespace HoloJam
         [SerializeField]
         private bool isInvincible;
         [SerializeField]
+        private bool canBeHurt = true;
+        [SerializeField]
         private bool isPlayerCharacter;
         public AttackableFaction MyFaction { get { return myFaction; } }
         [SerializeField]
@@ -21,9 +23,11 @@ namespace HoloJam
         private ParticleSystem partSys;
         private Rigidbody2D mRigidBody;
         private Core corePlayer;
+        public delegate void OnHitEvent(Hitbox hb);
+        public OnHitEvent hitEvent;
         void Start()
         {
-            partSys.Stop();
+            if (partSys != null) { partSys.Stop(); }
             corePlayer = GetComponent<Core>();
             mRigidBody = GetComponent<Rigidbody2D>();
             SetFaction(myFaction);
@@ -61,14 +65,15 @@ namespace HoloJam
             Vector2 finalKB = new Vector2((theirPos.x - transform.position.x > 0 ? -1 : 1) * hb.KnockbackImpulse.x, hb.KnockbackImpulse.y);
             if (Mathf.Abs(finalKB.y) != 0) mRigidBody.linearVelocityY = 0;
             mRigidBody.AddForce(finalKB, ForceMode2D.Impulse);
+            if (hitEvent != null) hitEvent(hb);
             if (CurrentHP == 0)
             {
-                corePlayer.PerformAction("die");
+                corePlayer?.PerformAction("die");
             } else
             {
-                corePlayer.PerformAction("hurt");
+                corePlayer?.PerformAction("hurt");
             }
-            if (hb.damage > 0 && partSys != null) { partSys.Play(); }
+            if (partSys != null) { partSys.Play(); }
         }
     }
 }

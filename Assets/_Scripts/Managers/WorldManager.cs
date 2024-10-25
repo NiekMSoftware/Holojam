@@ -29,31 +29,42 @@ namespace HoloJam
         {
             homeSceneName = SceneManager.GetActiveScene().name;
             SetPlayer(FindObjectOfType<Player>());
+            cachedPositionInHome = playerRef.transform.position;
+            SceneManager.sceneLoaded += Instance.OnNewSceneLoaded;
         }
         public static void LoadMemoryScene(string sceneName)
         {
             Instance.cachedPositionInHome = Instance.playerRef.transform.position;
             CorruptionManager.ResetEffects();
-            SceneManager.sceneLoaded += Instance.OnMemorySceneLoaded;
             SceneManager.LoadScene(sceneName);
+        }
+        public static void ReloadScene()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         public static void ReturnToHomeScene()
         {
             if (Instance.homeSceneName == SceneManager.GetActiveScene().name) return;
             CorruptionManager.ResetEffects();
-            SceneManager.sceneLoaded += Instance.OnHomeSceneLoaded;
             SceneManager.LoadScene(Instance.homeSceneName);
         }
-
+        void OnNewSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if (Instance.homeSceneName == SceneManager.GetActiveScene().name)
+            {
+                OnHomeSceneLoaded(scene, mode);
+            } else
+            {
+                OnMemorySceneLoaded(scene, mode);
+            }
+        }
         void OnHomeSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            SceneManager.sceneLoaded -= Instance.OnHomeSceneLoaded;
             SetPlayer(FindObjectOfType<Player>());
             playerRef.transform.position = cachedPositionInHome;
         }
         void OnMemorySceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            SceneManager.sceneLoaded -= Instance.OnMemorySceneLoaded;
             SetPlayer(FindObjectOfType<Player>());
         }
 

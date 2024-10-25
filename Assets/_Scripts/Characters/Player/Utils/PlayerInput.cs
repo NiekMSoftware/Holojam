@@ -102,6 +102,10 @@ namespace HoloJam.Characters.Player.Utils
         {
             return PlayerActions.Corruption.WasPressedThisFrame();
         }
+        public bool GetPausePressed()
+        {
+            return PlayerActions.Pause.WasPressedThisFrame();
+        }
 
         #endregion
     }

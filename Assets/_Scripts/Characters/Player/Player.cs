@@ -46,10 +46,14 @@ namespace HoloJam.Characters.Player
             if (performingAction) return;
             Controller.HandleJump(Input, Data.AirborneData);
         }
+
         private void TEMPActivatePower()
         {
-            if (Input.GetCorruptionPressed()) {
+            if (Input.GetCorruptionPressed() && !PauseManager.IsPaused) {
                 CorruptionManager.TogglePanelOpen();
+            } else if (Input.GetPausePressed() && !CorruptionManager.IsOpen)
+            {
+                PauseManager.TogglePause();
             }
         }
         private void FixedUpdate()
