@@ -666,6 +666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInvincible: 0
+  canBeHurt: 1
   isPlayerCharacter: 1
   myFaction: 0
   CurrentHP: 1
