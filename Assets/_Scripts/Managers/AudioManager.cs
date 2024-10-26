@@ -61,10 +61,7 @@ namespace HoloJam.Managers
 
         private void Start()
         {
-            // Set default volume levels if not saved
-            SetVolume(AudioLevels.Medium, AudioMixers.Music);
-            SetVolume(AudioLevels.Medium, AudioMixers.Sfx);
-
+            UpdateVolume();
             Play(FirstSongToPlay);
         }
 
@@ -77,9 +74,14 @@ namespace HoloJam.Managers
 
         private void UpdateVolume()
         {
-            AudioLevels musicLevel = (AudioLevels)PlayerPrefs.GetFloat("Music", (int)AudioLevels.Medium);
-            AudioLevels sfxLevel = (AudioLevels)PlayerPrefs.GetFloat("SFX", (int)AudioLevels.Medium);
+            // Retrieve saved levels, defaulting to Medium if no value is saved
+            int savedMusicLevel = PlayerPrefs.GetInt("MusicLevel", (int)AudioLevels.Medium);
+            int savedSFXLevel = PlayerPrefs.GetInt("SFXLevel", (int)AudioLevels.Medium);
 
+            AudioLevels musicLevel = (AudioLevels)savedMusicLevel;
+            AudioLevels sfxLevel = (AudioLevels)savedSFXLevel;
+
+            // Apply the retrieved levels
             SetVolume(musicLevel, AudioMixers.Music);
             SetVolume(sfxLevel, AudioMixers.Sfx);
         }
@@ -148,11 +150,13 @@ namespace HoloJam.Managers
                 case AudioMixers.Music:
                     musicMixer.audioMixer.SetFloat("Music", volume);
                     PlayerPrefs.SetFloat("Music", volume);
+                    PlayerPrefs.SetInt("MusicLevel", (int)level);
                     break;
 
                 case AudioMixers.Sfx:
                     sfxMixer.audioMixer.SetFloat("SFX", volume);
                     PlayerPrefs.SetFloat("SFX", volume);
+                    PlayerPrefs.SetInt("SFXLevel", (int)level);
                     break;
             }
 

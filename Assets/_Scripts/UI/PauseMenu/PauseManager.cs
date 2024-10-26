@@ -21,8 +21,8 @@ namespace HoloJam
         private Selectable lastButtonSelected;
         private bool isPaused;
 
-        private AudioLevels currentSfxLevel = AudioLevels.Medium;
-        private AudioLevels currentMusicLevel = AudioLevels.Medium;
+        private AudioLevels currentSfxLevel;
+        private AudioLevels currentMusicLevel;
 
         private void Awake()
         {
@@ -34,6 +34,9 @@ namespace HoloJam
             {
                 Destroy(gameObject);
             }
+
+            currentSfxLevel = (AudioLevels)PlayerPrefs.GetInt("SFXLevel", (int)AudioLevels.Medium);
+            currentMusicLevel = (AudioLevels)PlayerPrefs.GetInt("MusicLevel", (int)AudioLevels.Medium);
         }
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -64,13 +67,18 @@ namespace HoloJam
         }
         public void ToggleSFXVolume()
         {
-            currentSfxLevel = (AudioLevels)(((int)currentSfxLevel + 1) % Enum.GetValues(typeof(AudioLevels)).Length);
+            currentSfxLevel = GetNextAudioLevel(currentSfxLevel);
             AudioManager.Instance.SetVolume(currentSfxLevel, AudioMixers.Sfx);
         }
         public void ToggleMusicVolume()
         {
-            currentMusicLevel = (AudioLevels)(((int)currentMusicLevel + 1) % Enum.GetValues (typeof(AudioLevels)).Length);
+            currentMusicLevel = GetNextAudioLevel(currentMusicLevel);
             AudioManager.Instance.SetVolume(currentMusicLevel, AudioMixers.Music);
+        }
+        private AudioLevels GetNextAudioLevel(AudioLevels currentLevel)
+        {
+            int nextIndex = ((int)currentLevel + 1) % Enum.GetValues(typeof(AudioLevels)).Length;
+            return (AudioLevels)nextIndex;
         }
         public void ReloadCurrentScene()
         {
