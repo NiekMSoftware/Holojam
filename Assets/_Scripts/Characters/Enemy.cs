@@ -32,70 +32,70 @@ namespace HoloJam.Characters.Enemies
 
         protected virtual void Update()
         {
-            HandleState();
+            //HandleState();
             Machine.CurrentState.Do();
             if (performingAction) return;
             Machine.Set(Idle);
         }
-
+        //Moved To CorruptedObject.cs
         /// <summary>
         /// Handles additional states (e.g. anti-gravity, frozen)
         /// </summary>
-        private void HandleState()
-        {
-            switch (AdditionalEnemyState)
-            {
-                case AdditionalStates.None:
-                    if (_isFrozen)
-                    {
-                        UnfreezeEnemy();
-                        _isFrozen = false;
-                    }
-                    DisableAntiGravity();
-                    break;
+        //private void HandleState()
+        //{
+        //    switch (AdditionalEnemyState)
+        //    {
+        //        case AdditionalStates.None:
+        //            if (_isFrozen)
+        //            {
+        //                UnfreezeEnemy();
+        //                _isFrozen = false;
+        //            }
+        //            DisableAntiGravity();
+        //            break;
 
-                case AdditionalStates.Frozen:
-                    if (!_isFrozen)
-                    {
-                        FreezeEnemy();
-                        _isFrozen = true;
-                    }
-                    break;
+        //        case AdditionalStates.Frozen:
+        //            if (!_isFrozen)
+        //            {
+        //                FreezeEnemy();
+        //                _isFrozen = true;
+        //            }
+        //            break;
 
-                case AdditionalStates.AntiGravity:
-                    if (_isFrozen)
-                    {
-                        UnfreezeEnemy();
-                    }
-                    EnableAntiGravity();
-                    break;
-            }
-        }
+        //        case AdditionalStates.AntiGravity:
+        //            if (_isFrozen)
+        //            {
+        //                UnfreezeEnemy();
+        //            }
+        //            EnableAntiGravity();
+        //            break;
+        //    }
+        //}
 
-        private void FreezeEnemy()
-        {
-            // Stop all movement
-            Body.linearVelocity = Vector2.zero;
-            Body.bodyType = RigidbodyType2D.Kinematic;
+        //private void FreezeEnemy()
+        //{
+        //    // Stop all movement
+        //    Body.linearVelocity = Vector2.zero;
+        //    Body.bodyType = RigidbodyType2D.Kinematic;
 
-            // Pause animations
-            CharacterAnimator.Animator.enabled = false;
-        }
+        //    // Pause animations
+        //    CharacterAnimator.Animator.enabled = false;
+        //}
 
-        private void UnfreezeEnemy()
-        {
-            Body.bodyType = RigidbodyType2D.Dynamic;
-            CharacterAnimator.Animator.enabled = true;
-        }
+        //private void UnfreezeEnemy()
+        //{
+        //    Body.bodyType = RigidbodyType2D.Dynamic;
+        //    CharacterAnimator.Animator.enabled = true;
+        //}
 
-        private void EnableAntiGravity()
-        {
-            Body.gravityScale = -1f;
-        }
+        //private void EnableAntiGravity()
+        //{
+        //    Body.gravityScale = -1f;
+        //}
 
-        private void DisableAntiGravity()
-        {
-            Body.gravityScale = 1f;
-        }
+        //private void DisableAntiGravity()
+        //{
+        //    Body.gravityScale = 1f;
+        //}
     }
 }

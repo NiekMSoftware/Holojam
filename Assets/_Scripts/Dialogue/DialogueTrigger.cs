@@ -2,7 +2,6 @@ using HoloJam.Characters.Player;
 using HoloJam.Characters.Player.Utils;
 using HoloJam.Dialogue.Data;
 using UnityEngine;
-using HoloJam.Characters.Player;
 namespace HoloJam.Dialogue
 {
     public class DialogueTrigger : Interactable

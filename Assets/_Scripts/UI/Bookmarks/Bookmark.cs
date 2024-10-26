@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;// Required when using Event data.
+using HoloJam.Characters.Player.Utils;
 using TMPro;
 namespace HoloJam
 {
-    public class Bookmark : MonoBehaviour, ISelectHandler, IDeselectHandler
+    public class Bookmark : MonoBehaviour
     {
         public CorruptionType corruptionType;
         [SerializeField]
@@ -14,35 +15,81 @@ namespace HoloJam
         [SerializeField]
         private Image bookmarkImage;
         [SerializeField]
-        private Selectable selection;
-        [SerializeField]
         private Color inactiveColor;
         [SerializeField]
         private Color activeColor;
+
+        [SerializeField]
+        private Bookmark onSelectUp;
+        [SerializeField]
+        private Bookmark onSelectDown;
 
         private bool lastIsActive = true;
         private bool lastHasCharges = true;
         [HideInInspector]
         public BookMarkSection parentSection;
+        [SerializeField]
+        private bool isSelected;
+        private bool toSelect;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-
         }
-        public void OnSelect(BaseEventData eventData)
+        void Update()
         {
-            //Debug.Log("selected: " + gameObject);
-            parentSection.lastSelection = selection;
+            if (!isSelected)
+            {
+                if (toSelect)
+                {
+                    isSelected = true;
+                    toSelect = false;
+                }
+                return;
+            } 
+            if (PlayerInput.GetUIInput().Submit.WasPressedThisFrame())
+            {
+                Use();
+                return;
+            }
+            bool pressedThisFrame = PlayerInput.GetUIInput().Navigate.WasPressedThisFrame();
+            if (!pressedThisFrame) return;
+            Bookmark bestSelectable;
+            if (PlayerInput.GetUIInput().Navigate.ReadValue<Vector2>().y > 0)
+            {
+                bestSelectable = onSelectUp;
+                while (!bestSelectable.gameObject.activeInHierarchy)
+                {
+                    bestSelectable = bestSelectable.onSelectUp;
+                }
+                Dehighlight();
+                bestSelectable.Highlight();
+            } else if (PlayerInput.GetUIInput().Navigate.ReadValue<Vector2>().y < 0)
+            {
+                bestSelectable = onSelectDown;
+                while (!bestSelectable.gameObject.activeInHierarchy)
+                {
+                    bestSelectable = bestSelectable.onSelectDown;
+                }
+                Dehighlight();
+                bestSelectable.Highlight();
+            }
+        }
+        public void Highlight()
+        {
+            Debug.Log("selected: " + gameObject);
             mAnimator.Play("select");
+            toSelect = true;
+            parentSection.lastBookmark = this;
         }
 
-        public void OnDeselect(BaseEventData eventData)
+        public void Dehighlight()
         {
-            //Debug.Log("deselected: " + gameObject);
+            Debug.Log("deselected: " + gameObject);
             mAnimator.Play("idle");
+            isSelected = false;
         }
 
-        public void OnUse()
+        public void Use()
         {
             if (!lastHasCharges) return;
             mAnimator.Play("use");

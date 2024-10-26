@@ -18,11 +18,13 @@ namespace HoloJam
         private Vector2 velocityChange;
         private Vector2 currentVelocity;
         private float expirationTime;
+        private CorruptableObject coObject;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             expirationTime = Time.timeSinceLevelLoad + lifeTime;
             mRigidBody = GetComponent<Rigidbody2D>();
+            coObject = GetComponent<CorruptableObject>();
             currentVelocity = initialVelocity;
         }
         public void FlipVelocity()
@@ -32,6 +34,10 @@ namespace HoloJam
         }
         private void Update()
         {
+            if (coObject != null && coObject.Frozen)
+            {
+                expirationTime += Time.deltaTime;
+            }
             if (Time.timeSinceLevelLoad > expirationTime)
             {
                 Destroy(gameObject);
@@ -40,8 +46,14 @@ namespace HoloJam
         // Update is called once per frame
         void FixedUpdate()
         {
-            currentVelocity += velocityChange * Time.deltaTime;
-            mRigidBody.linearVelocity = currentVelocity;
+            if (coObject != null && coObject.Frozen)
+            {
+                mRigidBody.linearVelocity = Vector2.zero;
+            } else
+            {
+                currentVelocity += velocityChange * Time.deltaTime;
+                mRigidBody.linearVelocity = currentVelocity;
+            }
         }
 
         public void OnHitboxHit(Attackable target)

@@ -30,7 +30,7 @@ namespace HoloJam.Characters.Player
             _body = body;
         }
 
-        public void Move(float movementInput, float acceleration, float maxSpeed)
+        public void Move(float movementInput,  float acceleration, float maxSpeed)
         {
             // return if no input is given
             if (!(Mathf.Abs(movementInput) > 0)) return;
@@ -42,15 +42,26 @@ namespace HoloJam.Characters.Player
 
             // flip object based on direction
             float direction = Mathf.Sign(movementInput);
-            transform.localScale = new Vector3(direction, 1, 1);
+            transform.localScale = new Vector3(direction, transform.localScale.y, 1);
+        }
+        public void UpDownMove(float updowninput, float acceleration, float maxSpeed)
+        {
+            // return if no input is given
+            if (!(Mathf.Abs(updowninput) > 0)) return;
+
+            // increment velocity by acceleration
+            float increment = updowninput * acceleration;
+            float newSpeed = Mathf.Clamp(_body.linearVelocityY + increment, -maxSpeed, maxSpeed);
+            _body.linearVelocityY = newSpeed;
         }
 
-        public void HandleJump(PlayerInput input, AirborneData airborneData)
+        public void HandleJump(PlayerInput input, AirborneData airborneData, bool normalGravity)
         {
+            float jumpMod = (normalGravity ? 1 : -1);
             // Start the initial jump
             if (input.GetJumpValue() > 0 && _coyoteTimeCounter > 0)
             {
-                _body.linearVelocityY = airborneData.JumpForce;
+                _body.linearVelocityY = airborneData.JumpForce * jumpMod;
                 _coyoteTimeCounter = 0;
 
                 _jumpTimeCounter = airborneData.JumpTime;
@@ -58,7 +69,7 @@ namespace HoloJam.Characters.Player
 
             // check if the ceiling was hit
             if (!player.SurroundingSensor.HitCeiling)
-                Jump(input.GetJumpValue(), airborneData.JumpForce, airborneData.AddedJumpForce, airborneData.JumpTime);
+                Jump(input.GetJumpValue(), airborneData.JumpForce * jumpMod, airborneData.AddedJumpForce * jumpMod, airborneData.JumpTime);
             else
                 _jumpTimeCounter = 0;
 
@@ -71,7 +82,7 @@ namespace HoloJam.Characters.Player
             // apply a downwards force to fall faster
             if (_jumpTimeCounter <= 0)
             {
-                _body.linearVelocityY += airborneData.GravityMultiplier * Physics2D.gravity.y * Time.deltaTime;
+                _body.linearVelocityY += airborneData.GravityMultiplier * Physics2D.gravity.y * Time.deltaTime * jumpMod;
 
                 // Clamp the falling velocity to avoid falling too fast
                 _body.linearVelocityY = Mathf.Clamp(_body.linearVelocityY, -airborneData.MaxFallingSpeed, Mathf.Infinity);

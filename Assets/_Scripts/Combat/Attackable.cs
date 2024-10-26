@@ -57,6 +57,19 @@ namespace HoloJam
                 Destroy(gameObject);
             }
         }
+        public void TakeDamage(int damage)
+        {
+            CurrentHP = Mathf.Clamp(CurrentHP - damage, 0, MaxHP);
+            if (CurrentHP == 0)
+            {
+                corePlayer?.PerformAction("die");
+            }
+            else
+            {
+                corePlayer?.PerformAction("hurt");
+            }
+            if (partSys != null) { partSys.Play(); }
+        }
         public void TakeHit(Hitbox hb)
         {
             CurrentHP = Mathf.Clamp(CurrentHP - hb.damage, 0, MaxHP);

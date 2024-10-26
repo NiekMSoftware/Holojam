@@ -11,6 +11,7 @@ namespace HoloJam
         [SerializeField]
         private Vector2 throwVelocityForward = new Vector2();
         private bool originalColliderIsTrigger;
+        public bool thrown;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -31,11 +32,13 @@ namespace HoloJam
         }
         public void ThrowUp(bool isFacingLeft)
         {
+            mRigidBody.linearVelocity = Vector2.zero;
             mRigidBody.AddForce(new Vector2((isFacingLeft ? -1 : 1) * throwVelocityUp.x, throwVelocityUp.y), ForceMode2D.Impulse);
             OnRelease();
         }
         public void ThrowForward(bool isFacingLeft)
         {
+            mRigidBody.linearVelocity = Vector2.zero;
             mRigidBody.AddForce(new Vector2((isFacingLeft ? -1 : 1) * throwVelocityForward.x, throwVelocityForward.y),ForceMode2D.Impulse);
             OnRelease();
         }
@@ -45,6 +48,7 @@ namespace HoloJam
         }
         private void OnRelease()
         {
+            thrown = true;
             mCollider.isTrigger = originalColliderIsTrigger;
         }
     }

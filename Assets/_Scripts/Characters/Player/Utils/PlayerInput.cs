@@ -7,17 +7,23 @@ namespace HoloJam.Characters.Player.Utils
 {
     public class PlayerInput : MonoBehaviour
     {
+        public static PlayerInput Instance;
         public PlayerInputActions InputActions;
         public PlayerInputActions.PlayerActions PlayerActions;
         public PlayerInputActions.UIActions UIActions;
 
         #region Main Methods
+        public static PlayerInputActions.UIActions GetUIInput()
+        {
+            return Instance.UIActions;
+        }
 
         private void Awake()
         {
             InputActions = new PlayerInputActions();
             PlayerActions = InputActions.Player;
             UIActions = InputActions.UI;
+            PlayerInput.Instance = this;
         }
 
         private void OnEnable()
@@ -68,6 +74,7 @@ namespace HoloJam.Characters.Player.Utils
 
         public void OnSubmit(InputAction.CallbackContext ctx)
         {
+            if (UIManager.Instance == null) return;
             if (!UIManager.Instance.IsTypingComplete())
             {
                 // If the dialogue is still typing, finish it
