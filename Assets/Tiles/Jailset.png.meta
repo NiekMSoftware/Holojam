@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Jailset_0: -7619954852277552990
+      Jailset_1: -1712911243354276320
+      Jailset_2: -2711982731787998764
+      Jailset_3: 7657544749710450630
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      On and Off Lanterns_0: -7715134015114061344
+      On and Off Lanterns_1: -4075661049335457958
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
