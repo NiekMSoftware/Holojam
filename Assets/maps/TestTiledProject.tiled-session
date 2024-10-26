@@ -17,6 +17,14 @@
                 "y": 147.45495565101837
             }
         },
+        "hubtemplate.tmx": {
+            "scale": 3,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 256.83333333333337,
+                "y": 184.33333333333331
+            }
+        },
         "jail_bars.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 11
@@ -49,8 +57,8 @@
             "scale": 3,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 318.83333333333337,
-                "y": 284
+                "x": 273.83333333333337,
+                "y": 282
             }
         },
         "template.tmx": {
@@ -104,6 +112,10 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "hubtemplate.tmx",
+        "test_memory.tmx",
+        "onoff_test.tmx",
+        "test_rightroom.tmx",
         "Test_roomleft.tmx",
         "test_level.tmx",
         "jail_bars.tsx",
@@ -111,11 +123,7 @@
         "memory_block.tsx",
         "onoff2_block.tsx",
         "onoff_block.tsx",
-        "onoff_test.tmx",
-        "jail_block.tsx",
-        "jail_wall.tsx",
-        "test_memory.tmx",
-        "template.tmx"
+        "jail_block.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {

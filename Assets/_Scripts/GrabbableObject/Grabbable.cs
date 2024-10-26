@@ -5,19 +5,21 @@ namespace HoloJam
     public class Grabbable : Interactable
     {
         private Collider2D mCollider;
-        private Rigidbody2D mRigidBody;
+        public Rigidbody2D mRigidBody;
         [SerializeField]
         private Vector2 throwVelocityUp = new Vector2();
         [SerializeField]
         private Vector2 throwVelocityForward = new Vector2();
+        [SerializeField]
+        private Collider2D extraColliderToConvertToTrigger;
         private bool originalColliderIsTrigger;
         public bool thrown;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             interactionType = InteractableType.GRAB;
-            mRigidBody = GetComponent<Rigidbody2D>();
             mCollider = GetComponent<Collider2D>();
+            mRigidBody = mCollider.attachedRigidbody;
             originalColliderIsTrigger = mCollider.isTrigger;
         }
         public override void OnPerformInteraction(Player p)
@@ -29,6 +31,10 @@ namespace HoloJam
         public void OnGrabbed()
         {
             mCollider.isTrigger = true;
+            if (extraColliderToConvertToTrigger != null)
+            {
+                extraColliderToConvertToTrigger.isTrigger = true;
+            }
         }
         public void ThrowUp(bool isFacingLeft)
         {
@@ -50,6 +56,10 @@ namespace HoloJam
         {
             thrown = true;
             mCollider.isTrigger = originalColliderIsTrigger;
+            if (extraColliderToConvertToTrigger != null)
+            {
+                extraColliderToConvertToTrigger.isTrigger = false;
+            }
         }
     }
 }
