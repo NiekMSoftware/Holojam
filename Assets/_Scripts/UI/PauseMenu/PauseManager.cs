@@ -1,6 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;// Required when using Event data.
+using UnityEngine.EventSystems;
+using TMPro;// Required when using Event data.
+using HoloJam.Managers;
+using static HoloJam.Managers.AudioManager;
+using System;
+using UnityEditor;
 namespace HoloJam
 {
     public class PauseManager : MonoBehaviour
@@ -15,6 +20,10 @@ namespace HoloJam
         private EventSystem mEventSystem;
         private Selectable lastButtonSelected;
         private bool isPaused;
+
+        private AudioLevels currentSfxLevel;
+        private AudioLevels currentMusicLevel;
+
         private void Awake()
         {
             if (Instance == null)
@@ -25,6 +34,10 @@ namespace HoloJam
             {
                 Destroy(gameObject);
             }
+
+            // Initialize the levels from player prefs
+            currentMusicLevel = (AudioLevels)PlayerPrefs.GetInt("MusicLevel", (int)AudioLevels.Medium);
+            currentSfxLevel = (AudioLevels)PlayerPrefs.GetInt("SFXLevel", (int)AudioLevels.Medium);
         }
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -55,11 +68,18 @@ namespace HoloJam
         }
         public void ToggleSFXVolume()
         {
-
+            currentSfxLevel = GetNextAudioLevel(currentSfxLevel);
+            AudioManager.Instance.SetVolume(currentSfxLevel, AudioMixers.Sfx);
         }
         public void ToggleMusicVolume()
         {
-
+            currentMusicLevel = GetNextAudioLevel(currentMusicLevel);
+            AudioManager.Instance.SetVolume(currentMusicLevel, AudioMixers.Music);
+        }
+        private AudioLevels GetNextAudioLevel(AudioLevels currentLevel)
+        {
+            int nextIndex = ((int)currentLevel + 1) % Enum.GetValues(typeof(AudioLevels)).Length;
+            return (AudioLevels)nextIndex;
         }
         public void ReloadCurrentScene()
         {
@@ -73,7 +93,11 @@ namespace HoloJam
         }
         public void Quit()
         {
+#if UNITY_EDITOR
+            EditorApplication.ExitPlaymode();
+#else
             Application.Quit();
+#endif
         }
     }
 }
