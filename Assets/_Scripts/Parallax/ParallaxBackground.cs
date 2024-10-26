@@ -27,7 +27,7 @@ namespace HoloJam.Parallax
             SetLayers();
         }
 
-        private void SetLayers()
+        public void SetLayers()
         {
             // clear out the layes
             layers.Clear();
