@@ -570,6 +570,7 @@ MonoBehaviour:
   idleState: {fileID: 6798557807497120442}
   runState: {fileID: 3365094018306644013}
   airState: {fileID: 8864476747283354447}
+  birdState: {fileID: 545511735750903173}
 --- !u!114 &3119884402796804188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,7 +653,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dade1cfda2540b04f8c35803d2e8e855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigidBodyAffectedByTimestop: 1
+  animatorAffectedByTimestop: 1
+  affectedByGravity: 1
+  flipTransform: 1
+  reactToKill: 1
   NegationFieldsOverlapped: 0
+  GlobeObject: {fileID: 2657272893418469118, guid: 945c17dc4414c1d43be1dd5e1a10bd25, type: 3}
 --- !u!114 &6762349373321213318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5865,6 +5872,7 @@ Transform:
   - {fileID: 832737384321529644}
   - {fileID: 4410243140952295358}
   - {fileID: 640757667891059170}
+  - {fileID: 5241983151856336210}
   m_Father: {fileID: 3118709267513838134}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6451696483463904530
@@ -6183,6 +6191,50 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &8041963345366489704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5241983151856336210}
+  - component: {fileID: 545511735750903173}
+  m_Layer: 0
+  m_Name: Bird
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5241983151856336210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8041963345366489704}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9209957530472656713}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &545511735750903173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8041963345366489704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9933afdb69a35948b929ef3eb5cf946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8051989576035701416
 GameObject:
   m_ObjectHideFlags: 0

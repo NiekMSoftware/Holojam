@@ -16,10 +16,33 @@ namespace HoloJam.Characters.Player
         public IdleState idleState;
         public RunState runState;
         public AirState airState;
+        public BirdState birdState;
 
         [field: Space()] public PlayerInput Input { get; private set; }
         public PlayerController Controller { get ; private set; }
-
+        private bool birdMode = false;
+        private COPlayer corruptObj;
+        private Interactor mInteractor;
+        public void SetBird(bool bird)
+        {
+            birdMode = bird;
+            if (bird)
+            {
+                mInteractor.HandsFree = false;
+                Body.gravityScale = 0;
+            } else
+            {
+                mInteractor.HandsFree = true;
+                Body.gravityScale = corruptObj.InvertedGravity ? -1 : 1;
+            }
+        }
+        private void ExitBird(Hitbox hb)
+        {
+            if (birdMode)
+            {
+                SetBird(false);
+            }
+        }
         private void Awake()
         {
             Body = GetComponent<Rigidbody2D>();
@@ -27,7 +50,10 @@ namespace HoloJam.Characters.Player
             CharacterAnimator = GetComponent<CharacterAnimation>();
             SurroundingSensor = GetComponent<SurroundingSensors>();
             Controller = GetComponent<PlayerController>();
+            corruptObj = GetComponent<COPlayer>();
+            mInteractor = GetComponent<Interactor>();
             Controller.Initialize(Body);
+            GetComponent<Attackable>().hitEvent += ExitBird;
         }
 
         private void Start()
@@ -39,12 +65,19 @@ namespace HoloJam.Characters.Player
         private void Update()
         {
             TEMPActivatePower();
+            if (birdMode && Input.GetInteractValue() > 0)
+            {
+                SetBird(false);
+            }
             // Handle state machine
             SelectState();
             Machine.CurrentState.Do();
             Controller.UpdateTimers(Data.AirborneData);
             if (performingAction) return;
-            Controller.HandleJump(Input, Data.AirborneData);
+            if (!birdMode)
+            {
+                Controller.HandleJump(Input, Data.AirborneData, !corruptObj.InvertedGravity);
+            } 
         }
 
         private void TEMPActivatePower()
@@ -59,13 +92,23 @@ namespace HoloJam.Characters.Player
         private void FixedUpdate()
         {
             Controller.Move(Input.GetMovementInput(), Data.GroundedData.Acceleration, Data.GroundedData.MaxHorizontalSpeed);
+            if (birdMode)
+            {
+                Controller.UpDownMove(Input.GetUpDownInput(), Data.GroundedData.Acceleration, Data.GroundedData.MaxHorizontalSpeed);
+            }
             Controller.ApplyFriction(Data.AirborneData.Grounded, Input.GetMovementInput(), Data.GroundedData.GroundDecay);
         }
 
         private void SelectState()
         {
             if (performingAction) return;
+            
             Data.AirborneData.Grounded = SurroundingSensor.Grounded;
+            if (birdMode)
+            {
+                Machine.Set(birdState);
+                return;
+            }
             if (Data.AirborneData.Grounded)
             {
                 if (Input.GetMovementInput() == 0 && Controller.CheckVelocity(0.1f))

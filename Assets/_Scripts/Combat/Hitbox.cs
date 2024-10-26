@@ -25,6 +25,7 @@ namespace HoloJam
         }
         private void OnTriggerEnter2D(Collider2D collision)
         {
+            if (!enabled) return;
             if (collision.attachedRigidbody == null) return;
             if (collision.GetComponent<Hitbox>() != null) return;
             Attackable attackable = collision.attachedRigidbody.GetComponent<Attackable>();

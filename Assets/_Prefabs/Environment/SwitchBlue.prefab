@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 69210935393855103, guid: c44e5f96399bed04a894308f08a7ed6b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5885903039554231066, guid: fb07e36db8c70254f875494ef38c999b, type: 3}
+      objectReference: {fileID: -4019536899316807863, guid: 137f9daa3a346e84c9ff504fe68c60d0, type: 3}
     - target: {fileID: 877509292601390722, guid: c44e5f96399bed04a894308f08a7ed6b, type: 3}
       propertyPath: m_Name
       value: SwitchBlue
@@ -19,11 +19,11 @@ PrefabInstance:
     - target: {fileID: 1116002417355479596, guid: c44e5f96399bed04a894308f08a7ed6b, type: 3}
       propertyPath: onSprite
       value: 
-      objectReference: {fileID: 5885903039554231066, guid: fb07e36db8c70254f875494ef38c999b, type: 3}
+      objectReference: {fileID: -4019536899316807863, guid: 137f9daa3a346e84c9ff504fe68c60d0, type: 3}
     - target: {fileID: 1116002417355479596, guid: c44e5f96399bed04a894308f08a7ed6b, type: 3}
       propertyPath: offSprite
       value: 
-      objectReference: {fileID: 248191368809093738, guid: fb07e36db8c70254f875494ef38c999b, type: 3}
+      objectReference: {fileID: -6870524541663862561, guid: 137f9daa3a346e84c9ff504fe68c60d0, type: 3}
     - target: {fileID: 1116002417355479596, guid: c44e5f96399bed04a894308f08a7ed6b, type: 3}
       propertyPath: mBlockType
       value: 0

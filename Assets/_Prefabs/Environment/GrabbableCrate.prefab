@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2805980509944845627}
   - component: {fileID: 2095134043602895477}
   - component: {fileID: 5284117355538085857}
+  - component: {fileID: 3229925810277062527}
   m_Layer: 8
   m_Name: GrabbableCrate
   m_TagString: Untagged
@@ -176,10 +177,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de75a4f5e750044297b90c0b0cf23dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 0
+  priority: 1
   interactionType: 3
-  throwVelocityUp: {x: 0, y: 20}
-  throwVelocityForward: {x: 15, y: 8}
+  throwVelocityUp: {x: 0, y: 15}
+  throwVelocityForward: {x: 15, y: 6}
+  thrown: 0
+--- !u!114 &3229925810277062527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257435297914427021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58587df0e6aca6d488e31cc54b77eb49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidBodyAffectedByTimestop: 1
+  animatorAffectedByTimestop: 1
+  affectedByGravity: 1
+  flipTransform: 0
+  reactToKill: 0
+  NegationFieldsOverlapped: 0
 --- !u!1 &3167052555305020233
 GameObject:
   m_ObjectHideFlags: 0

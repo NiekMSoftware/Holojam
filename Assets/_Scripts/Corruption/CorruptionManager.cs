@@ -104,7 +104,7 @@ namespace HoloJam
         {
             if (!Instance.corruptableObjects.Contains(obj))
             {
-                Instance.corruptableObjects.Remove(obj);
+                Instance.corruptableObjects.Add(obj);
             }
             else
             {

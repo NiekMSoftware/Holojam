@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6570484066927393609}
   - component: {fileID: 7688765414918723481}
   - component: {fileID: 145227201272167864}
+  - component: {fileID: 4783470922023892098}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -209,3 +210,21 @@ MonoBehaviour:
   faction: 0
   damage: 1
   KnockbackImpulse: {x: 5, y: 5}
+--- !u!114 &4783470922023892098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8045387532645285818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58587df0e6aca6d488e31cc54b77eb49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidBodyAffectedByTimestop: 1
+  animatorAffectedByTimestop: 1
+  affectedByGravity: 0
+  flipTransform: 0
+  reactToKill: 0
+  NegationFieldsOverlapped: 0

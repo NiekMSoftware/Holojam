@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 namespace HoloJam
 {
     public class BookMarkSection : MonoBehaviour
@@ -8,11 +9,13 @@ namespace HoloJam
         [SerializeField]
         private Transform bookmarksTransform;
         [SerializeField]
+        private EventSystem mEventSystem;
+        [SerializeField]
         private Animator mAnimator;
         private Dictionary<CorruptionType, Bookmark> bookmarks = new Dictionary<CorruptionType, Bookmark>();
         [SerializeField]
-        private Selectable defaultSelect;
-        public Selectable lastSelection;
+        private Bookmark defaultSelect;
+        public Bookmark lastBookmark;
 
         private void Awake()
         {
@@ -28,11 +31,14 @@ namespace HoloJam
             mAnimator.Play(isOpen ? "open" : "close");
             if (isOpen)
             {
-                if (lastSelection == null)
+                if (lastBookmark == null)
                 {
-                    lastSelection = defaultSelect;
+                    lastBookmark = defaultSelect;
                 }
-                lastSelection.Select();
+                lastBookmark.Highlight();
+            } else
+            {
+                lastBookmark.Dehighlight();
             }
         }
         

@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace HoloJam
 {
-    public enum CorruptionType { GRAVITY, TIMESTOP, ALLIES, SEED, KILL}
+    public enum CorruptionType { GRAVITY, TIMESTOP, BIRD, GLOBE, KILL}
     public class CorruptionEffect : MonoBehaviour
     {
         public bool CanBeUsed;
