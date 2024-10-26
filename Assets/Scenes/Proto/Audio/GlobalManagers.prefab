@@ -364,6 +364,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sounds:
   - {fileID: 11400000, guid: da5a3c9676f595346b411990a03f2b8e, type: 2}
+  musicMixer: {fileID: 5279421769707107656, guid: cfa84812252fa85478b6fb06dff400bf, type: 2}
+  sfxMixer: {fileID: 2480705155777744464, guid: cfa84812252fa85478b6fb06dff400bf, type: 2}
   FirstSongToPlay: Test - Music
 --- !u!1 &2299857001101201557
 GameObject:
