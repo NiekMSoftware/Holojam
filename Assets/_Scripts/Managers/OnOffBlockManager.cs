@@ -90,8 +90,11 @@ namespace HoloJam
         private void ToggleBlock(GameObject obj, bool on)
         {
             obj.GetComponent<Tilemap>().color = on ? new Color(1, 1, 1, 1) : new Color(0.25f, 0.25f, 0.25f, 0.4f);
-            obj.GetComponentInChildren<PolygonCollider2D>().enabled = on;
-
+            PolygonCollider2D childObj = obj.GetComponentInChildren<PolygonCollider2D>();
+            if (childObj != null)
+            {
+                childObj.enabled = on;
+            }
         }
         
     }

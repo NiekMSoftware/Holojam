@@ -23,6 +23,10 @@ namespace HoloJam
             {
                 Bookmark nextBM = bookmarksTransform.GetChild(i).GetComponent<Bookmark>();
                 nextBM.parentSection = this;
+                if (!defaultSelect.gameObject.activeInHierarchy && nextBM.gameObject.activeInHierarchy)
+                {
+                    defaultSelect = nextBM;
+                }
                 bookmarks[nextBM.corruptionType] = nextBM;
             }
         }

@@ -42,7 +42,7 @@ namespace HoloJam
         }
         private void UpdateGrabbedObjPosition()
         {
-            currentGrabbedObject.transform.position = grabTransform.position;
+            currentGrabbedObject.mRigidBody.transform.position = grabTransform.position;
         }
         private void CheckRelease()
         {
