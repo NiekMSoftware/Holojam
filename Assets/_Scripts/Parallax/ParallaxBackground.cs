@@ -7,9 +7,7 @@ namespace HoloJam.Parallax
     [ExecuteInEditMode]
     public class ParallaxBackground : MonoBehaviour
     {
-        public ParallaxCamera parallaxCamera;
-
-        [Tooltip("Layers will be added as a child of the background.")]
+        private ParallaxCamera parallaxCamera;
         public List<ParallaxLayer> layers = new List<ParallaxLayer>();
 
         private void Start()
