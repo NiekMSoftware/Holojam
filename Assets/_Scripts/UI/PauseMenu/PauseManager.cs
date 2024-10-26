@@ -35,8 +35,9 @@ namespace HoloJam
                 Destroy(gameObject);
             }
 
-            currentSfxLevel = (AudioLevels)PlayerPrefs.GetInt("SFXLevel", (int)AudioLevels.Medium);
+            // Initialize the levels from player prefs
             currentMusicLevel = (AudioLevels)PlayerPrefs.GetInt("MusicLevel", (int)AudioLevels.Medium);
+            currentSfxLevel = (AudioLevels)PlayerPrefs.GetInt("SFXLevel", (int)AudioLevels.Medium);
         }
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
