@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de75a4f5e750044297b90c0b0cf23dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 0
+  priority: 1
   interactionType: 3
   throwVelocityUp: {x: 0, y: 15}
   throwVelocityForward: {x: 15, y: 6}

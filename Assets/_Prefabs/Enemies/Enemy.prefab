@@ -602,7 +602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbacced2e5b9da84a90c86f56bdea0a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 1
+  priority: 2
   interactionType: 0
 --- !u!1 &4952258715614148646
 GameObject:

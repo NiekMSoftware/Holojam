@@ -68,8 +68,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mBlockType: 1
   currentToggle: 1
-  onSprite: {fileID: -2931541168075451469, guid: b4cc290c62eb6d3479b419215f4219f6, type: 3}
-  offSprite: {fileID: -6596601140074719797, guid: b4cc290c62eb6d3479b419215f4219f6, type: 3}
+  onSprite: {fileID: -657677534608077713, guid: 9fcf75b7c439c9743b1cda3ea49094c9, type: 3}
+  offSprite: {fileID: 4077370187239364415, guid: 9fcf75b7c439c9743b1cda3ea49094c9, type: 3}
 --- !u!1 &3419403138211828454
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ SpriteRenderer:
   m_SortingLayerID: -1526078791
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2931541168075451469, guid: b4cc290c62eb6d3479b419215f4219f6, type: 3}
+  m_Sprite: {fileID: -657677534608077713, guid: 9fcf75b7c439c9743b1cda3ea49094c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
