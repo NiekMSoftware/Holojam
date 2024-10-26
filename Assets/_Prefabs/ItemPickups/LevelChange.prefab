@@ -137,5 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f07697bea91d9f44096aec58f6bca657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priority: 0
+  interactionType: 0
   returnToHome: 0
   sceneToLoad: 
