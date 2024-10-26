@@ -1,6 +1,6 @@
 using HoloJam.Audio;
 using System;
-using UnityEditor.Media;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -32,6 +32,10 @@ namespace HoloJam.Managers
         [Space]
         public string FirstSongToPlay;
 
+        [Space]
+        public TMP_Text sfxBtnText;
+        public TMP_Text mscBtnText;
+
         private void Awake()
         {
             if (instance == null)
@@ -57,16 +61,9 @@ namespace HoloJam.Managers
 
         private void Start()
         {
-            if (IsAudioLevelSaved())
-            {
-                UpdateVolume();
-            }
-            else
-            {
-                // Set default volume levels if not saved
-                SetVolume(AudioLevels.Medium, AudioMixers.Music);
-                SetVolume(AudioLevels.Medium, AudioMixers.Sfx);
-            }
+            // Set default volume levels if not saved
+            SetVolume(AudioLevels.Medium, AudioMixers.Music);
+            SetVolume(AudioLevels.Medium, AudioMixers.Sfx);
 
             Play(FirstSongToPlay);
         }
@@ -123,21 +120,26 @@ namespace HoloJam.Managers
             {
                 case AudioLevels.Muted:
                     volume = -80f;
+                    SetText(level, mixers);
                     break;
 
                 case AudioLevels.Low:
                     volume = -54f;
+                    SetText(level, mixers);
                     break;
 
                 case AudioLevels.Medium:
                     volume = -28f;
+                    SetText(level, mixers);
                     break;
 
                 case AudioLevels.High:
-                    volume = 0f;
+                    volume = -12f;
+                    SetText(level, mixers);
                     break;
                 default:
-                    volume = 0f;
+                    volume = -12f;
+                    SetText(level, mixers);
                     break;
             }
 
@@ -157,9 +159,18 @@ namespace HoloJam.Managers
             PlayerPrefs.Save();
         }
 
-        private bool IsAudioLevelSaved()
+        private void SetText(AudioLevels levels, AudioMixers mixers)
         {
-            return PlayerPrefs.HasKey("Music") && PlayerPrefs.HasKey("SFX");
+            switch (mixers)
+            {
+                case AudioMixers.Music:
+                    mscBtnText.text = $"{mixers} Volume: {levels}";
+                    break;
+
+                case AudioMixers.Sfx:
+                    sfxBtnText.text = $"{mixers} Volume: {levels}";
+                    break;
+            }
         }
         #endregion
     }

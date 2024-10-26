@@ -1,6 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;// Required when using Event data.
+using UnityEngine.EventSystems;
+using TMPro;// Required when using Event data.
+using HoloJam.Managers;
+using static HoloJam.Managers.AudioManager;
+using System;
+using UnityEditor;
 namespace HoloJam
 {
     public class PauseManager : MonoBehaviour
@@ -15,6 +20,10 @@ namespace HoloJam
         private EventSystem mEventSystem;
         private Selectable lastButtonSelected;
         private bool isPaused;
+
+        private AudioLevels currentSfxLevel = AudioLevels.Medium;
+        private AudioLevels currentMusicLevel = AudioLevels.Medium;
+
         private void Awake()
         {
             if (Instance == null)
@@ -55,11 +64,13 @@ namespace HoloJam
         }
         public void ToggleSFXVolume()
         {
-
+            currentSfxLevel = (AudioLevels)(((int)currentSfxLevel + 1) % Enum.GetValues(typeof(AudioLevels)).Length);
+            AudioManager.Instance.SetVolume(currentSfxLevel, AudioMixers.Sfx);
         }
         public void ToggleMusicVolume()
         {
-
+            currentMusicLevel = (AudioLevels)(((int)currentMusicLevel + 1) % Enum.GetValues (typeof(AudioLevels)).Length);
+            AudioManager.Instance.SetVolume(currentMusicLevel, AudioMixers.Music);
         }
         public void ReloadCurrentScene()
         {
@@ -73,7 +84,11 @@ namespace HoloJam
         }
         public void Quit()
         {
+#if UNITY_EDITOR
+            EditorApplication.ExitPlaymode();
+#else
             Application.Quit();
+#endif
         }
     }
 }

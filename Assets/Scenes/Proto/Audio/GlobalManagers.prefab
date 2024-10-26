@@ -367,6 +367,8 @@ MonoBehaviour:
   musicMixer: {fileID: 5279421769707107656, guid: cfa84812252fa85478b6fb06dff400bf, type: 2}
   sfxMixer: {fileID: 2480705155777744464, guid: cfa84812252fa85478b6fb06dff400bf, type: 2}
   FirstSongToPlay: Test - Music
+  sfxBtnText: {fileID: 4328054842746563663}
+  mscBtnText: {fileID: 9209466781220050544}
 --- !u!1 &2299857001101201557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,7 +1239,7 @@ GameObject:
   - component: {fileID: 3966248923635027065}
   - component: {fileID: 9209466781220050544}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: mscText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1981,7 +1983,7 @@ GameObject:
   - component: {fileID: 6008841271359719091}
   - component: {fileID: 4328054842746563663}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: sfxText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
