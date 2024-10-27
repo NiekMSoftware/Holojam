@@ -83,7 +83,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1676496721043856069
 RectTransform:
   m_ObjectHideFlags: 0
@@ -401,8 +401,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 69147745e37a18b4c9118fb527a289ee, type: 2}
-  m_sharedMaterial: {fileID: 5027699027427186618, guid: 69147745e37a18b4c9118fb527a289ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e6b224441b065c54b88460dd8562a25b, type: 2}
+  m_sharedMaterial: {fileID: -5795576649418271520, guid: e6b224441b065c54b88460dd8562a25b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2101,15 +2101,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.0036458336
+    x: 0.125
     y: 0
-    width: 0.18750001
-    height: 0.7462963
+    width: 0.75000006
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.296875
+  orthographic size: 8.4375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3262,8 +3262,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Dialogue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d89e3e902f06754fa50bdbb7ece5f5b, type: 2}
-  m_sharedMaterial: {fileID: 5126073146439861806, guid: 6d89e3e902f06754fa50bdbb7ece5f5b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e6b224441b065c54b88460dd8562a25b, type: 2}
+  m_sharedMaterial: {fileID: -5795576649418271520, guid: e6b224441b065c54b88460dd8562a25b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3691,7 +3691,6 @@ MonoBehaviour:
   bookmarksTransform: {fileID: 593080683781641752}
   mEventSystem: {fileID: 1501934952952700405}
   mAnimator: {fileID: 861508318809649892}
-  defaultSelect: {fileID: 5929524721877013604}
   lastBookmark: {fileID: 0}
 --- !u!95 &861508318809649892
 Animator:
