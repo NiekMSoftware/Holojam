@@ -3,32 +3,68 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Hub World/hubtemplate.tmx",
+    "activeFile": "template.tmx",
     "expandedProjectPaths": [
-        "."
+        ".",
+        "HubRooms/1 - Prison",
+        "HubRooms",
+        "SectionA-Jail"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
         "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Memory_Ground.tsx": {
             "scaleInDock": 1
         },
-        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Teplate.tmx": {
-            "scale": 1.6565625,
-            "selectedLayer": 0,
-            "viewCenter": {
-                "x": 585.2480664025657,
-                "y": 106.54593472929636
-            }
-        },
-        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/tiles/placeholders.tsx": {
+        "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Placeholder.tsx": {
             "scaleInDock": 1
         },
-        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Hub World/hubtemplate.tmx": {
-            "scale": 2.4304166666666664,
+        "Holojam/Assets/maps/jail_bars.tsx": {
+            "scaleInDock": 1
+        },
+        "Holojam/Assets/maps/jail_block.tsx": {
+            "scaleInDock": 1
+        },
+        "Holojam/Assets/maps/jail_wall.tsx": {
+            "scaleInDock": 1
+        },
+        "HubRooms/1 - Prison/CellA.tmx": {
+            "scale": 2.8974999999999995,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 240.0345125107852,
+                "y": 160.13805004314065
+            }
+        },
+        "HubRooms/1 - Prison/CellB.tmx": {
+            "scale": 2.8974999999999995,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.0345125107852,
+                "y": 160.13805004314065
+            }
+        },
+        "HubRooms/1 - Prison/CellC.tmx": {
+            "scale": 2.8974999999999995,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.0345125107852,
+                "y": 160.13805004314065
+            }
+        },
+        "HubRooms/1 - Prison/StartingCell.tmx": {
+            "scale": 2.8974999999999995,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.0345125107852,
+                "y": 160.13805004314065
+            }
+        },
+        "SectionA-Jail/1 - Jailer.tmx": {
+            "scale": 2.8974999999999995,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.0345125107852,
+                "y": 111.130284728214
             }
         },
         "Test_roomleft.tmx": {
@@ -41,10 +77,10 @@
         },
         "hubtemplate.tmx": {
             "scale": 3,
-            "selectedLayer": 6,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 256.83333333333337,
-                "y": 184.33333333333331
+                "x": 218.16666666666663,
+                "y": 173
             }
         },
         "jail_bars.tsx": {
@@ -76,35 +112,35 @@
             "scaleInEditor": 16
         },
         "onoff_test.tmx": {
-            "scale": 2,
+            "scale": 3,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 525.75,
-                "y": 191.25
+                "x": 273.83333333333337,
+                "y": 282
             }
         },
         "template.tmx": {
             "scale": 3,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 124.49999999999997,
-                "y": 293
+                "x": 239.83333333333337,
+                "y": 160
             }
         },
         "test_level.tmx": {
             "scale": 3,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 399.16666666666663,
-                "y": 181.16666666666663
+                "x": 221.49999999999997,
+                "y": 160
             }
         },
         "test_memory.tmx": {
             "scale": 3,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 399.16666666666663,
-                "y": 181.16666666666663
+                "x": 210.49999999999997,
+                "y": 265.3333333333333
             }
         },
         "test_rightroom.tmx": {
@@ -124,31 +160,28 @@
     "openFiles": [
         "jail_block.tsx",
         "jail_wall.tsx",
-        "test_memory.tmx",
-        "test_level.tmx",
-        "jail_bars.tsx",
-        "memory_bg.tsx",
-        "memory_block.tsx",
-        "onoff_test.tmx",
-        "onoff_block.tsx",
+        "SectionA-Jail/1 - Jailer.tmx",
+        "template.tmx",
         "onoff2_block.tsx",
-        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Teplate.tmx",
-        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Hub World/hubtemplate.tmx"
+        "HubRooms/1 - Prison/CellA.tmx",
+        "HubRooms/1 - Prison/CellB.tmx",
+        "HubRooms/1 - Prison/CellC.tmx",
+        "HubRooms/1 - Prison/StartingCell.tmx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
         "jail_block.tsx",
         "jail_wall.tsx",
-        "test_memory.tmx",
-        "test_level.tmx",
-        "jail_bars.tsx",
-        "memory_bg.tsx",
-        "memory_block.tsx",
-        "onoff_test.tmx",
-        "onoff_block.tsx",
+        "SectionA-Jail/1 - Jailer.tmx",
+        "HubRooms/1 - Prison/StartingCell.tmx",
+        "HubRooms/1 - Prison/CellC.tmx",
+        "HubRooms/1 - Prison/CellB.tmx",
+        "HubRooms/1 - Prison/CellA.tmx",
         "onoff2_block.tsx",
-        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Teplate.tmx",
-        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Hub World/hubtemplate.tmx"
+        "template.tmx",
+        "hubtemplate.tmx",
+        "test_memory.tmx",
+        "onoff_test.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
