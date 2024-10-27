@@ -18,6 +18,12 @@
         "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Placeholder.tsx": {
             "scaleInDock": 1
         },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Holojam/Assets/Memory_Ground.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Holojam/Assets/Placeholder.tsx": {
+            "scaleInDock": 1
+        },
         "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Hub World/Sanarooms/Great Hall.tmx": {
             "scale": 0.8101388888888889,
             "selectedLayer": 0,
@@ -44,11 +50,11 @@
             }
         },
         "HubRooms/1 - Prison/CellB.tmx": {
-            "scale": 2.8974999999999995,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 240.03451251078522,
-                "y": 159.96548748921487
+                "x": 223.75,
+                "y": 90.25
             }
         },
         "HubRooms/1 - Prison/CellC.tmx": {
@@ -67,12 +73,15 @@
                 "y": 159.96548748921487
             }
         },
+        "OnOff_BlockOff.tsx": {
+            "scaleInDock": 1
+        },
         "SectionA-Jail/1 - Jailer.tmx": {
-            "scale": 2.8974999999999995,
+            "scale": 1.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.0345125107852,
-                "y": 107.50647109577224
+                "x": 112.33333333333331,
+                "y": 261
             }
         },
         "Test_roomleft.tmx": {
@@ -113,7 +122,7 @@
         },
         "onoff2_block.tsx": {
             "scaleInDock": 1,
-            "scaleInEditor": 16
+            "scaleInEditor": 8
         },
         "onoff_block.tsx": {
             "scaleInDock": 1,
@@ -131,8 +140,8 @@
             "scale": 3,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 189.33333333333331,
-                "y": 210.83333333333331
+                "x": 239.83333333333331,
+                "y": 160.16666666666663
             }
         },
         "test_level.tmx": {
@@ -178,18 +187,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "HubRooms/1 - Prison/StartingCell.tmx",
-        "HubRooms/1 - Prison/CellC.tmx",
-        "HubRooms/1 - Prison/CellB.tmx",
-        "HubRooms/1 - Prison/CellA.tmx",
-        "jail_block.tsx",
-        "jail_wall.tsx",
-        "SectionA-Jail/1 - Jailer.tmx",
         "onoff2_block.tsx",
         "template.tmx",
+        "jail_wall.tsx",
+        "jail_block.tsx",
+        "SectionA-Jail/1 - Jailer.tmx",
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Hub World/Sanarooms/Great Hall.tmx",
+        "HubRooms/1 - Prison/CellB.tmx",
+        "HubRooms/1 - Prison/StartingCell.tmx",
+        "HubRooms/1 - Prison/CellC.tmx",
+        "HubRooms/1 - Prison/CellA.tmx",
         "hubtemplate.tmx",
-        "test_memory.tmx",
-        "onoff_test.tmx"
+        "test_memory.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
