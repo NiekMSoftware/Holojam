@@ -137,6 +137,7 @@ namespace HoloJam
         }
         public static void ReloadScene()
         {
+            CorruptionManager.ResetEffects();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         public static void ReturnToHomeScene()
