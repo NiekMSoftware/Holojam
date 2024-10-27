@@ -10,10 +10,10 @@ namespace HoloJam.Parallax
 
         public void Move(float delta)
         {
-            Vector3 newPos = transform.localPosition;
-            newPos.x -= delta * ParallaxFactor;
+            //Vector3 newPos = transform.localPosition;
+            //newPos.x -= delta * ParallaxFactor;
 
-            transform.localPosition = newPos;
+            //transform.localPosition = newPos;
         }
     }
 }
