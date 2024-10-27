@@ -61,7 +61,11 @@ namespace HoloJam
                 {
                     bestSelectable = bestSelectable.onSelectUp;
                 }
-                Dehighlight();
+                if (bestSelectable != this)
+                {
+                    Dehighlight();
+                }
+                
                 bestSelectable.Highlight();
             } else if (PlayerInput.GetUIInput().Navigate.ReadValue<Vector2>().y < 0)
             {
@@ -70,7 +74,10 @@ namespace HoloJam
                 {
                     bestSelectable = bestSelectable.onSelectDown;
                 }
-                Dehighlight();
+                if (bestSelectable != this)
+                {
+                    Dehighlight();
+                }
                 bestSelectable.Highlight();
             }
         }
