@@ -3,11 +3,11 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "template.tmx",
+    "activeFile": "HubRooms/3 - Old Tunnels/Long Tunnel.tmx",
     "expandedProjectPaths": [
-        ".",
-        "HubRooms/1 - Prison",
         "HubRooms",
+        "HubRooms/1 - Prison",
+        ".",
         "SectionA-Jail"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -32,6 +32,9 @@
                 "y": 347.47128407337567
             }
         },
+        "Holojam/Assets/maps/OnOff_BlockOff.tsx": {
+            "scaleInDock": 1
+        },
         "Holojam/Assets/maps/jail_bars.tsx": {
             "scaleInDock": 1
         },
@@ -39,6 +42,12 @@
             "scaleInDock": 1
         },
         "Holojam/Assets/maps/jail_wall.tsx": {
+            "scaleInDock": 1
+        },
+        "Holojam/Assets/maps/onoff2_block.tsx": {
+            "scaleInDock": 1
+        },
+        "Holojam/Assets/maps/onoff_block.tsx": {
             "scaleInDock": 1
         },
         "HubRooms/1 - Prison/CellA.tmx": {
@@ -53,8 +62,8 @@
             "scale": 2,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 223.75,
-                "y": 90.25
+                "x": 305.75,
+                "y": 117.75
             }
         },
         "HubRooms/1 - Prison/CellC.tmx": {
@@ -65,12 +74,124 @@
                 "y": 159.96548748921487
             }
         },
+        "HubRooms/1 - Prison/Center.tmx": {
+            "scale": 1,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 351.5,
+                "y": 293.5
+            }
+        },
         "HubRooms/1 - Prison/StartingCell.tmx": {
             "scale": 2.8974999999999995,
             "selectedLayer": 0,
             "viewCenter": {
                 "x": 240.03451251078522,
                 "y": 159.96548748921487
+            }
+        },
+        "HubRooms/1 - Prison/Warden's Office.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 235.7291077155254,
+                "y": 174.75947934352013
+            }
+        },
+        "HubRooms/2 - Lower Class Rooms/45 to 67 Bridger.tmx": {
+            "scale": 1.2152083333333332,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 479.3416766672382,
+                "y": 154.2945311160638
+            }
+        },
+        "HubRooms/2 - Lower Class Rooms/B2 room.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "HubRooms/2 - Lower Class Rooms/B3 room.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "HubRooms/2 - Lower Class Rooms/B4 room.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "HubRooms/2 - Lower Class Rooms/B5 room.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "HubRooms/2 - Lower Class Rooms/B6 room.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "HubRooms/2 - Lower Class Rooms/B7 room.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx": {
+            "scale": 1,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 465.5,
+                "y": 87.5
+            }
+        },
+        "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx": {
+            "scale": 1.2152083333333332,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 480.1645808331905,
+                "y": 285.1362935024859
+            }
+        },
+        "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx": {
+            "scale": 3.313125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 129.63591775136769,
+                "y": 91.90718732314657
+            }
+        },
+        "HubRooms/3 - Old Tunnels/Long Tunnel.tmx": {
+            "scale": 1,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 478.5,
+                "y": 165.5
+            }
+        },
+        "HubRooms/3 - Old Tunnels/Tall Tunnel.tmx": {
+            "scale": 1,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 80.5,
+                "y": 379.5
             }
         },
         "OnOff_BlockOff.tsx": {
@@ -169,36 +290,28 @@
             }
         }
     },
-    "last.externalTilesetPath": "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/maps",
+    "last.externalTilesetPath": "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Holojam/Assets/maps",
     "last.imagePath": "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Tiles",
     "map.lastUsedFormat": "tmx",
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "openFiles": [
-        "jail_block.tsx",
-        "jail_wall.tsx",
-        "SectionA-Jail/1 - Jailer.tmx",
-        "template.tmx",
-        "onoff2_block.tsx",
-        "HubRooms/1 - Prison/CellA.tmx",
-        "HubRooms/1 - Prison/CellB.tmx",
-        "HubRooms/1 - Prison/CellC.tmx",
-        "HubRooms/1 - Prison/StartingCell.tmx"
+        "HubRooms/3 - Old Tunnels/Long Tunnel.tmx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "HubRooms/3 - Old Tunnels/Long Tunnel.tmx",
+        "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx",
         "onoff2_block.tsx",
-        "template.tmx",
-        "jail_wall.tsx",
-        "jail_block.tsx",
-        "SectionA-Jail/1 - Jailer.tmx",
-        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Hub World/Sanarooms/Great Hall.tmx",
-        "HubRooms/1 - Prison/CellB.tmx",
-        "HubRooms/1 - Prison/StartingCell.tmx",
-        "HubRooms/1 - Prison/CellC.tmx",
-        "HubRooms/1 - Prison/CellA.tmx",
-        "hubtemplate.tmx",
-        "test_memory.tmx"
+        "onoff_block.tsx",
+        "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx",
+        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx",
+        "HubRooms/2 - Lower Class Rooms/45 to 67 Bridger.tmx",
+        "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B6 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B3 room.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {

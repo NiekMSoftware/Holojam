@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="1">
- <tileset firstgid="1" source="../../Holojam/Assets/maps/jail_wall.tsx"/>
- <tileset firstgid="65" source="../../Holojam/Assets/maps/jail_block.tsx"/>
+ <tileset firstgid="1" source="../../jail_wall.tsx"/>
+ <tileset firstgid="65" source="../../jail_block.tsx"/>
  <layer id="4" name="bkg_far" width="20" height="10">
   <properties>
    <property name="unity:sortinglayer" value="Bkg_far"/>
