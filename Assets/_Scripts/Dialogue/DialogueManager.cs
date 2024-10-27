@@ -61,6 +61,8 @@ namespace HoloJam.Dialogue
 
         public void ContinueDialogue()
         {
+            if (PauseManager.IsPaused) return;
+
             if (CurrentNode is DialogueLineNode lineNode)
             {
                 if (lineNode.NextNode != null)

@@ -7,6 +7,7 @@ namespace HoloJam.Dialogue
     public class DialogueTrigger : Interactable
     {
         public DialogueNode StartingNode;
+        private PlayerInput input;
         private void Start()
         {
             interactionType = InteractableType.DIALOGUE;
@@ -14,6 +15,16 @@ namespace HoloJam.Dialogue
         public override void OnPerformInteraction(Player p)
         {
             DialogueManager.Instance.StartDialogue(StartingNode);
+        }
+
+        public override void OnTriggerExit2D(Collider2D collision)
+        {
+            base.OnTriggerExit2D(collision);
+
+            if (collision.CompareTag("Player"))
+            {
+                DialogueManager.Instance.EndDialogue();
+            }
         }
     }
 }
