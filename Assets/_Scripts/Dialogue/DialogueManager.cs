@@ -33,6 +33,7 @@ namespace HoloJam.Dialogue
 
         public void StartDialogue(DialogueNode node)
         {
+            if (player == null) player = FindFirstObjectByType<Player>();
             UIManager.Instance.ShowDialogue(node.characterName, node.dialogueText);
             player.Input.EnableUIControls();
             SetCurrentNode(node);
@@ -61,6 +62,8 @@ namespace HoloJam.Dialogue
 
         public void ContinueDialogue()
         {
+            if (PauseManager.IsPaused) return;
+
             if (CurrentNode is DialogueLineNode lineNode)
             {
                 if (lineNode.NextNode != null)
