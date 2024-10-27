@@ -29,6 +29,78 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelDesign/A-Jail/A1.unity
     guid: 7afaa28a48d5c3042bbf0fb6c05b232f
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/F-Queen/F3.unity
+    guid: 265dbf75c27a0e74181f57232164a297
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/F-Queen/F2.unity
+    guid: 3c33815deeac7e44fb44a9d9be4a9ac7
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/F-Queen/F1.unity
+    guid: 164fde06483cdf24abd295eda99d1424
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/E-Upper/E1.unity
+    guid: 8916e2fa23bdb324a923af52cfad3a3d
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/D-Courtyard/D4.unity
+    guid: bc08aec01402f5849b8cc626508ace85
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/D-Courtyard/D3.unity
+    guid: f1202313128c1da4eaad79bea1a24bf9
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/D-Courtyard/D2.unity
+    guid: 2c57423a8f1cda544b3261aa094189dd
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/D-Courtyard/D1.unity
+    guid: af18e39bfe843ce4082d4ede07a37daf
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/C-Tunnels/C2.unity
+    guid: 7e18571b81c398e4f8aa7b61de5cc880
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/C-Tunnels/C1.unity
+    guid: b6845c1ac5f1928449240065382b5e3f
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/B-Commons/B10.unity
+    guid: 1e69e81e8bfaf204c8827cc5337e086b
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/B-Commons/B9.unity
+    guid: 9e84f41a5e94f9d40be04ee07aa24d93
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/B-Commons/B8.unity
+    guid: 065bc0c40139b4a409dc33a84d6123ea
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/B-Commons/B7.unity
+    guid: e581f4fcf3d1b1940994f3b808ce2ac3
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/B-Commons/B5.unity
+    guid: 2845d2736d15f75489e1d7e172258325
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/B-Commons/B4.unity
+    guid: 5bca4a46d732be447a07221ffc39c3cf
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/B-Commons/B3.unity
+    guid: af1fcf3840a110b49b9177e23bb9ec68
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/B-Commons/B2.unity
+    guid: a47977980c5b40e46a83a34277b4e3cf
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/B-Commons/B1.unity
+    guid: 966c8c9c2bc285e4ba83640d8abc8586
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/A-Jail/A6.unity
+    guid: 9324763d54178e4408846df6e272cecf
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/A-Jail/A5.unity
+    guid: 6d3c6ed58e5cb3e43adb5ba8c797bc72
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/A-Jail/A4.unity
+    guid: 895aa4b9ce0bee546bb77587b9dc2985
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/E-Upper/E3.unity
+    guid: a4e0bf1ab66550546acba746435e1a10
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/E-Upper/E2.unity
+    guid: 85b1477a03929c9459b3b17f5d5b71b2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
