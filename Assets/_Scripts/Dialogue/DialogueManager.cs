@@ -33,6 +33,7 @@ namespace HoloJam.Dialogue
 
         public void StartDialogue(DialogueNode node)
         {
+            if (player == null) player = FindFirstObjectByType<Player>();
             UIManager.Instance.ShowDialogue(node.characterName, node.dialogueText);
             player.Input.EnableUIControls();
             SetCurrentNode(node);
