@@ -18,6 +18,14 @@
         "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Placeholder.tsx": {
             "scaleInDock": 1
         },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Hub World/Sanarooms/Great Hall.tmx": {
+            "scale": 0.8101388888888889,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 720.2468712497858,
+                "y": 347.47128407337567
+            }
+        },
         "Holojam/Assets/maps/jail_bars.tsx": {
             "scaleInDock": 1
         },
@@ -28,35 +36,35 @@
             "scaleInDock": 1
         },
         "HubRooms/1 - Prison/CellA.tmx": {
-            "scale": 2.8974999999999995,
+            "scale": 1.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.0345125107852,
-                "y": 160.13805004314065
+                "x": 197.66666666666669,
+                "y": 179
             }
         },
         "HubRooms/1 - Prison/CellB.tmx": {
             "scale": 2.8974999999999995,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.0345125107852,
-                "y": 160.13805004314065
+                "x": 240.03451251078522,
+                "y": 159.96548748921487
             }
         },
         "HubRooms/1 - Prison/CellC.tmx": {
             "scale": 2.8974999999999995,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.0345125107852,
-                "y": 160.13805004314065
+                "x": 240.03451251078522,
+                "y": 159.96548748921487
             }
         },
         "HubRooms/1 - Prison/StartingCell.tmx": {
             "scale": 2.8974999999999995,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.0345125107852,
-                "y": 160.13805004314065
+                "x": 240.03451251078522,
+                "y": 159.96548748921487
             }
         },
         "SectionA-Jail/1 - Jailer.tmx": {
@@ -64,7 +72,7 @@
             "selectedLayer": 0,
             "viewCenter": {
                 "x": 240.0345125107852,
-                "y": 111.130284728214
+                "y": 107.50647109577224
             }
         },
         "Test_roomleft.tmx": {
@@ -123,8 +131,8 @@
             "scale": 3,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 239.83333333333337,
-                "y": 160
+                "x": 189.33333333333331,
+                "y": 210.83333333333331
             }
         },
         "test_level.tmx": {
@@ -170,13 +178,13 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "jail_block.tsx",
-        "jail_wall.tsx",
-        "SectionA-Jail/1 - Jailer.tmx",
         "HubRooms/1 - Prison/StartingCell.tmx",
         "HubRooms/1 - Prison/CellC.tmx",
         "HubRooms/1 - Prison/CellB.tmx",
         "HubRooms/1 - Prison/CellA.tmx",
+        "jail_block.tsx",
+        "jail_wall.tsx",
+        "SectionA-Jail/1 - Jailer.tmx",
         "onoff2_block.tsx",
         "template.tmx",
         "hubtemplate.tmx",
