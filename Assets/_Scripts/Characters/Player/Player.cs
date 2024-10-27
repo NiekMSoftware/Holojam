@@ -64,6 +64,8 @@ namespace HoloJam.Characters.Player
 
         private void Update()
         {
+            if (PauseManager.IsPaused) return;
+
             TEMPActivatePower();
             if (birdMode && Input.GetInteractValue() > 0)
             {
