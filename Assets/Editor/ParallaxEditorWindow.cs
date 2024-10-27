@@ -17,19 +17,29 @@ public class ParallaxEditorWindow : EditorWindow
     private string newBackgroundName = "Parallax Background"; 
     
     private Sprite selectedSprite;
+    private float parallaxFactor;
 
     // styling
-    private GUIStyle titleStyle;
+    private GUIStyle header1;
+    private GUIStyle header2;
     private GUIStyle customButtonStyle;
 
     private void InitializeStyles()
     {
-        titleStyle = new GUIStyle(EditorStyles.boldLabel)
+        header1 = new GUIStyle(EditorStyles.boldLabel)
         {
             fontSize = 16,
             alignment = TextAnchor.MiddleLeft,
             normal = { textColor = Color.white },
         };
+
+        header2 = new GUIStyle(EditorStyles.boldLabel)
+        {
+            fontSize = 14,
+            alignment = TextAnchor.MiddleLeft,
+            normal = { textColor = Color.white },
+        };
+
 
         customButtonStyle = new GUIStyle(GUI.skin.button)
         {
@@ -58,7 +68,7 @@ public class ParallaxEditorWindow : EditorWindow
     {
         InitializeStyles();
 
-        EditorGUILayout.LabelField("Parallax Manager", titleStyle, GUILayout.Height(20));
+        EditorGUILayout.LabelField("Parallax Manager", header1, GUILayout.Height(20));
         EditorGUILayout.Space(20);
 
         #region Creation of Backgrounds
@@ -108,7 +118,9 @@ public class ParallaxEditorWindow : EditorWindow
         }
 
         // Existing editor UI for layers
-        serializedBackground.Update();
+        if (serializedBackground != null)
+            serializedBackground.Update();
+        else return;
         previousLayerCount = layersProperty.arraySize;
         EditorGUILayout.PropertyField(layersProperty, new GUIContent("Layers"), true);
 
@@ -117,7 +129,11 @@ public class ParallaxEditorWindow : EditorWindow
             RemoveDeletedLayer(previousLayerCount - 1);
         }
 
+        EditorGUILayout.LabelField("Adjust layer specific properties", header2);
+        parallaxFactor = EditorGUILayout.Slider(parallaxFactor, 0, 1);
         selectedSprite = (Sprite)EditorGUILayout.ObjectField("Select Sprite", selectedSprite, typeof(Sprite), allowSceneObjects: false);
+
+        GUILayout.BeginHorizontal();
         if (GUILayout.Button("Add Layer"))
         {
             AddNewLayerWithSprite();
@@ -128,6 +144,7 @@ public class ParallaxEditorWindow : EditorWindow
             parallaxBackground.SetLayers();
             RefreshAvailableBackgrounds();
         }
+        GUILayout.EndHorizontal();
 
         serializedBackground.ApplyModifiedProperties();
         #endregion
@@ -200,6 +217,9 @@ public class ParallaxEditorWindow : EditorWindow
         parallaxBackground.layers.Add(newLayer);
         SetLayerName(newLayer, parallaxBackground.layers.Count - 1);
 
+        // Update factor
+        UpdateParllaxFactor(newLayerObj);
+
         // Add child object with the selected sprite
         AddChildObjectWithSelectedSprite(newLayerObj);
     }
@@ -220,6 +240,16 @@ public class ParallaxEditorWindow : EditorWindow
         }
     }
 
+    private void UpdateParllaxFactor(GameObject layerObj)
+    {
+        // get component of layer
+        var layer = layerObj.GetComponent<ParallaxLayer>();
+        if (layer != null)
+        {
+            layer.ParallaxFactor = parallaxFactor;
+        }
+    }
+
     private void RemoveDeletedLayer(int removedIndex)
     {
         if (removedIndex >= 0 && removedIndex < parallaxBackground.transform.childCount)
@@ -233,10 +263,6 @@ public class ParallaxEditorWindow : EditorWindow
     {
         layer.name = "Layer - " + index;
     }
-
-    #endregion
-
-    #region Styling
 
     #endregion
 }
