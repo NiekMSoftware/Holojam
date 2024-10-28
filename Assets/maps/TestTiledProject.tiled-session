@@ -3,13 +3,14 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx",
+    "activeFile": "memory_block.tsx",
     "expandedProjectPaths": [
-        ".",
-        "HubRooms/5 - Higher Class Rooms",
-        "HubRooms/4 - Courtyard",
         "HubRooms",
         "HubRooms/2 - Lower Class Rooms",
+        "HubRooms/6 - Queen's Spire",
+        ".",
+        "HubRooms/4 - Courtyard",
+        "HubRooms/5 - Higher Class Rooms",
         "SectionA-Jail"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -18,6 +19,175 @@
             "scaleInDock": 1
         },
         "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Placeholder.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/0 - No Powers Acquired/A1 - Jailer.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/0 - No Powers Acquired/A2 - Yoricks.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/0 - No Powers Acquired/A3 - CratesAndSwitches.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/0 - No Powers Acquired/A4 - Wall.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/0 - No Powers Acquired/A5 - Lantern.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/0 - No Powers Acquired/A6 - Spitters.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/0 - No Powers Acquired/A7 - MovingPlatforms.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/0 - No Powers Acquired/A8 - SpitOnButton.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/0 - No Powers Acquired/A9 - Unlock Timestop.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/1 - Kronii's Time Stop/1 - TimestopTutorial.tmx": {
+            "scale": 2,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 266.25,
+                "y": 219.75
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/1 - Kronii's Time Stop/2 - TimestopLineEmUp.tmx": {
+            "scale": 0.5264583333333334,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 242.18440838939455,
+                "y": 487.218045112782
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/1 - Kronii's Time Stop/3 - TimestopBoxDrop.tmx": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": -229.5,
+                "y": 310.5
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/1 - Kronii's Time Stop/4 - TimestopWithEnemies.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 20.75,
+                "y": 206.25
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/1 - Kronii's Time Stop/5 - TimestopWhoops.tmx": {
+            "scale": 0.5264583333333334,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 242.18440838939455,
+                "y": 487.218045112782
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/1 - Kronii's Time Stop/6 - UnlockGravitySwap.tmx": {
+            "scale": 0.5264583333333334,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 242.18440838939455,
+                "y": 487.218045112782
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/2 - Sana's Gravity Swap/1- Gravity change tutorial.tmx": {
+            "scale": 0.5304166666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.3770620581304,
+                "y": 159.30871956009423
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/2 - Sana's Gravity Swap/GravityTime Position Boxes.tmx": {
+            "scale": 0.5304166666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.3770620581304,
+                "y": 159.30871956009423
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/2 - Sana's Gravity Swap/Lantern.tmx": {
+            "scale": 0.5304166666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.3770620581304,
+                "y": 159.30871956009423
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/3 - Mumei's Pillar Platform/1 - PlantTutorial.tmx": {
+            "scale": 2,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": -24.25,
+                "y": 191.25
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/3 - Mumei's Pillar Platform/LoadsOfSeeds.tmx": {
+            "scale": 0.5304166666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.3770620581304,
+                "y": 159.30871956009423
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Memory_Ground.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Memory_Sparkle.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Placeholder.tsx": {
             "scaleInDock": 1
         },
         "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Holojam/Assets/Memory_Ground.tsx": {
@@ -328,8 +498,8 @@
             "scale": 0.75,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 866,
-                "y": 414
+                "x": 403.33333333333337,
+                "y": 278
             }
         },
         "HubRooms/6 - Queen's Spire/Lore room.tmx": {
@@ -450,30 +620,22 @@
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "openFiles": [
-        "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx",
-        "HubRooms/5 - Higher Class Rooms/E2 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E3 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E4 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E5 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E6 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E7 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E8 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E9 room.tmx"
+        "memory_block.tsx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "HubRooms/5 - Higher Class Rooms/E9 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E8 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E7 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E6 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E5 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E4 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E3 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E2 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx",
-        "HubRooms/5 - Higher Class Rooms/Above Entrance.tmx",
-        "HubRooms/5 - Higher Class Rooms/E4 and E7 balconies.tmx",
-        "HubRooms/5 - Higher Class Rooms/Balconies.tmx"
+        "memory_block.tsx",
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/3 - Mumei's Pillar Platform/LoadsOfSeeds.tmx",
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/3 - Mumei's Pillar Platform/1 - PlantTutorial.tmx",
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/2 - Sana's Gravity Swap/Lantern.tmx",
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/2 - Sana's Gravity Swap/GravityTime Position Boxes.tmx",
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/2 - Sana's Gravity Swap/1- Gravity change tutorial.tmx",
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/1 - Kronii's Time Stop/6 - UnlockGravitySwap.tmx",
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/1 - Kronii's Time Stop/5 - TimestopWhoops.tmx",
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/1 - Kronii's Time Stop/4 - TimestopWithEnemies.tmx",
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/1 - Kronii's Time Stop/3 - TimestopBoxDrop.tmx",
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/1 - Kronii's Time Stop/2 - TimestopLineEmUp.tmx",
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/1 - Kronii's Time Stop/1 - TimestopTutorial.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
