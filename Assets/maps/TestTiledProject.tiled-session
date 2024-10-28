@@ -1,9 +1,237 @@
 {
-    "activeFile": "HubRooms/1 - Prison/CellA.tmx",
+    "activeFile": "",
     "expandedProjectPaths": [
+        ".",
+        "BookmarkLevels"
     ],
+    "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
+        "BookmarkLevels/1 - Prison/A1 - Jailer.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 273.15600830032065,
+                "y": 206.7534427466516
+            }
+        },
+        "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/1 - Prison/A3 - CratesAndSwitches.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/1 - Prison/A4 - Wall.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/1 - Prison/A5 - Lantern.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/1 - Prison/A6 - Spitters.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/1 - Prison/A7 - MovingPlatforms.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/1 - Prison/A8 - SpitOnButton.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/1 - Prison/A9 - Unlock Timestop.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/2 - Lower Class Rooms/1 - TimestopTutorial.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/2 - Lower Class Rooms/2 - TimestopLineEmUp.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/2 - Lower Class Rooms/3 - TimestopBoxDrop.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/2 - Lower Class Rooms/4 - TimestopWithEnemies.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 256.25353706847767,
+                "y": 131.29598189020942
+            }
+        },
+        "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/3 - Old Tunnels/1- Gravity change tutorial.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/3 - Old Tunnels/GravityTime Position Boxes.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/4 - Courtyard/1 - PillarTutorial.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/Work in Progress/Fauna - BigButton.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/Work in Progress/Fish.tmx": {
+            "scale": 3,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 256.8333333333333,
+                "y": 165.83333333333334
+            }
+        },
+        "BookmarkLevels/Work in Progress/LoadsOfPillars.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/Work in Progress/Plantern.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 207.75,
+                "y": 182.25
+            }
+        },
+        "BookmarkLevels/Work in Progress/Sana - SpitChange.tmx": {
+            "scale": 1.6565625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.95472552348616,
+                "y": 252.0279192605169
+            }
+        },
+        "BookmarkLevels/extra memory tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Level Files/0 - No Powers Acquired/A1 - Jailer.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Memory_Ground.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/Tiled Levels/Placeholder.tsx": {
+            "scaleInDock": 1
+        },
         "HubRooms/1 - Prison/CellA.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "Memory_Ground.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Memory_Sparkle.tsx": {
+            "scaleInDock": 1
+        },
+        "Placeholder.tsx": {
+            "scaleInDock": 1
+        },
+        "PlaceholderSprites.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "hubtemplate.tmx": {
             "scale": 2.4304166666666664,
             "selectedLayer": 0,
             "viewCenter": {
@@ -19,13 +247,39 @@
         },
         "jail_wall.tsx": {
             "scaleInDock": 1
+        },
+        "memory_bg.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "memory_block.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         }
     },
+    "last.externalTilesetPath": "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Holojam/Assets/maps",
+    "last.imagePath": "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Holojam/Assets/maps/BookmarkLevels",
     "openFiles": [
-        "HubRooms/1 - Prison/CellA.tmx"
     ],
-    "project": "",
+    "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "HubRooms/1 - Prison/CellA.tmx"
-    ]
+        "BookmarkLevels/extra memory tileset.tsx",
+        "BookmarkLevels/Work in Progress/Sana - SpitChange.tmx",
+        "BookmarkLevels/Work in Progress/Plantern.tmx",
+        "BookmarkLevels/Work in Progress/LoadsOfPillars.tmx",
+        "BookmarkLevels/Work in Progress/Fish.tmx",
+        "BookmarkLevels/Work in Progress/Fauna - BigButton.tmx",
+        "BookmarkLevels/4 - Courtyard/1 - PillarTutorial.tmx",
+        "BookmarkLevels/3 - Old Tunnels/GravityTime Position Boxes.tmx",
+        "BookmarkLevels/3 - Old Tunnels/1- Gravity change tutorial.tmx",
+        "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx",
+        "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx",
+        "memory_block.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
 }
