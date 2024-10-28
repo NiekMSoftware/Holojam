@@ -135,6 +135,12 @@ namespace HoloJam
             Instance.cachedPositionInHome = positionInWorld;
             SceneManager.LoadScene(sceneName);
         }
+        public static void LoadNewScene(string sceneName)
+        {
+            Instance.lastTargetTag= TransitionTag.NONE;
+            CorruptionManager.ResetEffects();
+            SceneManager.LoadScene(sceneName);
+        }
         public static void ReloadScene()
         {
             CorruptionManager.ResetEffects();

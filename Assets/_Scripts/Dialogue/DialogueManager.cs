@@ -41,9 +41,21 @@ namespace HoloJam.Dialogue
 
         public void EndDialogue()
         {
+            print("Ending regular dialogue.");
             UIManager.Instance.HideDialogue();
             player.Input.DisableUIControls();
             CurrentNode = null;
+        }
+
+        public void EndDialogue(string sceneName)
+        {
+            print("Ending Dialogue and loading scene!");
+            UIManager.Instance.HideDialogue();
+            player.Input.DisableUIControls();
+            CurrentNode = null;
+
+            // load a new scene
+            WorldManager.LoadNewScene(sceneName);
         }
 
         public void SetCurrentNode(DialogueNode node)
@@ -72,8 +84,20 @@ namespace HoloJam.Dialogue
                     SetCurrentNode(lineNode.NextNode);
                 }
                 else
-                { 
+                {
                     EndDialogue();
+                }
+            }
+            else if (CurrentNode is DialogueSceneNode sceneNode)
+            {
+                if (sceneNode.NextNode != null)
+                {
+                    OnDialogueLineCompleted();
+                    SetCurrentNode(sceneNode.NextNode);
+                }
+                else
+                { 
+                    EndDialogue(sceneNode.SceneToLoad);
                 }
             }
         }

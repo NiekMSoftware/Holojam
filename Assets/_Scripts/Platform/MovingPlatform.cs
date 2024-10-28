@@ -1,3 +1,6 @@
+using HoloJam.Characters.Player;
+using HoloJam.Characters.Player.Utils;
+using NUnit.Framework.Constraints;
 using UnityEngine;
 
 namespace HoloJam.Platform
@@ -22,8 +25,13 @@ namespace HoloJam.Platform
         private int _currentPointIndex = 0;
         private bool _movingForward = true;
 
+        private PlatformEffector2D _effector;
+        private PlayerInput input;
+
         private void Start()
         {
+            _effector = GetComponent<PlatformEffector2D>();
+
             // initialize position to the first anchor point
             if (AnchorPoints.Length > 0)
             {
@@ -35,6 +43,7 @@ namespace HoloJam.Platform
         {
             if (AnchorPoints.Length < 2) return;
             MovePlatform();
+            CheckTargetReached();
         }
 
         private void MovePlatform()
@@ -43,27 +52,35 @@ namespace HoloJam.Platform
             Vector2 targetPosition = AnchorPoints[_currentPointIndex].position;
 
             transform.position = Vector2.MoveTowards(currentPosition, targetPosition, Speed * Time.deltaTime);
+        }
 
-            // Check if we reached target
-            if (Vector2.Distance(currentPosition, targetPosition) < 0.1f)
+
+        private void CheckTargetReached()
+        {
+            if (Vector2.Distance(transform.position, AnchorPoints[_currentPointIndex].position) < 0.1f)
             {
-                if (_movingForward)
+                UpdateTargetPoint();
+            }
+        }
+
+        private void UpdateTargetPoint()
+        {
+            if (_movingForward)
+            {
+                _currentPointIndex++;
+                if (_currentPointIndex >= AnchorPoints.Length)
                 {
-                    _currentPointIndex++;
-                    if (_currentPointIndex >= AnchorPoints.Length)
-                    {
-                        _movingForward = false;
-                        _currentPointIndex = AnchorPoints.Length - 1;
-                    }
+                    _movingForward = false;
+                    _currentPointIndex = AnchorPoints.Length - 1;
                 }
-                else
+            }
+            else
+            {
+                _currentPointIndex--;
+                if (_currentPointIndex < 0)
                 {
-                    _currentPointIndex--;
-                    if (_currentPointIndex < 0)
-                    {
-                        _movingForward = true;
-                        _currentPointIndex = 1;
-                    }
+                    _movingForward = true;
+                    _currentPointIndex = 1;
                 }
             }
         }
@@ -73,9 +90,26 @@ namespace HoloJam.Platform
             collision.transform.parent.SetParent(transform);
         }
 
+        private void OnTriggerStay2D(Collider2D collision)
+        {
+            input = collision.GetComponentInParent<PlayerInput>();
+            Collider2D playerCol = collision.GetComponent<Collider2D>();
+            Player p = playerCol.GetComponentInParent<Player>();
+            
+            // Check if player is grounded (aka on the platform) and is pressing down
+            if (p.SurroundingSensor.Grounded && input.GetUpDownInput() < 0)
+            {
+                _effector.rotationalOffset = 180;
+            }
+        }
+
         private void OnTriggerExit2D(Collider2D collision)
         {
-            collision.transform.parent.SetParent(null);
+            if (collision != null)
+                collision.transform.parent.SetParent(null);
+
+            input = null;
+            _effector.rotationalOffset = 0;
         }
 
 #if UNITY_EDITOR
