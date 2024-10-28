@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shiori_holding_jump_white_0: -4714844711963114888
+      shiori_holding_jump_white_1: 2690734434681374027
+      shiori_holding_jump_white_2: -1329107560782441358
+      shiori_holding_jump_white_3: -5228550038549964481
+      shiori_holding_jump_white_4: -6538903191460318550
+      shiori_holding_jump_white_5: 1134843451742241934
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -138,6 +138,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   priority: 0
-  interactionType: 0
+  interactionType: 2
   returnToHome: 0
-  sceneToLoad: 
+  sceneToLoad: DummyMemoryWorld

@@ -13,8 +13,6 @@ namespace HoloJam
         [SerializeField]
         private Animator mAnimator;
         private Dictionary<CorruptionType, Bookmark> bookmarks = new Dictionary<CorruptionType, Bookmark>();
-        [SerializeField]
-        private Bookmark defaultSelect;
         public Bookmark lastBookmark;
 
         private void Awake()
@@ -33,7 +31,14 @@ namespace HoloJam
             {
                 if (lastBookmark == null)
                 {
-                    lastBookmark = defaultSelect;
+                    foreach (Bookmark b in bookmarks.Values)
+                    {
+                        if (b.gameObject.activeInHierarchy)
+                        {
+                            lastBookmark = b;
+                            break;
+                        }
+                    }
                 }
                 lastBookmark.Highlight();
             } else

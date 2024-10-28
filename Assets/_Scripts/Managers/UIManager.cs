@@ -29,7 +29,7 @@ namespace HoloJam.Managers
 
         private Coroutine _typingCoroutine;
         private bool _isTypingFast = false;
-        private bool _isTypingComplete = false;
+        private bool _isTypingComplete { get; set; } = false;
         private bool _isChoiceNode = false;
 
         private void Awake()
@@ -143,7 +143,7 @@ namespace HoloJam.Managers
             DialogueManager.Instance.ChooseOption(choice);
         }
 
-        public void FinishTyping(string fullText)
+        public bool FinishTyping(string fullText)
         {
             if (_typingCoroutine != null)
             {
@@ -153,6 +153,7 @@ namespace HoloJam.Managers
 
             dialogueText.text = fullText; // Set the full text
             _isTypingComplete = true;
+            return true;
         }
     }
 }

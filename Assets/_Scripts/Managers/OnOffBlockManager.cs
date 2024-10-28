@@ -21,6 +21,7 @@ namespace HoloJam
         private List<IReactToOnOffToggle> SpecialOnOffReactors = new List<IReactToOnOffToggle>();
         private List<IReactToOnOffToggle> SpecialOnOffReactors2 = new List<IReactToOnOffToggle>();
 
+        private bool toRefreshOnOff = false;
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -38,13 +39,30 @@ namespace HoloJam
         {
             
         }
+        void Update()
+        {
+            if (toRefreshOnOff)
+            {
+                NewSceneUpdate();
+            }
+        }
         void OnNewSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            toRefreshOnOff = true;
+            
+        }
+        void NewSceneUpdate()
         {
             blockStatus = true;
             blockStatus2 = true;
+            defaultOnBlocks.Clear();
+            defaultOffBlocks.Clear();
+            defaultOn2Blocks.Clear();
+            defaultOff2Blocks.Clear();
             SpecialOnOffReactors.Clear();
             SpecialOnOffReactors2.Clear();
             UpdateOnOffBlocks();
+            toRefreshOnOff = false;
         }
         private void UpdateOnOffBlocks()
         {
@@ -54,11 +72,6 @@ namespace HoloJam
             defaultOff2Blocks = new List<GameObject>(GameObject.FindGameObjectsWithTag("onoff2-defaultoff"));
             SetBlocksStatus(blockStatus,BlockType.LAYER_ONE_BLUE);
             SetBlocksStatus(blockStatus2, BlockType.LAYER_TWO_PURPLE);
-        }
-        // Update is called once per frame
-        void Update()
-        {
-        
         }
         public static void RegisterToggleObject(IReactToOnOffToggle toggleObj, BlockType bType)
         {
@@ -90,8 +103,11 @@ namespace HoloJam
         private void ToggleBlock(GameObject obj, bool on)
         {
             obj.GetComponent<Tilemap>().color = on ? new Color(1, 1, 1, 1) : new Color(0.25f, 0.25f, 0.25f, 0.4f);
-            obj.GetComponentInChildren<PolygonCollider2D>().enabled = on;
-
+            PolygonCollider2D childObj = obj.GetComponentInChildren<PolygonCollider2D>();
+            if (childObj != null)
+            {
+                childObj.enabled = on;
+            }
         }
         
     }

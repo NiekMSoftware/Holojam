@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 3554115721401207406}
   m_Layer: 0
   m_Name: pCollider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -602,7 +602,7 @@ MonoBehaviour:
   GroundCheck: {fileID: 29334100120291809}
   GroundLayer:
     serializedVersion: 2
-    m_Bits: 320
+    m_Bits: 1344
 --- !u!95 &6190951334307788935
 Animator:
   serializedVersion: 7

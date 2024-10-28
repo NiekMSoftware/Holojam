@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8937c6412aa910645a322b11d26dff78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YDeathZone: -20
+  YDeathZone: -70
   zoneName: Test World
   roomName: Left Room
