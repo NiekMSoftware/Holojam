@@ -247,6 +247,7 @@ GameObject:
   - component: {fileID: 2873689526238026073}
   - component: {fileID: 8689077647515572233}
   - component: {fileID: 976860697736093224}
+  - component: {fileID: 6647562445546317328}
   m_Layer: 0
   m_Name: GlobalManagers
   m_TagString: Untagged
@@ -334,6 +335,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528e6604df9817a409e3b40d212ffccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6647562445546317328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913585196511369523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 332d09b2818f05245be13a1af9e978b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savedMemoryIDs: []
 --- !u!1 &2005850511892230139
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,15 +2115,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.0036458336
+    x: 0
     y: 0
-    width: 0.18750001
-    height: 0.7462963
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.296875
+  orthographic size: 5.4166665
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

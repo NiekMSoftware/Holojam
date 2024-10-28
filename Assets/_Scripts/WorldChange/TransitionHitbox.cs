@@ -47,7 +47,7 @@ namespace HoloJam
                         startPos -= yOffset;
                         break;
                     case TransitionTag.DOWN:
-                        startPos += yOffset;
+                        startPos -= yOffset;
                         break;
                     case TransitionTag.LEFT_2:
                         startPos += xOffset;
@@ -86,10 +86,12 @@ namespace HoloJam
             Vector3 startPos = transform.position;
             if (useCustomOffset )
             {
-                startPos += ExitPreviewObj.transform.localPosition;
+                //startPos += ExitPreviewObj.transform.localPosition;
+                p.transform.position = ExitPreviewObj.transform.position;
+                return ExitPreviewObj.transform.position;
             } else
             {
-                Vector3 yOffset = new Vector3(0, 1.5f, 0);
+                Vector3 yOffset = new Vector3(0, 2f, 0);
                 Vector3 xOffset = new Vector3(1.5f, 0, 0);
                 switch (myTag)
                 {

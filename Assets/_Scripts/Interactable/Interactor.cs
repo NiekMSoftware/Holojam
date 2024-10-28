@@ -40,6 +40,7 @@ namespace HoloJam
             if (basePlayer.performingAction || !canInteract) return;
             if (input.GetInteractValue() > 0 && highestInteractable != null)
             {
+                highestInteractable.ApplySave();
                 highestInteractable.OnPerformInteraction(basePlayer);
             }
         }
