@@ -7,9 +7,14 @@ namespace HoloJam
     {
         public int priority = 0;
         public InteractableType interactionType;
+        public string saveIDOnInteract;
         public virtual void OnPerformInteraction(Player p)
         {
 
+        }
+        public void ApplySave()
+        {
+            if (saveIDOnInteract != "") MemoryManager.SetVariable(saveIDOnInteract);
         }
         public virtual void OnTriggerEnter2D(Collider2D collision)
         {

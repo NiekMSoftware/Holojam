@@ -30,6 +30,7 @@ namespace HoloJam
             if (Instance == null)
             {
                 Instance = this;
+                FirstStart();
             }
             else
             {
@@ -74,7 +75,7 @@ namespace HoloJam
             }
         }
         // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        void FirstStart()
         {
             homeSceneName = SceneManager.GetActiveScene().name;
             SetPlayer(FindObjectOfType<Player>());

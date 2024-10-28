@@ -15,7 +15,17 @@ namespace HoloJam.StateMachine.States
         {
             float velX = Rigidbody.linearVelocityX;
             float velY = Rigidbody.linearVelocityY;
-            if (Mathf.Abs(velX) > Mathf.Abs(velY))
+            if (Mathf.Abs(velX)> 0)
+            {
+                core.SetFacingLeft(velX < 0);
+            }
+            
+            if (core.SurroundingSensor.Grounded)
+            {
+                CharAnimator.PlayAnimation("bird_grounded");
+            }
+              
+            else if (Mathf.Abs(velX) > Mathf.Abs(velY))
             {
                 CharAnimator.PlayAnimation("bird_move");
             } else if (velY != 0)

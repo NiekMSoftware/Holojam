@@ -101,7 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f60615a2b5867489aa7f209972870f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingNode: {fileID: 11400000, guid: 54290fcaaae5a1e4b8657e73badb14bb, type: 2}
+  priority: 0
+  interactionType: 1
+  saveIDOnInteract: 
+  StartingNode: {fileID: 11400000, guid: 4f5b13b56ef17e945b12f59235d2edc7, type: 2}
 --- !u!58 &624869227904163833
 CircleCollider2D:
   m_ObjectHideFlags: 0
