@@ -78,7 +78,9 @@ namespace HoloJam.Characters.Player.Utils
             if (!UIManager.Instance.IsTypingComplete() && !PauseManager.IsPaused)
             {
                 // If the dialogue is still typing, finish it
-                UIManager.Instance.FinishTyping(DialogueManager.Instance.CurrentNode.dialogueText);
+                if (DialogueManager.Instance.CurrentNode != null)
+                    UIManager.Instance.FinishTyping(DialogueManager.Instance.CurrentNode.dialogueText);
+
                 return;
             }
 

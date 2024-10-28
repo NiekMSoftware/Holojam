@@ -279,6 +279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   priority: 0
   interactionType: 0
+  saveIDOnInteract: 
   mRigidBody: {fileID: 0}
   throwVelocityUp: {x: 0, y: 15}
   throwVelocityForward: {x: 15, y: 6}
