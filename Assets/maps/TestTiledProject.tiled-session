@@ -1,15 +1,15 @@
 {
-    "activeFile": "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
+    "activeFile": "",
     "expandedProjectPaths": [
+        "BookmarkLevels/6 - Random Baelz Seeds",
+        "BookmarkLevels/Work in Progress",
         "BookmarkLevels/3 - Old Tunnels",
         "BookmarkLevels/2 - Lower Class Rooms",
-        "BookmarkLevels",
-        ".",
-        "BookmarkLevels/6 - Random Baelz Seeds",
+        "BookmarkLevels/4 - Courtyard",
         "BookmarkLevels/5 - Higher Class Rooms",
-        "HubRooms",
-        "BookmarkLevels/Work in Progress",
-        "HubRooms/6 - Queen's Spire"
+        "BookmarkLevels",
+        "BookmarkLevels/1 - Prison",
+        "."
     ],
     "fileStates": {
         "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx": {
@@ -102,10 +102,10 @@
         },
         "BookmarkLevels/2 - Lower Class Rooms/4 - TimestopWithEnemies.tmx": {
             "scale": 2.4304166666666664,
-            "selectedLayer": 2,
+            "selectedLayer": 0,
             "viewCenter": {
                 "x": 229.38453625921483,
-                "y": 172.19269672552718
+                "y": 171.98697068403908
             }
         },
         "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx": {
@@ -136,88 +136,80 @@
             "scale": 2.4304166666666664,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 259.00908623349903,
+                "y": 180.62746442653867
             }
         },
         "BookmarkLevels/3 - Old Tunnels/UnlockPillar.tmx": {
-            "scale": 2.4304166666666664,
+            "scale": 3.370520833333333,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 236.907006211948,
+                "y": 218.66056803782803
             }
         },
         "BookmarkLevels/3 - Old Tunnels/Weed Killer.tmx": {
             "scale": 2,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 259.25,
-                "y": 165.75
+                "x": 293.25,
+                "y": 261
             }
         },
         "BookmarkLevels/4 - Courtyard/1 - PillarTutorial.tmx": {
             "scale": 2.4304166666666664,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 240.0822904165953,
+                "y": 159.643408194754
             }
         },
         "BookmarkLevels/4 - Courtyard/A8 - SpitOnButton.tmx": {
             "scale": 2.4304166666666664,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 275.4671695525459,
+                "y": 170.3411623521344
             }
         },
         "BookmarkLevels/4 - Courtyard/HopOnPillarAndFlipGravity.tmx": {
-            "scale": 2,
-            "selectedLayer": 2,
+            "scale": 3.370520833333333,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 201.75,
-                "y": 187.25
+                "x": 239.28052662484166,
+                "y": 168.2232592638378
             }
         },
         "BookmarkLevels/4 - Courtyard/ThreePillars.tmx": {
-            "scale": 2.4304166666666664,
+            "scale": 3.370520833333333,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
-            }
-        },
-        "BookmarkLevels/4 - Courtyard/TwoPillars.tmx": {
-            "scale": 2,
-            "selectedLayer": 2,
-            "viewCenter": {
-                "x": 189.75,
-                "y": 149.25
+                "x": 204.86448063788364,
+                "y": 164.95966869610905
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx": {
             "scale": 2.4304166666666664,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 239.25938625064288,
+                "y": 212.30927481570376
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/2.tmx": {
-            "scale": 2,
-            "selectedLayer": 2,
+            "scale": 3.370520833333333,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 246.75,
-                "y": 141.25
+                "x": 239.87390672806507,
+                "y": 162.88283833482708
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/3.tmx": {
             "scale": 2,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 254.25,
-                "y": 155.75
+                "x": 248.75,
+                "y": 182.5
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/Fish.tmx": {
@@ -229,51 +221,51 @@
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/Unlock Kill Everything.tmx": {
-            "scale": 2.4304166666666664,
+            "scale": 3.370520833333333,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 244.02756745062894,
+                "y": 158.13579750903978
             }
         },
         "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx": {
-            "scale": 2,
+            "scale": 3,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 237.25,
-                "y": 152.25
+                "x": 287.83333333333337,
+                "y": 170
             }
         },
         "BookmarkLevels/6 - Random Baelz Seeds/2.tmx": {
-            "scale": 2,
-            "selectedLayer": 2,
+            "scale": 3.370520833333333,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 235.75,
-                "y": 167.75
+                "x": 239.87390672806507,
+                "y": 159.91593781871
             }
         },
         "BookmarkLevels/6 - Random Baelz Seeds/3.tmx": {
-            "scale": 2.4304166666666664,
+            "scale": 3.370520833333333,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 239.87390672806507,
+                "y": 159.91593781871
             }
         },
         "BookmarkLevels/6 - Random Baelz Seeds/4.tmx": {
-            "scale": 2.4304166666666664,
-            "selectedLayer": 2,
+            "scale": 3.370520833333333,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 239.87390672806507,
+                "y": 159.91593781871
             }
         },
         "BookmarkLevels/Work in Progress/Fauna - BigButton.tmx": {
             "scale": 2.4304166666666664,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 240.0822904165953,
+                "y": 159.643408194754
             }
         },
         "BookmarkLevels/Work in Progress/Fish.tmx": {
@@ -285,27 +277,27 @@
             }
         },
         "BookmarkLevels/Work in Progress/LoadsOfPillars.tmx": {
-            "scale": 2,
-            "selectedLayer": 2,
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 287.75,
-                "y": 173.75
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
             }
         },
         "BookmarkLevels/Work in Progress/Plantern.tmx": {
             "scale": 2.4304166666666664,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 233.9105091719527,
-                "y": 191.5309446254072
+                "x": 240.0822904165953,
+                "y": 159.643408194754
             }
         },
         "BookmarkLevels/Work in Progress/Sana - SpitChange.tmx": {
             "scale": 2.4304166666666664,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 240.0822904165953,
+                "y": 159.643408194754
             }
         },
         "BookmarkLevels/extra memory tileset.tsx": {
@@ -602,14 +594,6 @@
                 "y": 639.465329991646
             }
         },
-        "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx": {
-            "scale": 1,
-            "selectedLayer": 6,
-            "viewCenter": {
-                "x": 334.5,
-                "y": 379.5
-            }
-        },
         "HubRooms/6 - Queen's Spire/Boss room maybe.tmx": {
             "scale": 1.8703124999999998,
             "selectedLayer": 0,
@@ -625,14 +609,6 @@
                 "x": 287.84868807367803,
                 "y": 80.10631393516084
             }
-        },
-        "HubRooms/6 - Queen's Spire/PlaceholderBoss.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
-        },
-        "HubRooms/6 - Queen's Spire/PlaceholderThrone.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
         },
         "HubRooms/6 - Queen's Spire/Throne Room + Ending.tmx": {
             "scale": 0.9192329545454545,
@@ -758,29 +734,21 @@
     "last.imagePath": "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Holojam/Assets/maps/HubRooms/6 - Queen's Spire",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
-        "BookmarkLevels/3 - Old Tunnels/UnlockPillar.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/2.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/3.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/2.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/3.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/4.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "BookmarkLevels/3 - Old Tunnels/UnlockPillar.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/2.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/3.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/4.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/3.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/2.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
+        "BookmarkLevels/Work in Progress/Fauna - BigButton.tmx",
+        "BookmarkLevels/5 - Higher Class Rooms/Fish.tmx",
+        "BookmarkLevels/Work in Progress/Fish.tmx",
         "BookmarkLevels/3 - Old Tunnels/Weed Killer.tmx",
-        "BookmarkLevels/Work in Progress/Plantern.tmx",
-        "BookmarkLevels/Work in Progress/Sana - SpitChange.tmx",
-        "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx"
+        "BookmarkLevels/3 - Old Tunnels/GravityTime Position Boxes.tmx",
+        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
+        "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx",
+        "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx",
+        "BookmarkLevels/3 - Old Tunnels/1- Gravity change tutorial.tmx",
+        "BookmarkLevels/2 - Lower Class Rooms/3 - TimestopBoxDrop.tmx",
+        "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx",
+        "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {

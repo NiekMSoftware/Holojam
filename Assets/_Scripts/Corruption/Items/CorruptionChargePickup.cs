@@ -16,7 +16,7 @@ namespace HoloJam
         {
             if (disabled) return;
 
-            if (collision.attachedRigidbody.GetComponent<Player>() == null) return;
+            if (collision.attachedRigidbody == null || collision.attachedRigidbody.GetComponent<Player>() == null) return;
             bool spellsmodified = CorruptionManager.ModifyCharges(corruptionType, chargeDelta);
             if (spellsmodified && disableAfterPickup)
             {
