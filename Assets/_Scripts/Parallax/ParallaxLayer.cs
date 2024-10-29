@@ -5,7 +5,7 @@ namespace HoloJam.Parallax
     [ExecuteInEditMode]
     public class ParallaxLayer : MonoBehaviour
     {
-        [Range(0f, 1f), Tooltip("The factor of the parallax, 0 for closest, 1 for farthest.")]
+        [Range(-1f, 1f), Tooltip("The factor of the parallax, 0 for closest, 1 for farthest.")]
         public float ParallaxFactor;
 
         public void Move(float delta)

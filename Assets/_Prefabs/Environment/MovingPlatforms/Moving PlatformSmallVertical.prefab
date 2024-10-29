@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5159734965468715372, guid: 14fb8dc3e6dde0944a7a3069c6b4b889, type: 3}
       propertyPath: m_Name
-      value: Moving PlatformWithAnchors (1) Variant
+      value: Moving PlatformSmallVertical
       objectReference: {fileID: 0}
     - target: {fileID: 7615304281423023307, guid: 14fb8dc3e6dde0944a7a3069c6b4b889, type: 3}
       propertyPath: m_LocalPosition.x

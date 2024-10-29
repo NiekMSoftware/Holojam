@@ -175,6 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyOnLight: 0
   rigidBodyAffectedByTimestop: 1
+  hitboxDisabledByTimestop: 1
   animatorAffectedByTimestop: 0
   affectedByGravity: 1
   flipTransform: 1
