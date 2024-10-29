@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Novelknight Hurt_0: 8532485571225483465
+      Novelknight Hurt_1: 7974426868024248522
+      Novelknight Hurt_2: -6989053457154512860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

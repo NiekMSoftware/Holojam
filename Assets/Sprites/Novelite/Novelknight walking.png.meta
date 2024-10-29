@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Novelknight walking_0: -6318220904657168641
+      Novelknight walking_1: 4162336011879386130
+      Novelknight walking_2: -1586306081001935799
+      Novelknight walking_3: -7322305457543275836
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
