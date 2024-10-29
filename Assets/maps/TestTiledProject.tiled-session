@@ -554,6 +554,14 @@
                 "y": 639.465329991646
             }
         },
+        "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 355.6666666666667,
+                "y": 369.66666666666663
+            }
+        },
         "HubRooms/6 - Queen's Spire/Boss room maybe.tmx": {
             "scale": 1.8703124999999998,
             "selectedLayer": 0,
@@ -569,6 +577,12 @@
                 "x": 287.84868807367803,
                 "y": 80.10631393516084
             }
+        },
+        "HubRooms/6 - Queen's Spire/PlaceholderBoss.tsx": {
+            "scaleInEditor": 1
+        },
+        "HubRooms/6 - Queen's Spire/PlaceholderThrone.tsx": {
+            "scaleInEditor": 1
         },
         "HubRooms/6 - Queen's Spire/Throne Room + Ending.tmx": {
             "scale": 0.9192329545454545,
@@ -698,18 +712,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
+        "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx",
+        "BookmarkLevels/4 - Courtyard/ThreePillars.tmx",
+        "BookmarkLevels/4 - Courtyard/HopOnPillarAndFlipGravity.tmx",
+        "BookmarkLevels/3 - Old Tunnels/Weed Killer.tmx",
+        "HubRooms/6 - Queen's Spire/PlaceholderBoss.tsx",
+        "HubRooms/6 - Queen's Spire/PlaceholderThrone.tsx",
         "BookmarkLevels/5 - Higher Class Rooms/Unlock Kill Everything.tmx",
         "BookmarkLevels/4 - Courtyard/TwoPillars.tmx",
         "BookmarkLevels/Work in Progress/Plantern.tmx",
-        "BookmarkLevels/4 - Courtyard/HopOnPillarAndFlipGravity.tmx",
         "BookmarkLevels/1 - Prison/A7 - MovingPlatforms.tmx",
-        "BookmarkLevels/Work in Progress/LoadsOfPillars.tmx",
-        "BookmarkLevels/Work in Progress/Fauna - BigButton.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/Fish.tmx",
-        "BookmarkLevels/Work in Progress/Fish.tmx",
-        "BookmarkLevels/3 - Old Tunnels/Weed Killer.tmx",
-        "BookmarkLevels/3 - Old Tunnels/GravityTime Position Boxes.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx"
+        "BookmarkLevels/Work in Progress/LoadsOfPillars.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
