@@ -164,6 +164,14 @@
                 "y": 159.84913423624207
             }
         },
+        "BookmarkLevels/4 - Courtyard/HopOnPillarAndFlipGravity.tmx": {
+            "scale": 2,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 201.75,
+                "y": 187.25
+            }
+        },
         "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx": {
             "scale": 2.4304166666666664,
             "selectedLayer": 2,
@@ -205,11 +213,11 @@
             }
         },
         "BookmarkLevels/Work in Progress/LoadsOfPillars.tmx": {
-            "scale": 2.4304166666666664,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 287.75,
+                "y": 173.75
             }
         },
         "BookmarkLevels/Work in Progress/Plantern.tmx": {
@@ -664,6 +672,9 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/4 - Courtyard/HopOnPillarAndFlipGravity.tmx",
+        "BookmarkLevels/1 - Prison/A7 - MovingPlatforms.tmx",
+        "BookmarkLevels/Work in Progress/LoadsOfPillars.tmx",
         "BookmarkLevels/Work in Progress/Fauna - BigButton.tmx",
         "BookmarkLevels/5 - Higher Class Rooms/Fish.tmx",
         "BookmarkLevels/Work in Progress/Fish.tmx",
@@ -672,9 +683,6 @@
         "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
         "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx",
         "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx",
-        "BookmarkLevels/3 - Old Tunnels/1- Gravity change tutorial.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/3 - TimestopBoxDrop.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx"
+        "BookmarkLevels/3 - Old Tunnels/1- Gravity change tutorial.tmx"
     ]
 }
