@@ -95,7 +95,10 @@ namespace HoloJam.Characters.Player.Utils
         {
             return PlayerActions.UpDown.ReadValue<float>();
         }
-
+        public bool UpdownThisFrame()
+        {
+            return PlayerActions.UpDown.WasPressedThisFrame();
+        }
         public float GetJumpValue()
         {
             return PlayerActions.Jump.ReadValue<float>();

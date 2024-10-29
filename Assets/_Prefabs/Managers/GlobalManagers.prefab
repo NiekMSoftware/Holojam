@@ -2067,6 +2067,7 @@ GameObject:
   - component: {fileID: 5789056512795430934}
   - component: {fileID: 3073278372596986159}
   - component: {fileID: 8671990905733100341}
+  - component: {fileID: 5415608448692373161}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2116,15 +2117,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.0036458336
+    x: 0
     y: 0
-    width: 0.18750001
-    height: 0.48148146
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.4375
+  orthographic size: 7.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2248,6 +2249,18 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!114 &5415608448692373161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5572090019224686069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf6b11afaed1ec46ba4c70f071f0387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5577714250368670588
 GameObject:
   m_ObjectHideFlags: 0
@@ -4801,7 +4814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5476537878881801815, guid: 057087928fba73a4eb33791a78c4314a, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5476537878881801815, guid: 057087928fba73a4eb33791a78c4314a, type: 3}
       propertyPath: 'm_ApplyToSortingLayers.Array.data[1]'
@@ -4814,6 +4827,10 @@ PrefabInstance:
     - target: {fileID: 5476537878881801815, guid: 057087928fba73a4eb33791a78c4314a, type: 3}
       propertyPath: 'm_ApplyToSortingLayers.Array.data[3]'
       value: -750581463
+      objectReference: {fileID: 0}
+    - target: {fileID: 5476537878881801815, guid: 057087928fba73a4eb33791a78c4314a, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[4]'
+      value: 1270332073
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

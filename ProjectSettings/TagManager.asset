@@ -51,6 +51,9 @@ TagManager:
   - name: Bkg
     uniqueID: 3544385833
     locked: 0
+  - name: Parallax Background
+    uniqueID: 1270332073
+    locked: 0
   - name: Ground
     uniqueID: 2768888505
     locked: 0

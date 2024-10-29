@@ -19,7 +19,7 @@ MonoBehaviour:
   <AirborneData>k__BackingField:
     <JumpTime>k__BackingField: 0.28
     <JumpForce>k__BackingField: 8
-    <AddedJumpForce>k__BackingField: 12
+    <AddedJumpForce>k__BackingField: 11.2
     <GravityMultiplier>k__BackingField: 3
     <MaxFallingSpeed>k__BackingField: 24
     <CoyoteTime>k__BackingField: 0.2

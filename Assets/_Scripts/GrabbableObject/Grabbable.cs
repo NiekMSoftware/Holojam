@@ -51,6 +51,7 @@ namespace HoloJam
         }
         public void Drop()
         {
+            mRigidBody.linearVelocity = Vector2.zero;
             OnRelease();
         }
         private void OnRelease()

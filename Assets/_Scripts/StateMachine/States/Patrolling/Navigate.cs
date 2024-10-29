@@ -35,7 +35,13 @@ namespace HoloJam.StateMachine.States
                 increment = direction.y * core.Data.GroundedData.Acceleration;
                 newYSpeed = Mathf.Clamp(Rigidbody.linearVelocityY + increment, -core.Data.GroundedData.MaxHorizontalSpeed, core.Data.GroundedData.MaxHorizontalSpeed);
             }
-            Rigidbody.linearVelocity = new Vector2(newSpeed, newYSpeed);
+            if (core.GetComponent<CorruptableObject>().Frozen)
+            {
+                Rigidbody.linearVelocity = Vector2.zero;
+            } else
+            {
+                Rigidbody.linearVelocity = new Vector2(newSpeed, newYSpeed);
+            }
         }
     }
 }

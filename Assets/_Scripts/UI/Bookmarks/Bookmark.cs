@@ -46,15 +46,15 @@ namespace HoloJam
                 }
                 return;
             } 
-            if (PlayerInput.GetUIInput().Submit.WasPressedThisFrame())
+            if (PlayerInput.Instance.GetJumpPressed() || PlayerInput.Instance.GetInteractValue() > 0)
             {
                 Use();
                 return;
             }
-            bool pressedThisFrame = PlayerInput.GetUIInput().Navigate.WasPressedThisFrame();
+            bool pressedThisFrame = PlayerInput.Instance.UpdownThisFrame();
             if (!pressedThisFrame) return;
             Bookmark bestSelectable;
-            if (PlayerInput.GetUIInput().Navigate.ReadValue<Vector2>().y > 0)
+            if (PlayerInput.Instance.GetUpDownInput() > 0)
             {
                 bestSelectable = onSelectUp;
                 while (!bestSelectable.gameObject.activeInHierarchy)
@@ -67,7 +67,7 @@ namespace HoloJam
                 }
                 
                 bestSelectable.Highlight();
-            } else if (PlayerInput.GetUIInput().Navigate.ReadValue<Vector2>().y < 0)
+            } else if (PlayerInput.Instance.GetUpDownInput() < 0)
             {
                 bestSelectable = onSelectDown;
                 while (!bestSelectable.gameObject.activeInHierarchy)

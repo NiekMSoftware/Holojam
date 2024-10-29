@@ -104,7 +104,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mBlockType: 0
-  currentToggle: 1
 --- !u!95 &6589806844869440644
 Animator:
   serializedVersion: 7
