@@ -691,6 +691,7 @@
             }
         }
     },
+    "last.imagePath": "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Holojam/Assets/maps/HubRooms/6 - Queen's Spire",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
         "BookmarkLevels/4 - Courtyard/TwoPillars.tmx"
@@ -709,5 +710,10 @@
         "BookmarkLevels/3 - Old Tunnels/Weed Killer.tmx",
         "BookmarkLevels/3 - Old Tunnels/GravityTime Position Boxes.tmx",
         "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx"
-    ]
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
 }
