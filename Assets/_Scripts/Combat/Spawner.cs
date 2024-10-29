@@ -9,6 +9,8 @@ namespace HoloJam
         private bool lastSpawnNow;
         [SerializeField]
         private Attackable parentAttackable;
+        [SerializeField]
+        private Vector2 overrideSpeed;
 
         // Update is called once per frame
         void Update()
@@ -27,6 +29,10 @@ namespace HoloJam
                     if (p != null && parentAttackable.transform.localScale.x < 0)
                     {
                         p.FlipVelocity();
+                    }
+                    if (p != null && overrideSpeed.magnitude > 0)
+                    {
+                        p.SetVelocity(overrideSpeed);
                     }
                 }
             }

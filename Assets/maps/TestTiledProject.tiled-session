@@ -31,7 +31,7 @@
         },
         "BookmarkLevels/1 - Prison/A3 - CratesAndSwitches.tmx": {
             "scale": 3.370520833333333,
-            "selectedLayer": 2,
+            "selectedLayer": 3,
             "viewCenter": {
                 "x": 271.02636214729426,
                 "y": 172.08022993479
@@ -57,16 +57,16 @@
             "scale": 3.370520833333333,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 257.97199987637913,
-                "y": 187.5081126185988
+                "x": 206.94131099916558,
+                "y": 219.55063819266311
             }
         },
         "BookmarkLevels/1 - Prison/A7 - MovingPlatforms.tmx": {
             "scale": 3.370520833333333,
-            "selectedLayer": 2,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 222.66588373458606,
+                "y": 154.5755168896993
             }
         },
         "BookmarkLevels/1 - Prison/A8 - SpitOnButton.tmx": {
@@ -79,82 +79,90 @@
         },
         "BookmarkLevels/1 - Prison/A9 - Unlock Timestop.tmx": {
             "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "selectedLayer": 4,
             "viewCenter": {
-                "x": 245.8077077602992,
-                "y": 160.80600797354518
+                "x": 304.5523379794172,
+                "y": 104.13820811570915
             }
         },
         "BookmarkLevels/2 - Lower Class Rooms/1 - TimestopTutorial.tmx": {
             "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 225.63278425070308,
+                "y": 462.8364805142628
             }
         },
         "BookmarkLevels/2 - Lower Class Rooms/2 - TimestopLineEmUp.tmx": {
             "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 217.62215285718705,
+                "y": 228.74802979262606
             }
         },
         "BookmarkLevels/2 - Lower Class Rooms/3 - TimestopBoxDrop.tmx": {
             "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 236.907006211948,
+                "y": 194.0352937540563
             }
         },
         "BookmarkLevels/2 - Lower Class Rooms/4 - TimestopWithEnemies.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "scale": 3,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 255.16666666666663,
+                "y": 169.66666666666669
             }
         },
         "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx": {
             "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 227.41292456037334,
+                "y": 142.41122477361932
             }
         },
         "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx": {
             "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 237.5003863151714,
-                "y": 179.200791173471
+                "x": 240.17059677967674,
+                "y": 240.6156318570943
             }
         },
         "BookmarkLevels/3 - Old Tunnels/1- Gravity change tutorial.tmx": {
             "scale": 3.370520833333333,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 241.3573569861236,
+                "y": 169.41001947028465
             }
         },
         "BookmarkLevels/3 - Old Tunnels/GravityTime Position Boxes.tmx": {
             "scale": 3.370520833333333,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 241.950737089347,
-                "y": 188.69487282504562
+                "x": 213.46849213462312,
+                "y": 189.8816330314924
             }
         },
         "BookmarkLevels/4 - Courtyard/1 - PillarTutorial.tmx": {
             "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 273.1031925085762,
-                "y": 186.02466236054022
+                "x": 255.89516951509722,
+                "y": 157.5424174058164
+            }
+        },
+        "BookmarkLevels/4 - Courtyard/A8 - SpitOnButton.tmx": {
+            "scale": 3.370520833333333,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 257.08192972154404,
+                "y": 200.56247488951388
             }
         },
         "BookmarkLevels/Work in Progress/Fauna - BigButton.tmx": {
@@ -198,12 +206,15 @@
             }
         },
         "BookmarkLevels/extra memory tileset.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Memory_Ground.tsx": {
+            "dynamicWrapping": true,
             "scaleInDock": 1
         },
         "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Placeholder.tsx": {
+            "dynamicWrapping": true,
             "scaleInDock": 1
         },
         "Holojam/Assets/maps/OnOff_BlockOff.tsx": {
@@ -504,6 +515,9 @@
                 "y": 159.91593781871006
             }
         },
+        "PlaceholderSprites.tsx": {
+            "dynamicWrapping": false
+        },
         "SectionA-Jail/1 - Jailer.tmx": {
             "scale": 2.8974999999999995,
             "selectedLayer": 0,
@@ -561,10 +575,12 @@
             "scaleInEditor": 16
         },
         "memory_block.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1,
             "scaleInEditor": 16
         },
         "onoff2_block.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1,
             "scaleInEditor": 16
         },
@@ -632,18 +648,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx",
+        "BookmarkLevels/4 - Courtyard/A8 - SpitOnButton.tmx",
+        "BookmarkLevels/extra memory tileset.tsx",
+        "BookmarkLevels/2 - Lower Class Rooms/4 - TimestopWithEnemies.tmx",
+        "BookmarkLevels/2 - Lower Class Rooms/3 - TimestopBoxDrop.tmx",
+        "BookmarkLevels/2 - Lower Class Rooms/1 - TimestopTutorial.tmx",
         "BookmarkLevels/Work in Progress/LoadsOfPillars.tmx",
         "BookmarkLevels/Work in Progress/Plantern.tmx",
         "BookmarkLevels/Work in Progress/Sana - SpitChange.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/4 - TimestopWithEnemies.tmx",
         "BookmarkLevels/1 - Prison/A1 - Jailer.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/1 - TimestopTutorial.tmx",
         "BookmarkLevels/2 - Lower Class Rooms/2 - TimestopLineEmUp.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/3 - TimestopBoxDrop.tmx",
-        "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx",
-        "BookmarkLevels/1 - Prison/A3 - CratesAndSwitches.tmx",
-        "BookmarkLevels/1 - Prison/A4 - Wall.tmx",
-        "BookmarkLevels/1 - Prison/A5 - Lantern.tmx"
+        "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {

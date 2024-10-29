@@ -43,11 +43,8 @@ namespace HoloJam
             Instance.isOpen = !Instance.isOpen;
             Time.timeScale = Instance.isOpen ? 0 : 1;
             Instance.bookmarkUI.SetPanelOpen(Instance.isOpen);
-            if (Instance.isOpen)
-                Instance.player.Input.EnableUIControls();
-            else
+            if (!Instance.isOpen)
             {
-                Instance.player.Input.DisableUIControls();
                 Instance.mEventSystem.SetSelectedGameObject(null);
             }
                 

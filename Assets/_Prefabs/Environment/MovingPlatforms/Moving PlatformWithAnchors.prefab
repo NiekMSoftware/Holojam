@@ -73,10 +73,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1526078791
+  m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: -2735132603627670208, guid: d463b04ede05e25428e2c0e79e1038aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 8311118624865739652}
   - component: {fileID: 5746571248121925648}
   - component: {fileID: 5434001439021491246}
+  - component: {fileID: 627448525739193738}
   m_Layer: 10
   m_Name: Platform
   m_TagString: Untagged
@@ -212,7 +213,7 @@ Transform:
   m_GameObject: {fileID: 8643581937683971025}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: -1, z: 0}
+  m_LocalPosition: {x: 1.479, y: -0.439, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -235,7 +236,8 @@ MonoBehaviour:
   AnchorPoints:
   - {fileID: 8737334277179544958}
   - {fileID: 7615304281423023307}
-  Speed: 5
+  Speed: 3.5
+  timeOffset: 0
 --- !u!61 &8311118624865739652
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -270,7 +272,7 @@ BoxCollider2D:
   m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0060167313, y: 0.03208697}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -280,7 +282,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.009451, y: 0.81549954}
   m_EdgeRadius: 0
 --- !u!50 &5746571248121925648
 Rigidbody2D:
@@ -328,3 +330,22 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &627448525739193738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8643581937683971025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58587df0e6aca6d488e31cc54b77eb49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyOnLight: 0
+  rigidBodyAffectedByTimestop: 0
+  animatorAffectedByTimestop: 1
+  affectedByGravity: 0
+  flipTransform: 0
+  reactToKill: 0
+  NegationFieldsOverlapped: 0

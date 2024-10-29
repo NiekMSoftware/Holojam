@@ -9,6 +9,7 @@ namespace HoloJam
         private bool destroyOnLight;
         [Header("Timestop effects")]
         public bool rigidBodyAffectedByTimestop = true;
+        public bool hitboxDisabledByTimestop = true;
         public bool animatorAffectedByTimestop = true;
         public bool Frozen { get { return frozen; } }
         private bool frozen;
@@ -71,7 +72,10 @@ namespace HoloJam
                 mRigidBody.bodyType = newFrozen ? RigidbodyType2D.Kinematic : RigidbodyType2D.Dynamic;
                 mRigidBody.gravityScale = newFrozen ? 0 : (invertedGravity ? -1 : 1);
             }
-            mHitboxes.ForEach(hb => hb.enabled = !newFrozen);
+            if (hitboxDisabledByTimestop)
+            {
+                mHitboxes.ForEach(hb => hb.enabled = !newFrozen);
+            }
         }
         public virtual void OnGravityInvert(bool newInvert)
         {
