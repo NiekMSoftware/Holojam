@@ -1,15 +1,15 @@
 {
-    "activeFile": "",
+    "activeFile": "BookmarkLevels/4 - Courtyard/TwoPillars.tmx",
     "expandedProjectPaths": [
-        "BookmarkLevels/6 - Random Baelz Seeds",
-        "BookmarkLevels/Work in Progress",
-        "BookmarkLevels/3 - Old Tunnels",
-        "BookmarkLevels/2 - Lower Class Rooms",
-        "BookmarkLevels/4 - Courtyard",
-        "BookmarkLevels/5 - Higher Class Rooms",
         "BookmarkLevels",
+        ".",
+        "BookmarkLevels/2 - Lower Class Rooms",
         "BookmarkLevels/1 - Prison",
-        "."
+        "BookmarkLevels/3 - Old Tunnels",
+        "BookmarkLevels/5 - Higher Class Rooms",
+        "BookmarkLevels/Work in Progress",
+        "BookmarkLevels/4 - Courtyard",
+        "BookmarkLevels/6 - Random Baelz Seeds"
     ],
     "fileStates": {
         "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx": {
@@ -172,6 +172,14 @@
                 "y": 187.25
             }
         },
+        "BookmarkLevels/4 - Courtyard/TwoPillars.tmx": {
+            "scale": 2,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 189.75,
+                "y": 149.25
+            }
+        },
         "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx": {
             "scale": 2.4304166666666664,
             "selectedLayer": 2,
@@ -224,8 +232,8 @@
             "scale": 2.4304166666666664,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 233.9105091719527,
+                "y": 191.5309446254072
             }
         },
         "BookmarkLevels/Work in Progress/Sana - SpitChange.tmx": {
@@ -669,9 +677,12 @@
     },
     "map.lastUsedFormat": "tmx",
     "openFiles": [
+        "BookmarkLevels/4 - Courtyard/TwoPillars.tmx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/4 - Courtyard/TwoPillars.tmx",
+        "BookmarkLevels/Work in Progress/Plantern.tmx",
         "BookmarkLevels/4 - Courtyard/HopOnPillarAndFlipGravity.tmx",
         "BookmarkLevels/1 - Prison/A7 - MovingPlatforms.tmx",
         "BookmarkLevels/Work in Progress/LoadsOfPillars.tmx",
@@ -681,8 +692,6 @@
         "BookmarkLevels/3 - Old Tunnels/Weed Killer.tmx",
         "BookmarkLevels/3 - Old Tunnels/GravityTime Position Boxes.tmx",
         "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx",
-        "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx",
-        "BookmarkLevels/3 - Old Tunnels/1- Gravity change tutorial.tmx"
+        "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx"
     ]
 }
