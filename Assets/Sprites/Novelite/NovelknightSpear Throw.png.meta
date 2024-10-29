@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NovelknightSpear Throw_0: 680784507551460932
+      NovelknightSpear Throw_1: -2025902177056358325
+      NovelknightSpear Throw_2: 3573498255786965605
+      NovelknightSpear Throw_3: -117819300676052440
+      NovelknightSpear Throw_4: -5163151555215849727
+      NovelknightSpear Throw_5: -3970949181142041078
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
