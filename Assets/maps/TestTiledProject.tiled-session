@@ -132,7 +132,7 @@
         },
         "BookmarkLevels/3 - Old Tunnels/GravityTime Position Boxes.tmx": {
             "scale": 2.4304166666666664,
-            "selectedLayer": 0,
+            "selectedLayer": 2,
             "viewCenter": {
                 "x": 240.08229041659524,
                 "y": 159.84913423624207
@@ -152,6 +152,22 @@
             "viewCenter": {
                 "x": 240.08229041659524,
                 "y": 159.84913423624207
+            }
+        },
+        "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 252.75,
+                "y": 150.25
             }
         },
         "BookmarkLevels/Work in Progress/Fauna - BigButton.tmx": {
@@ -625,6 +641,7 @@
             }
         }
     },
+    "map.lastUsedFormat": "tmx",
     "openFiles": [
         "BookmarkLevels/4 - Courtyard/1 - PillarTutorial.tmx",
         "BookmarkLevels/Work in Progress/Fish.tmx",
@@ -632,17 +649,17 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx",
+        "BookmarkLevels/3 - Old Tunnels/1- Gravity change tutorial.tmx",
+        "BookmarkLevels/3 - Old Tunnels/GravityTime Position Boxes.tmx",
         "BookmarkLevels/2 - Lower Class Rooms/3 - TimestopBoxDrop.tmx",
         "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx",
         "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx",
         "BookmarkLevels/2 - Lower Class Rooms/4 - TimestopWithEnemies.tmx",
         "BookmarkLevels/4 - Courtyard/1 - PillarTutorial.tmx",
-        "BookmarkLevels/3 - Old Tunnels/1- Gravity change tutorial.tmx",
         "BookmarkLevels/4 - Courtyard/A8 - SpitOnButton.tmx",
-        "BookmarkLevels/3 - Old Tunnels/GravityTime Position Boxes.tmx",
         "BookmarkLevels/1 - Prison/A4 - Wall.tmx",
         "BookmarkLevels/1 - Prison/A3 - CratesAndSwitches.tmx",
-        "BookmarkLevels/1 - Prison/A5 - Lantern.tmx",
-        "BookmarkLevels/1 - Prison/A7 - MovingPlatforms.tmx"
+        "BookmarkLevels/1 - Prison/A5 - Lantern.tmx"
     ]
 }
