@@ -144,8 +144,8 @@
             "scale": 2,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 204.25,
-                "y": 257.75
+                "x": 259.25,
+                "y": 165.75
             }
         },
         "BookmarkLevels/4 - Courtyard/1 - PillarTutorial.tmx": {
@@ -172,6 +172,14 @@
                 "y": 187.25
             }
         },
+        "BookmarkLevels/4 - Courtyard/ThreePillars.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
         "BookmarkLevels/4 - Courtyard/TwoPillars.tmx": {
             "scale": 2,
             "selectedLayer": 2,
@@ -196,12 +204,20 @@
                 "y": 159.84913423624207
             }
         },
+        "BookmarkLevels/5 - Higher Class Rooms/Unlock Kill Everything.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
         "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx": {
-            "scale": 3,
+            "scale": 2,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 278.5,
-                "y": 177.16666666666663
+                "x": 237.25,
+                "y": 152.25
             }
         },
         "BookmarkLevels/Work in Progress/Fauna - BigButton.tmx": {
@@ -681,6 +697,7 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/5 - Higher Class Rooms/Unlock Kill Everything.tmx",
         "BookmarkLevels/4 - Courtyard/TwoPillars.tmx",
         "BookmarkLevels/Work in Progress/Plantern.tmx",
         "BookmarkLevels/4 - Courtyard/HopOnPillarAndFlipGravity.tmx",
@@ -691,7 +708,6 @@
         "BookmarkLevels/Work in Progress/Fish.tmx",
         "BookmarkLevels/3 - Old Tunnels/Weed Killer.tmx",
         "BookmarkLevels/3 - Old Tunnels/GravityTime Position Boxes.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx"
+        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx"
     ]
 }
