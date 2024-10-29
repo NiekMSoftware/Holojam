@@ -1,13 +1,15 @@
 {
-    "activeFile": "memory_block.tsx",
+    "activeFile": "",
     "expandedProjectPaths": [
-        ".",
+        "BookmarkLevels/6 - Random Baelz Seeds",
+        "BookmarkLevels/Work in Progress",
+        "BookmarkLevels/3 - Old Tunnels",
         "BookmarkLevels/2 - Lower Class Rooms",
         "BookmarkLevels/4 - Courtyard",
-        "BookmarkLevels/3 - Old Tunnels",
+        "BookmarkLevels/5 - Higher Class Rooms",
         "BookmarkLevels",
-        "BookmarkLevels/Work in Progress",
-        "BookmarkLevels/1 - Prison"
+        "BookmarkLevels/1 - Prison",
+        "."
     ],
     "fileStates": {
         "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx": {
@@ -139,11 +141,11 @@
             }
         },
         "BookmarkLevels/3 - Old Tunnels/Weed Killer.tmx": {
-            "scale": 4,
+            "scale": 2,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 135.375,
-                "y": 247.375
+                "x": 204.25,
+                "y": 257.75
             }
         },
         "BookmarkLevels/4 - Courtyard/1 - PillarTutorial.tmx": {
@@ -163,6 +165,14 @@
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "BookmarkLevels/5 - Higher Class Rooms/Fish.tmx": {
             "scale": 2.4304166666666664,
             "selectedLayer": 2,
             "viewCenter": {
@@ -651,23 +661,20 @@
     },
     "map.lastUsedFormat": "tmx",
     "openFiles": [
-        "BookmarkLevels/4 - Courtyard/1 - PillarTutorial.tmx",
-        "BookmarkLevels/Work in Progress/Fish.tmx",
-        "memory_block.tsx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/Work in Progress/Fauna - BigButton.tmx",
+        "BookmarkLevels/5 - Higher Class Rooms/Fish.tmx",
+        "BookmarkLevels/Work in Progress/Fish.tmx",
+        "BookmarkLevels/3 - Old Tunnels/Weed Killer.tmx",
+        "BookmarkLevels/3 - Old Tunnels/GravityTime Position Boxes.tmx",
         "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
         "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx",
         "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx",
         "BookmarkLevels/3 - Old Tunnels/1- Gravity change tutorial.tmx",
-        "BookmarkLevels/3 - Old Tunnels/GravityTime Position Boxes.tmx",
         "BookmarkLevels/2 - Lower Class Rooms/3 - TimestopBoxDrop.tmx",
         "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/4 - TimestopWithEnemies.tmx",
-        "BookmarkLevels/4 - Courtyard/1 - PillarTutorial.tmx",
-        "BookmarkLevels/4 - Courtyard/A8 - SpitOnButton.tmx",
-        "BookmarkLevels/1 - Prison/A4 - Wall.tmx"
+        "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx"
     ]
 }
