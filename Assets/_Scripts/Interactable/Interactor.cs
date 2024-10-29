@@ -12,6 +12,7 @@ namespace HoloJam
         private Animator interactionAnimator;
         private Interactable highestInteractable;
         private PlayerInput input;
+        
         public bool HandsFree { get { return canInteract; } set { canInteract = value; } }
         private bool canInteract;
         private void Start()
@@ -51,6 +52,10 @@ namespace HoloJam
             highestInteractable = null;
             foreach(Interactable i in currentInteractables)
             {
+                if (!i.CanInteractInMidair && !basePlayer.SurroundingSensor.Grounded)
+                {
+                    continue;
+                }
                 if (i.priority > highestInteractablePriority) { 
                     highestInteractablePriority = i.priority;
                     highestInteractable = i;

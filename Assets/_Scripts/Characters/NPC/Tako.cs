@@ -22,6 +22,8 @@ namespace HoloJam.Characters.NPC
 
         private void Update()
         {
+            State.DoBranch();
+            if (performingAction) return;
             if (State.IsComplete)
             {
                 if (State == Collect)
@@ -36,7 +38,7 @@ namespace HoloJam.Characters.NPC
                     Set(Collect);
             }
 
-            State.DoBranch();
+            //State.DoBranch();
         }
 
         private void FixedUpdate()

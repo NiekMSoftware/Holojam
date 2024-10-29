@@ -10,6 +10,8 @@ namespace HoloJam
         public static WorldManager Instance;
         [SerializeField]
         private CinemachineCamera cineCamera;
+        [SerializeField]
+        private CinemachineConfiner2D confiner;
         private string homeSceneName;
         private Vector3 cachedPositionInHome;
         private Player playerRef;
@@ -36,6 +38,10 @@ namespace HoloJam
             {
                 Destroy(gameObject);
             }
+        }
+        public static void SetCameraBounds(Collider2D bounds)
+        {
+            Instance.confiner.BoundingShape2D = bounds;
         }
         public static void SetYDeathZone(float DeathZone)
         {

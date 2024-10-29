@@ -17,9 +17,9 @@ MonoBehaviour:
     <GroundDecay>k__BackingField: 0.7
     <MaxHorizontalSpeed>k__BackingField: 7
   <AirborneData>k__BackingField:
-    <JumpTime>k__BackingField: 0.35
-    <JumpForce>k__BackingField: 7
-    <AddedJumpForce>k__BackingField: 8
+    <JumpTime>k__BackingField: 0.28
+    <JumpForce>k__BackingField: 8
+    <AddedJumpForce>k__BackingField: 12
     <GravityMultiplier>k__BackingField: 3
     <MaxFallingSpeed>k__BackingField: 24
     <CoyoteTime>k__BackingField: 0.2

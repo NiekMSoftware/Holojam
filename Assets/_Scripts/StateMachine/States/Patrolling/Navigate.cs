@@ -7,7 +7,7 @@ namespace HoloJam.StateMachine.States
         public Vector2 destination;
         public float threshold = 0.1f;
         public State Animation;
-
+        public bool allowYMovement;
         public override void Enter()
         {
             Set(Animation, true);
@@ -15,7 +15,8 @@ namespace HoloJam.StateMachine.States
 
         public override void Do()
         {
-            if (Vector2.Distance(core.transform.position, destination) < threshold)
+            float dist = Vector2.Distance(core.transform.position, destination);
+            if (dist < threshold)
             {
                 IsComplete = true;
             }
@@ -28,7 +29,13 @@ namespace HoloJam.StateMachine.States
 
             float increment = direction.x * core.Data.GroundedData.Acceleration;
             float newSpeed = Mathf.Clamp(Rigidbody.linearVelocityX + increment, -core.Data.GroundedData.MaxHorizontalSpeed, core.Data.GroundedData.MaxHorizontalSpeed);
-            Rigidbody.linearVelocity = new Vector2(newSpeed, core.Body.linearVelocityY);
+            float newYSpeed = core.Body.linearVelocityY;
+            if (allowYMovement)
+            {
+                increment = direction.y * core.Data.GroundedData.Acceleration;
+                newYSpeed = Mathf.Clamp(Rigidbody.linearVelocityY + increment, -core.Data.GroundedData.MaxHorizontalSpeed, core.Data.GroundedData.MaxHorizontalSpeed);
+            }
+            Rigidbody.linearVelocity = new Vector2(newSpeed, newYSpeed);
         }
     }
 }

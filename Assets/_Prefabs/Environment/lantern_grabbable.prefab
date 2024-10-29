@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6956843302754503170}
   - component: {fileID: 1569074950615389177}
   - component: {fileID: 2749245357997915834}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grabhitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,6 +83,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   priority: 1
   interactionType: 3
+  saveIDOnInteract: 
+  CanInteractInMidair: 1
   mRigidBody: {fileID: 0}
   throwVelocityUp: {x: 0, y: 15}
   throwVelocityForward: {x: 15, y: 5}
@@ -98,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3726876617131416988}
   - component: {fileID: 3169988303238410895}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NegationHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,9 +174,17 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2080001203511944077, guid: e6efda60a9f07224db8685e8c54fabf3, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5358383294092693789, guid: e6efda60a9f07224db8685e8c54fabf3, type: 3}
       propertyPath: m_Name
       value: lantern_grabbable
+      objectReference: {fileID: 0}
+    - target: {fileID: 5358383294092693789, guid: e6efda60a9f07224db8685e8c54fabf3, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5562810809307882231, guid: e6efda60a9f07224db8685e8c54fabf3, type: 3}
       propertyPath: m_Sprite

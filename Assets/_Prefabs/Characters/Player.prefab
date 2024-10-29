@@ -296,6 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0558ca579f34b0449d54ce12a4d0055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}
   attackable: {fileID: 6762349373321213318}
 --- !u!1 &2565532839413890777
 GameObject:
@@ -363,8 +364,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: 0, y: -0.12340057}
+  m_Size: {x: 0.8, y: 1.7531989}
   m_Direction: 0
 --- !u!1 &3045371875806641811
 GameObject:
@@ -653,6 +654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dade1cfda2540b04f8c35803d2e8e855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnLight: 0
   rigidBodyAffectedByTimestop: 1
   animatorAffectedByTimestop: 1
   affectedByGravity: 1
@@ -953,6 +955,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72545c3a82238e4fb2566c4ca6baa8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}
+  runAnim: run
+  scaleAnimOnXSpeed: 1
 --- !u!1 &4234130183971290155
 GameObject:
   m_ObjectHideFlags: 0
@@ -5839,6 +5844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc34d174ecdb80e4c8e1d5a7925e2779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}
 --- !u!1 &5862000612660481761
 GameObject:
   m_ObjectHideFlags: 0
@@ -5919,6 +5925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdd1b11054e964e44b00404c4f260623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}
 --- !u!1 &6614619305772397861
 GameObject:
   m_ObjectHideFlags: 0
@@ -6029,7 +6036,7 @@ Transform:
   m_GameObject: {fileID: 7520687367536118028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.871, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6235,6 +6242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9933afdb69a35948b929ef3eb5cf946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}
 --- !u!1 &8051989576035701416
 GameObject:
   m_ObjectHideFlags: 0

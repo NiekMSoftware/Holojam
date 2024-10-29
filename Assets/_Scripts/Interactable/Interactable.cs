@@ -8,6 +8,7 @@ namespace HoloJam
         public int priority = 0;
         public InteractableType interactionType;
         public string saveIDOnInteract;
+        public bool CanInteractInMidair = true;
         public virtual void OnPerformInteraction(Player p)
         {
 

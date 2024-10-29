@@ -6,8 +6,6 @@ namespace HoloJam
     {
 
         public BlockType mBlockType;
-        [SerializeField]
-        private bool currentToggle;
         private Animator mAnimator; 
 
         private SwitchInteractable switchInteractable;
@@ -28,14 +26,12 @@ namespace HoloJam
         }
         void ToggleEvent(Player p)
         {
-            currentToggle = !currentToggle;
-            OnOffBlockManager.SetBlocksStatus(currentToggle, mBlockType);
+            OnOffBlockManager.ToggleBlockStatus(mBlockType);
             mAnimator.Play("press",0,0);
             p.PerformAction("pickup");
         }
         public void SetToggle(bool toggle)
         {
-            currentToggle = toggle;
             mAnimator.Play("press", 0, 0);
         }
 
@@ -54,8 +50,7 @@ namespace HoloJam
             if (Time.timeSinceLevelLoad - lastCollide < COLLIDE_GAP) return;
             mAnimator.Update(0);
             lastCollide = Time.timeSinceLevelLoad;
-            currentToggle = !currentToggle;
-            OnOffBlockManager.SetBlocksStatus(currentToggle, mBlockType);
+            OnOffBlockManager.ToggleBlockStatus(mBlockType);
         }
     }
 }

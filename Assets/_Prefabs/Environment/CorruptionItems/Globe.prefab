@@ -210,6 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58587df0e6aca6d488e31cc54b77eb49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnLight: 0
   rigidBodyAffectedByTimestop: 1
   animatorAffectedByTimestop: 1
   affectedByGravity: 1
@@ -279,6 +280,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   priority: 0
   interactionType: 0
+  saveIDOnInteract: 
+  CanInteractInMidair: 1
   mRigidBody: {fileID: 0}
   throwVelocityUp: {x: 0, y: 15}
   throwVelocityForward: {x: 15, y: 6}

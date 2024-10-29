@@ -5,6 +5,8 @@ namespace HoloJam
 {
     public class CorruptableObject : MonoBehaviour
     {
+        [SerializeField]
+        private bool destroyOnLight;
         [Header("Timestop effects")]
         public bool rigidBodyAffectedByTimestop = true;
         public bool animatorAffectedByTimestop = true;
@@ -29,6 +31,13 @@ namespace HoloJam
         void Start()
         {
             BaseStart();
+        }
+        private void Update()
+        {
+            if (destroyOnLight && NegationFieldsOverlapped > 0)
+            {
+                mAnimator.Play("die");
+            }
         }
         protected void BaseStart()
         {
@@ -58,6 +67,7 @@ namespace HoloJam
             if (rigidBodyAffectedByTimestop && mRigidBody != null)
             {
                 mRigidBody.linearVelocity = Vector2.zero;
+                mRigidBody.angularVelocity = 0;
                 mRigidBody.bodyType = newFrozen ? RigidbodyType2D.Kinematic : RigidbodyType2D.Dynamic;
                 mRigidBody.gravityScale = newFrozen ? 0 : (invertedGravity ? -1 : 1);
             }

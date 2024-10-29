@@ -35,6 +35,7 @@ namespace HoloJam
             {
                 extraColliderToConvertToTrigger.isTrigger = true;
             }
+            mRigidBody.angularVelocity = 0;
         }
         public void ThrowUp(bool isFacingLeft)
         {

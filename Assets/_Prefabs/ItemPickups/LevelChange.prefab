@@ -139,5 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   priority: 0
   interactionType: 2
+  saveIDOnInteract: 
+  CanInteractInMidair: 1
   returnToHome: 0
   sceneToLoad: DummyMemoryWorld

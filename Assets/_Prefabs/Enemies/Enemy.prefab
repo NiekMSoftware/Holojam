@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0558ca579f34b0449d54ce12a4d0055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}
   attackable: {fileID: 8448608428757323787}
 --- !u!1 &3449936684983954646
 GameObject:
@@ -124,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc34d174ecdb80e4c8e1d5a7925e2779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}
 --- !u!1 &4046286031624340763
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,8 +254,8 @@ MonoBehaviour:
   canBeHurt: 1
   isPlayerCharacter: 0
   myFaction: 1
-  CurrentHP: 2
-  MaxHP: 2
+  CurrentHP: 1
+  MaxHP: 1
   partSys: {fileID: 8880669266514276111}
 --- !u!212 &8089239158061020144
 SpriteRenderer:
@@ -604,6 +606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   priority: 2
   interactionType: 0
+  saveIDOnInteract: 
 --- !u!1 &4952258715614148646
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +729,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72545c3a82238e4fb2566c4ca6baa8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}
+  runAnim: run
+  scaleAnimOnXSpeed: 1
 --- !u!1 &6132361360060786088
 GameObject:
   m_ObjectHideFlags: 0
@@ -5843,7 +5849,7 @@ CapsuleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -5908,3 +5914,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdd1b11054e964e44b00404c4f260623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}

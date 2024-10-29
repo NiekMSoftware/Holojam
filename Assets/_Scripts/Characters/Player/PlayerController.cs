@@ -59,7 +59,7 @@ namespace HoloJam.Characters.Player
         {
             float jumpMod = (normalGravity ? 1 : -1);
             // Start the initial jump
-            if (input.GetJumpValue() > 0 && _coyoteTimeCounter > 0)
+            if (input.GetJumpPressed() && _coyoteTimeCounter > 0)
             {
                 _body.linearVelocityY = airborneData.JumpForce * jumpMod;
                 _coyoteTimeCounter = 0;

@@ -83,6 +83,10 @@ namespace HoloJam
                 Instance.SpecialOnOffReactors2.Add(toggleObj);
             }
         }
+        public static void ToggleBlockStatus(BlockType blockType)
+        {
+            SetBlocksStatus(blockType == BlockType.LAYER_ONE_BLUE? !Instance.blockStatus : !Instance.blockStatus2, blockType);
+        }
         public static void SetBlocksStatus(bool on, BlockType blockType)
         {
             if (blockType == BlockType.LAYER_ONE_BLUE)
