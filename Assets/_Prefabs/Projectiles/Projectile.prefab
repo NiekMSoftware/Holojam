@@ -102,7 +102,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1526078791
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 251562832856502633, guid: dbfbc912a27c00e459b1dc03982a2cef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 3
   destroyOnHit: 1
-  DestroyOnWall: 0
+  DestroyOnWall: 1
   initialVelocity: {x: 3.5, y: 0}
   velocityChange: {x: 0, y: 0}
 --- !u!114 &145227201272167864
@@ -224,6 +224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyOnLight: 0
   rigidBodyAffectedByTimestop: 1
+  hitboxDisabledByTimestop: 1
   animatorAffectedByTimestop: 1
   affectedByGravity: 0
   flipTransform: 0

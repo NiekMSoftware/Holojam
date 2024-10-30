@@ -47,6 +47,7 @@ MonoBehaviour:
   spawnObjPrefab: {fileID: 8045387532645285818, guid: 1c1bb49f63748ca43b0391b17f1a49cd, type: 3}
   spawnNow: 0
   parentAttackable: {fileID: 4178168811371227241}
+  overrideSpeed: {x: 0, y: 0}
 --- !u!1001 &5531734258119768162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111,9 +112,13 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.6684096
       objectReference: {fileID: 0}
+    - target: {fileID: 3875685664863702317, guid: 58bb35c656c0f70459d1a58e7db619e4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.008
+      objectReference: {fileID: 0}
     - target: {fileID: 4046286031624340763, guid: 58bb35c656c0f70459d1a58e7db619e4, type: 3}
       propertyPath: m_Name
-      value: YorickShooter
+      value: YorickShooter_periodic
       objectReference: {fileID: 0}
     - target: {fileID: 4673711653987696161, guid: 58bb35c656c0f70459d1a58e7db619e4, type: 3}
       propertyPath: m_Material
