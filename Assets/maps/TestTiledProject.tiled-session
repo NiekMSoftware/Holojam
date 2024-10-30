@@ -510,10 +510,20 @@
             }
         },
         "HubRooms/3 - Old Tunnels/dirt_bkg.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "HubRooms/3 - Old Tunnels/dirt_block.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "HubRooms/4 - Courtyard/Direct Middle-D2.tmx": {
+            "scale": 1.1696875,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 486.882180069463,
+                "y": 218.43441090034725
+            }
         },
         "HubRooms/4 - Courtyard/Direct Middle.tmx": {
             "scale": 1.6852604166666665,
@@ -524,11 +534,11 @@
             }
         },
         "HubRooms/4 - Courtyard/Front of door-D1.tmx": {
-            "scale": 1.8056361607142857,
-            "selectedLayer": 0,
+            "scale": 1,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 447.76462589238804,
-                "y": 160.0543931761288
+                "x": 232.5,
+                "y": 131.5
             }
         },
         "HubRooms/4 - Courtyard/Front of door.tmx": {
@@ -539,12 +549,28 @@
                 "y": 160.0543931761288
             }
         },
+        "HubRooms/4 - Courtyard/Wall Border-D3.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 569.5,
+                "y": 161.5
+            }
+        },
         "HubRooms/4 - Courtyard/Wall Border.tmx": {
             "scale": 1.6852604166666665,
             "selectedLayer": 0,
             "viewCenter": {
                 "x": 479.74781345613013,
                 "y": 160.21262787032177
+            }
+        },
+        "HubRooms/4 - Courtyard/Wall-D4.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 128.66666666666663,
+                "y": 387.33333333333337
             }
         },
         "HubRooms/4 - Courtyard/Wall.tmx": {
@@ -793,18 +819,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "HubRooms/3 - Old Tunnels/dirt_block.tsx",
         "HubRooms/3 - Old Tunnels/dirt_bkg.tsx",
-        "HubRooms/1 - Prison/CellC.tmx",
+        "HubRooms/4 - Courtyard/Wall-D4.tmx",
+        "HubRooms/4 - Courtyard/Direct Middle-D2.tmx",
+        "HubRooms/4 - Courtyard/Front of door-D1.tmx",
+        "HubRooms/3 - Old Tunnels/dirt_block.tsx",
+        "HubRooms/4 - Courtyard/Wall Border-D3.tmx",
         "HubRooms/1 - Prison/CellB.tmx",
         "HubRooms/3 - Old Tunnels/Tall Tunnel.tmx",
         "HubRooms/3 - Old Tunnels/Long Tunnel.tmx",
+        "HubRooms/1 - Prison/CellC.tmx",
         "HubRooms/1 - Prison/Warden's Office.tmx",
-        "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx",
-        "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx",
-        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx",
-        "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/B6 room.tmx"
+        "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
