@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 6398654566670239148}
   m_Layer: 8
   m_Name: PIllar
-  m_TagString: Untagged
+  m_TagString: heavy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,7 +289,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58587df0e6aca6d488e31cc54b77eb49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnLight: 0
   rigidBodyAffectedByTimestop: 1
+  hitboxDisabledByTimestop: 1
   animatorAffectedByTimestop: 1
   affectedByGravity: 1
   flipTransform: 0
@@ -407,7 +409,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1526078791
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 4269108728175869260, guid: 611aaf1828a5f9e45931029d164f8b9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

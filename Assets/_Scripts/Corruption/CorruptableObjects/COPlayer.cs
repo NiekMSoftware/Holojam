@@ -29,7 +29,7 @@ namespace HoloJam
                     Instantiate(GlobeObject, spawnPos, Quaternion.identity);
                     break;
                 case CorruptionType.BIRD:
-                    mPlayer.SetBird(true);
+                    mPlayer.ToggleBird();
                     break;
                 default:
                     break;

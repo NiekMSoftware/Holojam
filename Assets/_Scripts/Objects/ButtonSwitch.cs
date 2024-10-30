@@ -2,23 +2,23 @@ using UnityEngine;
 using HoloJam.Characters.Player;
 namespace HoloJam
 {
-    public class ButtonSwitch : MonoBehaviour, IReactToOnOffToggle
+    public class ButtonSwitch :  IReactToOnOffToggle
     {
-
-        public BlockType mBlockType;
         private Animator mAnimator; 
 
         private SwitchInteractable switchInteractable;
         private SpriteRenderer mSprite;
         private float lastCollide;
         private const float COLLIDE_GAP = 0.5f;
+        [SerializeField]
+        private bool heavySwitch = false;
         private void Start()
         {
             switchInteractable = GetComponentInChildren<SwitchInteractable>();
             mSprite = GetComponentInChildren<SpriteRenderer>();
             mAnimator = GetComponent<Animator>();
             switchInteractable.toggleEvent += ToggleEvent;
-            OnOffBlockManager.RegisterToggleObject(this, mBlockType);
+            //OnOffBlockManager.RegisterToggleObject(this, mBlockType);
         }
         private void OnDestroy()
         {
@@ -32,10 +32,13 @@ namespace HoloJam
         }
         public void SetToggle(bool toggle)
         {
-            mAnimator.Play("press", 0, 0);
+            if (mAnimator != null)
+            {
+                mAnimator.Play("press", 0, 0);
+            }
         }
 
-        public void OnToggle(bool toggleValue)
+        public override void OnToggle(bool toggleValue)
         {
             SetToggle(toggleValue);
         }
@@ -48,6 +51,7 @@ namespace HoloJam
             if (collision.attachedRigidbody.GetComponent<Player>() != null) return;
             if (mAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.95f) return;
             if (Time.timeSinceLevelLoad - lastCollide < COLLIDE_GAP) return;
+            if (heavySwitch && !collision.attachedRigidbody.gameObject.CompareTag("heavy")) return;
             mAnimator.Update(0);
             lastCollide = Time.timeSinceLevelLoad;
             OnOffBlockManager.ToggleBlockStatus(mBlockType);

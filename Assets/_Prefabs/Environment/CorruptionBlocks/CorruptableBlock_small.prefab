@@ -28,6 +28,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorruptableBlock_small
       objectReference: {fileID: 0}
+    - target: {fileID: 6802603605987459714, guid: 048758e1ced343147bf64ef1428ee3de, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802603605987459714, guid: 048758e1ced343147bf64ef1428ee3de, type: 3}
+      propertyPath: m_Size.y
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7120180099969445285, guid: 048758e1ced343147bf64ef1428ee3de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.93

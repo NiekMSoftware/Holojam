@@ -2,7 +2,7 @@ using UnityEngine;
 using HoloJam.Characters.Player;
 namespace HoloJam
 {
-    public class TimedSwitch : MonoBehaviour, IReactToOnOffToggle
+    public class TimedSwitch : IReactToOnOffToggle
     {
 
         public BlockType mBlockType;
@@ -23,7 +23,7 @@ namespace HoloJam
             switchInteractable = GetComponentInChildren<SwitchInteractable>();
             mSprite = GetComponentInChildren<SpriteRenderer>();
             switchInteractable.toggleEvent += ToggleEvent;
-            OnOffBlockManager.RegisterToggleObject(this, mBlockType);
+            //OnOffBlockManager.RegisterToggleObject(this, mBlockType);
         }
         private void OnDestroy()
         {

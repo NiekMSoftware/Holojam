@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1385780740137413788, guid: 688037c72fc687a41adc6f5519ce055c, type: 3}
       propertyPath: m_Name
-      value: LargeCrate Variant
+      value: WideCrate
       objectReference: {fileID: 0}
     - target: {fileID: 1769004811686536410, guid: 688037c72fc687a41adc6f5519ce055c, type: 3}
       propertyPath: m_LocalPosition.x

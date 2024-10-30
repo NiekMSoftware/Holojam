@@ -2,6 +2,7 @@ using HoloJam.Characters.Player;
 using HoloJam.Characters.Player.Utils;
 using NUnit.Framework.Constraints;
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace HoloJam.Platform
 {
@@ -31,6 +32,7 @@ namespace HoloJam.Platform
         private PlayerInput input;
         private BoxCollider2D mCollider;
         private CorruptableObject mCorruptable;
+        private List<Collider2D> mColliders = new List<Collider2D>();
 
         private void Start()
         {
@@ -42,6 +44,7 @@ namespace HoloJam.Platform
             if (AnchorPoints.Length > 0)
             {
                 transform.position = AnchorPoints[0].position;
+                _currentPointIndex++;
                 MovePlatform(timeOffset);
             }
         }
@@ -101,15 +104,16 @@ namespace HoloJam.Platform
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (mCollider.isTrigger) return;
+            if (collision.isTrigger) return;
             if (collision.attachedRigidbody == null) return;
             if (collision.transform.parent == null) return;
             collision.transform.parent.SetParent(transform);
+            mColliders.Add(collision);
         }
 
         private void OnTriggerStay2D(Collider2D collision)
         {
-            if (mCollider.isTrigger) return;
+            if (collision.isTrigger) return;
             if (collision.attachedRigidbody == null) return;
             input = collision.GetComponentInParent<PlayerInput>();
             Collider2D playerCol = collision.GetComponent<Collider2D>();
@@ -126,8 +130,11 @@ namespace HoloJam.Platform
         {
             if (collision.attachedRigidbody == null) return;
             if (collision.transform.parent == null) return;
-            if (collision != null)
+            if (collision != null && mColliders.Contains(collision))
+            {
+                mColliders.Remove(collision);
                 collision.transform.parent.SetParent(null);
+            }
 
             input = null;
             _effector.rotationalOffset = 0;

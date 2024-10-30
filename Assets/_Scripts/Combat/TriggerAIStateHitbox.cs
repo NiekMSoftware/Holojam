@@ -16,9 +16,7 @@ namespace HoloJam
         
         }
 
-        private void TriggerState()
-        {
-
+        private void TriggerState() { 
         }
     }
 }

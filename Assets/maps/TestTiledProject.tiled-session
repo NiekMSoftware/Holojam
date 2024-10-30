@@ -11,6 +11,7 @@
         "BookmarkLevels/1 - Prison",
         "."
     ],
+    "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
         "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx": {
             "scale": 2.4304166666666664,
@@ -173,19 +174,19 @@
             }
         },
         "BookmarkLevels/4 - Courtyard/HopOnPillarAndFlipGravity.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "scale": 1.5,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 239.28052662484166,
-                "y": 168.2232592638378
+                "x": 322.33333333333326,
+                "y": 292.66666666666663
             }
         },
         "BookmarkLevels/4 - Courtyard/ThreePillars.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 204.86448063788364,
-                "y": 164.95966869610905
+                "x": 149.25,
+                "y": 280
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx": {
@@ -197,11 +198,11 @@
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/2.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 162.88283833482708
+                "x": 326.75,
+                "y": 122
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/3.tmx": {
@@ -230,7 +231,7 @@
         },
         "BookmarkLevels/5 - Higher Class Rooms/UnlockKillEverything.tmx": {
             "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "selectedLayer": 2,
             "viewCenter": {
                 "x": 239.87390672806507,
                 "y": 159.91593781871
@@ -240,29 +241,29 @@
             "scale": 3,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 287.83333333333337,
-                "y": 170
+                "x": 283.16666666666663,
+                "y": 175.66666666666669
             }
         },
         "BookmarkLevels/6 - Random Baelz Seeds/2.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 3,
+            "scale": 4,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 247.58784806996943,
-                "y": 159.61924776709833
+                "x": 292.875,
+                "y": 147.75
             }
         },
         "BookmarkLevels/6 - Random Baelz Seeds/3.tmx": {
             "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 264.202490960225,
+                "y": 179.7941712766944
             }
         },
         "BookmarkLevels/6 - Random Baelz Seeds/4 - Fish.tmx": {
             "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "selectedLayer": 3,
             "viewCenter": {
                 "x": 239.87390672806507,
                 "y": 159.91593781871
@@ -483,11 +484,11 @@
             }
         },
         "HubRooms/3 - Old Tunnels/Long Tunnel.tmx": {
-            "scale": 1.6852604166666665,
+            "scale": 4,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 348.0174305405322,
-                "y": 189.28825292826906
+                "x": 322.625,
+                "y": 297.5
             }
         },
         "HubRooms/3 - Old Tunnels/Tall Tunnel.tmx": {
@@ -610,6 +611,14 @@
                 "y": 639.465329991646
             }
         },
+        "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx": {
+            "scale": 1.8703124999999998,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 431.7460317460318,
+                "y": 419.18128654970764
+            }
+        },
         "HubRooms/6 - Queen's Spire/Boss room maybe.tmx": {
             "scale": 1.8703124999999998,
             "selectedLayer": 0,
@@ -618,12 +627,28 @@
                 "y": 319.732664995823
             }
         },
+        "HubRooms/6 - Queen's Spire/Lore room-F2.tmx": {
+            "scale": 2.8087673611111112,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 287.84868807367803,
+                "y": 80.10631393516084
+            }
+        },
         "HubRooms/6 - Queen's Spire/Lore room.tmx": {
             "scale": 2.8087673611111112,
             "selectedLayer": 0,
             "viewCenter": {
                 "x": 287.84868807367803,
                 "y": 80.10631393516084
+            }
+        },
+        "HubRooms/6 - Queen's Spire/Throne Room + Ending-F3.tmx": {
+            "scale": 0.9192329545454545,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 879.5376580029051,
+                "y": 159.91593781871006
             }
         },
         "HubRooms/6 - Queen's Spire/Throne Room + Ending.tmx": {

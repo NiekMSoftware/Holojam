@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1526078791
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -2735132603627670208, guid: d463b04ede05e25428e2c0e79e1038aa, type: 3}
   m_Color: {r: 0.56181026, g: 0.58535105, b: 0.9528302, a: 1}
@@ -157,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7540712623742136274, guid: 14fb8dc3e6dde0944a7a3069c6b4b889, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7540712623742136274, guid: 14fb8dc3e6dde0944a7a3069c6b4b889, type: 3}
       propertyPath: m_SortingLayerID
@@ -204,4 +204,10 @@ MonoBehaviour:
   mBlockType: 0
   itemToDeactivate: {fileID: 1735840807527515790}
   triggerTODeactivate: {fileID: 4877105621445703811}
+  triggerTODeactivate2: {fileID: 8640233356701458018}
   invert: 0
+--- !u!61 &8640233356701458018 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5121073907847021925, guid: 14fb8dc3e6dde0944a7a3069c6b4b889, type: 3}
+  m_PrefabInstance: {fileID: 3529119943248681735}
+  m_PrefabAsset: {fileID: 0}
