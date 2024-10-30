@@ -236,6 +236,14 @@
                 "y": 159.84913423624207
             }
         },
+        "BookmarkLevels/5 - Higher Class Rooms/UnlockKillEverything.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
         "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx": {
             "scale": 2,
             "selectedLayer": 2,
@@ -255,6 +263,14 @@
         "BookmarkLevels/6 - Random Baelz Seeds/3.tmx": {
             "scale": 2.4304166666666664,
             "selectedLayer": 2,
+            "viewCenter": {
+                "x": 240.08229041659524,
+                "y": 159.84913423624207
+            }
+        },
+        "BookmarkLevels/6 - Random Baelz Seeds/4 - Fish.tmx": {
+            "scale": 2.4304166666666664,
+            "selectedLayer": 0,
             "viewCenter": {
                 "x": 240.08229041659524,
                 "y": 159.84913423624207
@@ -761,18 +777,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/5 - Higher Class Rooms/3.tmx",
+        "BookmarkLevels/5 - Higher Class Rooms/2.tmx",
+        "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx",
+        "BookmarkLevels/6 - Random Baelz Seeds/2.tmx",
+        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
+        "BookmarkLevels/4 - Courtyard/ThreePillars.tmx",
+        "BookmarkLevels/4 - Courtyard/HopOnPillarAndFlipGravity.tmx",
+        "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx",
         "BookmarkLevels/3 - Old Tunnels/UnlockPillar.tmx",
         "BookmarkLevels/6 - Random Baelz Seeds/3.tmx",
         "BookmarkLevels/6 - Random Baelz Seeds/4.tmx",
-        "jail_wall.tsx",
-        "BookmarkLevels/5 - Higher Class Rooms/3.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/2.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/2.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx",
-        "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx",
-        "BookmarkLevels/3 - Old Tunnels/Weed Killer.tmx",
-        "BookmarkLevels/Work in Progress/Plantern.tmx"
+        "jail_wall.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
