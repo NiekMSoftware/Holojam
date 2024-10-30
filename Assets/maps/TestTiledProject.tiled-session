@@ -2,14 +2,14 @@
     "activeFile": "BookmarkLevels/6 - Random Baelz Seeds/3.tmx",
     "expandedProjectPaths": [
         "BookmarkLevels/6 - Random Baelz Seeds",
-        "BookmarkLevels/3 - Old Tunnels",
-        "BookmarkLevels/2 - Lower Class Rooms",
-        "BookmarkLevels",
-        "BookmarkLevels/4 - Courtyard",
-        "HubRooms",
+        ".",
         "BookmarkLevels/5 - Higher Class Rooms",
-        "BookmarkLevels/Work in Progress",
-        "."
+        "BookmarkLevels/4 - Courtyard",
+        "BookmarkLevels/1 - Prison",
+        "BookmarkLevels",
+        "BookmarkLevels/2 - Lower Class Rooms",
+        "BookmarkLevels/3 - Old Tunnels",
+        "HubRooms"
     ],
     "fileStates": {
         "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx": {
@@ -262,7 +262,7 @@
         },
         "BookmarkLevels/6 - Random Baelz Seeds/3.tmx": {
             "scale": 2.4304166666666664,
-            "selectedLayer": 4,
+            "selectedLayer": 3,
             "viewCenter": {
                 "x": 236.3792216698097,
                 "y": 168.0781758957655
@@ -778,8 +778,8 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "BookmarkLevels/5 - Higher Class Rooms/3.tmx",
         "BookmarkLevels/6 - Random Baelz Seeds/3.tmx",
+        "BookmarkLevels/5 - Higher Class Rooms/3.tmx",
         "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx",
         "BookmarkLevels/5 - Higher Class Rooms/2.tmx",
         "BookmarkLevels/6 - Random Baelz Seeds/2.tmx",
