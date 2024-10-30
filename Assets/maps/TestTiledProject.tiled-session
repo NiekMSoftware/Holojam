@@ -270,10 +270,10 @@
         },
         "BookmarkLevels/6 - Random Baelz Seeds/4 - Fish.tmx": {
             "scale": 2.4304166666666664,
-            "selectedLayer": 0,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 215.80661752100121,
+                "y": 172.19269672552718
             }
         },
         "BookmarkLevels/6 - Random Baelz Seeds/4.tmx": {
@@ -777,6 +777,8 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/5 - Higher Class Rooms/UnlockKillEverything.tmx",
+        "BookmarkLevels/6 - Random Baelz Seeds/4 - Fish.tmx",
         "BookmarkLevels/5 - Higher Class Rooms/3.tmx",
         "BookmarkLevels/5 - Higher Class Rooms/2.tmx",
         "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx",
@@ -786,9 +788,7 @@
         "BookmarkLevels/4 - Courtyard/HopOnPillarAndFlipGravity.tmx",
         "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx",
         "BookmarkLevels/3 - Old Tunnels/UnlockPillar.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/3.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/4.tmx",
-        "jail_wall.tsx"
+        "BookmarkLevels/6 - Random Baelz Seeds/3.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
