@@ -518,11 +518,11 @@
             "scaleInEditor": 1
         },
         "HubRooms/4 - Courtyard/Direct Middle-D2.tmx": {
-            "scale": 1.1696875,
+            "scale": 0.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 486.882180069463,
-                "y": 218.43441090034725
+                "x": 309,
+                "y": 281
             }
         },
         "HubRooms/4 - Courtyard/Direct Middle.tmx": {
@@ -566,11 +566,11 @@
             }
         },
         "HubRooms/4 - Courtyard/Wall-D4.tmx": {
-            "scale": 0.75,
+            "scale": 0.33,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 128.66666666666663,
-                "y": 387.33333333333337
+                "x": 498.4848484848485,
+                "y": 619.6969696969696
             }
         },
         "HubRooms/4 - Courtyard/Wall.tmx": {
@@ -582,75 +582,75 @@
             }
         },
         "HubRooms/5 - Higher Class Rooms/E2 room.tmx": {
-            "scale": 3.370520833333333,
+            "scale": 2,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 228.00630466359678,
-                "y": 227.8579596377909
+                "x": 242.25,
+                "y": 171.25
             }
         },
         "HubRooms/5 - Higher Class Rooms/E3 room.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 243.75,
+                "y": 154.25
             }
         },
         "HubRooms/5 - Higher Class Rooms/E4 room.tmx": {
-            "scale": 3.370520833333333,
+            "scale": 0.75,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 644.6666666666667,
+                "y": 215.33333333333337
             }
         },
         "HubRooms/5 - Higher Class Rooms/E5 room.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 216.25,
+                "y": 201.75
             }
         },
         "HubRooms/5 - Higher Class Rooms/E6 room.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "scale": 1.5,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 244.99999999999997,
+                "y": 218.33333333333334
             }
         },
         "HubRooms/5 - Higher Class Rooms/E7 room.tmx": {
-            "scale": 3.370520833333333,
+            "scale": 0.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 231,
+                "y": 361
             }
         },
         "HubRooms/5 - Higher Class Rooms/E8 room.tmx": {
-            "scale": 3.370520833333333,
+            "scale": 0.75,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 72.66666666666663,
+                "y": 370
             }
         },
         "HubRooms/5 - Higher Class Rooms/E9 room.tmx": {
-            "scale": 3.370520833333333,
+            "scale": 0.33,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 843.9393939393939,
+                "y": 265.1515151515151
             }
         },
         "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx": {
-            "scale": 0.9351562499999999,
-            "selectedLayer": 0,
+            "scale": 0.5,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 720.200501253133,
-                "y": 639.465329991646
+                "x": 591,
+                "y": 369
             }
         },
         "HubRooms/6 - Queen's Spire/Boss room maybe.tmx": {
@@ -819,18 +819,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "HubRooms/3 - Old Tunnels/dirt_bkg.tsx",
+        "HubRooms/5 - Higher Class Rooms/E6 room.tmx",
+        "HubRooms/5 - Higher Class Rooms/E5 room.tmx",
+        "HubRooms/5 - Higher Class Rooms/E3 room.tmx",
+        "HubRooms/5 - Higher Class Rooms/E2 room.tmx",
+        "HubRooms/5 - Higher Class Rooms/E9 room.tmx",
+        "HubRooms/5 - Higher Class Rooms/E8 room.tmx",
+        "HubRooms/5 - Higher Class Rooms/E7 room.tmx",
+        "HubRooms/5 - Higher Class Rooms/E4 room.tmx",
+        "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx",
         "HubRooms/4 - Courtyard/Wall-D4.tmx",
         "HubRooms/4 - Courtyard/Direct Middle-D2.tmx",
-        "HubRooms/4 - Courtyard/Front of door-D1.tmx",
-        "HubRooms/3 - Old Tunnels/dirt_block.tsx",
-        "HubRooms/4 - Courtyard/Wall Border-D3.tmx",
-        "HubRooms/1 - Prison/CellB.tmx",
-        "HubRooms/3 - Old Tunnels/Tall Tunnel.tmx",
-        "HubRooms/3 - Old Tunnels/Long Tunnel.tmx",
-        "HubRooms/1 - Prison/CellC.tmx",
-        "HubRooms/1 - Prison/Warden's Office.tmx",
-        "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx"
+        "HubRooms/3 - Old Tunnels/dirt_bkg.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
