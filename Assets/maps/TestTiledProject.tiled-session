@@ -203,8 +203,8 @@
             "scale": 3.370520833333333,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 162.88283833482708
+                "x": 239.87390672806504,
+                "y": 162.73449330902122
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/3.tmx": {
@@ -212,7 +212,7 @@
             "selectedLayer": 0,
             "viewCenter": {
                 "x": 220.25,
-                "y": 203
+                "y": 202.75
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/Fish.tmx": {
@@ -566,11 +566,11 @@
             }
         },
         "HubRooms/4 - Courtyard/Wall-D4.tmx": {
-            "scale": 0.33,
+            "scale": 0.75,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 498.4848484848485,
-                "y": 619.6969696969696
+                "x": 566,
+                "y": 364.6666666666667
             }
         },
         "HubRooms/4 - Courtyard/Wall.tmx": {
@@ -849,18 +849,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/5 - Higher Class Rooms/3.tmx",
+        "BookmarkLevels/5 - Higher Class Rooms/2.tmx",
+        "HubRooms/4 - Courtyard/Wall-D4.tmx",
+        "PlaceholderSprites.tsx",
         "HubRooms/6 - Queen's Spire/Throne Room + Ending-F3.tmx",
         "HubRooms/6 - Queen's Spire/Lore room-F2.tmx",
         "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx",
         "corrupted_wall.tsx",
         "corrupted_carpet.tsx",
-        "PlaceholderSprites.tsx",
         "HubRooms/5 - Higher Class Rooms/E6 room.tmx",
         "HubRooms/5 - Higher Class Rooms/E5 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E3 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E2 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E9 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E8 room.tmx"
+        "HubRooms/5 - Higher Class Rooms/E3 room.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
