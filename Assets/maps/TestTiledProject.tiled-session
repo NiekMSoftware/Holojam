@@ -1,15 +1,15 @@
 {
-    "activeFile": "",
+    "activeFile": "BookmarkLevels/6 - Random Baelz Seeds/3.tmx",
     "expandedProjectPaths": [
-        "HubRooms/6 - Queen's Spire",
-        "BookmarkLevels/Work in Progress",
+        "BookmarkLevels/6 - Random Baelz Seeds",
+        "BookmarkLevels/3 - Old Tunnels",
+        "BookmarkLevels/2 - Lower Class Rooms",
         "BookmarkLevels",
+        "BookmarkLevels/4 - Courtyard",
         "HubRooms",
         "BookmarkLevels/5 - Higher Class Rooms",
-        "BookmarkLevels/2 - Lower Class Rooms",
-        "BookmarkLevels/3 - Old Tunnels",
-        ".",
-        "BookmarkLevels/6 - Random Baelz Seeds"
+        "BookmarkLevels/Work in Progress",
+        "."
     ],
     "fileStates": {
         "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx": {
@@ -262,10 +262,10 @@
         },
         "BookmarkLevels/6 - Random Baelz Seeds/3.tmx": {
             "scale": 2.4304166666666664,
-            "selectedLayer": 2,
+            "selectedLayer": 4,
             "viewCenter": {
-                "x": 240.08229041659524,
-                "y": 159.84913423624207
+                "x": 236.3792216698097,
+                "y": 168.0781758957655
             }
         },
         "BookmarkLevels/6 - Random Baelz Seeds/4 - Fish.tmx": {
@@ -774,9 +774,12 @@
     "last.imagePath": "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Holojam/Assets/maps/HubRooms/6 - Queen's Spire",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
+        "BookmarkLevels/6 - Random Baelz Seeds/3.tmx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/6 - Random Baelz Seeds/3.tmx",
+        "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx",
         "BookmarkLevels/5 - Higher Class Rooms/2.tmx",
         "BookmarkLevels/5 - Higher Class Rooms/3.tmx",
         "BookmarkLevels/6 - Random Baelz Seeds/2.tmx",
@@ -786,9 +789,7 @@
         "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
         "BookmarkLevels/4 - Courtyard/ThreePillars.tmx",
         "BookmarkLevels/4 - Courtyard/HopOnPillarAndFlipGravity.tmx",
-        "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx",
-        "BookmarkLevels/3 - Old Tunnels/UnlockPillar.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/3.tmx"
+        "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
