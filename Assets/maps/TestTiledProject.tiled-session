@@ -406,11 +406,11 @@
             }
         },
         "HubRooms/1 - Prison/Warden's Office.tmx": {
-            "scale": 2,
-            "selectedLayer": 0,
+            "scale": 1.5,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 232.75,
-                "y": 129.75
+                "x": 179.66666666666663,
+                "y": 69
             }
         },
         "HubRooms/2 - Lower Class Rooms/45 to 67 Bridger.tmx": {
@@ -430,67 +430,67 @@
             }
         },
         "HubRooms/2 - Lower Class Rooms/B3 room.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "scale": 1.5,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 270.33333333333337,
+                "y": 239
             }
         },
         "HubRooms/2 - Lower Class Rooms/B4 room.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "scale": 1.5,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 206.33333333333331,
+                "y": 188.33333333333334
             }
         },
         "HubRooms/2 - Lower Class Rooms/B5 room.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "scale": 1.5,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 178.33333333333331,
+                "y": 177.66666666666669
             }
         },
         "HubRooms/2 - Lower Class Rooms/B6 room.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 234.75,
+                "y": 153.25
             }
         },
         "HubRooms/2 - Lower Class Rooms/B7 room.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "scale": 1.5,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 234.99999999999997,
+                "y": 133
             }
         },
         "HubRooms/2 - Lower Class Rooms/Great Hall.tmx": {
-            "scale": 1.1235069444444443,
-            "selectedLayer": 0,
+            "scale": 1,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 719.6217201841952,
-                "y": 286.60258985690893
+                "x": 916.5,
+                "y": 209.5
             }
         },
         "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx": {
-            "scale": 1.6852604166666665,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 479.74781345613013,
-                "y": 159.6192477670983
+                "x": 278.75,
+                "y": 79.75
             }
         },
         "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx": {
-            "scale": 5.05578125,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 159.91593781871,
-                "y": 107.99517878666131
+                "x": 131.75,
+                "y": 87.75
             }
         },
         "HubRooms/3 - Old Tunnels/Long Tunnel.tmx": {
@@ -787,18 +787,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx",
-        "HubRooms/1 - Prison/CellB.tmx",
-        "BookmarkLevels/1 - Prison/A5 - Lantern.tmx",
-        "BookmarkLevels/1 - Prison/A6 - Spitters.tmx",
-        "Carpet.tsx",
-        "Checkboard tileset.tsx",
-        "corrupted_carpet.tsx",
-        "corrupted_wall.tsx",
-        "NiceWall.tsx",
         "Timberframe Wallstileset.tsx",
-        "BookmarkLevels/3 - Old Tunnels/UnlockPillar.tmx",
-        "HubRooms/2 - Lower Class Rooms/45 to 67 Bridger.tmx"
+        "NiceWall.tsx",
+        "Checkboard tileset.tsx",
+        "Carpet.tsx",
+        "corrupted_wall.tsx",
+        "corrupted_carpet.tsx",
+        "PlaceholderSprites.tsx",
+        "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx",
+        "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx",
+        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx",
+        "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B6 room.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
