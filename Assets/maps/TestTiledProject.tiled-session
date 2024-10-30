@@ -216,8 +216,8 @@
             "scale": 2,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 241.25,
-                "y": 170.25
+                "x": 218.25,
+                "y": 144.25
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/Fish.tmx": {
@@ -777,12 +777,12 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/5 - Higher Class Rooms/2.tmx",
+        "BookmarkLevels/5 - Higher Class Rooms/3.tmx",
+        "BookmarkLevels/6 - Random Baelz Seeds/2.tmx",
         "BookmarkLevels/5 - Higher Class Rooms/UnlockKillEverything.tmx",
         "BookmarkLevels/6 - Random Baelz Seeds/4 - Fish.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/3.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/2.tmx",
         "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/2.tmx",
         "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
         "BookmarkLevels/4 - Courtyard/ThreePillars.tmx",
         "BookmarkLevels/4 - Courtyard/HopOnPillarAndFlipGravity.tmx",
