@@ -23,6 +23,10 @@ namespace HoloJam.Characters.Player
         private bool birdMode = false;
         private COPlayer corruptObj;
         private Interactor mInteractor;
+        public void ToggleBird()
+        {
+            SetBird(!birdMode);
+        }
         public void SetBird(bool bird)
         {
             birdMode = bird;
@@ -67,10 +71,10 @@ namespace HoloJam.Characters.Player
             if (PauseManager.IsPaused) return;
 
             TEMPActivatePower();
-            if (birdMode && Input.GetInteractValue() > 0)
-            {
-                SetBird(false);
-            }
+            //if (birdMode && Input.GetInteractValue() > 0)
+            //{
+            //    SetBird(false);
+            //}
             // Handle state machine
             SelectState();
             Machine.CurrentState.Do();

@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0558ca579f34b0449d54ce12a4d0055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}
   attackable: {fileID: 8448608428757323787}
 --- !u!1 &3449936684983954646
 GameObject:
@@ -124,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc34d174ecdb80e4c8e1d5a7925e2779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}
 --- !u!1 &4046286031624340763
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,8 +254,8 @@ MonoBehaviour:
   canBeHurt: 1
   isPlayerCharacter: 0
   myFaction: 1
-  CurrentHP: 2
-  MaxHP: 2
+  CurrentHP: 1
+  MaxHP: 1
   partSys: {fileID: 8880669266514276111}
 --- !u!212 &8089239158061020144
 SpriteRenderer:
@@ -363,7 +365,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58587df0e6aca6d488e31cc54b77eb49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnLight: 0
   rigidBodyAffectedByTimestop: 1
+  hitboxDisabledByTimestop: 1
   animatorAffectedByTimestop: 1
   affectedByGravity: 1
   flipTransform: 1
@@ -443,7 +447,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1526078791
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -7555997330452051463, guid: 35db936640e95c941b597f0bc00bf3f5, type: 3}
   m_Color: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 1}
@@ -578,7 +582,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.24248889}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -588,7 +592,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.5150222}
   m_EdgeRadius: 0
 --- !u!114 &8951606523814873950
 MonoBehaviour:
@@ -604,6 +608,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   priority: 2
   interactionType: 0
+  saveIDOnInteract: 
+  CanInteractInMidair: 1
 --- !u!1 &4952258715614148646
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +732,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72545c3a82238e4fb2566c4ca6baa8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}
+  runAnim: run
+  scaleAnimOnXSpeed: 1
 --- !u!1 &6132361360060786088
 GameObject:
   m_ObjectHideFlags: 0
@@ -5534,7 +5543,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1526078791
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -5843,7 +5852,7 @@ CapsuleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -5908,3 +5917,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdd1b11054e964e44b00404c4f260623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}

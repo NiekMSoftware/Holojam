@@ -21,7 +21,7 @@ namespace HoloJam
         private List<IReactToOnOffToggle> SpecialOnOffReactors = new List<IReactToOnOffToggle>();
         private List<IReactToOnOffToggle> SpecialOnOffReactors2 = new List<IReactToOnOffToggle>();
 
-        private bool toRefreshOnOff = false;
+        public bool toRefreshOnOff = false;
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -46,7 +46,7 @@ namespace HoloJam
                 NewSceneUpdate();
             }
         }
-        void OnNewSceneLoaded(Scene scene, LoadSceneMode mode)
+        public void OnNewSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             toRefreshOnOff = true;
             
@@ -70,6 +70,17 @@ namespace HoloJam
             defaultOffBlocks = new List<GameObject>(GameObject.FindGameObjectsWithTag("onoff-defaultoff"));
             defaultOn2Blocks = new List<GameObject>(GameObject.FindGameObjectsWithTag("onoff2-defaulton"));
             defaultOff2Blocks = new List<GameObject>(GameObject.FindGameObjectsWithTag("onoff2-defaultoff"));
+            IReactToOnOffToggle [] allToggles = GameObject.FindObjectsOfType<IReactToOnOffToggle>();
+            foreach (IReactToOnOffToggle onOffObj in allToggles)
+            {
+                if (onOffObj.mBlockType == BlockType.LAYER_ONE_BLUE)
+                {
+                    SpecialOnOffReactors.Add(onOffObj);
+                } else
+                {
+                    SpecialOnOffReactors2.Add(onOffObj);
+                }
+            }
             SetBlocksStatus(blockStatus,BlockType.LAYER_ONE_BLUE);
             SetBlocksStatus(blockStatus2, BlockType.LAYER_TWO_PURPLE);
         }
@@ -82,6 +93,10 @@ namespace HoloJam
             {
                 Instance.SpecialOnOffReactors2.Add(toggleObj);
             }
+        }
+        public static void ToggleBlockStatus(BlockType blockType)
+        {
+            SetBlocksStatus(blockType == BlockType.LAYER_ONE_BLUE? !Instance.blockStatus : !Instance.blockStatus2, blockType);
         }
         public static void SetBlocksStatus(bool on, BlockType blockType)
         {

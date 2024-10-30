@@ -8,6 +8,7 @@ TagManager:
   - onoff-defaulton
   - onoff2-defaulton
   - onoff2-defaultoff
+  - heavy
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Ground
   - Foreground
   - Platform
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -50,6 +51,9 @@ TagManager:
     locked: 0
   - name: Bkg
     uniqueID: 3544385833
+    locked: 0
+  - name: Parallax Background
+    uniqueID: 1270332073
     locked: 0
   - name: Ground
     uniqueID: 2768888505

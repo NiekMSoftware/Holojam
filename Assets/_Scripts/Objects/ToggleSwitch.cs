@@ -3,10 +3,10 @@ using HoloJam.Characters.Player;
 
 namespace HoloJam
 {
-    public class ToggleSwitch : MonoBehaviour, IReactToOnOffToggle 
+    public class ToggleSwitch :  IReactToOnOffToggle 
     { 
 
-        public BlockType mBlockType;
+        
         [SerializeField]
         private bool currentToggle;
         [SerializeField]
@@ -21,7 +21,7 @@ namespace HoloJam
             switchInteractable = GetComponentInChildren<SwitchInteractable>();
             mSprite = GetComponentInChildren<SpriteRenderer>();
             switchInteractable.toggleEvent += ToggleEvent;
-            OnOffBlockManager.RegisterToggleObject(this, mBlockType);
+            //OnOffBlockManager.RegisterToggleObject(this, mBlockType);
         }
         private void OnDestroy()
         {
@@ -35,11 +35,12 @@ namespace HoloJam
         }
         public void SetToggle(bool toggle)
         {
+            if (mSprite == null) return;
             currentToggle = toggle;
             mSprite.sprite = toggle ? onSprite : offSprite;
         }
 
-        public void OnToggle(bool toggleValue)
+        public override void OnToggle(bool toggleValue)
         {
             SetToggle(toggleValue);
         }

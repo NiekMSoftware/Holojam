@@ -9,6 +9,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3611834764092868728, guid: 13a790c3c05268c41bbcc5bb1ee001c8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3611834764092868728, guid: 13a790c3c05268c41bbcc5bb1ee001c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.018778
       objectReference: {fileID: 0}
@@ -104,7 +108,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mBlockType: 0
-  currentToggle: 0
 --- !u!95 &6589806844869440644
 Animator:
   serializedVersion: 7

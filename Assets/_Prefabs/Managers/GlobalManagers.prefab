@@ -243,10 +243,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3797879237620836101}
-  - component: {fileID: 976860697736093224}
   - component: {fileID: 217249691253508643}
   - component: {fileID: 2873689526238026073}
   - component: {fileID: 8689077647515572233}
+  - component: {fileID: 976860697736093224}
   - component: {fileID: 6647562445546317328}
   m_Layer: 0
   m_Name: GlobalManagers
@@ -277,18 +277,6 @@ Transform:
   - {fileID: 7572281623834862594}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &976860697736093224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913585196511369523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 528e6604df9817a409e3b40d212ffccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &217249691253508643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,6 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cineCamera: {fileID: 4989468557895232401}
+  confiner: {fileID: 1523549120883773047}
   roomNameAnimator: {fileID: 4175155182063234835}
   bigZoneName: {fileID: 4192534066835057264}
   smallZoneName: {fileID: 3238014238149738362}
@@ -335,6 +324,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockStatus: 1
+--- !u!114 &976860697736093224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913585196511369523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528e6604df9817a409e3b40d212ffccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6647562445546317328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2066,6 +2067,7 @@ GameObject:
   - component: {fileID: 5789056512795430934}
   - component: {fileID: 3073278372596986159}
   - component: {fileID: 8671990905733100341}
+  - component: {fileID: 5415608448692373161}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2115,15 +2117,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.06614584
+    x: 0
     y: 0
-    width: 0.18750001
-    height: 1.1962963
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.4375
+  orthographic size: 7.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2247,6 +2249,18 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!114 &5415608448692373161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5572090019224686069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf6b11afaed1ec46ba4c70f071f0387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5577714250368670588
 GameObject:
   m_ObjectHideFlags: 0
@@ -3920,6 +3934,7 @@ GameObject:
   - component: {fileID: 4989468557895232401}
   - component: {fileID: 7785693931391566629}
   - component: {fileID: 7111695484677665145}
+  - component: {fileID: 1523549120883773047}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: Untagged
@@ -4016,6 +4031,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8a05de0ac134f4f9d01bef6b9da077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1523549120883773047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8989057136864681774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoundingShape2D: {fileID: 0}
+  Damping: 0.5
+  SlowingDistance: 5
+  OversizeWindow:
+    Enabled: 0
+    MaxWindowSize: 0
+    Padding: 0
+  m_LegacyMaxWindowSize: -2
 --- !u!1001 &2627820487473363652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4779,7 +4814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5476537878881801815, guid: 057087928fba73a4eb33791a78c4314a, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5476537878881801815, guid: 057087928fba73a4eb33791a78c4314a, type: 3}
       propertyPath: 'm_ApplyToSortingLayers.Array.data[1]'
@@ -4792,6 +4827,10 @@ PrefabInstance:
     - target: {fileID: 5476537878881801815, guid: 057087928fba73a4eb33791a78c4314a, type: 3}
       propertyPath: 'm_ApplyToSortingLayers.Array.data[3]'
       value: -750581463
+      objectReference: {fileID: 0}
+    - target: {fileID: 5476537878881801815, guid: 057087928fba73a4eb33791a78c4314a, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[4]'
+      value: 1270332073
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

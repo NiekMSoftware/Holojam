@@ -2,8 +2,9 @@ using UnityEngine;
 
 namespace HoloJam
 {
-    public interface IReactToOnOffToggle
+    public class IReactToOnOffToggle : MonoBehaviour
     {
-        public void OnToggle(bool toggleValue);
+        public BlockType mBlockType;
+        public virtual void OnToggle(bool toggleValue) { }
     }
 }

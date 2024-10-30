@@ -163,6 +163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   priority: 0
   interactionType: 4
+  saveIDOnInteract: 
+  CanInteractInMidair: 1
 --- !u!1 &8528325513079136945
 GameObject:
   m_ObjectHideFlags: 0

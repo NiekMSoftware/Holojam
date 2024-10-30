@@ -32,6 +32,11 @@ namespace HoloJam
             initialVelocity = new Vector2(-initialVelocity.x, initialVelocity.y);
             currentVelocity = new Vector2(-currentVelocity.x, currentVelocity.y);
         }
+        public void SetVelocity(Vector2 newVel)
+        {
+            initialVelocity = newVel;
+            currentVelocity = newVel;
+        }
         private void Update()
         {
             if (coObject != null && coObject.Frozen)
@@ -63,6 +68,7 @@ namespace HoloJam
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.isTrigger) return;
+            if (collision.attachedRigidbody != null && collision.attachedRigidbody.GetComponent<Attackable>() != null) return;
             if (DestroyOnWall) Destroy(gameObject);
         }
     }

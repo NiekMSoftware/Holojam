@@ -77,8 +77,10 @@ namespace HoloJam.StateMachine.States
 
         public void CheckForTarget()
         {
+            if (Targets == null) return;
             foreach (Transform t in Targets)
             {
+                if (t == null) continue;
                 if (InVision(t.position) && t.gameObject.activeSelf)
                 {
                     Target = t;

@@ -13,6 +13,7 @@ namespace HoloJam.StateMachine
         protected float startTime;
         public float RunTime => Time.time - startTime;
 
+        [SerializeField]
         // blackboard variables
         protected Core core;
         protected Rigidbody2D Rigidbody => core.Body;

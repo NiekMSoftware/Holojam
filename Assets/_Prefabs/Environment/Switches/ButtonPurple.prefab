@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1829863502177587458, guid: 28365f507cc8ef9478cf8b4ccfdf99b4, type: 3}
+      propertyPath: CanInteractInMidair
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6048120115365317911, guid: 28365f507cc8ef9478cf8b4ccfdf99b4, type: 3}
       propertyPath: m_Name
       value: ButtonPurple
