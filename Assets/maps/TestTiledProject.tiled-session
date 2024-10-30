@@ -1,15 +1,18 @@
 {
-    "activeFile": "",
+    "activeFile": "HubRooms/1 - Prison/CellB.tmx",
     "expandedProjectPaths": [
-        "BookmarkLevels/6 - Random Baelz Seeds",
-        "BookmarkLevels/Work in Progress",
-        "BookmarkLevels/3 - Old Tunnels",
-        "BookmarkLevels/2 - Lower Class Rooms",
-        "BookmarkLevels/4 - Courtyard",
+        "HubRooms/1 - Prison",
+        "HubRooms/2 - Lower Class Rooms",
+        "BookmarkLevels/1 - Prison",
+        ".",
         "BookmarkLevels/5 - Higher Class Rooms",
         "BookmarkLevels",
-        "BookmarkLevels/1 - Prison",
-        "."
+        "BookmarkLevels/2 - Lower Class Rooms",
+        "BookmarkLevels/Work in Progress",
+        "BookmarkLevels/4 - Courtyard",
+        "BookmarkLevels/3 - Old Tunnels",
+        "BookmarkLevels/6 - Random Baelz Seeds",
+        "HubRooms"
     ],
     "fileStates": {
         "BookmarkLevels/1 - Prison/A2 - Yoricks.tmx": {
@@ -192,8 +195,8 @@
             "scale": 2.4304166666666664,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 239.25938625064288,
-                "y": 212.30927481570376
+                "x": 427.70444025372876,
+                "y": 214.57226127207272
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/2.tmx": {
@@ -336,6 +339,14 @@
         "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/tiles/placeholders.tsx": {
             "scaleInDock": 1
         },
+        "Carpet.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 11
+        },
+        "Checkboard tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 11
+        },
         "Holojam/Assets/maps/OnOff_BlockOff.tsx": {
             "scaleInDock": 1
         },
@@ -366,8 +377,8 @@
             "scale": 3,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 390.5,
-                "y": 178.83333333333331
+                "x": 230.16666666666669,
+                "y": 177.16666666666663
             }
         },
         "HubRooms/1 - Prison/CellC.tmx": {
@@ -634,6 +645,10 @@
                 "y": 159.91593781871006
             }
         },
+        "NiceWall.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 11
+        },
         "PlaceholderSprites.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 2
@@ -669,6 +684,18 @@
                 "x": 219.99567327008066,
                 "y": 147.45495565101837
             }
+        },
+        "Timberframe Wallstileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 11
+        },
+        "corrupted_carpet.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 11
+        },
+        "corrupted_wall.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 11
         },
         "hubtemplate.tmx": {
             "scale": 3,
@@ -750,21 +777,28 @@
     "last.imagePath": "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Tiles",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
+        "Carpet.tsx",
+        "Checkboard tileset.tsx",
+        "corrupted_carpet.tsx",
+        "corrupted_wall.tsx",
+        "NiceWall.tsx",
+        "Timberframe Wallstileset.tsx",
+        "HubRooms/1 - Prison/CellB.tmx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx",
+        "HubRooms/1 - Prison/CellB.tmx",
+        "BookmarkLevels/1 - Prison/A5 - Lantern.tmx",
+        "BookmarkLevels/1 - Prison/A6 - Spitters.tmx",
+        "Carpet.tsx",
+        "Checkboard tileset.tsx",
+        "corrupted_carpet.tsx",
+        "corrupted_wall.tsx",
+        "NiceWall.tsx",
+        "Timberframe Wallstileset.tsx",
         "BookmarkLevels/3 - Old Tunnels/UnlockPillar.tmx",
-        "HubRooms/2 - Lower Class Rooms/45 to 67 Bridger.tmx",
-        "HubRooms/1 - Prison/Warden's Office.tmx",
-        "HubRooms/1 - Prison/StartingCell.tmx",
-        "HubRooms/1 - Prison/Center.tmx",
-        "HubRooms/1 - Prison/CellC.tmx",
-        "HubRooms/1 - Prison/CellA.tmx",
-        "jail_block.tsx",
-        "jail_bars.tsx",
-        "BookmarkLevels/5 - Higher Class Rooms/UnlockKillEverything.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/4 - TimestopWithEnemies.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx"
+        "HubRooms/2 - Lower Class Rooms/45 to 67 Bridger.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
