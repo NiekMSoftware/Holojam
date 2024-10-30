@@ -141,11 +141,11 @@
             }
         },
         "BookmarkLevels/3 - Old Tunnels/UnlockPillar.tmx": {
-            "scale": 3.370520833333333,
+            "scale": 2,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 236.907006211948,
-                "y": 218.66056803782803
+                "x": 244.25,
+                "y": 174.75
             }
         },
         "BookmarkLevels/3 - Old Tunnels/Weed Killer.tmx": {
@@ -229,11 +229,11 @@
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/UnlockKillEverything.tmx": {
-            "scale": 3.370520833333333,
+            "scale": 2,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 237.75,
+                "y": 186.75
             }
         },
         "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx": {
@@ -359,15 +359,15 @@
             "selectedLayer": 0,
             "viewCenter": {
                 "x": 239.6893874029336,
-                "y": 159.7929249352891
+                "y": 159.96548748921487
             }
         },
         "HubRooms/1 - Prison/CellB.tmx": {
             "scale": 3,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 239.83333333333337,
-                "y": 160
+                "x": 390.5,
+                "y": 178.83333333333331
             }
         },
         "HubRooms/1 - Prison/CellC.tmx": {
@@ -375,15 +375,15 @@
             "selectedLayer": 0,
             "viewCenter": {
                 "x": 239.6893874029336,
-                "y": 159.7929249352891
+                "y": 159.96548748921487
             }
         },
         "HubRooms/1 - Prison/Center.tmx": {
             "scale": 3,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 414.83333333333337,
-                "y": 127.66666666666666
+                "x": 414.83333333333326,
+                "y": 127.5
             }
         },
         "HubRooms/1 - Prison/StartingCell.tmx": {
@@ -391,23 +391,23 @@
             "selectedLayer": 0,
             "viewCenter": {
                 "x": 239.6893874029336,
-                "y": 159.7929249352891
+                "y": 159.96548748921487
             }
         },
         "HubRooms/1 - Prison/Warden's Office.tmx": {
-            "scale": 3.370520833333333,
+            "scale": 2,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 232.75,
+                "y": 129.75
             }
         },
         "HubRooms/2 - Lower Class Rooms/45 to 67 Bridger.tmx": {
             "scale": 1.6852604166666665,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 479.74781345613013,
-                "y": 172.67361003801346
+                "x": 394.3010785919585,
+                "y": 114.22566987050718
             }
         },
         "HubRooms/2 - Lower Class Rooms/B2 room.tmx": {
@@ -753,18 +753,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "BookmarkLevels/2 - Lower Class Rooms/4 - TimestopWithEnemies.tmx",
         "BookmarkLevels/3 - Old Tunnels/UnlockPillar.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/2.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/3.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/4.tmx",
-        "BookmarkLevels/Work in Progress/Fauna - BigButton.tmx",
-        "BookmarkLevels/Work in Progress/Plantern.tmx",
-        "BookmarkLevels/Work in Progress/Sana - SpitChange.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/4 - Fish.tmx",
+        "HubRooms/2 - Lower Class Rooms/45 to 67 Bridger.tmx",
+        "HubRooms/1 - Prison/Warden's Office.tmx",
+        "HubRooms/1 - Prison/StartingCell.tmx",
+        "HubRooms/1 - Prison/Center.tmx",
+        "HubRooms/1 - Prison/CellC.tmx",
+        "HubRooms/1 - Prison/CellA.tmx",
+        "jail_block.tsx",
+        "jail_bars.tsx",
         "BookmarkLevels/5 - Higher Class Rooms/UnlockKillEverything.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/3.tmx"
+        "BookmarkLevels/2 - Lower Class Rooms/4 - TimestopWithEnemies.tmx",
+        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
