@@ -123,11 +123,11 @@
             }
         },
         "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx": {
-            "scale": 2.3888541666666665,
+            "scale": 4,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 225.42188113199322,
-                "y": 156.35110975450223
+                "x": 266.125,
+                "y": 109.625
             }
         },
         "BookmarkLevels/3 - Old Tunnels/1- Gravity change tutorial.tmx": {
@@ -417,18 +417,18 @@
             }
         },
         "HubRooms/3 - Old Tunnels/Long Tunnel.tmx": {
-            "scale": 0.75,
-            "selectedLayer": 7,
+            "scale": 1.5,
+            "selectedLayer": 8,
             "viewCenter": {
-                "x": 517.3333333333334,
-                "y": 267.33333333333337
+                "x": 761.6666666666667,
+                "y": 95
             }
         },
         "HubRooms/3 - Old Tunnels/Tall Tunnel.tmx": {
             "scale": 1.5,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 162.66666666666669,
+                "x": 162.33333333333331,
                 "y": 440.3333333333333
             }
         },
@@ -755,10 +755,10 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx",
         "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx",
         "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
         "BookmarkLevels/2 - Lower Class Rooms/4 - TimestopWithEnemies.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx",
         "HubRooms/1 - Prison/Warden's Office.tmx",
         "HubRooms/2 - Lower Class Rooms/Great Hall.tmx",
         "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
