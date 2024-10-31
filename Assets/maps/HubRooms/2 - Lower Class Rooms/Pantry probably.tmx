@@ -7,6 +7,7 @@
  <tileset firstgid="159" source="../../Timberframe Wallstileset.tsx"/>
  <tileset firstgid="174" source="../../Checkboard tileset.tsx"/>
  <tileset firstgid="189" source="../../PlaceholderSprites.tsx"/>
+ <tileset firstgid="294" source="../3 - Old Tunnels/dirt_block.tsx"/>
  <layer id="4" name="bkg_far" width="20" height="10">
   <properties>
    <property name="unity:sortinglayer" value="Bkg_far"/>
