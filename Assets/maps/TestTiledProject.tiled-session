@@ -1,8 +1,13 @@
 {
-    "activeFile": "",
+    "activeFile": "HubRooms/Possible Extra Art.tsx",
     "expandedProjectPaths": [
+        "BookmarkLevels",
+        "HubRooms/2 - Lower Class Rooms",
+        "HubRooms/5 - Higher Class Rooms",
+        "HubRooms/3 - Old Tunnels",
         ".",
-        "BookmarkLevels"
+        "HubRooms/1 - Prison",
+        "HubRooms"
     ],
     "fileStates": {
         "BookmarkLevels/1 - Prison/1 - Jailer.tmx": {
@@ -486,7 +491,7 @@
         },
         "HubRooms/5 - Higher Class Rooms/E2 room.tmx": {
             "scale": 2,
-            "selectedLayer": 6,
+            "selectedLayer": 7,
             "viewCenter": {
                 "x": 234.5,
                 "y": 149.75
@@ -494,10 +499,10 @@
         },
         "HubRooms/5 - Higher Class Rooms/E3 room.tmx": {
             "scale": 2,
-            "selectedLayer": 6,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 232.5,
-                "y": 171.25
+                "x": 235.5,
+                "y": 176.25
             }
         },
         "HubRooms/5 - Higher Class Rooms/E4 room.tmx": {
@@ -509,19 +514,19 @@
             }
         },
         "HubRooms/5 - Higher Class Rooms/E5 room.tmx": {
-            "scale": 1,
-            "selectedLayer": 6,
+            "scale": 2,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 109,
-                "y": 148.5
+                "x": 244,
+                "y": 149.75
             }
         },
         "HubRooms/5 - Higher Class Rooms/E6 room.tmx": {
             "scale": 2,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 241.5,
-                "y": 119.75
+                "x": 239,
+                "y": 172.75
             }
         },
         "HubRooms/5 - Higher Class Rooms/E7 room.tmx": {
@@ -611,13 +616,15 @@
             }
         },
         "HubRooms/Possible Extra Art.tsx": {
-            "scaleInEditor": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 4
         },
         "NiceWall.tsx": {
             "scaleInDock": 1
         },
         "PlaceholderSprites.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "SectionA-Jail/1 - Jailer.tmx": {
             "scale": 2.8974999999999995,
@@ -743,21 +750,23 @@
     "last.imagePath": "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Holojam/Assets/maps/HubRooms",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
+        "PlaceholderSprites.tsx",
+        "HubRooms/Possible Extra Art.tsx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B6 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
+        "PlaceholderSprites.tsx",
+        "HubRooms/Possible Extra Art.tsx",
         "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx",
         "HubRooms/5 - Higher Class Rooms/E6 room.tmx",
         "HubRooms/5 - Higher Class Rooms/E5 room.tmx",
         "HubRooms/5 - Higher Class Rooms/E3 room.tmx",
         "HubRooms/5 - Higher Class Rooms/E2 room.tmx",
-        "HubRooms/1 - Prison/Center.tmx",
-        "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx",
-        "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx",
-        "HubRooms/3 - Old Tunnels/Tall Tunnel.tmx",
-        "HubRooms/1 - Prison/StartingCell.tmx"
+        "HubRooms/1 - Prison/Center.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
