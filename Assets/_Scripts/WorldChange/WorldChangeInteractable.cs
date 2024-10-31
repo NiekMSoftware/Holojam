@@ -18,6 +18,8 @@ namespace HoloJam
         {
             if (returnToHome)
             {
+                Debug.Log(SceneManager.GetActiveScene().name);
+                MemoryManager.SetVariable(SceneManager.GetActiveScene().name);
                 WorldManager.ReturnToHomeScene();
             }
             else

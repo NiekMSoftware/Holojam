@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   YDeathZone: -70
-  zoneName: Test World
-  roomName: Left Room
+  zoneName: 
+  roomName: 
   CameraBounds: {fileID: 2546860081669569530}
 --- !u!1 &9037557676648352387
 GameObject:

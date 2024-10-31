@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8888607694112621727}
   - component: {fileID: 7247018793720898013}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,6 +135,10 @@ PrefabInstance:
     - target: {fileID: 6515738565976748847, guid: 8c57e1dae86872848aa924999f0e47f5, type: 3}
       propertyPath: m_Name
       value: LevelChange_falling
+      objectReference: {fileID: 0}
+    - target: {fileID: 6515738565976748847, guid: 8c57e1dae86872848aa924999f0e47f5, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7075747202728583157, guid: 8c57e1dae86872848aa924999f0e47f5, type: 3}
       propertyPath: m_Sprite

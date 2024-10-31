@@ -497,12 +497,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1440948875812084403}
   - {fileID: 183767107728659640}
   - {fileID: 6771747152926027162}
   - {fileID: 4463275505321984966}
   - {fileID: 5652214296058725217}
   - {fileID: 9209957530472656713}
-  - {fileID: 1440948875812084403}
   - {fileID: 1906519190030042555}
   - {fileID: 7853695381290970336}
   - {fileID: 251102553075945271}
@@ -5943,7 +5943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1440948875812084403
 Transform:
   m_ObjectHideFlags: 0
@@ -5979,7 +5979,7 @@ MonoBehaviour:
   m_Intensity: 0.25
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 1
-  m_ApplyToSortingLayers: 00000000290943d3b9e209a59d36dc46
+  m_ApplyToSortingLayers: 00000000290943d39d36dc46
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
