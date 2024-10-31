@@ -4986,10 +4986,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnLight: 0
-  rigidBodyAffectedByTimestop: 1
-  hitboxDisabledByTimestop: 1
+  rigidBodyAffectedByTimestop: 0
+  hitboxDisabledByTimestop: 0
   animatorAffectedByTimestop: 0
-  affectedByGravity: 1
+  affectedByGravity: 0
   flipTransform: 1
   reactToKill: 0
   NegationFieldsOverlapped: 0
