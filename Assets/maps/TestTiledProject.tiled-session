@@ -124,10 +124,10 @@
         },
         "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx": {
             "scale": 2.3888541666666665,
-            "selectedLayer": 0,
+            "selectedLayer": 5,
             "viewCenter": {
-                "x": 239.86395151092313,
-                "y": 160.11860637509264
+                "x": 220.39855230453932,
+                "y": 156.35110975450223
             }
         },
         "BookmarkLevels/3 - Old Tunnels/1- Gravity change tutorial.tmx": {
@@ -393,11 +393,11 @@
             }
         },
         "HubRooms/2 - Lower Class Rooms/Great Hall.tmx": {
-            "scale": 1.5,
-            "selectedLayer": 1,
+            "scale": 0.75,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 440.6666666666667,
-                "y": 181.66666666666669
+                "x": 599.3333333333333,
+                "y": 154
             }
         },
         "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx": {
