@@ -6,7 +6,8 @@ namespace HoloJam.Characters.Data
     public class GroundedData
     {
         [field: SerializeField, Range(0f, 2f)] public float Acceleration { get; private set; }
-        [field: SerializeField, Range(0f, 0.9f)] public float GroundDecay { get; private set; } 
+        [field: SerializeField, Range(0f, 0.9f)] public float GroundDecay { get; private set; }
+        [field: SerializeField, Range(0f, 0.99f)] public float AirDecay { get; private set; }
         [field: SerializeField] public float MaxHorizontalSpeed { get; private set; }
     }
 }

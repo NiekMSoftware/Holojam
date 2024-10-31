@@ -158,6 +158,7 @@ namespace HoloJam
         public static void ReturnToHomeScene()
         {
             if (Instance.homeSceneName == SceneManager.GetActiveScene().name) return;
+            
             CorruptionManager.ResetEffects();
             SceneManager.LoadScene(Instance.homeSceneName);
         }

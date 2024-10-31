@@ -86,6 +86,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelDesign/E-Upper/E5.unity
     guid: 665804ee49f4a7b4cb8db5935ffa8612
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/A-Jail/Bookmarks/A1-BS.unity
+    guid: 173a29c214d22e84e8c9623772111a15
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/A-Jail/Bookmarks/A2-B.unity
+    guid: 82cdaaccdf47ffb42afe2152c45b09f2
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/A-Jail/Bookmarks/A3-B.unity
+    guid: f2559a8b28662c34d817a5dc6774eecb
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/A-Jail/Bookmarks/A4-B.unity
+    guid: fd82c2f78e558c34ba2d9b77f505f4fb
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/A-Jail/Bookmarks/A6-B.unity
+    guid: 6ad520f51042a5849a769b846c6e258b
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/A-Jail/Bookmarks/A7-B.unity
+    guid: 1f95b82a8bcbbad4ba3debbaeaf00bf8
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/A-Jail/Bookmarks/A9-B.unity
+    guid: 08d73ef810be8d64e99cc4107bdff50a
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/A-Jail/Bookmarks/A5-B.unity
+    guid: 7cd504a16f06e2e4d86e66451cd4f6a1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

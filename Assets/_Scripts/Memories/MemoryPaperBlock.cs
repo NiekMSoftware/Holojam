@@ -8,6 +8,8 @@ namespace HoloJam
         public string searchMemID1;
         public string searchMemID2;
         public string searchMemID3;
+        public string searchMemID4;
+        public string searchMemID5;
 
         private Animator mAnim;
         [SerializeField]
@@ -34,6 +36,10 @@ namespace HoloJam
             if (searchMemID2 != "" && !MemoryManager.HasVariable(searchMemID2))
                 return false;
             if (searchMemID3 != "" && !MemoryManager.HasVariable(searchMemID3))
+                return false;
+            if (searchMemID4 != "" && !MemoryManager.HasVariable(searchMemID4))
+                return false;
+            if (searchMemID5 != "" && !MemoryManager.HasVariable(searchMemID5))
                 return false;
             return true;
         }

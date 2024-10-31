@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1e2564b9e6e67049a694e5404023f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnObjPrefab: {fileID: 8045387532645285818, guid: 1c1bb49f63748ca43b0391b17f1a49cd, type: 3}
+  spawnObjPrefab: {fileID: 5290048119372859151, guid: 7319e08799fb42342be30f1d6e55f625, type: 3}
   spawnNow: 0
   parentAttackable: {fileID: 7573502719098661247}
   overrideSpeed: {x: 0, y: 0}

@@ -99,11 +99,18 @@ namespace HoloJam.Characters.Player
             }
         }
 
-        public void ApplyFriction(bool isGrounded, float input, float groundDecay)
+        public void ApplyFriction(bool isGrounded, float input, float groundDecay, float airDecay)
         {
             if (isGrounded && input == 0 && Mathf.Abs(_body.linearVelocityX) > 0.05f)
             { 
                 _body.linearVelocityX *= groundDecay;
+
+                // Stop the player if the velocity is small after decay
+                if (CheckVelocity(0.1f))
+                    _body.linearVelocityX = 0;
+            } else if (!isGrounded && input == 0 && Mathf.Abs(_body.linearVelocityX) > 0.05f)
+            {
+                _body.linearVelocityX *= airDecay;
 
                 // Stop the player if the velocity is small after decay
                 if (CheckVelocity(0.1f))

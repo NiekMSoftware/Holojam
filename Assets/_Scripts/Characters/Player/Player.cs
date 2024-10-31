@@ -102,7 +102,7 @@ namespace HoloJam.Characters.Player
             {
                 Controller.UpDownMove(Input.GetUpDownInput(), Data.GroundedData.Acceleration, Data.GroundedData.MaxHorizontalSpeed);
             }
-            Controller.ApplyFriction(Data.AirborneData.Grounded, Input.GetMovementInput(), Data.GroundedData.GroundDecay);
+            Controller.ApplyFriction(Data.AirborneData.Grounded, Input.GetMovementInput(), Data.GroundedData.GroundDecay, Data.GroundedData.AirDecay);
         }
 
         private void SelectState()

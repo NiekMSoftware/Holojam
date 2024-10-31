@@ -1,13 +1,12 @@
 {
-    "activeFile": "HubRooms/Possible Extra Art.tsx",
+    "activeFile": "BookmarkLevels/1 - Prison/A1 - Jailer.tmx",
     "expandedProjectPaths": [
-        "BookmarkLevels",
-        "HubRooms/2 - Lower Class Rooms",
-        "HubRooms/5 - Higher Class Rooms",
-        "HubRooms/3 - Old Tunnels",
+        "HubRooms/4 - Courtyard",
         ".",
+        "BookmarkLevels/1 - Prison",
         "HubRooms/1 - Prison",
-        "HubRooms"
+        "HubRooms",
+        "BookmarkLevels"
     ],
     "fileStates": {
         "BookmarkLevels/1 - Prison/1 - Jailer.tmx": {
@@ -30,24 +29,24 @@
             "scale": 2.3888541666666665,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 239.86395151092313,
-                "y": 160.11860637509264
+                "x": 239.65464614311253,
+                "y": 159.9093010072821
             }
         },
         "BookmarkLevels/1 - Prison/4 - Wall.tmx": {
             "scale": 2.3888541666666665,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 239.86395151092313,
-                "y": 160.11860637509264
+                "x": 239.65464614311253,
+                "y": 159.9093010072821
             }
         },
         "BookmarkLevels/1 - Prison/5 - Lantern.tmx": {
             "scale": 2.3888541666666665,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 239.86395151092313,
-                "y": 160.11860637509264
+                "x": 223.3288274538874,
+                "y": 288.00418610735625
             }
         },
         "BookmarkLevels/1 - Prison/6 - Spitters.tmx": {
@@ -78,8 +77,8 @@
             "scale": 2.3888541666666665,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 239.86395151092313,
-                "y": 160.11860637509264
+                "x": 239.65464614311253,
+                "y": 159.9093010072821
             }
         },
         "BookmarkLevels/2 - Lower Class Rooms/1 - TimestopTutorial.tmx": {
@@ -300,8 +299,8 @@
             "scale": 3,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 198,
-                "y": 201.83333333333331
+                "x": 298.83333333333337,
+                "y": 195.66666666666669
             }
         },
         "HubRooms/1 - Prison/CellC.tmx": {
@@ -314,10 +313,10 @@
         },
         "HubRooms/1 - Prison/Center.tmx": {
             "scale": 1.5,
-            "selectedLayer": 2,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 310.6666666666667,
-                "y": 270.33333333333326
+                "x": 320.3333333333333,
+                "y": 319.66666666666663
             }
         },
         "HubRooms/1 - Prison/StartingCell.tmx": {
@@ -453,8 +452,8 @@
             "scale": 1.5,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 517.3333333333333,
-                "y": 173.66666666666669
+                "x": 429.3333333333333,
+                "y": 159.66666666666663
             }
         },
         "HubRooms/4 - Courtyard/Front of door.tmx": {
@@ -477,8 +476,8 @@
             "scale": 0.75,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 337.33333333333337,
-                "y": 600.6666666666665
+                "x": 480,
+                "y": 480.66666666666663
             }
         },
         "HubRooms/4 - Courtyard/Wall.tmx": {
@@ -491,7 +490,7 @@
         },
         "HubRooms/5 - Higher Class Rooms/E2 room.tmx": {
             "scale": 2,
-            "selectedLayer": 7,
+            "selectedLayer": 6,
             "viewCenter": {
                 "x": 234.5,
                 "y": 149.75
@@ -499,10 +498,10 @@
         },
         "HubRooms/5 - Higher Class Rooms/E3 room.tmx": {
             "scale": 2,
-            "selectedLayer": 7,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 235.5,
-                "y": 176.25
+                "x": 232.5,
+                "y": 171.25
             }
         },
         "HubRooms/5 - Higher Class Rooms/E4 room.tmx": {
@@ -515,18 +514,18 @@
         },
         "HubRooms/5 - Higher Class Rooms/E5 room.tmx": {
             "scale": 2,
-            "selectedLayer": 7,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 244,
-                "y": 149.75
+                "x": 235,
+                "y": 167.75
             }
         },
         "HubRooms/5 - Higher Class Rooms/E6 room.tmx": {
             "scale": 2,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 239,
-                "y": 172.75
+                "x": 212,
+                "y": 175.75
             }
         },
         "HubRooms/5 - Higher Class Rooms/E7 room.tmx": {
@@ -554,11 +553,11 @@
             }
         },
         "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx": {
-            "scale": 1,
+            "scale": 3,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 430,
-                "y": 451.5
+                "x": 105.66666666666664,
+                "y": 731.5
             }
         },
         "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx": {
@@ -616,15 +615,13 @@
             }
         },
         "HubRooms/Possible Extra Art.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 4
+            "scaleInEditor": 1
         },
         "NiceWall.tsx": {
             "scaleInDock": 1
         },
         "PlaceholderSprites.tsx": {
-            "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInDock": 1
         },
         "SectionA-Jail/1 - Jailer.tmx": {
             "scale": 2.8974999999999995,
@@ -666,6 +663,10 @@
         },
         "corrupted_wall.tsx": {
             "scaleInDock": 1
+        },
+        "decorative_props.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 5.5
         },
         "hubtemplate.tmx": {
             "scale": 3,
@@ -750,23 +751,26 @@
     "last.imagePath": "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Tiles",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
-        "PlaceholderSprites.tsx",
-        "HubRooms/Possible Extra Art.tsx"
+        "HubRooms/1 - Prison/Center.tmx",
+        "HubRooms/4 - Courtyard/Front of door-D1.tmx",
+        "HubRooms/4 - Courtyard/Wall-D4.tmx",
+        "decorative_props.tsx",
+        "BookmarkLevels/1 - Prison/A1 - Jailer.tmx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/B6 room.tmx",
+        "HubRooms/1 - Prison/Center.tmx",
+        "HubRooms/4 - Courtyard/Front of door-D1.tmx",
+        "HubRooms/4 - Courtyard/Wall-D4.tmx",
+        "decorative_props.tsx",
+        "BookmarkLevels/1 - Prison/A1 - Jailer.tmx",
         "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
-        "PlaceholderSprites.tsx",
-        "HubRooms/Possible Extra Art.tsx",
-        "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx",
-        "HubRooms/5 - Higher Class Rooms/E6 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E5 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E3 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E2 room.tmx",
-        "HubRooms/1 - Prison/Center.tmx"
+        "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx",
+        "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx",
+        "HubRooms/3 - Old Tunnels/Tall Tunnel.tmx",
+        "HubRooms/1 - Prison/StartingCell.tmx",
+        "HubRooms/1 - Prison/CellA.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
