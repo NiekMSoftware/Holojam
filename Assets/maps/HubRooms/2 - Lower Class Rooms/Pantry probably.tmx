@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="1">
  <tileset firstgid="1" source="../../jail_wall.tsx"/>
  <tileset firstgid="65" source="../../jail_block.tsx"/>
  <tileset firstgid="129" source="../../corrupted_wall.tsx"/>
@@ -134,6 +134,20 @@
 151,0,0,0,0,0,0,0,0,0,0,0,0,0,285,286,270,270,271,144,
 176,0,0,0,0,0,0,0,0,0,0,0,0,0,0,285,285,285,286,149,
 178,175,176,0,0,144,174,176,145,145,145,145,145,145,145,145,145,145,145,147
+</data>
+ </layer>
+ <layer id="10" name="annotations (for game objects)" width="20" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,228,229,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,1610612965,198,199,243,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,1610612964,213,214,228,229,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
  <layer id="3" name="foreground" width="20" height="10">
