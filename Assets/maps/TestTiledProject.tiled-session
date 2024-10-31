@@ -329,11 +329,11 @@
             }
         },
         "HubRooms/1 - Prison/Warden's Office.tmx": {
-            "scale": 2,
+            "scale": 1.5,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 270,
-                "y": 190.25
+                "x": 303.66666666666663,
+                "y": 181.66666666666669
             }
         },
         "HubRooms/2 - Lower Class Rooms/45 to 67 Bridger.tmx": {
