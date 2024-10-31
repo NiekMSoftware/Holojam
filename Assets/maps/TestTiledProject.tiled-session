@@ -281,7 +281,7 @@
             "selectedLayer": 2,
             "viewCenter": {
                 "x": 264.202490960225,
-                "y": 179.7941712766944
+                "y": 173.56368019284855
             }
         },
         "BookmarkLevels/6 - Random Baelz Seeds/4 - Fish.tmx": {
@@ -289,7 +289,7 @@
             "selectedLayer": 2,
             "viewCenter": {
                 "x": 212.578421979788,
-                "y": 192.25515344438608
+                "y": 186.02466236054025
             }
         },
         "BookmarkLevels/6 - Random Baelz Seeds/4.tmx": {
@@ -359,6 +359,14 @@
         },
         "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Bookmark Levels/tiles/placeholders.tsx": {
             "scaleInDock": 1
+        },
+        "Carpet.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 8
+        },
+        "Checkboard tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 16
         },
         "Holojam/Assets/maps/OnOff_BlockOff.tsx": {
             "scaleInDock": 1
@@ -476,7 +484,7 @@
         },
         "HubRooms/2 - Lower Class Rooms/B7 room.tmx": {
             "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "selectedLayer": 6,
             "viewCenter": {
                 "x": 239.87390672806507,
                 "y": 159.91593781871
@@ -507,20 +515,28 @@
             }
         },
         "HubRooms/3 - Old Tunnels/Long Tunnel.tmx": {
-            "scale": 4,
+            "scale": 0.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 322.625,
-                "y": 297.5
+                "x": 91,
+                "y": 414
             }
         },
         "HubRooms/3 - Old Tunnels/Tall Tunnel.tmx": {
             "scale": 1.8703124999999998,
-            "selectedLayer": 0,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 160.1336675020886,
-                "y": 319.732664995823
+                "x": 229.64076858813706,
+                "y": 312.7819548872181
             }
+        },
+        "HubRooms/3 - Old Tunnels/dirt_bkg.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 11
+        },
+        "HubRooms/3 - Old Tunnels/dirt_block.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 16
         },
         "HubRooms/4 - Courtyard/Direct Middle.tmx": {
             "scale": 1.6852604166666665,
@@ -532,10 +548,10 @@
         },
         "HubRooms/4 - Courtyard/Front of door-D1.tmx": {
             "scale": 1.8056361607142857,
-            "selectedLayer": 0,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 447.76462589238804,
-                "y": 160.0543931761288
+                "x": 185.2532682263498,
+                "y": 379.3676793275026
             }
         },
         "HubRooms/4 - Courtyard/Front of door.tmx": {
@@ -552,6 +568,14 @@
             "viewCenter": {
                 "x": 479.74781345613013,
                 "y": 160.21262787032177
+            }
+        },
+        "HubRooms/4 - Courtyard/Wall-D4.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 638.9999999999999,
+                "y": 672.6666666666666
             }
         },
         "HubRooms/4 - Courtyard/Wall.tmx": {
@@ -688,6 +712,10 @@
                 "y": 159.91593781871006
             }
         },
+        "NiceWall.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 16
+        },
         "PlaceholderSprites.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 2
@@ -723,6 +751,18 @@
                 "x": 219.99567327008066,
                 "y": 147.45495565101837
             }
+        },
+        "Timberframe Wallstileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 16
+        },
+        "corrupted_carpet.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 16
+        },
+        "corrupted_wall.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 16
         },
         "hubtemplate.tmx": {
             "scale": 3,
@@ -807,18 +847,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "BookmarkLevels/2 - Lower Class Rooms/4 - TimestopWithEnemies.tmx",
-        "BookmarkLevels/3 - Old Tunnels/UnlockPillar.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/1 - KillerTutorial.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/2.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/3.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/4.tmx",
-        "BookmarkLevels/Work in Progress/Fauna - BigButton.tmx",
-        "BookmarkLevels/Work in Progress/Plantern.tmx",
-        "BookmarkLevels/Work in Progress/Sana - SpitChange.tmx",
-        "BookmarkLevels/6 - Random Baelz Seeds/4 - Fish.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/UnlockKillEverything.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/3.tmx"
+        "BookmarkLevels/5 - Higher Class Rooms/Unlock Kill Everything.tmx",
+        "Carpet.tsx",
+        "corrupted_carpet.tsx",
+        "corrupted_wall.tsx",
+        "NiceWall.tsx",
+        "BookmarkLevels/3 - Old Tunnels/1- Gravity change tutorial.tmx",
+        "HubRooms/3 - Old Tunnels/Long Tunnel.tmx",
+        "Timberframe Wallstileset.tsx",
+        "Checkboard tileset.tsx",
+        "HubRooms/5 - Higher Class Rooms/E2 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B2 room.tmx",
+        "HubRooms/3 - Old Tunnels/dirt_block.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {

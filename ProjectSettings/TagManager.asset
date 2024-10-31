@@ -46,14 +46,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Parallax Background
+    uniqueID: 1270332073
+    locked: 0
   - name: Bkg_far
     uniqueID: 2526456685
     locked: 0
   - name: Bkg
     uniqueID: 3544385833
-    locked: 0
-  - name: Parallax Background
-    uniqueID: 1270332073
     locked: 0
   - name: Ground
     uniqueID: 2768888505

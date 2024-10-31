@@ -4,7 +4,7 @@
  <tileset firstgid="65" source="../../jail_block.tsx"/>
  <tileset firstgid="129" source="../../corrupted_carpet.tsx"/>
  <tileset firstgid="144" source="../../corrupted_wall.tsx"/>
- <layer id="4" name="bkg_far" width="110" height="20">
+ <layer id="4" name="bkg_far" width="110" height="20" visible="0">
   <properties>
    <property name="unity:sortinglayer" value="Bkg_far"/>
   </properties>

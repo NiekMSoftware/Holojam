@@ -129,11 +129,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7711175303916389297, guid: 69f0faf50ead092478798dd2a662fe32, type: 3}
       propertyPath: m_LocalScale.x
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7711175303916389297, guid: 69f0faf50ead092478798dd2a662fe32, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7711175303916389297, guid: 69f0faf50ead092478798dd2a662fe32, type: 3}
       propertyPath: m_LocalPosition.x
@@ -255,11 +255,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1448187439672455933, guid: 91fb609ef0e35b9408c52de9ff3b0be4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.006855
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 1448187439672455933, guid: 91fb609ef0e35b9408c52de9ff3b0be4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15.37
+      value: -11.54
       objectReference: {fileID: 0}
     - target: {fileID: 1448187439672455933, guid: 91fb609ef0e35b9408c52de9ff3b0be4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -294,6 +294,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5115452045723271480, guid: 91fb609ef0e35b9408c52de9ff3b0be4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115452045723271480, guid: 91fb609ef0e35b9408c52de9ff3b0be4, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
@@ -303,7 +307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5115452045723271480, guid: 91fb609ef0e35b9408c52de9ff3b0be4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: -0.125
       objectReference: {fileID: 0}
     - target: {fileID: 5953254605714287454, guid: 91fb609ef0e35b9408c52de9ff3b0be4, type: 3}
       propertyPath: myTag
@@ -315,7 +319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5953254605714287454, guid: 91fb609ef0e35b9408c52de9ff3b0be4, type: 3}
       propertyPath: sceneToLoad
-      value: A5
+      value: A2
       objectReference: {fileID: 0}
     - target: {fileID: 8812613620613464004, guid: 91fb609ef0e35b9408c52de9ff3b0be4, type: 3}
       propertyPath: m_Name

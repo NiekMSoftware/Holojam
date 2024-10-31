@@ -27,12 +27,18 @@ namespace HoloJam.Parallax
 
         private void OnDisable()
         {
-            parallaxCamera.OnCameraTranslate -= Move;
+            if (parallaxCamera != null)
+            {
+                parallaxCamera.OnCameraTranslate -= Move;
+            }
         }
 
         private void OnDestroy()
         {
-            parallaxCamera.OnCameraTranslate -= Move;
+            if (parallaxCamera != null)
+            {
+                parallaxCamera.OnCameraTranslate -= Move;
+            }
         }
 
         public void SetLayers()
