@@ -115,11 +115,11 @@
             }
         },
         "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx": {
-            "scale": 2.3888541666666665,
-            "selectedLayer": 2,
+            "scale": 4,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 239.86395151092313,
-                "y": 160.11860637509264
+                "x": 136.875,
+                "y": 243.125
             }
         },
         "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx": {
@@ -388,8 +388,8 @@
             "scale": 2,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 249.25,
-                "y": 193.25
+                "x": 268.25,
+                "y": 168.25
             }
         },
         "HubRooms/2 - Lower Class Rooms/Great Hall.tmx": {
@@ -755,18 +755,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx",
+        "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
         "BookmarkLevels/2 - Lower Class Rooms/4 - TimestopWithEnemies.tmx",
         "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx",
         "HubRooms/1 - Prison/Warden's Office.tmx",
         "HubRooms/2 - Lower Class Rooms/Great Hall.tmx",
         "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B6 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
         "HubRooms/4 - Courtyard/Front of door-D1.tmx",
         "HubRooms/4 - Courtyard/Wall-D4.tmx",
-        "HubRooms/5 - Higher Class Rooms/E5 room.tmx",
-        "HubRooms/1 - Prison/CellA.tmx"
+        "HubRooms/5 - Higher Class Rooms/E5 room.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
