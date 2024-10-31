@@ -45,6 +45,13 @@ namespace HoloJam
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
+            if (heavySwitch && collision.attachedRigidbody.gameObject.CompareTag("heavy"))
+            {
+                mAnimator.Update(0);
+                lastCollide = Time.timeSinceLevelLoad;
+                OnOffBlockManager.ToggleBlockStatus(mBlockType);
+                return;
+            }
             if (collision.attachedRigidbody == null) return;
             if (collision.isTrigger) return;
             if (collision.GetComponent<Hitbox>() != null) return;

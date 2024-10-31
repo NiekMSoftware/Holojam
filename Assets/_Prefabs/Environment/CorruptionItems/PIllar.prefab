@@ -294,7 +294,7 @@ MonoBehaviour:
   hitboxDisabledByTimestop: 1
   animatorAffectedByTimestop: 1
   affectedByGravity: 1
-  flipTransform: 0
+  flipTransform: 1
   reactToKill: 0
   NegationFieldsOverlapped: 0
 --- !u!114 &1725844542531834536
