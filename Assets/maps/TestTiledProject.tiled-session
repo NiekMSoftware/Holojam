@@ -1,12 +1,12 @@
 {
-    "activeFile": "BookmarkLevels/1 - Prison/A1 - Jailer.tmx",
+    "activeFile": "decorative_props.tsx",
     "expandedProjectPaths": [
-        "HubRooms/4 - Courtyard",
         ".",
+        "BookmarkLevels",
         "BookmarkLevels/1 - Prison",
         "HubRooms/1 - Prison",
         "HubRooms",
-        "BookmarkLevels"
+        "HubRooms/4 - Courtyard"
     ],
     "fileStates": {
         "BookmarkLevels/1 - Prison/1 - Jailer.tmx": {
@@ -42,11 +42,11 @@
             }
         },
         "BookmarkLevels/1 - Prison/5 - Lantern.tmx": {
-            "scale": 2.3888541666666665,
-            "selectedLayer": 2,
+            "scale": 3,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 223.3288274538874,
-                "y": 288.00418610735625
+                "x": 227,
+                "y": 86.5
             }
         },
         "BookmarkLevels/1 - Prison/6 - Spitters.tmx": {
@@ -315,8 +315,8 @@
             "scale": 1.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 315.3333333333333,
-                "y": 594.3333333333333
+                "x": 320,
+                "y": 319.6666666666667
             }
         },
         "HubRooms/1 - Prison/StartingCell.tmx": {
@@ -452,8 +452,8 @@
             "scale": 1.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 448,
-                "y": 159.66666666666663
+                "x": 612,
+                "y": 389.66666666666663
             }
         },
         "HubRooms/4 - Courtyard/Front of door.tmx": {
@@ -476,8 +476,8 @@
             "scale": 1,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 480,
-                "y": 480.5
+                "x": 669,
+                "y": 672.5
             }
         },
         "HubRooms/4 - Courtyard/Wall.tmx": {
@@ -752,26 +752,22 @@
     "last.imagePath": "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Tiles",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
-        "HubRooms/1 - Prison/Center.tmx",
-        "HubRooms/4 - Courtyard/Front of door-D1.tmx",
-        "HubRooms/4 - Courtyard/Wall-D4.tmx",
-        "decorative_props.tsx",
-        "BookmarkLevels/1 - Prison/A1 - Jailer.tmx"
+        "decorative_props.tsx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "decorative_props.tsx",
+        "HubRooms/1 - Prison/Center.tmx",
+        "HubRooms/4 - Courtyard/Wall-D4.tmx",
+        "HubRooms/4 - Courtyard/Front of door-D1.tmx",
+        "BookmarkLevels/1 - Prison/A1 - Jailer.tmx",
+        "BookmarkLevels/1 - Prison/5 - Lantern.tmx",
         "BookmarkLevels/1 - Prison/6 - Spitters.tmx",
         "BookmarkLevels/6 - Random Baelz Seeds/3.tmx",
-        "HubRooms/1 - Prison/Center.tmx",
-        "HubRooms/4 - Courtyard/Front of door-D1.tmx",
-        "HubRooms/4 - Courtyard/Wall-D4.tmx",
-        "decorative_props.tsx",
-        "BookmarkLevels/1 - Prison/A1 - Jailer.tmx",
         "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
         "HubRooms/2 - Lower Class Rooms/Great Hall.tmx",
-        "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx",
-        "HubRooms/3 - Old Tunnels/Tall Tunnel.tmx"
+        "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
