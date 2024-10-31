@@ -67,8 +67,10 @@ namespace HoloJam
         }
         private void OnTriggerEnter2D(Collider2D collision)
         {
+            if (collision.attachedRigidbody != null && collision.attachedRigidbody.GetComponent<ButtonSwitch>() != null) Destroy(gameObject);
             if (collision.isTrigger) return;
             if (collision.attachedRigidbody != null && collision.attachedRigidbody.GetComponent<Attackable>() != null) return;
+           
             if (DestroyOnWall) Destroy(gameObject);
         }
     }

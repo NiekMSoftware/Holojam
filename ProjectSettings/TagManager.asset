@@ -9,6 +9,7 @@ TagManager:
   - onoff2-defaulton
   - onoff2-defaultoff
   - heavy
+  - specialHeavy
   layers:
   - Default
   - TransparentFX

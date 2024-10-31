@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelDesign/E-Upper/Unused/E1.unity
     guid: 8916e2fa23bdb324a923af52cfad3a3d
   - enabled: 1
-    path: Assets/Scenes/LevelDesign/D-Courtyard/D4.unity
+    path: Assets/Scenes/LevelDesign/D-Courtyard/Unused/D4.unity
     guid: bc08aec01402f5849b8cc626508ace85
   - enabled: 1
     path: Assets/Scenes/LevelDesign/D-Courtyard/Unused/D3.unity
@@ -143,6 +143,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelDesign/D-Courtyard/Bookmarks/D4-B.unity
     guid: e15027a40b2d85746b9984c80a542313
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/D-Courtyard/Bookmarks/D3-B.unity
+    guid: a64bf435fab865940935275b6fe22f92
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/E-Upper/Bookmarks/E1-B.unity
+    guid: 1907b7c82d66e9b4c82427ea98148bbe
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/E-Upper/Bookmarks/E2-B.unity
+    guid: 1acbdb7fe0160614f8a9ba5e2077054a
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/E-Upper/Bookmarks/E3-B.unity
+    guid: 24cd0b0d6f1865d45a0dcad589bced00
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/E-Upper/Bookmarks/E4-B.unity
+    guid: be1d3be154d99d647b9dcede9dd810f2
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/F-Queen/Bookmarks/F1-B.unity
+    guid: 22ce8c70dae81b04c8a8f12e5d6ce755
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/F-Queen/Bookmarks/F2-B.unity
+    guid: c0b068044dbf0864eafd4db34266c939
+  - enabled: 1
+    path: Assets/Scenes/LevelDesign/F-Queen/Bookmarks/F4-B.unity
+    guid: 0ccde7c85af46e348bb9bd78e3d73458
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
