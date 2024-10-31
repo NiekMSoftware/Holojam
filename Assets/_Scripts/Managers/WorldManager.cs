@@ -178,17 +178,19 @@ namespace HoloJam
             if (lastTargetTag == TransitionTag.NONE)
             {
                 playerRef.transform.position = cachedPositionInHome;
-            }
-            TransitionHitbox[] hbs = FindObjectsOfType<TransitionHitbox>();
-            foreach(TransitionHitbox hb in hbs)
+            } else
             {
-                if (hb.myTag == lastTargetTag)
+                TransitionHitbox[] hbs = FindObjectsOfType<TransitionHitbox>();
+                foreach (TransitionHitbox hb in hbs)
                 {
-                    Instance.cachedPositionInHome =  hb.SetPosition(playerRef);
-                    return;
+                    if (hb.myTag == lastTargetTag)
+                    {
+                        Instance.cachedPositionInHome = hb.SetPosition(playerRef);
+                        return;
+                    }
                 }
+                playerRef.transform.position = cachedPositionInHome;
             }
-            playerRef.transform.position = cachedPositionInHome;
         }
         void OnMemorySceneLoaded(Scene scene, LoadSceneMode mode)
         {
