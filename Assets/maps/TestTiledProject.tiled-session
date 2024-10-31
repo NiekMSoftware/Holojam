@@ -285,50 +285,50 @@
         },
         "HubRooms/1 - Prison/CellA.tmx": {
             "scale": 2.8974999999999995,
-            "selectedLayer": 0,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 239.86194995685943,
-                "y": 159.96548748921487
+                "x": 420.0172562553927,
+                "y": 175.8412424503883
             }
         },
         "HubRooms/1 - Prison/CellB.tmx": {
             "scale": 3,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 386.33333333333326,
-                "y": 142.83333333333334
+                "x": 198,
+                "y": 201.83333333333331
             }
         },
         "HubRooms/1 - Prison/CellC.tmx": {
             "scale": 2.8974999999999995,
-            "selectedLayer": 0,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 239.86194995685943,
-                "y": 159.96548748921487
+                "x": 68.67989646246767,
+                "y": 214.49525452976707
             }
         },
         "HubRooms/1 - Prison/Center.tmx": {
-            "scale": 1,
-            "selectedLayer": 7,
+            "scale": 1.5,
+            "selectedLayer": 8,
             "viewCenter": {
-                "x": 170,
-                "y": 507.5
+                "x": 298,
+                "y": 161.66666666666669
             }
         },
         "HubRooms/1 - Prison/StartingCell.tmx": {
-            "scale": 2.8974999999999995,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 179.46505608283007,
-                "y": 131.665228645384
+                "x": 294,
+                "y": 197.75
             }
         },
         "HubRooms/1 - Prison/Warden's Office.tmx": {
             "scale": 2,
-            "selectedLayer": 7,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 203,
-                "y": 162.75
+                "x": 267,
+                "y": 182.25
             }
         },
         "HubRooms/2 - Lower Class Rooms/45 to 67 Bridger.tmx": {
@@ -746,18 +746,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "HubRooms/1 - Prison/StartingCell.tmx",
+        "HubRooms/1 - Prison/Center.tmx",
+        "HubRooms/1 - Prison/CellA.tmx",
+        "HubRooms/1 - Prison/CellC.tmx",
+        "HubRooms/1 - Prison/Warden's Office.tmx",
+        "HubRooms/1 - Prison/CellB.tmx",
         "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B6 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
         "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx",
-        "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx",
-        "HubRooms/1 - Prison/Warden's Office.tmx",
-        "HubRooms/Possible Extra Art.tsx",
-        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx",
-        "HubRooms/5 - Higher Class Rooms/E6 room.tmx",
-        "HubRooms/1 - Prison/Center.tmx",
-        "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx"
+        "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
