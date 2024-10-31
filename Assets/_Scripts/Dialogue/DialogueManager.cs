@@ -11,6 +11,7 @@ namespace HoloJam.Dialogue
     {
         public static DialogueManager Instance { get; private set; }
         public event Action OnDialogueLineComplete;
+        public event Action AllDialogueComplete;
 
         [SerializeField] private Player player;
         public DialogueNode CurrentNode;
@@ -30,12 +31,19 @@ namespace HoloJam.Dialogue
             if (player == null)
                 player = FindFirstObjectByType<Player>();
         }
-
-        public void StartDialogue(DialogueNode node)
+        public void RegisterDialogueEndEvent(Action newAction)
+        {
+            AllDialogueComplete += newAction;
+        }
+        public void DeRegisterDialogueEndEvent(Action newAction)
+        {
+            AllDialogueComplete -= newAction;
+        }
+        public void StartDialogue(DialogueNode node, bool disableMovement, bool disableJump)
         {
             if (player == null) player = FindFirstObjectByType<Player>();
             UIManager.Instance.ShowDialogue(node.characterName, node.dialogueText);
-            player.Input.EnableUIControls();
+            player.Input.EnableUIControls(disableMovement, disableJump);
             SetCurrentNode(node);
         }
 
@@ -45,15 +53,17 @@ namespace HoloJam.Dialogue
             UIManager.Instance.HideDialogue();
             player.Input.DisableUIControls();
             CurrentNode = null;
+            AllDialogueComplete?.Invoke();
         }
 
         public void EndDialogue(string sceneName)
         {
+            
             print("Ending Dialogue and loading scene!");
             UIManager.Instance.HideDialogue();
             player.Input.DisableUIControls();
             CurrentNode = null;
-
+            AllDialogueComplete?.Invoke();
             // load a new scene
             WorldManager.LoadNewScene(sceneName);
         }

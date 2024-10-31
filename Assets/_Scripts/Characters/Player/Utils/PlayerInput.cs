@@ -48,12 +48,19 @@ namespace HoloJam.Characters.Player.Utils
             UIActions.Submit.performed += OnSubmit;
         }
 
-        public void EnableUIControls()
+        public void EnableUIControls(bool disableMovement, bool disableJump)
         {
             UIActions.Enable();
             Debug.Log("Enabled ui");
-            PlayerActions.Jump.Disable();
-
+            if (disableMovement)
+            {
+                PlayerActions.Move.Disable();
+                PlayerActions.Corruption.Disable();
+            }
+            if (disableJump)
+            {
+                PlayerActions.Jump.Disable();
+            }
             UIActions.Submit.performed += OnSubmit;
         }
 
@@ -61,6 +68,8 @@ namespace HoloJam.Characters.Player.Utils
         {
             UIActions.Disable();
             PlayerActions.Jump.Enable();
+            PlayerActions.Move.Enable();
+            PlayerActions.Corruption.Enable();
 
             UIActions.Submit.performed -= OnSubmit;
         }

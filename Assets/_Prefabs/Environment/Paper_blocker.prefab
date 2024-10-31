@@ -351,6 +351,9 @@ MonoBehaviour:
   searchMemID1: 
   searchMemID2: 
   searchMemID3: 
+  searchMemID4: 
+  searchMemID5: 
+  sfxPaper: paper_block
   triggerDistance: 5
 --- !u!95 &2784406462527443792
 Animator:

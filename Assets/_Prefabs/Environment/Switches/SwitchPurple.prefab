@@ -54,6 +54,8 @@ MonoBehaviour:
   CurrentHP: 1
   MaxHP: 1
   partSys: {fileID: 0}
+  sfxHurt: 
+  sfxDie: 
 --- !u!114 &1116002417355479596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +167,8 @@ MonoBehaviour:
   interactionType: 4
   saveIDOnInteract: 
   CanInteractInMidair: 1
+  sfxOnHighlight: 
+  sfxOnInteract: 
 --- !u!1 &8528325513079136945
 GameObject:
   m_ObjectHideFlags: 0

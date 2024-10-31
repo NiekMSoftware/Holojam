@@ -1,5 +1,6 @@
 using UnityEngine;
 using HoloJam.Characters.Player;
+using HoloJam.Managers;
 
 namespace HoloJam
 {
@@ -10,6 +11,7 @@ namespace HoloJam
         public string searchMemID3;
         public string searchMemID4;
         public string searchMemID5;
+        public string sfxPaper;
 
         private Animator mAnim;
         [SerializeField]
@@ -53,6 +55,7 @@ namespace HoloJam
             if (collision.attachedRigidbody.GetComponent<Player>() == null) return;
             if (TriggeredMemories())
             {
+                AudioManager.Instance.Play(sfxPaper);
                 mAnim.Play("fade", 0, 0);
                 MemoryManager.SetVariable(GenerateID());
                 empty = true;
