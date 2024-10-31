@@ -124,9 +124,9 @@
         },
         "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx": {
             "scale": 2.3888541666666665,
-            "selectedLayer": 5,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 220.39855230453932,
+                "x": 225.42188113199322,
                 "y": 156.35110975450223
             }
         },
@@ -332,7 +332,7 @@
             "scale": 1.5,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 303.66666666666663,
+                "x": 311.66666666666663,
                 "y": 181.66666666666669
             }
         },
@@ -361,42 +361,42 @@
             }
         },
         "HubRooms/2 - Lower Class Rooms/B4 room.tmx": {
-            "scale": 2,
+            "scale": 1.5,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 232,
-                "y": 169.75
+                "x": 153.66666666666666,
+                "y": 179
             }
         },
         "HubRooms/2 - Lower Class Rooms/B5 room.tmx": {
             "scale": 2,
-            "selectedLayer": 1,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 104,
-                "y": 104.75
+                "x": 96.25,
+                "y": 185.25
             }
         },
         "HubRooms/2 - Lower Class Rooms/B6 room.tmx": {
             "scale": 2,
-            "selectedLayer": 6,
+            "selectedLayer": 8,
             "viewCenter": {
-                "x": 224,
-                "y": 165.75
+                "x": 247.75,
+                "y": 200.25
             }
         },
         "HubRooms/2 - Lower Class Rooms/B7 room.tmx": {
             "scale": 2,
-            "selectedLayer": 1,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 193,
-                "y": 176.75
+                "x": 249.25,
+                "y": 193.25
             }
         },
         "HubRooms/2 - Lower Class Rooms/Great Hall.tmx": {
             "scale": 0.75,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 703.3333333333333,
+                "x": 719.3333333333333,
                 "y": 240.66666666666669
             }
         },
@@ -755,18 +755,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "BookmarkLevels/2 - Lower Class Rooms/6 - UnlockGravitySwap.tmx",
+        "HubRooms/1 - Prison/Warden's Office.tmx",
+        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx",
+        "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B6 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
         "HubRooms/4 - Courtyard/Front of door-D1.tmx",
         "HubRooms/4 - Courtyard/Wall-D4.tmx",
         "HubRooms/5 - Higher Class Rooms/E5 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/B6 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
         "HubRooms/1 - Prison/CellA.tmx",
-        "HubRooms/1 - Prison/StartingCell.tmx",
-        "HubRooms/1 - Prison/CellC.tmx",
-        "HubRooms/1 - Prison/CellB.tmx",
-        "HubRooms/1 - Prison/Center.tmx"
+        "HubRooms/1 - Prison/StartingCell.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
