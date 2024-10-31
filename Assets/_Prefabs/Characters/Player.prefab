@@ -477,6 +477,7 @@ GameObject:
   - component: {fileID: 3439456316864250133}
   - component: {fileID: 7697967346562925238}
   - component: {fileID: 3093381305365455697}
+  - component: {fileID: 706927523951683863}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -568,6 +569,13 @@ MonoBehaviour:
   actionState: {fileID: 6492276512516698896}
   <Data>k__BackingField: {fileID: 11400000, guid: 567933b0858356f4cbb3d8c81e2a7c5a, type: 2}
   <lastFacingLeft>k__BackingField: 0
+  sfxStep:
+  - step1
+  - step2
+  - step3
+  - step4
+  sfxAttack: scissor_slice
+  sfxJump: jump
   idleState: {fileID: 6798557807497120442}
   runState: {fileID: 3365094018306644013}
   airState: {fileID: 8864476747283354447}
@@ -662,7 +670,10 @@ MonoBehaviour:
   flipTransform: 1
   reactToKill: 1
   NegationFieldsOverlapped: 0
+  destroyOnLightSFX: []
+  playPlantDeathSFX: 0
   GlobeObject: {fileID: 2657272893418469118, guid: 945c17dc4414c1d43be1dd5e1a10bd25, type: 3}
+  inNegationSFX: fire_fx
 --- !u!114 &6762349373321213318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,6 +693,8 @@ MonoBehaviour:
   CurrentHP: 1
   MaxHP: 1
   partSys: {fileID: 4095207115902633685}
+  sfxHurt: player_hurt
+  sfxDie: player_death
 --- !u!212 &3439456316864250133
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -763,6 +776,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabTransform: {fileID: 8023025712715620879}
+--- !u!114 &706927523951683863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3254002416308601019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4e970928447fa4284a79f0218f3f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityRequirement: 4
+  sfxID: landing
+  RequireOnFeet: 1
+  minimumDelay: 0.25
 --- !u!1 &3265459497470949384
 GameObject:
   m_ObjectHideFlags: 0

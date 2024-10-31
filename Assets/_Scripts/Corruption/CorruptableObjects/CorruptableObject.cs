@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using HoloJam.Managers;
 namespace HoloJam
 {
     public class CorruptableObject : MonoBehaviour
@@ -27,7 +28,12 @@ namespace HoloJam
         [HideInInspector]
         public int NegationFieldsOverlapped = 0;
         private List<Hitbox> mHitboxes = new List<Hitbox>();
-
+        [SerializeField]
+        private List<string> destroyOnLightSFX = new List<string>();
+        [SerializeField]
+        private bool playPlantDeathSFX;
+        private bool sfxPlayed = false;
+        
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -38,6 +44,11 @@ namespace HoloJam
             if (destroyOnLight && NegationFieldsOverlapped > 0)
             {
                 mAnimator.Play("die");
+                if (!sfxPlayed)
+                {
+                    sfxPlayed = true;
+                    AudioManager.Instance.Play(destroyOnLightSFX[Random.Range(0, destroyOnLightSFX.Count - 1)]);
+                }
             }
         }
         protected void BaseStart()
@@ -92,6 +103,7 @@ namespace HoloJam
         public virtual void Kill()
         {
             if (!reactToKill) return;
+            if (playPlantDeathSFX) CorruptionManager.PlayPlantDeathSound();
             if (mAttackable != null)
             {
                 mAnimator.speed = 1;

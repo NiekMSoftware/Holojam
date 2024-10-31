@@ -218,6 +218,8 @@ MonoBehaviour:
   flipTransform: 0
   reactToKill: 0
   NegationFieldsOverlapped: 0
+  destroyOnLightSFX: []
+  playPlantDeathSFX: 0
 --- !u!114 &2185990161059803238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnObj: {fileID: 7823414027490868200, guid: adc7fa2c77e55264a9ba4a65e225d7de, type: 3}
+  pillarSFX: pillar_building
 --- !u!58 &7299526386887024384
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -283,8 +286,12 @@ MonoBehaviour:
   interactionType: 0
   saveIDOnInteract: 
   CanInteractInMidair: 1
+  sfxOnHighlight: 
+  sfxOnInteract: 
   mRigidBody: {fileID: 0}
   throwVelocityUp: {x: 0, y: 15}
   throwVelocityForward: {x: 15, y: 6}
   extraColliderToConvertToTrigger: {fileID: 0}
   thrown: 0
+  sfxThrow: throw
+  sfxGrab: 

@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using HoloJam.Managers;
 namespace HoloJam
 {
     public class Projectile : MonoBehaviour
@@ -19,6 +19,10 @@ namespace HoloJam
         private Vector2 currentVelocity;
         private float expirationTime;
         private CorruptableObject coObject;
+        [SerializeField]
+        private string sfxOnImpact;
+        [SerializeField]
+        private string sfxOnSummon;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -26,6 +30,7 @@ namespace HoloJam
             mRigidBody = GetComponent<Rigidbody2D>();
             coObject = GetComponent<CorruptableObject>();
             currentVelocity = initialVelocity;
+            AudioManager.Instance.Play(sfxOnSummon);
         }
         public void FlipVelocity()
         {
@@ -63,15 +68,23 @@ namespace HoloJam
 
         public void OnHitboxHit(Attackable target)
         {
-            if (destroyOnHit) Destroy(gameObject);
+            if (destroyOnHit)
+            {
+                AudioManager.Instance.Play(sfxOnImpact);
+                Destroy(gameObject);
+            }
         }
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.attachedRigidbody != null && collision.attachedRigidbody.GetComponent<ButtonSwitch>() != null) Destroy(gameObject);
             if (collision.isTrigger) return;
             if (collision.attachedRigidbody != null && collision.attachedRigidbody.GetComponent<Attackable>() != null) return;
-           
-            if (DestroyOnWall) Destroy(gameObject);
+
+            if (DestroyOnWall)
+            {
+                AudioManager.Instance.Play(sfxOnImpact);
+                Destroy(gameObject);
+            }
         }
     }
 }

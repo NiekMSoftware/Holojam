@@ -1,6 +1,6 @@
 using UnityEngine;
 using HoloJam.Characters;
-
+using HoloJam.Managers;
 namespace HoloJam
 {
     public enum AttackableFaction { FRIENDLY, ENEMY, NEUTRAL} //Neutral can be attacked by both friendly and enemy
@@ -25,6 +25,8 @@ namespace HoloJam
         private Core corePlayer;
         public delegate void OnHitEvent(Hitbox hb);
         public OnHitEvent hitEvent;
+        public string sfxHurt;
+        public string sfxDie;
         void Start()
         {
             if (partSys != null) { partSys.Stop(); }
@@ -51,7 +53,7 @@ namespace HoloJam
         {
             if (isPlayerCharacter)
             {
-                WorldManager.ReturnToHomeScene();
+                WorldManager.ReloadScene();
             } else
             {
                 Destroy(gameObject);
@@ -62,10 +64,12 @@ namespace HoloJam
             CurrentHP = Mathf.Clamp(CurrentHP - damage, 0, MaxHP);
             if (CurrentHP == 0)
             {
+                AudioManager.Instance.Play(sfxDie);
                 corePlayer?.PerformAction("die");
             }
             else
             {
+                AudioManager.Instance.Play(sfxHurt);
                 corePlayer?.PerformAction("hurt");
             }
             if (partSys != null) { partSys.Play(); }
@@ -81,9 +85,11 @@ namespace HoloJam
             if (hitEvent != null) hitEvent(hb);
             if (CurrentHP == 0)
             {
+                AudioManager.Instance.Play(sfxDie);
                 corePlayer?.PerformAction("die");
             } else
             {
+                AudioManager.Instance.Play(sfxHurt);
                 corePlayer?.PerformAction("hurt");
             }
             if (partSys != null) { partSys.Play(); }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6265019050296000785}
   - component: {fileID: 85404471539710494}
   - component: {fileID: 6623635993106852606}
+  - component: {fileID: 2415483766847103150}
   m_Layer: 8
   m_Name: LargeCrate
   m_TagString: heavy
@@ -183,3 +184,21 @@ MonoBehaviour:
   flipTransform: 0
   reactToKill: 0
   NegationFieldsOverlapped: 0
+  destroyOnLightSFX: []
+  playPlantDeathSFX: 0
+--- !u!114 &2415483766847103150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385780740137413788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4e970928447fa4284a79f0218f3f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityRequirement: 2.5
+  sfxID: crate_thud
+  RequireOnFeet: 0
+  minimumDelay: 0.25

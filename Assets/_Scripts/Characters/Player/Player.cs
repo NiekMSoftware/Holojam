@@ -127,5 +127,7 @@ namespace HoloJam.Characters.Player
             else
                 Machine.Set(airState);
         }
+
+        
     }
 }

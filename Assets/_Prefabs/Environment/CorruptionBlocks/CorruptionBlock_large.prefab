@@ -5110,6 +5110,10 @@ MonoBehaviour:
   flipTransform: 0
   reactToKill: 0
   NegationFieldsOverlapped: 0
+  destroyOnLightSFX:
+  - yorick_hit1
+  - yorick_hit2
+  - yorick_death
 --- !u!114 &1859143427924419656
 MonoBehaviour:
   m_ObjectHideFlags: 0

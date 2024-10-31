@@ -257,6 +257,8 @@ MonoBehaviour:
   CurrentHP: 1
   MaxHP: 1
   partSys: {fileID: 8880669266514276111}
+  sfxHurt: yorick_hit1
+  sfxDie: yorick_death
 --- !u!212 &8089239158061020144
 SpriteRenderer:
   m_ObjectHideFlags: 0

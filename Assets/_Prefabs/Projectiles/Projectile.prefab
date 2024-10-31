@@ -195,6 +195,8 @@ MonoBehaviour:
   DestroyOnWall: 1
   initialVelocity: {x: 3.5, y: 0}
   velocityChange: {x: 0, y: 0}
+  sfxOnImpact: ink_hit
+  sfxOnSummon: ink_shot
 --- !u!114 &145227201272167864
 MonoBehaviour:
   m_ObjectHideFlags: 0

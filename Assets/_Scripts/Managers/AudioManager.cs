@@ -41,7 +41,11 @@ namespace HoloJam.Managers
             if (instance == null)
                 instance = this;
             else
+            {
                 Destroy(gameObject);
+                return;
+            }
+                
 
             // initialize and pool all sounds
             foreach (var sound in Sounds)
@@ -90,6 +94,7 @@ namespace HoloJam.Managers
         #region Playback Methods
         public void Play(string soundName)
         {
+            if (soundName == "") return;
             SoundData sd = Array.Find(Sounds, sound => sound.name == soundName);
             if (sd == null) { Debug.LogWarning($"Sound: {soundName} was not found! Did you type it in correctly?"); return; }
 

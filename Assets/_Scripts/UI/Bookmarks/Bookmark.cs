@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;// Required when using Event data.
 using HoloJam.Characters.Player.Utils;
+using System.Collections.Generic;
 using TMPro;
+using HoloJam.Managers;
 namespace HoloJam
 {
     public class Bookmark : MonoBehaviour
@@ -31,6 +32,8 @@ namespace HoloJam
         [SerializeField]
         private bool isSelected;
         private bool toSelect;
+        [SerializeField] private List<string> sfxSelect = new List<string>();
+        [SerializeField] private string sfxUse;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -83,7 +86,7 @@ namespace HoloJam
         }
         public void Highlight()
         {
-            Debug.Log("selected: " + gameObject);
+            AudioManager.Instance.Play(sfxSelect[Random.Range(0, sfxSelect.Count - 1)]);
             mAnimator.Play("select");
             toSelect = true;
             parentSection.lastBookmark = this;
@@ -91,7 +94,6 @@ namespace HoloJam
 
         public void Dehighlight()
         {
-            Debug.Log("deselected: " + gameObject);
             mAnimator.Play("idle");
             isSelected = false;
         }
@@ -100,6 +102,7 @@ namespace HoloJam
         {
             if (!lastHasCharges) return;
             mAnimator.Play("use");
+            AudioManager.Instance.Play(sfxUse);
             CorruptionManager.AttemptUseEffect(corruptionType);
             CorruptionManager.TogglePanelOpen();
         }

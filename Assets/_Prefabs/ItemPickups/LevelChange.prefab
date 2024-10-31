@@ -141,5 +141,7 @@ MonoBehaviour:
   interactionType: 2
   saveIDOnInteract: 
   CanInteractInMidair: 1
+  sfxOnHighlight: 
+  sfxOnInteract: lore_note_pickup
   returnToHome: 0
   sceneToLoad: DummyMemoryWorld

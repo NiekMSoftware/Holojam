@@ -1,5 +1,6 @@
 using UnityEngine;
 using HoloJam.Characters.Player;
+using HoloJam.Managers;
 namespace HoloJam
 {
     public class COPlayer : CorruptableObject
@@ -7,10 +8,29 @@ namespace HoloJam
         [SerializeField]
         private GameObject GlobeObject;
         private Player mPlayer;
+        [SerializeField]
+        private string inNegationSFX;
+        private bool isPlaying;
         private void Start()
         {
             BaseStart();
             mPlayer = GetComponent<Player>();
+        }
+        private void OnDestroy()
+        {
+            AudioManager.Instance.Stop(inNegationSFX);
+        }
+        private void Update()
+        {
+            if (NegationFieldsOverlapped > 0 && !isPlaying)
+            {
+                AudioManager.Instance.Play(inNegationSFX);
+                isPlaying = true;
+            } else if (isPlaying && NegationFieldsOverlapped <= 0)
+            {
+                AudioManager.Instance.Stop(inNegationSFX);
+                isPlaying = false;
+            }
         }
         public override void OnReceiveEffect(CorruptionType effect)
         {

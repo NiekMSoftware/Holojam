@@ -3,6 +3,7 @@ using HoloJam.StateMachine;
 using System.Collections.Generic;
 using UnityEngine;
 using HoloJam.StateMachine.States;
+using HoloJam.Managers;
 
 namespace HoloJam.Characters
 {
@@ -30,6 +31,9 @@ namespace HoloJam.Characters
         [field: Header("Data References")]
         [field: SerializeField] public CharacterSO Data { get; private set; }
         [field: SerializeField] public bool lastFacingLeft { get; private set; }
+        public List<string> sfxStep = new List<string>();
+        public string sfxAttack;
+        public string sfxJump;
         public void Set(State newState, bool forceReset = false)
         {
             Machine.Set(newState, forceReset);
@@ -56,6 +60,18 @@ namespace HoloJam.Characters
             performingAction = true;
             CharacterAnimator.PlayAnimation(actionName);
             if (actionState != null) Machine.Set(actionState);
+        }
+        public void PlayStepSFX()
+        {
+            AudioManager.Instance.Play(sfxStep[Random.Range(0,sfxStep.Count)]);
+        }
+        public void PlayAttackSFX()
+        {
+            AudioManager.Instance.Play(sfxAttack);
+        }
+        public void PlayJumpSFX()
+        {
+            AudioManager.Instance.Play(sfxJump);
         }
         private void OnDrawGizmos()
         {

@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using HoloJam.Characters.Player;
 using UnityEngine.EventSystems;// Required when using Event data.
+using HoloJam.Managers;
 namespace HoloJam
 {
     public class CorruptionManager : MonoBehaviour
@@ -16,6 +17,15 @@ namespace HoloJam
         [SerializeField] private Player player;
         [SerializeField] private EventSystem mEventSystem;
         [SerializeField] private Transform effectTransform;
+
+        [SerializeField] private string sfxOpen;
+        [SerializeField] private string sfxClose;
+        [SerializeField] private string sfxRefresh;
+        [SerializeField] private string sfxPlantDeath;
+        [SerializeField] private string sfxSpellUnlock;
+        private float timeSinceLastPlantDeath;
+        private const float plantDeathGap = 0.5f;
+
         private void Awake()
         {
             if (Instance == null)
@@ -43,6 +53,7 @@ namespace HoloJam
             Instance.isOpen = !Instance.isOpen;
             Time.timeScale = Instance.isOpen ? 0 : 1;
             Instance.bookmarkUI.SetPanelOpen(Instance.isOpen);
+            AudioManager.Instance.Play(Instance.isOpen ? Instance.sfxOpen : Instance.sfxClose);
             if (!Instance.isOpen)
             {
                 Instance.mEventSystem.SetSelectedGameObject(null);
@@ -58,14 +69,25 @@ namespace HoloJam
         {
             if (Instance.effects.ContainsKey(cType))
             {
+                AudioManager.Instance.Play(Instance.sfxSpellUnlock);
                 Instance.effects[cType].CanBeUsed = isActive;
                 Instance.UpdateBookmarkUI(Instance.effects[cType]);
             }
+        }
+        public static void PlayPlantDeathSound()
+        {
+            if (Time.timeSinceLevelLoad - Instance.timeSinceLastPlantDeath < plantDeathGap) return;
+
+            Instance.timeSinceLastPlantDeath = Time.timeSinceLevelLoad;
         }
         public static bool ModifyCharges(CorruptionType cType, int delta)
         {
             if (Instance.effects.ContainsKey(cType) && Instance.effects[cType].CanBeUsed)
             {
+                if (delta > 0)
+                {
+                    AudioManager.Instance.Play(Instance.sfxRefresh);
+                }
                 Instance.effects[cType].ModifyCharges(delta);
                 Instance.UpdateBookmarkUI(Instance.effects[cType]);
                 return true;

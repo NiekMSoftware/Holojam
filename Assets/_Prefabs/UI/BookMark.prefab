@@ -63,12 +63,16 @@ MonoBehaviour:
   mAnimator: {fileID: 1506642775470211548}
   counter: {fileID: 1756865604458722245}
   bookmarkImage: {fileID: 3383206169606798692}
-  selection: {fileID: 0}
   inactiveColor: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 0.8352941}
   activeColor: {r: 1, g: 1, b: 1, a: 1}
   onSelectUp: {fileID: 0}
   onSelectDown: {fileID: 0}
   parentSection: {fileID: 0}
+  isSelected: 0
+  sfxSelect:
+  - ability_select1
+  - ability_select2
+  sfxUse: 
 --- !u!95 &1506642775470211548
 Animator:
   serializedVersion: 7

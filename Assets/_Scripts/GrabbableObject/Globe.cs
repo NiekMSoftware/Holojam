@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using HoloJam.Managers;
 namespace HoloJam
 {
     public class Globe : MonoBehaviour
@@ -7,6 +7,7 @@ namespace HoloJam
         [SerializeField]
         private GameObject SpawnObj;
         private Grabbable mGrab;
+        public string pillarSFX;
         private void Start()
         {
             mGrab = GetComponent<Grabbable>();
@@ -34,6 +35,7 @@ namespace HoloJam
                 GameObject newObj = Instantiate(SpawnObj, transform.position, Quaternion.identity);
                 newObj.transform.localRotation = Quaternion.EulerAngles(0, 0, yDiff > 0 ? 180 : 0);
             }
+            AudioManager.Instance.Play(pillarSFX);
             Destroy(gameObject);
         }
     }

@@ -39,9 +39,9 @@ namespace HoloJam
         void Update()
         {
             if (basePlayer.performingAction || !canInteract) return;
-            if (input.GetInteractValue() > 0 && highestInteractable != null)
+            if (input.GetInteractionPressed() && highestInteractable != null)
             {
-                highestInteractable.ApplySave();
+                highestInteractable.InteractPreProcess();
                 highestInteractable.OnPerformInteraction(basePlayer);
             }
         }

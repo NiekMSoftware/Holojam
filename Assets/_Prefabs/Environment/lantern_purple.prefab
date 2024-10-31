@@ -169,11 +169,15 @@ MonoBehaviour:
   interactionType: 3
   saveIDOnInteract: 
   CanInteractInMidair: 1
+  sfxOnHighlight: 
+  sfxOnInteract: 
   mRigidBody: {fileID: 0}
   throwVelocityUp: {x: 0, y: 15}
   throwVelocityForward: {x: 15, y: 5}
   extraColliderToConvertToTrigger: {fileID: 575504825796570769}
   thrown: 0
+  sfxThrow: throw
+  sfxGrab: 
 --- !u!1 &3755528539473959218
 GameObject:
   m_ObjectHideFlags: 0

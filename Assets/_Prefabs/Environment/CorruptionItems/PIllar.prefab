@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 7422515073659698509}
   - component: {fileID: 1725844542531834536}
   - component: {fileID: 6398654566670239148}
+  - component: {fileID: 2103220958977540913}
   m_Layer: 8
   m_Name: PIllar
   m_TagString: heavy
@@ -297,6 +298,8 @@ MonoBehaviour:
   flipTransform: 1
   reactToKill: 0
   NegationFieldsOverlapped: 0
+  destroyOnLightSFX: []
+  playPlantDeathSFX: 0
 --- !u!114 &1725844542531834536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,6 +338,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2103220958977540913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7823414027490868200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4e970928447fa4284a79f0218f3f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityRequirement: 2
+  sfxID: crate_thud
+  RequireOnFeet: 0
+  minimumDelay: 0.25
 --- !u!1 &7842357828093524388
 GameObject:
   m_ObjectHideFlags: 0
