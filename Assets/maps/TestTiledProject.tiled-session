@@ -302,11 +302,11 @@
             }
         },
         "HubRooms/1 - Prison/Center.tmx": {
-            "scale": 1.5,
-            "selectedLayer": 4,
+            "scale": 1,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 354.6666666666667,
-                "y": 209
+                "x": 170,
+                "y": 507.5
             }
         },
         "HubRooms/1 - Prison/StartingCell.tmx": {
@@ -361,24 +361,24 @@
             "scale": 2,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 188.5,
-                "y": 174.25
+                "x": 303.5,
+                "y": 176.75
             }
         },
         "HubRooms/2 - Lower Class Rooms/B6 room.tmx": {
             "scale": 2,
-            "selectedLayer": 0,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 235.5,
-                "y": 145.25
+                "x": 178.5,
+                "y": 202.25
             }
         },
         "HubRooms/2 - Lower Class Rooms/B7 room.tmx": {
-            "scale": 3.370520833333333,
+            "scale": 2,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 240.02225175387088,
-                "y": 159.76759279290417
+                "x": 227.5,
+                "y": 176.75
             }
         },
         "HubRooms/2 - Lower Class Rooms/Great Hall.tmx": {
@@ -390,41 +390,44 @@
             }
         },
         "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx": {
-            "scale": 1,
-            "selectedLayer": 6,
+            "scale": 1.5,
+            "selectedLayer": 8,
             "viewCenter": {
-                "x": 516,
-                "y": 147.5
+                "x": 392.6666666666667,
+                "y": 198.33333333333334
             }
         },
         "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx": {
-            "scale": 3,
+            "scale": 2,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 135.66666666666663,
-                "y": 85.5
+                "x": 123,
+                "y": 118.75
             }
         },
         "HubRooms/3 - Old Tunnels/Long Tunnel.tmx": {
-            "scale": 1.6852604166666665,
-            "selectedLayer": 6,
+            "scale": 0.75,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 479.74781345613013,
-                "y": 159.6192477670983
+                "x": 517.3333333333334,
+                "y": 267.33333333333337
             }
         },
         "HubRooms/3 - Old Tunnels/Tall Tunnel.tmx": {
-            "scale": 1.8703124999999998,
-            "selectedLayer": 0,
+            "scale": 1.5,
+            "selectedLayer": 8,
             "viewCenter": {
-                "x": 160.1336675020886,
-                "y": 319.732664995823
+                "x": 74,
+                "y": 233
             }
         },
         "HubRooms/3 - Old Tunnels/dirt_bkg.tsx": {
             "scaleInDock": 1
         },
         "HubRooms/3 - Old Tunnels/dirt_block.tsx": {
+            "scaleInDock": 1
+        },
+        "HubRooms/3 - Old Tunnels/marble_wall.tsx": {
             "scaleInDock": 1
         },
         "HubRooms/4 - Courtyard/Direct Middle.tmx": {
@@ -436,11 +439,11 @@
             }
         },
         "HubRooms/4 - Courtyard/Front of door-D1.tmx": {
-            "scale": 1,
-            "selectedLayer": 1,
+            "scale": 1.5,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 465,
-                "y": 115.5
+                "x": 517.3333333333333,
+                "y": 173.66666666666669
             }
         },
         "HubRooms/4 - Courtyard/Front of door.tmx": {
@@ -460,11 +463,11 @@
             }
         },
         "HubRooms/4 - Courtyard/Wall-D4.tmx": {
-            "scale": 0.5,
-            "selectedLayer": 6,
+            "scale": 0.75,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 180,
-                "y": 503
+                "x": 337.33333333333337,
+                "y": 600.6666666666665
             }
         },
         "HubRooms/4 - Courtyard/Wall.tmx": {
@@ -508,11 +511,11 @@
             }
         },
         "HubRooms/5 - Higher Class Rooms/E6 room.tmx": {
-            "scale": 3.370520833333333,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 239.87390672806507,
-                "y": 159.91593781871
+                "x": 210,
+                "y": 226.75
             }
         },
         "HubRooms/5 - Higher Class Rooms/E7 room.tmx": {
@@ -540,11 +543,11 @@
             }
         },
         "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx": {
-            "scale": 0.5,
-            "selectedLayer": 6,
+            "scale": 3,
+            "selectedLayer": 8,
             "viewCenter": {
-                "x": 492,
-                "y": 545
+                "x": 105.66666666666664,
+                "y": 731.5
             }
         },
         "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx": {
@@ -662,6 +665,9 @@
             "scaleInDock": 1,
             "scaleInEditor": 11
         },
+        "marble_block.tsx": {
+            "scaleInDock": 1
+        },
         "memory_bg.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 16
@@ -719,24 +725,24 @@
             }
         }
     },
-    "last.imagePath": "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Tiles",
+    "last.imagePath": "C:/Users/Finn O'Shaughnessey/Documents/HoloJam/Holojam/Assets/maps/HubRooms",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "BookmarkLevels/6 - Random Baelz Seeds/3.tmx",
-        "BookmarkLevels/5 - Higher Class Rooms/3.tmx",
+        "HubRooms/5 - Higher Class Rooms/E6 room.tmx",
+        "HubRooms/1 - Prison/Center.tmx",
+        "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx",
+        "HubRooms/3 - Old Tunnels/Tall Tunnel.tmx",
+        "HubRooms/3 - Old Tunnels/Long Tunnel.tmx",
         "HubRooms/4 - Courtyard/Front of door-D1.tmx",
         "HubRooms/4 - Courtyard/Wall-D4.tmx",
-        "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx",
-        "HubRooms/6 - Queen's Spire/Lore room-F2.tmx",
-        "HubRooms/1 - Prison/CellA.tmx",
-        "HubRooms/1 - Prison/StartingCell.tmx",
-        "HubRooms/1 - Prison/CellC.tmx",
-        "HubRooms/1 - Prison/CellB.tmx",
-        "HubRooms/1 - Prison/Center.tmx",
-        "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx"
+        "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx",
+        "BookmarkLevels/6 - Random Baelz Seeds/3.tmx",
+        "BookmarkLevels/5 - Higher Class Rooms/3.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
