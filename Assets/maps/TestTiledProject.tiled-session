@@ -378,18 +378,18 @@
         },
         "HubRooms/2 - Lower Class Rooms/B6 room.tmx": {
             "scale": 2,
-            "selectedLayer": 1,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 187,
-                "y": 107.25
+                "x": 224,
+                "y": 165.75
             }
         },
         "HubRooms/2 - Lower Class Rooms/B7 room.tmx": {
             "scale": 2,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 325.5,
-                "y": 86.25
+                "x": 193,
+                "y": 176.75
             }
         },
         "HubRooms/2 - Lower Class Rooms/Great Hall.tmx": {
@@ -755,6 +755,9 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
         "HubRooms/1 - Prison/CellA.tmx",
         "HubRooms/1 - Prison/StartingCell.tmx",
         "HubRooms/1 - Prison/CellC.tmx",
@@ -763,10 +766,7 @@
         "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx",
         "HubRooms/4 - Courtyard/Wall-D4.tmx",
         "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx",
-        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx",
-        "HubRooms/1 - Prison/Warden's Office.tmx",
-        "HubRooms/3 - Old Tunnels/Tall Tunnel.tmx",
-        "HubRooms/5 - Higher Class Rooms/E2 room.tmx"
+        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
