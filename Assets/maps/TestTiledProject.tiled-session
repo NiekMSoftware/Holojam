@@ -755,6 +755,7 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "HubRooms/2 - Lower Class Rooms/B6 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
@@ -765,8 +766,7 @@
         "HubRooms/1 - Prison/Center.tmx",
         "HubRooms/5 - Higher Class Rooms/Flight Zone.tmx",
         "HubRooms/4 - Courtyard/Wall-D4.tmx",
-        "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx",
-        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx"
+        "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
