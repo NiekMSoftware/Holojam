@@ -28,7 +28,7 @@ namespace HoloJam.Platform
         private int _currentPointIndex = 0;
         private bool _movingForward = true;
 
-        private PlatformEffector2D _effector;
+        //private PlatformEffector2D _effector;
         private PlayerInput input;
         private BoxCollider2D mCollider;
         private CorruptableObject mCorruptable;
@@ -36,7 +36,7 @@ namespace HoloJam.Platform
 
         private void Start()
         {
-            _effector = GetComponent<PlatformEffector2D>();
+            //_effector = GetComponent<PlatformEffector2D>();
             mCollider = GetComponent<BoxCollider2D>();
             mCorruptable = GetComponent<CorruptableObject>();
 
@@ -119,11 +119,11 @@ namespace HoloJam.Platform
             Collider2D playerCol = collision.GetComponent<Collider2D>();
             Player p = playerCol.GetComponentInParent<Player>();
             
-            // Check if player is grounded (aka on the platform) and is pressing down
-            if (p != null && p.SurroundingSensor.Grounded && input.GetUpDownInput() < 0)
-            {
-                _effector.rotationalOffset = 180;
-            }
+            //// Check if player is grounded (aka on the platform) and is pressing down
+            //if (p != null && p.SurroundingSensor.Grounded && input.GetUpDownInput() < 0)
+            //{
+            //    _effector.rotationalOffset = 180;
+            //}
         }
 
         private void OnTriggerExit2D(Collider2D collision)
@@ -137,7 +137,7 @@ namespace HoloJam.Platform
             }
 
             input = null;
-            _effector.rotationalOffset = 0;
+            //_effector.rotationalOffset = 0;
         }
 
 #if UNITY_EDITOR
