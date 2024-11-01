@@ -429,3 +429,5 @@ MonoBehaviour:
   flipTransform: 0
   reactToKill: 0
   NegationFieldsOverlapped: 0
+  destroyOnLightSFX: []
+  playPlantDeathSFX: 0

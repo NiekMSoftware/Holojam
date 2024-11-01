@@ -1,12 +1,12 @@
 {
-    "activeFile": "",
+    "activeFile": "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx",
     "expandedProjectPaths": [
-        "HubRooms",
         ".",
         "HubRooms/6 - Queen's Spire",
-        "HubRooms/2 - Lower Class Rooms",
+        "HubRooms",
+        "BookmarkLevels/1 - Prison",
         "BookmarkLevels/3 - Old Tunnels",
-        "BookmarkLevels/1 - Prison"
+        "HubRooms/2 - Lower Class Rooms"
     ],
     "fileStates": {
         "BookmarkLevels/1 - Prison/1 - Jailer.tmx": {
@@ -561,11 +561,11 @@
             }
         },
         "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx": {
-            "scale": 1.5,
-            "selectedLayer": 8,
+            "scale": 0.75,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 229.3333333333333,
-                "y": 158.33333333333334
+                "x": 441.33333333333337,
+                "y": 336.6666666666667
             }
         },
         "HubRooms/6 - Queen's Spire/Boss room maybe.tmx": {
@@ -752,9 +752,11 @@
     "last.imagePath": "C:/Users/DrDoak/IdolShowdown/Holojam/Assets/Tiles",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
+        "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx",
         "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B6 room.tmx",
@@ -763,7 +765,6 @@
         "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx",
         "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx",
         "decorative_props.tsx",
-        "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx",
         "HubRooms/1 - Prison/CellB.tmx",
         "HubRooms/1 - Prison/CellA.tmx",
         "HubRooms/1 - Prison/Center.tmx"
