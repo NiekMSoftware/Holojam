@@ -79,7 +79,7 @@
             "scale": 2.3888541666666665,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 172.88623381153798,
+                "x": 172.6769284437274,
                 "y": 159.69999563947152
             }
         },
@@ -410,11 +410,11 @@
             }
         },
         "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx": {
-            "scale": 2,
-            "selectedLayer": 7,
+            "scale": 3,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 156.5,
-                "y": 104.25
+                "x": 160.49999999999997,
+                "y": 75.5
             }
         },
         "HubRooms/3 - Old Tunnels/Long Tunnel.tmx": {
