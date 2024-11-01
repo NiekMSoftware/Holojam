@@ -89,10 +89,10 @@ MonoBehaviour:
   sfxOnHighlight: 
   sfxOnInteract: lore_note_pickup
   customSaveID: 
-  StartingNode: {fileID: 0}
+  StartingNode: {fileID: 11400000, guid: f99d8cdf30ce7974a8fe1752adc3d466, type: 2}
   disableMovement: 1
   disableJump: 1
-  skipOnSecondInteraction: 1
+  skipOnSecondInteraction: 0
   triggerReturnToHub: 1
   oneUsePerWorld: 0
   newFocusTransform: {fileID: 0}

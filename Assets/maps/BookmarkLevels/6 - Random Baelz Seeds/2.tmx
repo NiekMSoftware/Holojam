@@ -85,6 +85,10 @@
 </data>
  </layer>
  <layer id="5" name="onoff2-defaulton" width="30" height="20">
+  <properties>
+   <property name="unity:layer" value="Ground"/>
+   <property name="unity:tag" value="onoff2-defaulton"/>
+  </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,44,44,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,44,44,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

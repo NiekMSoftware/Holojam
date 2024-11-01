@@ -21,7 +21,7 @@ namespace HoloJam
             switchInteractable = GetComponentInChildren<SwitchInteractable>();
             mSprite = GetComponentInChildren<SpriteRenderer>();
             switchInteractable.toggleEvent += ToggleEvent;
-            //OnOffBlockManager.RegisterToggleObject(this, mBlockType);
+            OnOffBlockManager.RegisterToggleObject(this, mBlockType);
         }
         private void OnDestroy()
         {

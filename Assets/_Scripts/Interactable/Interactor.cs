@@ -41,6 +41,7 @@ namespace HoloJam
         // Update is called once per frame
         void Update()
         {
+            if (basePlayer.IsBird) return;
             if (basePlayer.performingAction || !canInteract) return;
             if (input.GetInteractionPressed() && highestInteractable != null)
             {

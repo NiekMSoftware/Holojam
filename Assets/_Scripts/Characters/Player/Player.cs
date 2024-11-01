@@ -20,6 +20,7 @@ namespace HoloJam.Characters.Player
 
         [field: Space()] public PlayerInput Input { get; private set; }
         public PlayerController Controller { get ; private set; }
+        public bool IsBird { get { return birdMode; } }
         private bool birdMode = false;
         private COPlayer corruptObj;
         private Interactor mInteractor;
