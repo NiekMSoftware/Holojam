@@ -49,7 +49,7 @@ namespace HoloJam.Dialogue
 
         public void EndDialogue()
         {
-            print("Ending regular dialogue.");
+            if (player == null) player = FindFirstObjectByType<Player>();
             UIManager.Instance.HideDialogue();
             player.Input.DisableUIControls();
             CurrentNode = null;
@@ -59,7 +59,7 @@ namespace HoloJam.Dialogue
         public void EndDialogue(string sceneName)
         {
             
-            print("Ending Dialogue and loading scene!");
+            //print("Ending Dialogue and loading scene!");
             UIManager.Instance.HideDialogue();
             player.Input.DisableUIControls();
             CurrentNode = null;
