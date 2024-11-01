@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level_change_memory_book
       objectReference: {fileID: 0}
+    - target: {fileID: 1929332203526117033, guid: ecc1626da7f1b7d4c9aeb3aa306d8b48, type: 3}
+      propertyPath: m_Radius
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 4036143024810914040, guid: ecc1626da7f1b7d4c9aeb3aa306d8b48, type: 3}
       propertyPath: m_Sprite
       value: 

@@ -14,12 +14,18 @@ namespace HoloJam
         private bool lastGravity;
         [SerializeField]
         public DialogueTrigger triggerDialogueOnDeath;
+        [SerializeField]
+        public string DestroyIfHasMemory;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             mAnimator = GetComponent<Animator>();
             rigidbody2D = GetComponent <Rigidbody2D>();
             lastGravity = useGravity;
+            if (MemoryManager.HasVariable(DestroyIfHasMemory))
+            {
+                Destroy(gameObject);
+            }
         }
         public void StartKill()
         {
