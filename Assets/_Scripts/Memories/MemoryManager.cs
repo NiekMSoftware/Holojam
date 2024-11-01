@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using HoloJam.Characters.Player.Utils;
 namespace HoloJam
 {
     public class MemoryManager : MonoBehaviour
@@ -24,6 +25,21 @@ namespace HoloJam
 
             // Optionally prevent destruction on scene load
             DontDestroyOnLoad(gameObject);
+        }
+        private void Update()
+        {
+            if (PlayerInput.Instance == null) return;
+
+            if (PlayerInput.Instance.GetPausePressed() && PlayerInput.Instance.GetJumpValue() > 0 && 
+                PlayerInput.Instance.GetInteractValue() > 0 && PlayerInput.Instance.GetUpDownInput() > 0)
+            {
+                debugAllmemories = true;
+            }
+            if (PlayerInput.Instance.GetPausePressed() && PlayerInput.Instance.GetJumpValue() > 0 &&
+                PlayerInput.Instance.GetInteractValue() > 0 && PlayerInput.Instance.GetUpDownInput() < 0)
+            {
+                debugAllmemories = false;
+            }
         }
         public static void SetVariable(string ID)
         {

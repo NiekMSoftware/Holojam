@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using HoloJam.Characters.Player;
 using UnityEngine.EventSystems;// Required when using Event data.
 using HoloJam.Managers;
+using HoloJam.Characters.Player.Utils;
 namespace HoloJam
 {
     public class CorruptionManager : MonoBehaviour
@@ -46,7 +47,34 @@ namespace HoloJam
                 RegisterEffect(ce, ce.associatedType);
             }
         }
+        private void Update()
+        {
+            if (PlayerInput.Instance == null) return;
 
+            if (PlayerInput.Instance.GetCorruptionPressed() && PlayerInput.Instance.GetJumpValue() > 0 &&
+                PlayerInput.Instance.GetInteractValue() > 0)
+            {
+                if (PlayerInput.Instance.GetUpDownInput() > 0 && PlayerInput.Instance.GetMovementInput() > 0) 
+                {
+                    ToggleEffectActive(CorruptionType.TIMESTOP);
+                }
+                if (PlayerInput.Instance.GetUpDownInput() > 0)
+                {
+                    ToggleEffectActive(CorruptionType.GRAVITY);
+                } else if (PlayerInput.Instance.GetUpDownInput() < 0)
+                {
+                    ToggleEffectActive(CorruptionType.GLOBE);
+                }
+                else if (PlayerInput.Instance.GetMovementInput() > 0)
+                {
+                    ToggleEffectActive(CorruptionType.BIRD);
+                }
+                else if (PlayerInput.Instance.GetMovementInput() < 0)
+                {
+                    ToggleEffectActive(CorruptionType.KILL);
+                }
+            }
+        }
         public static void TogglePanelOpen()
         {
             if (!Instance.effects.Values.Any(obj => obj.CanBeUsed)) return;
@@ -64,6 +92,15 @@ namespace HoloJam
         {
             Instance.effects[cType] = effect;
             Instance.UpdateBookmarkUI(Instance.effects[cType]);
+        }
+        public static void ToggleEffectActive(CorruptionType cType)
+        {
+            if (Instance.effects.ContainsKey(cType))
+            {
+                AudioManager.Instance.Play(Instance.sfxSpellUnlock);
+                Instance.effects[cType].CanBeUsed = !Instance.effects[cType].CanBeUsed;
+                Instance.UpdateBookmarkUI(Instance.effects[cType]);
+            }
         }
         public static void SetEffectActive(CorruptionType cType, bool isActive)
         {

@@ -11,13 +11,17 @@ namespace HoloJam
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
+            mAnimator = GetComponent<Animator>();
             if (!MemoryManager.HasVariable("title"))
             {
                 frozen = true;
                 Time.timeScale = 0;
+            } else
+            {
+                mAnimator.Play("empty");
             }
 
-            mAnimator = GetComponent<Animator>();
+           
         }
 
         // Update is called once per frame
@@ -37,6 +41,7 @@ namespace HoloJam
             mAnimator.Play("start");
             Time.timeScale = 1;
             frozen = false;
+            MemoryManager.SetVariable("title");
         }
     }
 }

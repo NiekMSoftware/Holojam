@@ -102,7 +102,10 @@ namespace HoloJam
         }
         public static void SetBlocksStatus(bool on, BlockType blockType)
         {
-            AudioManager.Instance.Play(Instance.sfxButtonToggle);
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.Play(Instance.sfxButtonToggle);
+            }
             if (blockType == BlockType.LAYER_ONE_BLUE)
             {
                 Instance.blockStatus = on;
