@@ -204,11 +204,11 @@
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/2.tmx": {
-            "scale": 2.3888541666666665,
+            "scale": 1.5,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 239.86395151092313,
-                "y": 160.11860637509264
+                "x": 175.66666666666663,
+                "y": 243.66666666666669
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/3.tmx": {
@@ -381,7 +381,7 @@
             "scale": 2,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 196,
+                "x": 195.75,
                 "y": 207.75
             }
         },
@@ -389,7 +389,7 @@
             "scale": 4,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 425.75,
+                "x": 425.875,
                 "y": 156.125
             }
         },
@@ -397,16 +397,16 @@
             "scale": 1.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 892,
+                "x": 892.3333333333333,
                 "y": 186.33333333333334
             }
         },
         "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx": {
-            "scale": 2,
+            "scale": 4,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 820,
-                "y": 182.25
+                "x": 947.375,
+                "y": 210.375
             }
         },
         "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx": {
@@ -523,11 +523,11 @@
             }
         },
         "HubRooms/5 - Higher Class Rooms/E6 room.tmx": {
-            "scale": 2,
-            "selectedLayer": 1,
+            "scale": 1.5,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 211.75,
-                "y": 175.25
+                "x": 252.33333333333337,
+                "y": 157
             }
         },
         "HubRooms/5 - Higher Class Rooms/E7 room.tmx": {
@@ -566,8 +566,8 @@
             "scale": 1,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 424.5,
-                "y": 731.5
+                "x": 445.5,
+                "y": 370.5
             }
         },
         "HubRooms/6 - Queen's Spire/Boss room maybe.tmx": {
@@ -764,18 +764,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
-        "HubRooms/5 - Higher Class Rooms/E3 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E2 room.tmx",
-        "HubRooms/5 - Higher Class Rooms/E6 room.tmx",
         "HubRooms/5 - Higher Class Rooms/E5 room.tmx",
-        "HubRooms/1 - Prison/CellA.tmx",
-        "HubRooms/1 - Prison/StartingCell.tmx",
-        "HubRooms/1 - Prison/Center.tmx",
-        "HubRooms/1 - Prison/CellC.tmx",
-        "HubRooms/1 - Prison/CellB.tmx",
-        "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx",
-        "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx",
-        "HubRooms/2 - Lower Class Rooms/B4 room.tmx"
+        "HubRooms/2 - Lower Class Rooms/B6 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx",
+        "HubRooms/5 - Higher Class Rooms/E6 room.tmx",
+        "HubRooms/2 - Lower Class Rooms/Pantry probably.tmx",
+        "BookmarkLevels/1 - Prison/A1 - Jailer.tmx",
+        "BookmarkLevels/4 - Courtyard/2 - HopOnPillarAndFlipGravity.tmx",
+        "BookmarkLevels/5 - Higher Class Rooms/2.tmx",
+        "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx",
+        "HubRooms/5 - Higher Class Rooms/E3 room.tmx",
+        "HubRooms/5 - Higher Class Rooms/E2 room.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
