@@ -1,11 +1,11 @@
 {
     "activeFile": "HubRooms/1 - Prison/CellB.tmx",
     "expandedProjectPaths": [
-        ".",
-        "HubRooms",
-        "BookmarkLevels/3 - Old Tunnels",
         "BookmarkLevels/1 - Prison",
+        "HubRooms",
+        ".",
         "HubRooms/1 - Prison",
+        "BookmarkLevels/3 - Old Tunnels",
         "HubRooms/2 - Lower Class Rooms",
         "HubRooms/6 - Queen's Spire"
     ],
@@ -292,8 +292,8 @@
             "scale": 2,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 182.75,
-                "y": 207.75
+                "x": 240,
+                "y": 159.75
             }
         },
         "HubRooms/1 - Prison/CellB.tmx": {
@@ -308,24 +308,24 @@
             "scale": 2,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 244.25,
-                "y": 169.25
+                "x": 240,
+                "y": 159.75
             }
         },
         "HubRooms/1 - Prison/Center.tmx": {
             "scale": 1.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 320.33333333333326,
-                "y": 319.6666666666667
+                "x": 320,
+                "y": 320.33333333333337
             }
         },
         "HubRooms/1 - Prison/StartingCell.tmx": {
             "scale": 2,
-            "selectedLayer": -1,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 172.25,
-                "y": 193.25
+                "x": 240,
+                "y": 159.75
             }
         },
         "HubRooms/1 - Prison/Warden's Office.tmx": {
@@ -565,8 +565,8 @@
             "scale": 1,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 317.5,
-                "y": 297.5
+                "x": 425,
+                "y": 731.5
             }
         },
         "HubRooms/6 - Queen's Spire/Boss room maybe.tmx": {
