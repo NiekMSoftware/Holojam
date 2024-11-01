@@ -16,7 +16,6 @@ namespace HoloJam
         public bool invert;
         private void Start()
         {
-//            OnOffBlockManager.RegisterToggleObject(this, mBlockType);
         }
         public override void OnToggle(bool toggleValue)
         {

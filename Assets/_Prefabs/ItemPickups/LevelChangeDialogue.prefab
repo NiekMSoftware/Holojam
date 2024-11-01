@@ -102,3 +102,5 @@ MonoBehaviour:
   disableJump: 1
   skipOnSecondInteraction: 1
   triggerReturnToHub: 1
+  oneUsePerWorld: 0
+  newFocusTransform: {fileID: 0}

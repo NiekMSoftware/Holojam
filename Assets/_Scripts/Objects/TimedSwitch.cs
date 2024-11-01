@@ -4,8 +4,6 @@ namespace HoloJam
 {
     public class TimedSwitch : IReactToOnOffToggle
     {
-
-        public BlockType mBlockType;
         [SerializeField]
         private bool currentToggle;
         [SerializeField]

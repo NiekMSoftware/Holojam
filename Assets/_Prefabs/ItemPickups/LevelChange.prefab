@@ -145,3 +145,5 @@ MonoBehaviour:
   sfxOnInteract: lore_note_pickup
   returnToHome: 0
   sceneToLoad: DummyMemoryWorld
+  specialOnParticle: {fileID: 0}
+  specialUsedParticle: {fileID: 0}

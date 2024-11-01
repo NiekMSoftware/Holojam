@@ -10,6 +10,8 @@ namespace HoloJam.Dialogue
         public bool disableMove = true;
         public bool disableJump = true;
         public DialogueNode StartingNode;
+        public Transform newFocusTransform;
+        private Transform oldFocusTransform;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -35,12 +37,21 @@ namespace HoloJam.Dialogue
                 {
                     return;
                 }
+                if (newFocusTransform != null)
+                {
+                    oldFocusTransform = WorldManager.GetCameraTarget();
+                    WorldManager.SetTarget(newFocusTransform);
+                }
                 DialogueManager.Instance.RegisterDialogueEndEvent(SaveID);
                 DialogueManager.Instance.StartDialogue(StartingNode, disableMove, disableJump);
             }
         }
         void SaveID()
         {
+            if (newFocusTransform != null)
+            {
+                WorldManager.SetTarget(oldFocusTransform);
+            }
             DialogueManager.Instance.DeRegisterDialogueEndEvent(SaveID);
             MemoryManager.SetVariable(GetSaveID());
         }

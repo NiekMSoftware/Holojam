@@ -123,32 +123,64 @@ namespace HoloJam.Managers
         {
             float volume;
 
-            switch (level)
+            if (mixers == AudioMixers.Sfx)
             {
-                case AudioLevels.Muted:
-                    volume = -80f;
-                    SetText(level, mixers);
-                    break;
+                switch (level)
+                {
+                    case AudioLevels.Muted:
+                        volume = -80f;
+                        SetText(level, mixers);
+                        break;
 
-                case AudioLevels.Low:
-                    volume = -54f;
-                    SetText(level, mixers);
-                    break;
+                    case AudioLevels.Low:
+                        volume = -28f;
+                        SetText(level, mixers);
+                        break;
 
-                case AudioLevels.Medium:
-                    volume = -28f;
-                    SetText(level, mixers);
-                    break;
+                    case AudioLevels.Medium:
+                        volume = -16f;
+                        SetText(level, mixers);
+                        break;
 
-                case AudioLevels.High:
-                    volume = -12f;
-                    SetText(level, mixers);
-                    break;
-                default:
-                    volume = -12f;
-                    SetText(level, mixers);
-                    break;
+                    case AudioLevels.High:
+                        volume = -6f;
+                        SetText(level, mixers);
+                        break;
+                    default:
+                        volume = -16f;
+                        SetText(level, mixers);
+                        break;
+                }
+            } else
+            {
+                switch (level)
+                {
+                    case AudioLevels.Muted:
+                        volume = -80f;
+                        SetText(level, mixers);
+                        break;
+
+                    case AudioLevels.Low:
+                        volume = -54f;
+                        SetText(level, mixers);
+                        break;
+
+                    case AudioLevels.Medium:
+                        volume = -28f;
+                        SetText(level, mixers);
+                        break;
+
+                    case AudioLevels.High:
+                        volume = -12f;
+                        SetText(level, mixers);
+                        break;
+                    default:
+                        volume = -12f;
+                        SetText(level, mixers);
+                        break;
+                }
             }
+            
 
             switch (mixers)
             {

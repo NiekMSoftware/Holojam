@@ -3,7 +3,7 @@ using HoloJam.Characters.Player;
 using UnityEngine.SceneManagement;
 using Unity.Cinemachine;
 using TMPro;
-using Unity.Rendering.Universal;
+using HoloJam.Managers;
 namespace HoloJam
 {
     public class WorldManager : MonoBehaviour
@@ -31,7 +31,10 @@ namespace HoloJam
         [SerializeField]
         private GameObject globalLightPrefab;
         private TransitionTag lastTargetTag;
-        
+
+        [SerializeField]
+        private string memorySong;
+
         private void Awake()
         {
             if (Instance == null)
@@ -102,6 +105,7 @@ namespace HoloJam
             Instance.lastTargetTag = TransitionTag.NONE;
             Instance.cachedPositionInHome = Instance.playerRef.transform.position;
             CorruptionManager.ResetEffects();
+            AudioManager.Instance.Play(Instance.memorySong);
             SceneManager.LoadScene(sceneName);
         }
         public static void LoadNewHubScene(string scenename,TransitionTag originTag, TransitionTag targetTag)
@@ -167,7 +171,7 @@ namespace HoloJam
         public static void ReturnToHomeScene()
         {
             if (Instance.homeSceneName == SceneManager.GetActiveScene().name) return;
-            
+            AudioManager.Instance.Stop(Instance.memorySong);
             CorruptionManager.ResetEffects();
             SceneManager.LoadScene(Instance.homeSceneName);
         }
