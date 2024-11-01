@@ -196,11 +196,11 @@
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/1 - Bird Tutorial.tmx": {
-            "scale": 2.3888541666666665,
-            "selectedLayer": 0,
+            "scale": 1.5,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 239.86395151092313,
-                "y": 160.11860637509264
+                "x": 257.66666666666663,
+                "y": 219.66666666666669
             }
         },
         "BookmarkLevels/5 - Higher Class Rooms/2.tmx": {
@@ -500,9 +500,9 @@
         },
         "HubRooms/5 - Higher Class Rooms/E3 room.tmx": {
             "scale": 2,
-            "selectedLayer": 6,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 232.5,
+                "x": 232.25,
                 "y": 171.25
             }
         },
@@ -527,7 +527,7 @@
             "selectedLayer": 1,
             "viewCenter": {
                 "x": 211.75,
-                "y": 175.5
+                "y": 175.25
             }
         },
         "HubRooms/5 - Higher Class Rooms/E7 room.tmx": {
@@ -764,18 +764,18 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "HubRooms/5 - Higher Class Rooms/E3 room.tmx",
         "HubRooms/5 - Higher Class Rooms/E2 room.tmx",
+        "HubRooms/5 - Higher Class Rooms/E6 room.tmx",
+        "HubRooms/5 - Higher Class Rooms/E5 room.tmx",
+        "HubRooms/1 - Prison/CellA.tmx",
         "HubRooms/1 - Prison/StartingCell.tmx",
         "HubRooms/1 - Prison/Center.tmx",
         "HubRooms/1 - Prison/CellC.tmx",
         "HubRooms/1 - Prison/CellB.tmx",
-        "HubRooms/1 - Prison/CellA.tmx",
-        "HubRooms/5 - Higher Class Rooms/E5 room.tmx",
         "BookmarkLevels/2 - Lower Class Rooms/5 - TimestopWhoops.tmx",
         "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx",
-        "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/B6 room.tmx"
+        "HubRooms/2 - Lower Class Rooms/B4 room.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
