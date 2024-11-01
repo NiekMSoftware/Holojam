@@ -108,6 +108,15 @@ namespace HoloJam
             {
                 if (Instance.effects[cType].AttemptUse())
                 {
+                    List<CorruptableObject> cleanedCorruptableObjs = new List<CorruptableObject>();
+                    foreach (CorruptableObject obj in Instance.corruptableObjects)
+                    {
+                        if (obj != null)
+                        {
+                            cleanedCorruptableObjs.Add(obj);
+                        }
+                    }
+                    Instance.corruptableObjects = cleanedCorruptableObjs;
                     Instance.corruptableObjects.ForEach(obj => obj.ReceiveEffect(cType));
                     ModifyCharges(cType, -1);
                     return true;

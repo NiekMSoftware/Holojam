@@ -5,6 +5,7 @@ namespace HoloJam
     public class MemoryManager : MonoBehaviour
     {
         private static MemoryManager Instance;
+        public bool debugAllmemories;
         [SerializeField]
         private List<string> savedMemoryIDs = new List<string>();
 
@@ -33,6 +34,7 @@ namespace HoloJam
         }
         public static bool HasVariable(string ID)
         {
+            if (Instance.debugAllmemories) return true;
             return Instance.savedMemoryIDs.Contains(ID);
         }
         public static void ClearSave()

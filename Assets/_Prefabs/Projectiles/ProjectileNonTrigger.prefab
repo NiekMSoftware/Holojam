@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4783470922023892098}
   m_Layer: 0
   m_Name: ProjectileNonTrigger
-  m_TagString: heavy
+  m_TagString: specialHeavy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,3 +216,5 @@ MonoBehaviour:
   flipTransform: 0
   reactToKill: 0
   NegationFieldsOverlapped: 0
+  destroyOnLightSFX: []
+  playPlantDeathSFX: 0

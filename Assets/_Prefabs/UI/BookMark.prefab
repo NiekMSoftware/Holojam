@@ -63,7 +63,7 @@ MonoBehaviour:
   mAnimator: {fileID: 1506642775470211548}
   counter: {fileID: 1756865604458722245}
   bookmarkImage: {fileID: 3383206169606798692}
-  inactiveColor: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 0.8352941}
+  inactiveColor: {r: 0.31132078, g: 0, b: 0, a: 0.3764706}
   activeColor: {r: 1, g: 1, b: 1, a: 1}
   onSelectUp: {fileID: 0}
   onSelectDown: {fileID: 0}

@@ -3,6 +3,7 @@ using HoloJam.Characters.Player;
 using UnityEngine.SceneManagement;
 using Unity.Cinemachine;
 using TMPro;
+using Unity.Rendering.Universal;
 namespace HoloJam
 {
     public class WorldManager : MonoBehaviour
@@ -16,6 +17,7 @@ namespace HoloJam
         private Vector3 cachedPositionInHome;
         private Player playerRef;
         private float minY = -15f;
+        private float maxY = 20f;
         private string areaName = "";
         private string roomName = "";
         [SerializeField]
@@ -26,7 +28,10 @@ namespace HoloJam
         private TextMeshProUGUI smallZoneName;
         [SerializeField]
         private TextMeshProUGUI smallRoomName;
+        [SerializeField]
+        private GameObject globalLightPrefab;
         private TransitionTag lastTargetTag;
+        
         private void Awake()
         {
             if (Instance == null)
@@ -43,9 +48,10 @@ namespace HoloJam
         {
             Instance.confiner.BoundingShape2D = bounds;
         }
-        public static void SetYDeathZone(float DeathZone)
+        public static void SetYDeathZone(float DeathZone, float upperDeathZone)
         {
             Instance.minY = DeathZone;
+            Instance.maxY = upperDeathZone;
         }
         public static void UpdateRoomName(string areaName, string roomName)
         {
@@ -75,7 +81,9 @@ namespace HoloJam
         }
         private void Update()
         {
-            if (playerRef!= null && playerRef.transform.position.y < minY)
+            if (playerRef!= null && 
+                (playerRef.transform.position.y < minY ||
+                    playerRef.transform.position.y > maxY))
             {
                 WorldManager.ReloadScene();
             }
@@ -83,6 +91,7 @@ namespace HoloJam
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void FirstStart()
         {
+            Instantiate(globalLightPrefab, transform);
             homeSceneName = SceneManager.GetActiveScene().name;
             SetPlayer(FindObjectOfType<Player>());
             cachedPositionInHome = playerRef.transform.position;

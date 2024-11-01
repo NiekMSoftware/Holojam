@@ -725,7 +725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5953254605714287454, guid: 91fb609ef0e35b9408c52de9ff3b0be4, type: 3}
       propertyPath: sceneToLoad
-      value: B8
+      value: B6
       objectReference: {fileID: 0}
     - target: {fileID: 8812613620613464004, guid: 91fb609ef0e35b9408c52de9ff3b0be4, type: 3}
       propertyPath: m_Name
@@ -1031,6 +1031,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2406007462126247883, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2406007462126247883, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2406007462126247883, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2406007462126247883, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2406007462126247883, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2406007462126247883, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2406007462126247883, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2406007462126247883, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3164386501863157885, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1239,6 +1271,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6647562445546317328, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
+      propertyPath: debugAllmemories
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7058763669653571746, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1301,11 +1337,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: orthographic size
-      value: 8.4375
+      value: 6.78125
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.125
+      value: 0.2526042
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -1313,11 +1349,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.75000006
+      value: 0.18750001
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.40185183
       objectReference: {fileID: 0}
     - target: {fileID: 8270897359007044436, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1564,7 +1600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8206054126080999215, guid: 8bc941c146e02644eaeb914173e3fd6d, type: 3}
       propertyPath: zoneName
-      value: The Common
+      value: The Commons
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
