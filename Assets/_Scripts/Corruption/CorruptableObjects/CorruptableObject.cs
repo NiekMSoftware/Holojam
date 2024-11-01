@@ -33,6 +33,7 @@ namespace HoloJam
         [SerializeField]
         private bool playPlantDeathSFX;
         private bool sfxPlayed = false;
+        private ParticleSystem pSys;
         
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -59,6 +60,8 @@ namespace HoloJam
             mCorruptionKill = GetComponent<CorruptionKillAnimator>();
             mRigidBody = GetComponent<Rigidbody2D>();
             mHitboxes = new List<Hitbox>(GetComponentsInChildren<Hitbox>());
+            pSys = GetComponent<ParticleSystem>();
+            
         }
         private void OnDestroy()
         {

@@ -12,6 +12,7 @@ namespace HoloJam
         public bool CanInteractInMidair = true;
         public string sfxOnHighlight;
         public string sfxOnInteract;
+        protected bool canInteract = true;
         public virtual void OnPerformInteraction(Player p)
         {
 
@@ -23,6 +24,7 @@ namespace HoloJam
         }
         public virtual void OnTriggerEnter2D(Collider2D collision)
         {
+            if (!canInteract) return;
             if (collision.attachedRigidbody == null || collision.attachedRigidbody.GetComponent<Interactor>() == null ||
                 collision.GetComponent<Hitbox>() != null) return;
             if (sfxOnHighlight != "") AudioManager.Instance.Play(sfxOnHighlight);
@@ -30,6 +32,7 @@ namespace HoloJam
         }
         public virtual void OnTriggerExit2D(Collider2D collision)
         {
+            if (!canInteract) return;
             if (collision.attachedRigidbody == null || collision.attachedRigidbody.GetComponent<Interactor>() == null ||
                 collision.GetComponent<Hitbox>() != null) return;
             collision.attachedRigidbody.GetComponent<Interactor>().DeregisterInteractable(this);

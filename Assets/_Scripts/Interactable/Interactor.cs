@@ -14,7 +14,7 @@ namespace HoloJam
         private Interactable highestInteractable;
         private PlayerInput input;
         public string sfxInteractor;
-        public bool HandsFree { get { return canInteract; } set { canInteract = value; } }
+        public bool HandsFree { get { return canInteract; } set { canInteract = value; UpdateIcons(); } }
         private bool canInteract;
         private void Start()
         {
@@ -25,13 +25,14 @@ namespace HoloJam
         public void RegisterInteractable(Interactable interactable)
         {
             if (currentInteractables.Contains(interactable)) return;
+            Debug.Log("register: " + interactable);
             currentInteractables.Add(interactable);
-            AudioManager.Instance.Play(sfxInteractor);
             UpdateIcons();
         }
         public void DeregisterInteractable(Interactable interactable)
         {
             if (!currentInteractables.Contains(interactable)) return;
+            Debug.Log("Deregister: " + interactable);
             currentInteractables.Remove(interactable);
             UpdateIcons();
         }
@@ -68,6 +69,7 @@ namespace HoloJam
                 interactionAnimator.Play("idle");
                 return;
             }
+            AudioManager.Instance.Play(sfxInteractor);
             switch (highestInteractable.interactionType)
             {
                 case InteractableType.ATTACK:

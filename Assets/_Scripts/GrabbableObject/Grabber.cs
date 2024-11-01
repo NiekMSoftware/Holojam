@@ -28,6 +28,7 @@ namespace HoloJam
             mPlayer.PerformAction("pickup");
 
             mInteractor.HandsFree = false;
+            mInteractor.DeregisterInteractable(grabbedObject);
             grabbedObject.OnGrabbed();
             currentGrabbedObject = grabbedObject;
             charAnimator.SetPrefix("g");
@@ -36,7 +37,14 @@ namespace HoloJam
         // Update is called once per frame
         void Update()
         {
-            if (currentGrabbedObject == null) return;
+            if (currentGrabbedObject == null)
+            {
+                if (!mInteractor.HandsFree)
+                {
+                    Release();
+                }
+                return;
+            }
             UpdateGrabbedObjPosition();
             CheckRelease();
         }
@@ -61,11 +69,15 @@ namespace HoloJam
                 {
                     currentGrabbedObject.Drop();
                 }
-                currentGrabbedObject = null;
-                mInteractor.HandsFree = true;
-                charAnimator.SetPrefix("");
-                charAnimator.PlayAnimation("idle");
+                Release();
             }
+        }
+        void Release()
+        {
+            currentGrabbedObject = null;
+            mInteractor.HandsFree = true;
+            charAnimator.SetPrefix("");
+            charAnimator.PlayAnimation("idle");
         }
     }
 }

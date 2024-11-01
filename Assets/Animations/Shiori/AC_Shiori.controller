@@ -104,6 +104,32 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &-4476114542927492653
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: gfall_b
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: e086552a1a96e5b458eec2b263269de4, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &-4380778688433100611
 AnimatorState:
   serializedVersion: 6
@@ -130,14 +156,14 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-3841630480891006469
+--- !u!1102 &-3985859066351459095
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: jump_b
+  m_Name: gfall_w
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -150,20 +176,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a9c0ac06591623d4986569a85537ed63, type: 2}
+  m_Motion: {fileID: 7400000, guid: 98c6591ffff42c747b441fdd2a368094, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-3763643636349389527
+--- !u!1102 &-3841630480891006469
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: gjump_b
+  m_Name: jump_b
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -235,10 +261,10 @@ AnimatorStateMachine:
     m_Position: {x: 740, y: 450, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7928519613031922581}
-    m_Position: {x: 160, y: 660, z: 0}
+    m_Position: {x: 10, y: 650, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2342714936754531499}
-    m_Position: {x: 160, y: 580, z: 0}
+    m_Position: {x: 0, y: 580, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4425702041000106088}
     m_Position: {x: 80, y: 320, z: 0}
@@ -282,8 +308,17 @@ AnimatorStateMachine:
     m_State: {fileID: -1565142709888833425}
     m_Position: {x: -430, y: 20, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -3763643636349389527}
-    m_Position: {x: 190, y: 400, z: 0}
+    m_State: {fileID: 6904731837991620201}
+    m_Position: {x: 225, y: 465, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1933514571570849607}
+    m_Position: {x: 260, y: 530, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -3985859066351459095}
+    m_Position: {x: 295, y: 595, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -4476114542927492653}
+    m_Position: {x: 330, y: 660, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -628,6 +663,32 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &1933514571570849607
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: gjump_w
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 17a7afd9d56248244ac1c8c7e53bcc7d, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &2342714936754531499
 AnimatorState:
   serializedVersion: 6
@@ -857,6 +918,32 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: d55fa59f12f229b4ab8c0d67cd6f18e6, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &6904731837991620201
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: gjump_b
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 34a335d7c2fbc7d4b9f08e51963c509a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

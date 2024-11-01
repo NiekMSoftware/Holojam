@@ -46,6 +46,7 @@ namespace HoloJam
                 AudioManager.Instance.Play(sfxGrab);
                 lastGrabSFX = Time.timeSinceLevelLoad;
             }
+            canInteract = false;
         }
         public void ThrowUp(bool isFacingLeft)
         {
@@ -74,6 +75,7 @@ namespace HoloJam
             {
                 extraColliderToConvertToTrigger.isTrigger = false;
             }
+            canInteract = true;
         }
     }
 }

@@ -793,8 +793,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6739139585866112348, guid: ecc1626da7f1b7d4c9aeb3aa306d8b48, type: 3}
-      propertyPath: saveIDOnInteract
+      propertyPath: sceneToLoad
       value: B2-B
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739139585866112348, guid: ecc1626da7f1b7d4c9aeb3aa306d8b48, type: 3}
+      propertyPath: saveIDOnInteract
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9117916526546488789, guid: ecc1626da7f1b7d4c9aeb3aa306d8b48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1337,11 +1341,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: orthographic size
-      value: 6.78125
+      value: 8.4375
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.2526042
+      value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -1349,11 +1353,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.18750001
+      value: 0.75000006
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.40185183
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8270897359007044436, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_AnchorMax.y
