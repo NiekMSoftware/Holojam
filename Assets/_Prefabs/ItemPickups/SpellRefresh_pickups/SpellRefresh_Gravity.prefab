@@ -4993,6 +4993,8 @@ MonoBehaviour:
   flipTransform: 1
   reactToKill: 0
   NegationFieldsOverlapped: 0
+  destroyOnLightSFX: []
+  playPlantDeathSFX: 0
 --- !u!1 &2169837241998380017
 GameObject:
   m_ObjectHideFlags: 0
