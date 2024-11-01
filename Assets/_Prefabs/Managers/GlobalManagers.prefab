@@ -2328,15 +2328,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.08072917
     y: 0
-    width: 1
-    height: 1
+    width: 0.18750001
+    height: 0.49444443
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.78125
+  orthographic size: 8.4375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3904,7 +3904,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e6b224441b065c54b88460dd8562a25b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fcf4c0e5ddf4595468ed9b6bdeb0886e, type: 2}
   m_sharedMaterial: {fileID: -5795576649418271520, guid: e6b224441b065c54b88460dd8562a25b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3970,7 +3970,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &7649390479609455238
