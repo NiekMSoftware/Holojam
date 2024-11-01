@@ -25,14 +25,14 @@ namespace HoloJam
         public void RegisterInteractable(Interactable interactable)
         {
             if (currentInteractables.Contains(interactable)) return;
-            Debug.Log("register: " + interactable);
+            //Debug.Log("register: " + interactable);
             currentInteractables.Add(interactable);
             UpdateIcons();
         }
         public void DeregisterInteractable(Interactable interactable)
         {
             if (!currentInteractables.Contains(interactable)) return;
-            Debug.Log("Deregister: " + interactable);
+            //Debug.Log("Deregister: " + interactable);
             currentInteractables.Remove(interactable);
             UpdateIcons();
         }
