@@ -172,11 +172,11 @@
             }
         },
         "BookmarkLevels/4 - Courtyard/2 - HopOnPillarAndFlipGravity.tmx": {
-            "scale": 2.3888541666666665,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 239.86395151092313,
-                "y": 160.11860637509264
+                "x": 330.25,
+                "y": 36.25
             }
         },
         "BookmarkLevels/4 - Courtyard/3 - SpitOnButton.tmx": {
@@ -492,9 +492,9 @@
         },
         "HubRooms/5 - Higher Class Rooms/E2 room.tmx": {
             "scale": 2,
-            "selectedLayer": 6,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 234.5,
+                "x": 234.25,
                 "y": 149.75
             }
         },
@@ -764,6 +764,7 @@
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
+        "HubRooms/5 - Higher Class Rooms/E2 room.tmx",
         "HubRooms/1 - Prison/StartingCell.tmx",
         "HubRooms/1 - Prison/Center.tmx",
         "HubRooms/1 - Prison/CellC.tmx",
@@ -774,8 +775,7 @@
         "HubRooms/6 - Queen's Spire/Boss room maybe-F1.tmx",
         "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/B6 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/B7 room.tmx"
+        "HubRooms/2 - Lower Class Rooms/B6 room.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
