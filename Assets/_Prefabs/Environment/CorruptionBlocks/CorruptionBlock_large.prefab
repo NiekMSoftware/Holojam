@@ -5131,6 +5131,7 @@ MonoBehaviour:
   useGravityOverride: 0
   useGravity: 1
   killAnim: kill
+  triggerDialogueOnDeath: {fileID: 0}
 --- !u!95 &1418923539515724375
 Animator:
   serializedVersion: 7

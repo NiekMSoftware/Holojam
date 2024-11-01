@@ -192,7 +192,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb326efe020bdd242ae4e9e0a24a2b29, type: 3}
---- !u!43 &660741514
+--- !u!43 &643930939
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -966,7 +966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1847615727306178704, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.12
+      value: -9.03
       objectReference: {fileID: 0}
     - target: {fileID: 1913585196511369523, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_Name
@@ -1035,6 +1035,10 @@ PrefabInstance:
     - target: {fileID: 3164386501863157885, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373801250752556392, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.03
       objectReference: {fileID: 0}
     - target: {fileID: 3515304241729805256, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1361,6 +1365,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 458234347720835942, guid: db41a7d20014ea742b7af90d50f611ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.37200004
+      objectReference: {fileID: 0}
+    - target: {fileID: 656237458440383092, guid: db41a7d20014ea742b7af90d50f611ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.7112001
+      objectReference: {fileID: 0}
     - target: {fileID: 846890852607784161, guid: db41a7d20014ea742b7af90d50f611ed, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.36719
@@ -1417,6 +1429,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4237198663123205975, guid: db41a7d20014ea742b7af90d50f611ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7440001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388626309108785028, guid: db41a7d20014ea742b7af90d50f611ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761382831441607162, guid: db41a7d20014ea742b7af90d50f611ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 7027192686226810224, guid: db41a7d20014ea742b7af90d50f611ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4880002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298261620339027042, guid: db41a7d20014ea742b7af90d50f611ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.59519994
+      objectReference: {fileID: 0}
     - target: {fileID: 7313387184757890898, guid: db41a7d20014ea742b7af90d50f611ed, type: 3}
       propertyPath: m_Name
       value: Parallax Background
@@ -1424,6 +1456,10 @@ PrefabInstance:
     - target: {fileID: 7313387184757890898, guid: db41a7d20014ea742b7af90d50f611ed, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105911281681915316, guid: db41a7d20014ea742b7af90d50f611ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1159999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
