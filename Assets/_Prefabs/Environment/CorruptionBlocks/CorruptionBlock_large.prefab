@@ -5103,9 +5103,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnLight: 1
-  rigidBodyAffectedByTimestop: 1
-  hitboxDisabledByTimestop: 1
-  animatorAffectedByTimestop: 1
+  rigidBodyAffectedByTimestop: 0
+  hitboxDisabledByTimestop: 0
+  animatorAffectedByTimestop: 0
   affectedByGravity: 1
   flipTransform: 0
   reactToKill: 0
