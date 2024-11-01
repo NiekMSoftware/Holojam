@@ -1,13 +1,14 @@
 {
-    "activeFile": "HubRooms/1 - Prison/CellB.tmx",
+    "activeFile": "HubRooms/5 - Higher Class Rooms/E5 room.tmx",
     "expandedProjectPaths": [
-        "BookmarkLevels/1 - Prison",
-        "HubRooms",
-        ".",
         "HubRooms/1 - Prison",
+        "HubRooms/6 - Queen's Spire",
+        ".",
+        "HubRooms/5 - Higher Class Rooms",
         "BookmarkLevels/3 - Old Tunnels",
         "HubRooms/2 - Lower Class Rooms",
-        "HubRooms/6 - Queen's Spire"
+        "HubRooms",
+        "BookmarkLevels/1 - Prison"
     ],
     "fileStates": {
         "BookmarkLevels/1 - Prison/1 - Jailer.tmx": {
@@ -514,11 +515,11 @@
             }
         },
         "HubRooms/5 - Higher Class Rooms/E5 room.tmx": {
-            "scale": 3,
-            "selectedLayer": 6,
+            "scale": 1.5,
+            "selectedLayer": -1,
             "viewCenter": {
-                "x": 246.49999999999997,
-                "y": 190.99999999999997
+                "x": 266.33333333333326,
+                "y": 245.66666666666669
             }
         },
         "HubRooms/5 - Higher Class Rooms/E6 room.tmx": {
@@ -758,7 +759,8 @@
         "HubRooms/1 - Prison/Center.tmx",
         "HubRooms/1 - Prison/CellC.tmx",
         "HubRooms/1 - Prison/CellB.tmx",
-        "HubRooms/1 - Prison/CellA.tmx"
+        "HubRooms/1 - Prison/CellA.tmx",
+        "HubRooms/5 - Higher Class Rooms/E5 room.tmx"
     ],
     "project": "TestTiledProject.tiled-project",
     "recentFiles": [
@@ -766,14 +768,14 @@
         "HubRooms/1 - Prison/StartingCell.tmx",
         "HubRooms/1 - Prison/Center.tmx",
         "HubRooms/1 - Prison/CellC.tmx",
-        "HubRooms/1 - Prison/CellA.tmx",
         "HubRooms/1 - Prison/CellB.tmx",
+        "HubRooms/1 - Prison/CellA.tmx",
+        "HubRooms/5 - Higher Class Rooms/E5 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B4 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B5 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B6 room.tmx",
         "HubRooms/2 - Lower Class Rooms/B7 room.tmx",
-        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx",
-        "HubRooms/2 - Lower Class Rooms/Kitchen Probably.tmx"
+        "HubRooms/2 - Lower Class Rooms/Great Hall.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
