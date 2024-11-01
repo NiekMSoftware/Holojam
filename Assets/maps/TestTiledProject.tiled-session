@@ -2,11 +2,11 @@
     "activeFile": "",
     "expandedProjectPaths": [
         "HubRooms",
-        "BookmarkLevels/1 - Prison",
-        "HubRooms/2 - Lower Class Rooms",
         ".",
         "HubRooms/6 - Queen's Spire",
-        "BookmarkLevels/3 - Old Tunnels"
+        "HubRooms/2 - Lower Class Rooms",
+        "BookmarkLevels/3 - Old Tunnels",
+        "BookmarkLevels/1 - Prison"
     ],
     "fileStates": {
         "BookmarkLevels/1 - Prison/1 - Jailer.tmx": {
