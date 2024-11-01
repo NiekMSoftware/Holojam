@@ -338,7 +338,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2565532839413890777}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -375,7 +375,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2565532839413890777}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -810,6 +810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionAnimator: {fileID: 4430654887765699302}
+  sfxInteractor: can_interact
 --- !u!114 &3093381305365455697
 MonoBehaviour:
   m_ObjectHideFlags: 0

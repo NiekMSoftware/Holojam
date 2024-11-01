@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: A1-3
   m_EditorClassIdentifier: 
   characterName: 
-  dialogueText: Press EScape or Start to Pause to see controls
+  dialogueText: Press Escape or Start to Pause to see controls
   NextNode: {fileID: 0}
