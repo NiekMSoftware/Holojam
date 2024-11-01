@@ -113,6 +113,10 @@ namespace HoloJam
                 mAttackable.TakeDamage(100);
             } else if (mCorruptionKill != null)
             {
+                if (mAnimator != null)
+                {
+                    mAnimator.speed = 1;
+                }
                 mCorruptionKill.StartKill();
             } else
             {

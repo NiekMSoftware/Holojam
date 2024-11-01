@@ -1,5 +1,6 @@
 using UnityEngine;
 using HoloJam.Characters.Player.Utils;
+using HoloJam.Managers;
 namespace HoloJam
 {
     public class TitleScreen : MonoBehaviour
@@ -40,6 +41,7 @@ namespace HoloJam
         {
             mAnimator.Play("start");
             Time.timeScale = 1;
+            AudioManager.Instance.Play(WorldManager.Instance.hubSong);
             frozen = false;
             MemoryManager.SetVariable("title");
         }

@@ -392,7 +392,8 @@ MonoBehaviour:
   smallZoneName: {fileID: 3238014238149738362}
   smallRoomName: {fileID: 8565979972182802665}
   globalLightPrefab: {fileID: 2020927433016020052, guid: 057087928fba73a4eb33791a78c4314a, type: 3}
-  memorySong: Marking Memories
+  hubSong: Marking Memories
+  memorySong: Dreams of Nouveau
 --- !u!114 &8689077647515572233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2327,15 +2328,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.125
+    x: 0
     y: 0
-    width: 0.75000006
+    width: 1
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.4375
+  orthographic size: 6.78125
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

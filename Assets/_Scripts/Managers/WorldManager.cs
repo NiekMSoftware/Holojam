@@ -31,7 +31,8 @@ namespace HoloJam
         [SerializeField]
         private GameObject globalLightPrefab;
         private TransitionTag lastTargetTag;
-
+        [SerializeField]
+        public string hubSong;
         [SerializeField]
         private string memorySong;
 
@@ -105,6 +106,7 @@ namespace HoloJam
             Instance.lastTargetTag = TransitionTag.NONE;
             Instance.cachedPositionInHome = Instance.playerRef.transform.position;
             CorruptionManager.ResetEffects();
+            AudioManager.Instance.Stop(Instance.hubSong);
             AudioManager.Instance.Play(Instance.memorySong);
             SceneManager.LoadScene(sceneName);
         }
@@ -172,6 +174,7 @@ namespace HoloJam
         {
             if (Instance.homeSceneName == SceneManager.GetActiveScene().name) return;
             AudioManager.Instance.Stop(Instance.memorySong);
+            AudioManager.Instance.Play(Instance.hubSong);
             CorruptionManager.ResetEffects();
             SceneManager.LoadScene(Instance.homeSceneName);
         }

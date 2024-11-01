@@ -25,7 +25,10 @@ namespace HoloJam
 
         public void OnDirectionChanged(bool newFacingLeft)
         {
-            PlayAnimation(lastAnimationBase, newFacingLeft);
+            if (LastAnimationBase != "die")
+            {
+                PlayAnimation(lastAnimationBase, newFacingLeft);
+            }
         }
 
          public void PlayAnimation(string animation)

@@ -42,9 +42,11 @@ namespace HoloJam.Characters.Player
 
             // flip object based on direction
             float direction = Mathf.Sign(movementInput);
-
-            player.SetFacingLeft(direction < 0);
-            transform.localScale = new Vector3(direction, transform.localScale.y, 1);
+            if (!player.performingAction)
+            {
+                player.SetFacingLeft(direction < 0);
+                transform.localScale = new Vector3(direction, transform.localScale.y, 1);
+            }
         }
         public void UpDownMove(float updowninput, float acceleration, float maxSpeed)
         {

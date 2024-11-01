@@ -50,6 +50,7 @@ namespace HoloJam.Dialogue
         public void EndDialogue()
         {
             if (player == null) player = FindFirstObjectByType<Player>();
+            if (player == null) return;
             UIManager.Instance.HideDialogue();
             player.Input.DisableUIControls();
             CurrentNode = null;
