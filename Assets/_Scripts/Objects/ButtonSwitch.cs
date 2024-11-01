@@ -22,7 +22,10 @@ namespace HoloJam
         }
         private void OnDestroy()
         {
-            switchInteractable.toggleEvent -= ToggleEvent;
+            if (switchInteractable != null)
+            {
+                switchInteractable.toggleEvent -= ToggleEvent;
+            }
         }
         void ToggleEvent(Player p)
         {
@@ -45,6 +48,7 @@ namespace HoloJam
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
+            if (collision.attachedRigidbody == null) return;
             if (heavySwitch && collision.attachedRigidbody.gameObject.CompareTag("specialHeavy"))
             {
                 mAnimator.Update(0);
@@ -52,7 +56,6 @@ namespace HoloJam
                 OnOffBlockManager.ToggleBlockStatus(mBlockType);
                 return;
             }
-            if (collision.attachedRigidbody == null) return;
             if (collision.isTrigger) return;
             if (collision.GetComponent<Hitbox>() != null) return;
             if (collision.attachedRigidbody.GetComponent<Player>() != null) return;

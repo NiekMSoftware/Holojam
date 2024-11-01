@@ -16,10 +16,6 @@ namespace HoloJam.StateMachine.States
         public override void Do()
         {
             float velX = Rigidbody.linearVelocityX;
-            if (velX != 0)
-            {
-                core.SetFacingLeft(velX < 0);
-            }
             CharAnimator.PlayAnimation(Mathf.Abs(velX) > 1 ? "run" : "idle");
             if (scaleAnimOnXSpeed)
             {

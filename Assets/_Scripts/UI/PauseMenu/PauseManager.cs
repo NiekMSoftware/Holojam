@@ -6,6 +6,7 @@ using HoloJam.Managers;
 using static HoloJam.Managers.AudioManager;
 using System;
 using UnityEditor;
+using TMPro;
 namespace HoloJam
 {
     public class PauseManager : MonoBehaviour
@@ -18,11 +19,14 @@ namespace HoloJam
         private Animator pauseAnimator;
         [SerializeField]
         private EventSystem mEventSystem;
+        [SerializeField]
+        private TextMeshProUGUI typingSpeedText;
         private Selectable lastButtonSelected;
         private bool isPaused;
 
         private AudioLevels currentSfxLevel;
         private AudioLevels currentMusicLevel;
+        private bool isFast;
 
         private void Awake()
         {
@@ -75,6 +79,12 @@ namespace HoloJam
         {
             currentMusicLevel = GetNextAudioLevel(currentMusicLevel);
             AudioManager.Instance.SetVolume(currentMusicLevel, AudioMixers.Music);
+        }
+        public void ToggleTypingSpeed()
+        {
+            isFast = !isFast;
+            typingSpeedText.text = isFast ? "Typing Speed: Fast" : "Typing Speed: Slow";
+            UIManager.Instance.SetTypingSpeed(isFast);
         }
         private AudioLevels GetNextAudioLevel(AudioLevels currentLevel)
         {

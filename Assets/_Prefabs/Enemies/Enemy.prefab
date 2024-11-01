@@ -353,6 +353,9 @@ MonoBehaviour:
   actionState: {fileID: 8440673797698652973}
   <Data>k__BackingField: {fileID: 11400000, guid: d3765efff2e4b404aa014e98107fbc7d, type: 2}
   <lastFacingLeft>k__BackingField: 0
+  sfxStep: []
+  sfxAttack: 
+  sfxJump: 
   <AdditionalEnemyState>k__BackingField: 0
   Idle: {fileID: 2402322638401177110}
 --- !u!114 &4595109096949791457
@@ -375,6 +378,8 @@ MonoBehaviour:
   flipTransform: 1
   reactToKill: 1
   NegationFieldsOverlapped: 0
+  destroyOnLightSFX: []
+  playPlantDeathSFX: 0
 --- !u!1 &4547633439682579157
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,10 +613,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbacced2e5b9da84a90c86f56bdea0a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 2
+  priority: 3
   interactionType: 0
   saveIDOnInteract: 
   CanInteractInMidair: 1
+  sfxOnHighlight: 
+  sfxOnInteract: 
 --- !u!1 &4952258715614148646
 GameObject:
   m_ObjectHideFlags: 0

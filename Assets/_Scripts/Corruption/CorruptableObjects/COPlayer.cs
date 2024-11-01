@@ -45,7 +45,7 @@ namespace HoloJam
                     Kill();
                     break;
                 case CorruptionType.GLOBE:
-                    Vector3 spawnPos = new Vector3(transform.position.x, transform.position.y + 2f, transform.position.z);
+                    Vector3 spawnPos = new Vector3(transform.position.x, transform.position.y + (InvertedGravity ? -2f : 2f), transform.position.z);
                     Instantiate(GlobeObject, spawnPos, Quaternion.identity);
                     break;
                 case CorruptionType.BIRD:

@@ -61,6 +61,7 @@ namespace HoloJam.Characters.Player.Utils
             {
                 PlayerActions.Jump.Disable();
             }
+            PlayerActions.Interact.Disable();
             UIActions.Submit.performed += OnSubmit;
         }
 
@@ -70,7 +71,7 @@ namespace HoloJam.Characters.Player.Utils
             PlayerActions.Jump.Enable();
             PlayerActions.Move.Enable();
             PlayerActions.Corruption.Enable();
-
+            PlayerActions.Interact.Enable();
             UIActions.Submit.performed -= OnSubmit;
         }
 

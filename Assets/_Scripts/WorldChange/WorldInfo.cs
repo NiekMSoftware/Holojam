@@ -5,6 +5,7 @@ namespace HoloJam
     public class WorldInfo : MonoBehaviour
     {
         public float YDeathZone = -20f;
+        public float YDeathZoneUpper = 20f;
         public string zoneName = "";
         public string roomName = "";
         public Collider2D CameraBounds;
@@ -13,7 +14,7 @@ namespace HoloJam
         void Start()
         {
             WorldManager.UpdateRoomName(zoneName, roomName);
-            WorldManager.SetYDeathZone(YDeathZone);
+            WorldManager.SetYDeathZone(YDeathZone, YDeathZoneUpper);
             if (CameraBounds != null)
             {
                 WorldManager.SetCameraBounds(CameraBounds);

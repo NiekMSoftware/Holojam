@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   YDeathZone: -70
+  YDeathZoneUpper: 20
   zoneName: 
   roomName: 
   CameraBounds: {fileID: 2546860081669569530}
