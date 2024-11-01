@@ -2190,6 +2190,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9bb5879387e67cc4e80818e90642f1d8, type: 2}
   - {fileID: 11400000, guid: 3c13e46952f6c1749afd9a1243d2a1e8, type: 2}
   - {fileID: 11400000, guid: 54d2619ce5c4f79468a07f30cfae6988, type: 2}
+  - {fileID: 11400000, guid: 8ca6f9215e7e3d749a7eace2ac3ebb85, type: 2}
   musicMixer: {fileID: 5279421769707107656, guid: cfa84812252fa85478b6fb06dff400bf, type: 2}
   sfxMixer: {fileID: 2480705155777744464, guid: cfa84812252fa85478b6fb06dff400bf, type: 2}
   FirstSongToPlay: 
@@ -2276,6 +2277,7 @@ GameObject:
   - component: {fileID: 8671990905733100341}
   - component: {fileID: 5415608448692373161}
   - component: {fileID: 4802505055308056362}
+  - component: {fileID: 3810542308385908312}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2325,15 +2327,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.2526042
+    x: 0.125
     y: 0
-    width: 0.18750001
-    height: 0.40185183
+    width: 0.75000006
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.78125
+  orthographic size: 8.4375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2470,6 +2472,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &4802505055308056362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5572090019224686069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf6b11afaed1ec46ba4c70f071f0387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3810542308385908312
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
