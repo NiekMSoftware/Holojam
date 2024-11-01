@@ -393,8 +393,12 @@ PrefabInstance:
       value: -0.11320174
       objectReference: {fileID: 0}
     - target: {fileID: 8217144670104048606, guid: c37583eab9a761346823e9e009bf89eb, type: 3}
+      propertyPath: isBookwyrm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217144670104048606, guid: c37583eab9a761346823e9e009bf89eb, type: 3}
       propertyPath: animatorAffectedByTimestop
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8505593969735616666, guid: c37583eab9a761346823e9e009bf89eb, type: 3}
       propertyPath: m_Controller

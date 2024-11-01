@@ -12,6 +12,7 @@ namespace HoloJam
         public bool rigidBodyAffectedByTimestop = true;
         public bool hitboxDisabledByTimestop = true;
         public bool animatorAffectedByTimestop = true;
+        public bool isBookwyrm = false;
         public bool Frozen { get { return frozen; } }
         private bool frozen;
         private Animator mAnimator;
@@ -44,6 +45,10 @@ namespace HoloJam
         {
             if (destroyOnLight && NegationFieldsOverlapped > 0)
             {
+                if (isBookwyrm == true)
+                {
+                    mAnimator.SetFloat("Frozen", 1);
+                }
                 mAnimator.Play("die");
                 if (!sfxPlayed)
                 {
@@ -77,7 +82,14 @@ namespace HoloJam
             frozen = newFrozen;
             if (animatorAffectedByTimestop && mAnimator != null)
             {
-                mAnimator.speed = newFrozen ? 0 : 1;
+                if (isBookwyrm == true)
+                {
+                    mAnimator.SetFloat("Frozen", 0);
+                } else
+                {
+                    mAnimator.speed = newFrozen ? 0 : 1;
+                }
+                
             }
             if (rigidBodyAffectedByTimestop && mRigidBody != null)
             {
