@@ -317,6 +317,7 @@ MonoBehaviour:
   smallZoneName: {fileID: 3238014238149738362}
   smallRoomName: {fileID: 8565979972182802665}
   globalLightPrefab: {fileID: 2020927433016020052, guid: 057087928fba73a4eb33791a78c4314a, type: 3}
+  memorySong: Marking Memories
 --- !u!114 &8689077647515572233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2115,7 +2116,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 54d2619ce5c4f79468a07f30cfae6988, type: 2}
   musicMixer: {fileID: 5279421769707107656, guid: cfa84812252fa85478b6fb06dff400bf, type: 2}
   sfxMixer: {fileID: 2480705155777744464, guid: cfa84812252fa85478b6fb06dff400bf, type: 2}
-  FirstSongToPlay: Test - Music
+  FirstSongToPlay: 
   sfxBtnText: {fileID: 4328054842746563663}
   mscBtnText: {fileID: 9209466781220050544}
 --- !u!1 &5552262062812875275
@@ -2248,15 +2249,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.08072917
     y: 0
-    width: 1
-    height: 1
+    width: 0.18750001
+    height: 0.49444443
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.1875
+  orthographic size: 5.5625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
