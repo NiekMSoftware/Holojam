@@ -330,6 +330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockStatus: 1
+  sfxButtonToggle: button_down
   toRefreshOnOff: 0
 --- !u!114 &976860697736093224
 MonoBehaviour:
@@ -355,6 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 332d09b2818f05245be13a1af9e978b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugAllmemories: 0
   savedMemoryIDs: []
 --- !u!1 &2005850511892230139
 GameObject:
@@ -2107,6 +2109,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 21213708236d53540bf47189bc6173f3, type: 2}
   - {fileID: 11400000, guid: b7e821896ee09e34ea001785f7d07a04, type: 2}
   - {fileID: 11400000, guid: dbd2aa9a7ee52394a94e241c7fed337f, type: 2}
+  - {fileID: 11400000, guid: db39825669c09e84a934773dc43d8b3f, type: 2}
+  - {fileID: 11400000, guid: 9bb5879387e67cc4e80818e90642f1d8, type: 2}
+  - {fileID: 11400000, guid: 3c13e46952f6c1749afd9a1243d2a1e8, type: 2}
   musicMixer: {fileID: 5279421769707107656, guid: cfa84812252fa85478b6fb06dff400bf, type: 2}
   sfxMixer: {fileID: 2480705155777744464, guid: cfa84812252fa85478b6fb06dff400bf, type: 2}
   FirstSongToPlay: Test - Music
@@ -2242,15 +2247,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.08072917
+    x: 0.2526042
     y: 0
     width: 0.18750001
-    height: 0.49444443
+    height: 0.40185183
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.5625
+  orthographic size: 8.4375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

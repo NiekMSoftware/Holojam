@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4792289012479831693}
   - component: {fileID: 8425150324657920186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PaperMask_down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 725827338753520814}
   - component: {fileID: 7626825678608373248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Paper_blocker (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1979984711020449723}
   - component: {fileID: 333072646591437580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 2000911677535160428}
   - component: {fileID: 2784406462527443792}
   - component: {fileID: 8134348709933123204}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Paper_blocker
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using HoloJam.Dialogue;
 namespace HoloJam
 {
     public class CorruptionKillAnimator : MonoBehaviour
@@ -12,6 +12,8 @@ namespace HoloJam
         private Animator mAnimator;
         private Rigidbody2D rigidbody2D;
         private bool lastGravity;
+        [SerializeField]
+        public DialogueTrigger triggerDialogueOnDeath;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -22,6 +24,10 @@ namespace HoloJam
         public void StartKill()
         {
             mAnimator.Play(killAnim);
+            if (triggerDialogueOnDeath != null)
+            {
+                triggerDialogueOnDeath.TriggerDialogue();
+            }
         }
         // Update is called once per frame
         void Update()

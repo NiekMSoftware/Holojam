@@ -4,6 +4,7 @@ using SuperTiled2Unity;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 using System.Linq;
+using HoloJam.Managers;
 
 namespace HoloJam
 {
@@ -20,6 +21,7 @@ namespace HoloJam
         private List<GameObject> defaultOff2Blocks = new List<GameObject>();
         private List<IReactToOnOffToggle> SpecialOnOffReactors = new List<IReactToOnOffToggle>();
         private List<IReactToOnOffToggle> SpecialOnOffReactors2 = new List<IReactToOnOffToggle>();
+        public string sfxButtonToggle;
 
         public bool toRefreshOnOff = false;
         private void Awake()
@@ -100,6 +102,7 @@ namespace HoloJam
         }
         public static void SetBlocksStatus(bool on, BlockType blockType)
         {
+            AudioManager.Instance.Play(Instance.sfxButtonToggle);
             if (blockType == BlockType.LAYER_ONE_BLUE)
             {
                 Instance.blockStatus = on;

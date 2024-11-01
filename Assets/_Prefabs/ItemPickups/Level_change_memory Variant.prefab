@@ -9762,6 +9762,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 894189407463758984, guid: 8c57e1dae86872848aa924999f0e47f5, type: 3}
+      propertyPath: sfxOnInteract
+      value: dream_world_transition
+      objectReference: {fileID: 0}
+    - target: {fileID: 894189407463758984, guid: 8c57e1dae86872848aa924999f0e47f5, type: 3}
       propertyPath: specialOnParticle
       value: 
       objectReference: {fileID: 6291059199579196852}

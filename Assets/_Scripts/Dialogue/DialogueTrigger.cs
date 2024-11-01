@@ -16,6 +16,10 @@ namespace HoloJam.Dialogue
         public bool triggerReturnToHub;
         public bool oneUsePerWorld = false;
         private bool used = false;
+        public Transform newFocusTransform;
+        private Transform oldFocusTransform; 
+        [SerializeField]
+
         private void Start()
         {
             interactionType = InteractableType.DIALOGUE;
@@ -28,7 +32,7 @@ namespace HoloJam.Dialogue
             }
             return SceneManager.GetActiveScene().name;
         }
-        public override void OnPerformInteraction(Player p)
+        public void TriggerDialogue()
         {
             if (oneUsePerWorld && used)
             {
@@ -44,11 +48,24 @@ namespace HoloJam.Dialogue
                 return;
             }
             used = true;
+            if (newFocusTransform != null)
+            {
+                oldFocusTransform = WorldManager.GetCameraTarget();
+                WorldManager.SetTarget(newFocusTransform);
+            }
             DialogueManager.Instance.RegisterDialogueEndEvent(DialogueEndSaveID);
             DialogueManager.Instance.StartDialogue(StartingNode, disableMovement, disableJump);
         }
+        public override void OnPerformInteraction(Player p)
+        {
+            TriggerDialogue();
+        }
         void DialogueEndSaveID()
         {
+            if (newFocusTransform != null)
+            {
+                WorldManager.SetTarget(oldFocusTransform);
+            }
             MemoryManager.SetVariable(GetSaveID());
             if (triggerReturnToHub) 
             {

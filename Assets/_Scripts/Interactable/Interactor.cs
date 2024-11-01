@@ -2,6 +2,7 @@ using UnityEngine;
 using HoloJam.Characters.Player;
 using HoloJam.Characters.Player.Utils;
 using System.Collections.Generic;
+using HoloJam.Managers;
 namespace HoloJam
 {
     public class Interactor : MonoBehaviour
@@ -12,7 +13,7 @@ namespace HoloJam
         private Animator interactionAnimator;
         private Interactable highestInteractable;
         private PlayerInput input;
-        
+        public string sfxInteractor;
         public bool HandsFree { get { return canInteract; } set { canInteract = value; } }
         private bool canInteract;
         private void Start()
@@ -25,6 +26,7 @@ namespace HoloJam
         {
             if (currentInteractables.Contains(interactable)) return;
             currentInteractables.Add(interactable);
+            AudioManager.Instance.Play(sfxInteractor);
             UpdateIcons();
         }
         public void DeregisterInteractable(Interactable interactable)

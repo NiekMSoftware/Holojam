@@ -209,8 +209,16 @@ namespace HoloJam
         private void SetPlayer(Player newPlayer)
         {
             if (newPlayer == null) return;
-            cineCamera.Target.TrackingTarget = newPlayer.transform;
+            SetTarget(newPlayer.transform);
             playerRef = newPlayer;
+        }
+        public static Transform GetCameraTarget()
+        {
+            return Instance.cineCamera.Target.TrackingTarget;
+        }
+        public static void SetTarget(Transform newTarget)
+        {
+            Instance.cineCamera.Target.TrackingTarget = newTarget;
         }
     }
 }
