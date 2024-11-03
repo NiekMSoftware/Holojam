@@ -43,7 +43,6 @@ namespace HoloJam.Characters.Player.Utils
         {
             PlayerActions.Disable();
             UIActions.Enable();
-            Debug.Log("Enabled ui");
 
             UIActions.Submit.performed += OnSubmit;
         }

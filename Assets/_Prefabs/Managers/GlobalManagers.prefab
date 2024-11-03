@@ -2331,12 +2331,12 @@ Camera:
     x: 0.08072917
     y: 0
     width: 0.18750001
-    height: 0.3074074
+    height: 0.24444444
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.1875
+  orthographic size: 8.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3486,25 +3486,25 @@ MonoBehaviour:
     Jump:
     Space or Up
 
-    Interact: J or E
+    Interact / Backstab: J or E
 
-    Ability (when unlocked): K or R
+    Ability (when unlocked): K
+    or R
 
-    Pause:
-    ESCAPE
+    Pause: ESCAPE
 
 
     <b>Gamepad:</b>
 
     Movement: Thumbstick
 
-    Jump: A (xbox) or
-    Cross (ps)
+    Jump:
+    A (xbox) or Cross (ps)
 
-    Interact: X (xbox) or Square (ps)
+    Interact / Backstab: X (xbox) or Square (ps)
 
-    Ability: (when unlocked):
-    Y (xbox) or Triangle (ps)
+    Ability
+    (when unlocked): Y (xbox) or Triangle (ps)
 
     Pause: Start
 

@@ -89,7 +89,7 @@ namespace HoloJam.Characters.Player
 
         private void TEMPActivatePower()
         {
-            if (Input.GetCorruptionPressed() && !PauseManager.IsPaused) {
+            if ((Input.UIActions.Corruption.WasPerformedThisFrame() || Input.GetCorruptionPressed()) && !PauseManager.IsPaused) {
                 CorruptionManager.TogglePanelOpen();
             } else if (Input.GetPausePressed() && !CorruptionManager.IsOpen)
             {

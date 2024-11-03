@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using HoloJam.Characters.Player.Utils;
 namespace HoloJam
 {
     public class BookMarkSection : MonoBehaviour
@@ -40,9 +41,11 @@ namespace HoloJam
                         }
                     }
                 }
+                PlayerInput.Instance.SwitchToUIControls();
                 lastBookmark.Highlight();
             } else
             {
+                PlayerInput.Instance.SwitchToPlayerControls();
                 lastBookmark.Dehighlight();
             }
         }
