@@ -41,7 +41,7 @@ namespace HoloJam
         {
             mAnimator.Play("start");
             Time.timeScale = 1;
-            AudioManager.Instance.Play(WorldManager.Instance.hubSong);
+            AudioManager.Instance.PlayMusicSwapSeamless(WorldManager.Instance.hubSong);
             frozen = false;
             MemoryManager.SetVariable("title");
         }

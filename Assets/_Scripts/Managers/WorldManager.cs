@@ -106,8 +106,7 @@ namespace HoloJam
             Instance.lastTargetTag = TransitionTag.NONE;
             Instance.cachedPositionInHome = Instance.playerRef.transform.position;
             CorruptionManager.ResetEffects();
-            AudioManager.Instance.Stop(Instance.hubSong);
-            AudioManager.Instance.Play(Instance.memorySong);
+            AudioManager.Instance.PlayMusicSwapSeamless(Instance.memorySong);
             SceneManager.LoadScene(sceneName);
         }
         public static void LoadNewHubScene(string scenename,TransitionTag originTag, TransitionTag targetTag)
@@ -173,8 +172,7 @@ namespace HoloJam
         public static void ReturnToHomeScene()
         {
             if (Instance.homeSceneName == SceneManager.GetActiveScene().name) return;
-            AudioManager.Instance.Stop(Instance.memorySong);
-            AudioManager.Instance.Play(Instance.hubSong);
+            AudioManager.Instance.PlayMusicSwapSeamless(Instance.hubSong);
             CorruptionManager.ResetEffects();
             SceneManager.LoadScene(Instance.homeSceneName);
         }

@@ -3,6 +3,7 @@ using HoloJam.Characters.Player.Utils;
 using HoloJam.Dialogue.Data;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using HoloJam.Managers;
 namespace HoloJam.Dialogue
 {
     public class DialogueTrigger : Interactable
@@ -17,9 +18,9 @@ namespace HoloJam.Dialogue
         public bool oneUsePerWorld = false;
         private bool used = false;
         public Transform newFocusTransform;
-        private Transform oldFocusTransform; 
+        private Transform oldFocusTransform;
         [SerializeField]
-
+        private bool endOnLeaveTrigger = true;
         private void Start()
         {
             interactionType = InteractableType.DIALOGUE;
@@ -77,7 +78,7 @@ namespace HoloJam.Dialogue
         {
             base.OnTriggerExit2D(collision);
 
-            if (collision.CompareTag("Player"))
+            if (endOnLeaveTrigger && collision.CompareTag("Player"))
             {
                 DialogueManager.Instance.EndDialogue();
             }

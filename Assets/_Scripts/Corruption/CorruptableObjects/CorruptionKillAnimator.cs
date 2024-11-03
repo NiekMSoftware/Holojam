@@ -22,7 +22,7 @@ namespace HoloJam
             mAnimator = GetComponent<Animator>();
             rigidbody2D = GetComponent <Rigidbody2D>();
             lastGravity = useGravity;
-            if (MemoryManager.HasVariable(DestroyIfHasMemory))
+            if (DestroyIfHasMemory != "" && MemoryManager.HasVariable(DestroyIfHasMemory))
             {
                 Destroy(gameObject);
             }

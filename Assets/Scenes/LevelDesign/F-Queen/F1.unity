@@ -3975,6 +3975,10 @@ PrefabInstance:
       propertyPath: triggerReturnToHub
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1477059641077285025, guid: 2089585f06fb9e24e87c3fcc78737403, type: 3}
+      propertyPath: skipOnSecondInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2473276412813967206, guid: 2089585f06fb9e24e87c3fcc78737403, type: 3}
       propertyPath: m_Name
       value: LevelChangeDialogue
@@ -5667,11 +5671,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: orthographic size
-      value: 8.4375
+      value: 6.78125
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0
+      value: 0.2526042
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -5679,11 +5683,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1
+      value: 0.18750001
       objectReference: {fileID: 0}
     - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.40185183
       objectReference: {fileID: 0}
     - target: {fileID: 8270897359007044436, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6567,6 +6571,14 @@ PrefabInstance:
     - target: {fileID: 4413294271704364656, guid: 8bc941c146e02644eaeb914173e3fd6d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206054126080999215, guid: 8bc941c146e02644eaeb914173e3fd6d, type: 3}
+      propertyPath: roomName
+      value: Throne Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206054126080999215, guid: 8bc941c146e02644eaeb914173e3fd6d, type: 3}
+      propertyPath: zoneName
+      value: The Spire
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

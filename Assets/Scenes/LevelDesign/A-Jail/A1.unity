@@ -274,7 +274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Novella Rewrite
+  m_text: Novella Desires
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fcf4c0e5ddf4595468ed9b6bdeb0886e, type: 2}
   m_sharedMaterial: {fileID: 1042783665978943671, guid: fcf4c0e5ddf4595468ed9b6bdeb0886e, type: 2}
@@ -1958,6 +1958,18 @@ PrefabInstance:
     - target: {fileID: 3797879237620836101, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
+      propertyPath: orthographic size
+      value: 6.78125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0.2526042
+      objectReference: {fileID: 0}
+    - target: {fileID: 7955965513322066150, guid: eaec6e8d0f698cf43b5b89d8fc771891, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 0.40185183
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

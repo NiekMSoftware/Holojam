@@ -96,3 +96,4 @@ MonoBehaviour:
   triggerReturnToHub: 1
   oneUsePerWorld: 0
   newFocusTransform: {fileID: 0}
+  endOnLeaveTrigger: 0

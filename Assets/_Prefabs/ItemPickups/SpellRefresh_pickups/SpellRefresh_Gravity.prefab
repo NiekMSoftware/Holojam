@@ -4989,6 +4989,7 @@ MonoBehaviour:
   rigidBodyAffectedByTimestop: 0
   hitboxDisabledByTimestop: 0
   animatorAffectedByTimestop: 0
+  isBookwyrm: 0
   affectedByGravity: 0
   flipTransform: 1
   reactToKill: 0

@@ -36,6 +36,7 @@ namespace HoloJam.Managers
         public TMP_Text sfxBtnText;
         public TMP_Text mscBtnText;
 
+        private AudioSource lastMusicSource;
         private void Awake()
         {
             if (instance == null)
@@ -92,12 +93,26 @@ namespace HoloJam.Managers
         #endregion
 
         #region Playback Methods
+        public void PlayMusicSwapSeamless(string songName)
+        {
+            if (songName == "") return;
+            SoundData sd = Array.Find(Sounds, sound => sound.name == songName);
+            if (sd == null) { Debug.LogWarning($"Sound: {songName} was not found! Did you type it in correctly?"); return; }
+            float lastTime = 0;
+            if (lastMusicSource != null)
+            {
+                lastTime = lastMusicSource.time;
+                lastMusicSource.Stop();
+            }
+            sd.Source.Play();
+            lastMusicSource = sd.Source;
+            sd.Source.time = lastTime;
+        }
         public void Play(string soundName)
         {
             if (soundName == "") return;
             SoundData sd = Array.Find(Sounds, sound => sound.name == soundName);
             if (sd == null) { Debug.LogWarning($"Sound: {soundName} was not found! Did you type it in correctly?"); return; }
-
             sd.Source.Play();
         }
 

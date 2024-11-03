@@ -78,7 +78,12 @@ namespace HoloJam
         public static void TogglePanelOpen()
         {
             if (!Instance.effects.Values.Any(obj => obj.CanBeUsed)) return;
-            Instance.isOpen = !Instance.isOpen;
+            SetPanelOpen(!Instance.isOpen);
+        }
+        public static void SetPanelOpen(bool isOpen)
+        {
+            if (isOpen == Instance.isOpen) return;
+            Instance.isOpen = isOpen;
             Time.timeScale = Instance.isOpen ? 0 : 1;
             Instance.bookmarkUI.SetPanelOpen(Instance.isOpen);
             AudioManager.Instance.Play(Instance.isOpen ? Instance.sfxOpen : Instance.sfxClose);
@@ -86,7 +91,6 @@ namespace HoloJam
             {
                 Instance.mEventSystem.SetSelectedGameObject(null);
             }
-                
         }
         public static void RegisterEffect(CorruptionEffect effect, CorruptionType cType)
         {
@@ -138,6 +142,7 @@ namespace HoloJam
                 effect.ResetCharges();
                 Instance.UpdateBookmarkUI(effect);
             }
+            CorruptionManager.SetPanelOpen(false);
         }
         public static bool AttemptUseEffect(CorruptionType cType)
         {

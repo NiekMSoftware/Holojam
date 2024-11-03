@@ -34,6 +34,7 @@ namespace HoloJam
         private bool toSelect;
         [SerializeField] private List<string> sfxSelect = new List<string>();
         [SerializeField] private string sfxUse;
+        private bool usedRecently;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -49,7 +50,7 @@ namespace HoloJam
                 }
                 return;
             } 
-            if (PlayerInput.Instance.GetJumpPressed() || PlayerInput.Instance.GetInteractValue() > 0)
+            if (PlayerInput.Instance.GetInteractValue() > 0)
             {
                 Use();
                 return;
@@ -94,7 +95,13 @@ namespace HoloJam
 
         public void Dehighlight()
         {
-            mAnimator.Play("idle");
+            if (usedRecently)
+            {
+                usedRecently = false;
+            } else
+            {
+                mAnimator.Play("idle");
+            }
             isSelected = false;
         }
 
@@ -102,6 +109,7 @@ namespace HoloJam
         {
             if (!lastHasCharges) return;
             mAnimator.Play("use");
+            usedRecently = true;
             AudioManager.Instance.Play(sfxUse);
             CorruptionManager.AttemptUseEffect(corruptionType);
             CorruptionManager.TogglePanelOpen();
